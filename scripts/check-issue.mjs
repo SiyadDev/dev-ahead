@@ -19,7 +19,8 @@ const SECTIONS = [
 // Phrases from the private brief that must never reach the public edition.
 const PRIVATE = [
   /\bSyd\b/,
-  /\bSiyad'?s\b/,
+  /\bSiyad\b(?!Dev)/,
+  /\bRahman\b/,
   /your gap/i,
   /private research brief/i,
   /compiled for/i,

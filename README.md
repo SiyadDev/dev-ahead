@@ -2,7 +2,7 @@
 
 What's moving underneath developer news, twice a week. Early signals, capabilities you can adopt this week, and a running [Disruption Watch](src/data/watch.json) board that rates how far each shift has got.
 
-Written by Siyad Rahman. Suggestions and challenges to a rating are welcome: [open an issue](../../issues/new).
+Written by [SiyadDev](https://github.com/SiyadDev). Suggestions and challenges to a rating are welcome: [open an issue](../../issues/new).
 
 ## How it works
 

@@ -58,7 +58,7 @@ const current = (href: string) => (path === url(href).replace(/\/$/, '') ? 'page
       </main>
 
       <footer class="footer">
-        <span>Written by {SITE.author}.</span>
+        <span>Written by <a href={SITE.authorUrl}>{SITE.author}</a>.</span>
         <nav aria-label="Elsewhere">
           {SITE.linkedinNewsletter && <a href={SITE.linkedinNewsletter}>LinkedIn newsletter</a>}
           {SITE.devto && <a href={SITE.devto}>dev.to</a>}

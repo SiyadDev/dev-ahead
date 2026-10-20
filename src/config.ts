@@ -5,7 +5,8 @@ export const SITE = {
   tagline: "What's moving underneath developer news, twice a week.",
   description:
     'A twice-weekly brief on the tooling, AI capabilities and structural shifts that reach developers before they become headlines. Tracks a running Disruption Watch board.',
-  author: 'Siyad Rahman',
+  author: 'SiyadDev',
+  authorUrl: 'https://github.com/SiyadDev',
   // e.g. https://www.linkedin.com/newsletters/dev-ahead-1234567890/
   linkedinNewsletter: '',
   // e.g. https://www.linkedin.com/in/your-handle/

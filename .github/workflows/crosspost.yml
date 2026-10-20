@@ -39,6 +39,9 @@ jobs:
         run: |
           if [ -n "$INPUT_FILE" ]; then
             files="$INPUT_FILE"
+          elif [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+            echo "First push to the branch; nothing to compare against. Use 'Run workflow' to post an issue by hand."
+            files=""
           else
             files=$(git diff --name-only --diff-filter=A "$BEFORE" "$AFTER" -- 'src/content/issues/*.md' | tr '\n' ' ')
           fi

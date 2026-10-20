@@ -1,12 +1,12 @@
 # Addition to the DEV Ahead routine prompt
 
-Append this section to the end of the DEV Ahead routine's prompt, after the Google Drive publishing step. Replace `OWNER/dev-ahead` with the repository, and attach that repository to the routine as a source so the run has a checkout of it.
+Append this section to the end of the DEV Ahead routine's prompt, after the Google Drive publishing step. Attach that repository to the routine as a source so the run has a checkout of it.
 
 ---
 
 ## PUBLIC EDITION: GitHub pull request (after the Drive upload succeeds)
 
-The private brief above stays exactly as it is. Now produce a separate public edition for the open-source site in the `OWNER/dev-ahead` repository, which is checked out in your workspace. You draft; Siyad reviews and merges. Never merge the pull request yourself.
+The private brief above stays exactly as it is. Now produce a separate public edition for the open-source site in the `SiyadDev/dev-ahead` repository, which is checked out in your workspace. You draft; Siyad reviews and merges. Never merge the pull request yourself.
 
 1. Read `docs/editorial-guide.md` in the repository and follow it exactly. Read the two most recent files in `src/content/issues/` so the public edition carries its own continuity.
 2. Create a branch named `claude/issue-YYYY-MM-DD` (today's date).
@@ -22,6 +22,7 @@ The private brief above stays exactly as it is. Now produce a separate public ed
    - **Watch changes:** which entries moved or were added, or "none".
    - **Add your take:** one suggested place in the issue where a paragraph of Siyad's own opinion would add the most, and why.
    - **LinkedIn post draft:** a 120–180 word post announcing the issue, with a hook in the first two lines and the link left as `[link]`. Opinions are fine; do not invent personal experiences or anecdotes. Mark it clearly as a draft.
-7. Note the pull request link in your final summary, next to the Drive file link.
+7. If you cannot open a pull request from this environment, push the branch anyway and put the compare link (`https://github.com/SiyadDev/dev-ahead/compare/main...claude/issue-YYYY-MM-DD`) and the description text in your final summary instead.
+8. Note the pull request link in your final summary, next to the Drive file link.
 
 If the repository is not available in your workspace, skip this section, say so in your final summary, and do not fail the run.

@@ -1,6 +1,6 @@
 # Addition to the DEV Ahead routine prompt
 
-Append this section to the end of the DEV Ahead routine's prompt, after the Google Drive publishing step. Attach that repository to the routine as a source so the run has a checkout of it.
+Append this section to the end of the DEV Ahead routine's prompt, after the Google Drive publishing step. Attach the SiyadDev/dev-ahead repository to the routine as a source so the run has a checkout of it.
 
 ---
 

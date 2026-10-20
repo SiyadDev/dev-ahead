@@ -1,0 +1,15 @@
+---
+import Base from '../layouts/Base.astro';
+import { url } from '../config';
+---
+
+<Base title="Page not found">
+  <header class="page-head">
+    <h1>There's no page at this address.</h1>
+    <p>
+      It may have moved. Start from the <a href={url('/')}>home page</a> or browse <a href={url('/issues')}
+        >all issues</a
+      >.
+    </p>
+  </header>
+</Base>

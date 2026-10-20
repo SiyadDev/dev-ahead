@@ -1,0 +1,52 @@
+name: Cross-post to dev.to
+
+# Posts each newly merged issue to dev.to, with the canonical URL pointing at
+# the site. Does nothing until the DEVTO_API_KEY repository secret is set.
+on:
+  push:
+    branches: [main]
+    paths: ['src/content/issues/*.md']
+  workflow_dispatch:
+    inputs:
+      file:
+        description: 'Issue file to post, e.g. src/content/issues/2026-10-19.md'
+        required: true
+
+permissions:
+  contents: read
+  pages: read
+
+jobs:
+  crosspost:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - id: pages
+        uses: actions/configure-pages@v5
+      - name: Find new issues
+        id: files
+        env:
+          INPUT_FILE: ${{ inputs.file }}
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+        run: |
+          if [ -n "$INPUT_FILE" ]; then
+            files="$INPUT_FILE"
+          else
+            files=$(git diff --name-only --diff-filter=A "$BEFORE" "$AFTER" -- 'src/content/issues/*.md' | tr '\n' ' ')
+          fi
+          echo "files=$files" >> "$GITHUB_OUTPUT"
+      - name: Post to dev.to
+        if: steps.files.outputs.files != ''
+        env:
+          DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
+          SITE_URL: ${{ steps.pages.outputs.base_url }}
+          FILES: ${{ steps.files.outputs.files }}
+        run: npm run crosspost -- $FILES

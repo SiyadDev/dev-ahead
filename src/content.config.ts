@@ -1,0 +1,19 @@
+import { defineCollection } from 'astro:content';
+import { glob } from 'astro/loaders';
+import { z } from 'astro/zod';
+
+const issues = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/issues' }),
+  schema: z.object({
+    title: z.string(),
+    issue: z.number().int().positive(),
+    date: z.coerce.date(),
+    window: z.string(),
+    summary: z.string(),
+    // dev.to accepts at most 4 lowercase alphanumeric tags.
+    tags: z.array(z.string().regex(/^[a-z0-9]+$/)).max(4).default([]),
+    draft: z.boolean().default(false),
+  }),
+});
+
+export const collections = { issues };

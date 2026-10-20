@@ -1,0 +1,116 @@
+{
+  "updated": "2026-10-19",
+  "entries": [
+    {
+      "id": "open-weight-models",
+      "name": "Ultra-cheap and open-weight models",
+      "status": "Repricing the work",
+      "note": "Meta's Muse Spark Open (816B, 42B active, custom licence) and DeepSeek folding V4-Pro into V4.1 Flash pricing. Record the licence of every open model you recommend, not just its price.",
+      "history": [
+        { "date": "2026-10-12", "status": "Repricing the work", "note": "Haiku 5.5 at $0.10 / $0.50 confirmed on Anthropic's model page, with a reported price step above 100K tokens." },
+        { "date": "2026-10-15", "status": "Repricing the work", "note": "Counter-signal: Gemini 4 Argon's introductory price is explicitly temporary." },
+        { "date": "2026-10-19", "status": "Repricing the work", "note": "Muse Spark Open weights; DeepSeek V4.1 Flash absorbs V4-Pro." }
+      ]
+    },
+    {
+      "id": "agentic-coding",
+      "name": "Agentic coding and orchestration replacing prompt-level help",
+      "status": "Repricing the work",
+      "note": "Fork subagents are now on by default in scripted Claude Code runs. The cost effect is unmeasured.",
+      "history": [
+        { "date": "2026-10-12", "status": "Repricing the work", "note": "Per-subagent compaction and workflow-wide model pinning." },
+        { "date": "2026-10-19", "status": "Repricing the work", "note": "Fork subagents on by default for claude -p and the Agent SDK." }
+      ]
+    },
+    {
+      "id": "context-engineering",
+      "name": "Context engineering displacing prompt engineering",
+      "status": "Repricing the work",
+      "note": "Supporting evidence in every issue so far: idle compaction, per-subagent context windows, cache-aware usage warnings.",
+      "history": [
+        { "date": "2026-10-12", "status": "Repricing the work", "note": "Per-subagent autoCompactWindow; MCP description cap doubled." },
+        { "date": "2026-10-15", "status": "Repricing the work", "note": "Idle compaction and split cache metrics reported." },
+        { "date": "2026-10-19", "status": "Repricing the work", "note": "Idle-compaction setting exposed in /config." }
+      ]
+    },
+    {
+      "id": "mcp",
+      "name": "MCP and tool protocols standardising the integration layer",
+      "status": "Repricing the work",
+      "note": "Spec 2026-07-28 is now the cloud default, and clients are patching around servers that implement it partially.",
+      "history": [
+        { "date": "2026-10-15", "status": "Repricing the work", "note": "Cloud sessions negotiate spec 2026-07-28 by default; MCP permission-rule matching tightened." },
+        { "date": "2026-10-19", "status": "Repricing the work", "note": "Client fix for servers omitting resultType, ttlMs or cacheScope." }
+      ]
+    },
+    {
+      "id": "app-generation",
+      "name": "App and full-stack generation platforms",
+      "status": "Repricing the work",
+      "note": "No dated news from the main platforms in the last three issues. Held for lack of evidence, not re-checked.",
+      "history": []
+    },
+    {
+      "id": "decision-models",
+      "name": "Small decision models as control nodes in agent graphs",
+      "status": "Hitting the market",
+      "note": "Calibrated yes/no and scoring models are replacing prompted frontier-model calls for route, approve and escalate steps.",
+      "history": [
+        { "date": "2026-10-12", "status": "Hitting the market", "note": "New entry. Microsoft-Decision-1 shipped in Foundry on 9 October, after three inference projects added decision-model APIs the week before." },
+        { "date": "2026-10-16", "status": "Hitting the market", "note": "Ollama 0.40.4 runs decision models locally." }
+      ]
+    },
+    {
+      "id": "harness-layer",
+      "name": "Harness and plugin layer: hooks, skills, mods",
+      "status": "Hitting the market",
+      "note": "Hooks can now fail closed and rewrite a subagent's model and prompt at spawn time. More control surface, not yet a new rung.",
+      "history": [
+        { "date": "2026-10-12", "status": "Hitting the market", "note": "Fail-closed hooks (onFailure: \"block\")." },
+        { "date": "2026-10-15", "status": "Hitting the market", "note": "agent.spawn hooks can rewrite model and prompt." },
+        { "date": "2026-10-19", "status": "Hitting the market", "note": "12-hook concurrency cap; settable classifier model." }
+      ]
+    },
+    {
+      "id": "ai-native-infra",
+      "name": "AI-native infrastructure: sandboxes, computer use, cloud dev environments",
+      "status": "Hitting the market",
+      "note": "Cloud sessions and routines keep maturing; computer-use agents are still rough on Windows.",
+      "history": []
+    },
+    {
+      "id": "autonomous-qa",
+      "name": "Autonomous QA and test generation",
+      "status": "Hitting the market",
+      "note": "CheckerBench put a ceiling on it: the best agent wrote a working static-analysis checker for 45% of real CVEs.",
+      "history": [
+        { "date": "2026-10-12", "status": "Hitting the market", "note": "CheckerBench reading: best model and harness 45.33%, C/C++ far behind Python." }
+      ]
+    },
+    {
+      "id": "design-generation",
+      "name": "Design generation replacing UI and design work",
+      "status": "Accelerating",
+      "note": "Standalone Claude Design closes on 14 December 2026. That's consolidation, not a breakthrough.",
+      "history": [
+        { "date": "2026-10-19", "status": "Accelerating", "note": "Claude Design shutdown date announced in the Claude Code changelog." }
+      ]
+    },
+    {
+      "id": "pricing-pressure",
+      "name": "Downward pressure on dev and agency pricing",
+      "status": "Accelerating",
+      "note": "Cheaper model tiers support it indirectly. No direct pricing evidence this period.",
+      "history": []
+    },
+    {
+      "id": "agent-scale-source-control",
+      "name": "Source control and review built for many agents on one repo",
+      "status": "Watching",
+      "note": "Cursor Origin is in early beta and GitLab is reported to be reworking its architecture for agent concurrency. No independent benchmarks yet.",
+      "history": [
+        { "date": "2026-10-15", "status": "Watching", "note": "New entry." }
+      ]
+    }
+  ]
+}

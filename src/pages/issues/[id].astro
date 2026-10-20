@@ -1,0 +1,67 @@
+---
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { SITE, url, repoUrl } from '../../config';
+import { getIssues } from '../../lib/issues';
+import { formatDate } from '../../lib/watch';
+
+export async function getStaticPaths() {
+  const issues = await getIssues();
+  return issues.map((issue, i) => ({
+    params: { id: issue.id },
+    props: { issue, newer: issues[i - 1], older: issues[i + 1] },
+  }));
+}
+
+const { issue, newer, older } = Astro.props;
+const { Content } = await render(issue);
+const { data } = issue;
+
+const suggestUrl = repoUrl
+  ? `${repoUrl}/issues/new?title=${encodeURIComponent(`Re: issue ${data.issue}: `)}`
+  : '';
+---
+
+<Base title={data.title} description={data.summary} type="article" published={data.date}>
+  <article>
+    <header class="issue-head">
+      <p class="meta">
+        Issue {data.issue}, <time datetime={data.date.toISOString()}>{formatDate(data.date)}</time>. Covers {
+          data.window
+        }.
+      </p>
+      <h1>{data.title}</h1>
+      <p class="summary">{data.summary}</p>
+    </header>
+
+    <div class="issue-body">
+      <Content />
+    </div>
+
+    <footer class="issue-foot">
+      {
+        suggestUrl && (
+          <p>
+            Spotted something I missed, or think a rating is wrong? <a href={suggestUrl}>Open an issue on GitHub</a>.
+          </p>
+        )
+      }
+      {
+        SITE.linkedinNewsletter ? (
+          <p>
+            Get the next one: <a href={SITE.linkedinNewsletter}>subscribe on LinkedIn</a> or follow the{' '}
+            <a href={url('/rss.xml')}>RSS feed</a>.
+          </p>
+        ) : (
+          <p>
+            Get the next one through the <a href={url('/rss.xml')}>RSS feed</a>.
+          </p>
+        )
+      }
+      <nav class="pager" aria-label="More issues">
+        {older ? <a href={url(`/issues/${older.id}`)}>Previous: issue {older.data.issue}</a> : <span />}
+        {newer ? <a href={url(`/issues/${newer.id}`)}>Next: issue {newer.data.issue}</a> : <span />}
+      </nav>
+    </footer>
+  </article>
+</Base>

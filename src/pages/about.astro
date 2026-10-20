@@ -1,0 +1,73 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE, url, repoUrl } from '../config';
+---
+
+<Base title="About" description="What DEV Ahead covers, how it's researched, and how to contribute.">
+  <header class="page-head">
+    <h1>About DEV Ahead</h1>
+    <p>{SITE.tagline}</p>
+  </header>
+
+  <div class="issue-body">
+    <p>
+      Most developer newsletters tell you what shipped. DEV Ahead looks at the layer underneath: early signals that
+      tend to reach the headlines weeks later, capabilities you can adopt this week, and shifts in what software
+      work is worth. If a story was on the front page of Hacker News, it's only here if there's an angle the headline
+      missed.
+    </p>
+
+    <h2 id="whats-in-an-issue">What's in an issue</h2>
+    <ul>
+      <li><strong>The top 3.</strong> What changed, and what it means for how you work.</li>
+      <li><strong>Signal radar.</strong> Early signals, each with a confidence level.</li>
+      <li><strong>Research frontier.</strong> Papers explained in plain language, with an honest time horizon.</li>
+      <li><strong>New capabilities.</strong> Things you can wire up this week, with a rough time cost.</li>
+      <li>
+        <strong>Disruption watch.</strong> A running board, rated on a four-step ladder. See the <a
+          href={url('/watch')}>current board</a
+        >.
+      </li>
+      <li><strong>This week's experiment.</strong> A 30–90 minute build with a clear finish line.</li>
+    </ul>
+    <p>
+      Items are tagged <span class="tag tag-act">ACT NOW</span> (try it this week), <span class="tag tag-watch"
+        >WATCH</span
+      > (likely to matter, not yet actionable) or <span class="tag tag-context">CONTEXT</span> (worth knowing).
+    </p>
+
+    <h2 id="how-its-made">How it's made</h2>
+    <p>
+      Research for each issue is done with an AI agent that reads changelogs, release notes, papers and community
+      digests, and keeps the Disruption Watch board consistent from issue to issue. I edit, check and add to every
+      issue before it's published. Where a claim comes from a secondary source or couldn't be verified, the issue
+      says so.
+    </p>
+
+    <h2 id="contribute">Contribute</h2>
+    <p>
+      {
+        repoUrl ? (
+          <>
+            Every issue lives in a <a href={repoUrl}>public GitHub repository</a>. If you think something is wrong, a
+            rating should move, or there's a signal worth covering, <a href={`${repoUrl}/issues/new`}>open an issue</a>.
+          </>
+        ) : (
+          <>Every issue lives in a public GitHub repository, where you can suggest items or challenge a rating.</>
+        )
+      }
+    </p>
+
+    <h2 id="follow">Follow</h2>
+    <p>
+      {
+        SITE.linkedinNewsletter && (
+          <>
+            Subscribe to the <a href={SITE.linkedinNewsletter}>LinkedIn newsletter</a>, or{' '}
+          </>
+        )
+      }
+      use the <a href={url('/rss.xml')}>RSS feed</a> in any reader.
+    </p>
+  </div>
+</Base>

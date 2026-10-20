@@ -1,0 +1,22 @@
+name: Check issue
+
+# Runs on every pull request, including the ones the DEV Ahead routine opens,
+# so formatting problems show up before you review the content.
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - run: npm run build

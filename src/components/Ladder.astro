@@ -1,0 +1,36 @@
+---
+import { RUNGS } from '../config';
+import { url } from '../config';
+import { watch, isNew, formatDate } from '../lib/watch';
+---
+
+<section class="ladder-wrap" aria-labelledby="ladder-title">
+  <div class="ladder-head">
+    <h2 id="ladder-title">Disruption Watch</h2>
+    <p>Where each shift stands, updated {formatDate(watch.updated)}</p>
+  </div>
+  <div class="ladder">
+    {
+      RUNGS.map((rung) => (
+        <div class="step">
+          <h3>{rung}</h3>
+          <ul>
+            {watch.entries
+              .filter((e) => e.status === rung)
+              .map((e) => (
+                <li>
+                  <a href={url(`/watch#${e.id}`)}>{e.name}</a>
+                  {isNew(e) && <span class="new">New</span>}
+                </li>
+              ))}
+          </ul>
+        </div>
+      ))
+    }
+  </div>
+  <p class="ladder-foot">
+    Each shift climbs from Watching to Repricing the work as the evidence builds. <a href={url('/watch')}
+      >See the evidence for each one</a
+    >.
+  </p>
+</section>

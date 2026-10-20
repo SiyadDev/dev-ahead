@@ -1,0 +1,81 @@
+---
+import Base from '../layouts/Base.astro';
+import { RUNGS } from '../config';
+import { watch, rungIndex, isNew, formatDate } from '../lib/watch';
+
+const entries = [...watch.entries].sort((a, b) => rungIndex(b.status) - rungIndex(a.status));
+
+const meaning: Record<string, string> = {
+  Watching: 'Early evidence. Worth knowing about, not yet worth acting on.',
+  Accelerating: 'Multiple independent signals, and the pace is picking up.',
+  'Hitting the market': 'Shipping products you can use or buy today.',
+  'Repricing the work': 'Changing what clients expect to pay for, or what a team needs to staff.',
+};
+---
+
+<Base
+  title="Disruption Watch"
+  description="A running board of the shifts changing how software gets built and paid for, with the evidence behind each rating."
+>
+  <header class="page-head">
+    <h1>Disruption Watch</h1>
+    <p>
+      The shifts changing how software gets built and paid for, rated on a four-step ladder and updated every
+      issue. Last updated {formatDate(watch.updated)}.
+    </p>
+  </header>
+
+  <ol class="board">
+    {
+      entries.map((e) => {
+        const n = rungIndex(e.status);
+        return (
+          <li id={e.id} class={`r${n}`}>
+            <div class="status">
+              <span class="pips" aria-hidden="true">
+                {RUNGS.map((_, i) => (
+                  <i class={i < n ? 'on' : ''} />
+                ))}
+              </span>
+              {e.status}
+              {isNew(e) && <span class="muted">(new)</span>}
+            </div>
+            <h3>{e.name}</h3>
+            <p>{e.note}</p>
+            {e.history.length > 0 && (
+              <details>
+                <summary>Evidence log ({e.history.length})</summary>
+                <ol>
+                  {[...e.history].reverse().map((h) => (
+                    <li>
+                      <time datetime={h.date}>{formatDate(h.date)}</time>
+                      <span>{h.note}</span>
+                    </li>
+                  ))}
+                </ol>
+              </details>
+            )}
+          </li>
+        );
+      })
+    }
+  </ol>
+
+  <section class="section" aria-labelledby="key-title">
+    <h2 id="key-title">How the ladder works</h2>
+    <dl class="ladder-key">
+      {
+        RUNGS.map((r, i) => (
+          <div class={`r${i + 1}`}>
+            <dt>{r}</dt>
+            <dd>{meaning[r]}</dd>
+          </div>
+        ))
+      }
+    </dl>
+    <p class="prose muted sans">
+      An entry only moves when there's specific evidence, and each issue says what moved it. Entries can be held
+      for lack of new evidence; the issue says when that's the case.
+    </p>
+  </section>
+</Base>

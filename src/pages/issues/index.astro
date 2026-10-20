@@ -1,0 +1,27 @@
+---
+import Base from '../../layouts/Base.astro';
+import { url } from '../../config';
+import { getIssues } from '../../lib/issues';
+import { formatDate } from '../../lib/watch';
+
+const issues = await getIssues();
+---
+
+<Base title="All issues" description="Every issue of DEV Ahead, newest first.">
+  <header class="page-head">
+    <h1>All issues</h1>
+    <p>Published twice a week. Newest first.</p>
+  </header>
+  <ul class="archive">
+    {
+      issues.map((i) => (
+        <li>
+          <time datetime={i.data.date.toISOString()}>{formatDate(i.data.date)}</time>
+          <a href={url(`/issues/${i.id}`)}>
+            {i.data.issue}. {i.data.title}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</Base>

@@ -71,6 +71,12 @@ for (const file of files) {
     if (hit) fail(`${file}: contains private wording "${hit[0]}"`);
   }
 
+  // Raw HTML and script URLs are not allowed: issues are Markdown only.
+  const prose = body.replace(/```[\s\S]*?```/g, '').replace(/`[^`\n]*`/g, '');
+  const tag = prose.match(/<\/?[a-zA-Z][^>]*>/);
+  if (tag && !/^<https?:\/\//.test(tag[0])) fail(`${file}: contains raw HTML "${tag[0].slice(0, 40)}"; use Markdown instead`);
+  if (/\]\(\s*(javascript|vbscript|data):/i.test(body)) fail(`${file}: contains a script link`);
+
   if (/\]\((?!https?:\/\/|\/|#|mailto:)/.test(body)) fail(`${file}: has a relative link; use https:// or a site path starting with /`);
 }
 

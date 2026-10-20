@@ -3,6 +3,9 @@
 //   **ACT NOW** / **WATCH** / **CONTEXT**  -> tag pill
 //   a paragraph starting "Source:" or "Sources:" -> muted source line
 //   site-relative links like [Watch](/watch) -> prefixed with the base path
+// It also strips anything executable that raw HTML in an issue could carry
+// (script-like elements, on* handlers, javascript: URLs), as a second line of
+// defence behind `npm run check`.
 const TAGS = { 'ACT NOW': 'act', WATCH: 'watch', CONTEXT: 'context' };
 
 function textOf(node) {
@@ -15,9 +18,28 @@ function walk(node, fn) {
   for (const child of node.children ?? []) walk(child, fn);
 }
 
+const BLOCKED = new Set(['script', 'style', 'iframe', 'frame', 'object', 'embed', 'form', 'input', 'button', 'textarea', 'select', 'link', 'meta', 'base', 'svg', 'math']);
+const UNSAFE_URL = /^\s*(javascript|vbscript|data):/i;
+
+function sanitize(node) {
+  if (!node.children) return;
+  node.children = node.children.filter((c) => !(c.type === 'raw' || (c.type === 'element' && BLOCKED.has(c.tagName))));
+  for (const child of node.children) {
+    if (child.type !== 'element') continue;
+    for (const key of Object.keys(child.properties ?? {})) {
+      const value = child.properties[key];
+      if (/^on/i.test(key) || ((key === 'href' || key === 'src' || key === 'action') && UNSAFE_URL.test(String(value)))) {
+        delete child.properties[key];
+      }
+    }
+    sanitize(child);
+  }
+}
+
 export default function rehypeTags({ base = '/' } = {}) {
   const prefix = base.replace(/\/$/, '');
   return (tree) => {
+    sanitize(tree);
     walk(tree, (node) => {
       if (node.type !== 'element') return;
 

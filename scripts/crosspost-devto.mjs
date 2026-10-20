@@ -17,6 +17,22 @@ if (!site) {
   process.exit(1);
 }
 
+// dev.to allows roughly one new article every five minutes and answers 429
+// with "try again in N seconds"; wait that long and retry, up to twice.
+async function postWithRetry(payload, attempts = 3) {
+  for (let i = 1; ; i++) {
+    const res = await fetch('https://dev.to/api/articles', {
+      method: 'POST',
+      headers: { 'api-key': key, 'content-type': 'application/json', accept: 'application/vnd.forem.api-v1+json' },
+      body: JSON.stringify(payload),
+    });
+    if (res.status !== 429 || i === attempts) return res;
+    const wait = Number((await res.text()).match(/(\d+) seconds/)?.[1] ?? 300) + 10;
+    console.log(`dev.to rate limit reached; retrying in ${wait} seconds.`);
+    await new Promise((r) => setTimeout(r, wait * 1000));
+  }
+}
+
 for (const file of files) {
   const { data, body } = readIssue(file);
   if (data.draft) {
@@ -35,20 +51,16 @@ for (const file of files) {
     `*Originally published at [${canonical.replace(/^https?:\/\//, '')}](${canonical}). The full Disruption Watch board is at [${site.replace(/^https?:\/\//, '')}/watch](${site}/watch/).*`,
   ].join('\n');
 
-  const res = await fetch('https://dev.to/api/articles', {
-    method: 'POST',
-    headers: { 'api-key': key, 'content-type': 'application/json', accept: 'application/vnd.forem.api-v1+json' },
-    body: JSON.stringify({
-      article: {
-        title: `DEV Ahead #${data.issue}: ${data.title}`,
-        body_markdown: markdown,
-        published: true,
-        canonical_url: canonical,
-        description: data.summary.slice(0, 250),
-        tags: data.tags ?? [],
-        series: 'DEV Ahead',
-      },
-    }),
+  const res = await postWithRetry({
+    article: {
+      title: `DEV Ahead #${data.issue}: ${data.title}`,
+      body_markdown: markdown,
+      published: true,
+      canonical_url: canonical,
+      description: data.summary.slice(0, 250),
+      tags: data.tags ?? [],
+      series: 'DEV Ahead',
+    },
   });
 
   if (!res.ok) {

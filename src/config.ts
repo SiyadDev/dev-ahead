@@ -12,7 +12,7 @@ export const SITE = {
   // e.g. https://www.linkedin.com/in/your-handle/
   linkedinProfile: '',
   // e.g. https://dev.to/your-handle
-  devto: '',
+  devto: 'https://dev.to/siyaddev',
   // Set automatically in GitHub Actions (owner/repo); override here if needed.
   repo: process.env.GITHUB_REPOSITORY ?? '',
 };

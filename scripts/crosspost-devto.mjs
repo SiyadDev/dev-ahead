@@ -63,6 +63,14 @@ for (const file of files) {
     },
   });
 
+  if (res.status === 401) {
+    console.error(
+      `${file}: dev.to rejected the API key (401). Create a new key at https://dev.to/settings/extensions, ` +
+        'update the DEVTO_API_KEY repository secret, then re-run this workflow.',
+    );
+    process.exitCode = 1;
+    continue;
+  }
   if (!res.ok) {
     console.error(`${file}: dev.to returned ${res.status}: ${await res.text()}`);
     process.exitCode = 1;

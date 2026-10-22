@@ -11,7 +11,7 @@ DEV Ahead routine (twice weekly)
   └─ opens a pull request with the public edition + Watch board update
        └─ review, add your take, merge
             ├─ site rebuilds on GitHub Pages
-            ├─ issue cross-posts to dev.to (canonical link back here)
+            ├─ issue reaches dev.to (API cross-post or RSS import, canonical link back here)
             └─ paste into the LinkedIn newsletter by hand
 ```
 

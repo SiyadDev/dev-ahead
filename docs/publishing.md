@@ -15,7 +15,9 @@ Twice a week the DEV Ahead routine writes your private brief to Drive and opens 
 Merging to `main` automatically:
 
 - rebuilds and deploys the site, and
-- cross-posts the issue to dev.to with the canonical link back to your site (once `DEVTO_API_KEY` is set).
+- tries to cross-post the issue to dev.to through its API (needs `DEVTO_API_KEY`). If dev.to rejects it, the run shows a yellow warning instead of failing; the site is never affected.
+
+Then, if you use dev.to's RSS import instead (see setup below), open your dev.to dashboard, find the imported draft and press **Publish**.
 
 ## 3. Post it to your LinkedIn newsletter (about 5 minutes)
 
@@ -30,7 +32,8 @@ LinkedIn has no API for newsletters, so this step is by hand.
 ## One-time setup
 
 - **GitHub Pages:** in the repository, go to Settings, then Pages, and set Source to **GitHub Actions**.
-- **dev.to:** create an API key under dev.to Settings, then Extensions. In the repository go to Settings, then Secrets and variables, then Actions, and add it as `DEVTO_API_KEY`.
+- **dev.to, option A (no key, recommended while dev.to's key page is broken):** dev.to Settings, then Extensions, then **Manage my RSS feeds**. Add `https://siyaddev.github.io/dev-ahead/rss.xml` and tick the option to mark the RSS source as the canonical URL. New issues arrive as drafts on your dev.to dashboard; publish each with one click. The feed carries the full issue text.
+- **dev.to, option B (automatic):** create an API key under dev.to Settings, then Extensions, then **DEV Community API Keys**. In the repository go to Settings, then Secrets and variables, then Actions, and add it as `DEVTO_API_KEY`. Use A or B, not both, or each issue appears twice.
 - **LinkedIn newsletter:** on LinkedIn choose **Write article**, then **Create a newsletter**. Call it DEV Ahead, twice weekly. Put its URL in `linkedinNewsletter` in `src/config.ts`.
 - **Links:** fill in `linkedinProfile` and `devto` in `src/config.ts`.
 

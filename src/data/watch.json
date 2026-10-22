@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19",
+  "updated": "2026-10-22",
   "entries": [
     {
       "id": "open-weight-models",
@@ -7,19 +7,44 @@
       "status": "Repricing the work",
       "note": "Meta's Muse Spark Open (816B, 42B active, custom licence) and DeepSeek folding V4-Pro into V4.1 Flash pricing. Record the licence of every open model you recommend, not just its price.",
       "history": [
-        { "date": "2026-10-12", "status": "Repricing the work", "note": "Haiku 5.5 at $0.10 / $0.50 confirmed on Anthropic's model page, with a reported price step above 100K tokens." },
-        { "date": "2026-10-15", "status": "Repricing the work", "note": "Counter-signal: Gemini 4 Argon's introductory price is explicitly temporary." },
-        { "date": "2026-10-19", "status": "Repricing the work", "note": "Muse Spark Open weights; DeepSeek V4.1 Flash absorbs V4-Pro." }
+        {
+          "date": "2026-10-12",
+          "status": "Repricing the work",
+          "note": "Haiku 5.5 at $0.10 / $0.50 confirmed on Anthropic's model page, with a reported price step above 100K tokens."
+        },
+        {
+          "date": "2026-10-15",
+          "status": "Repricing the work",
+          "note": "Counter-signal: Gemini 4 Argon's introductory price is explicitly temporary."
+        },
+        {
+          "date": "2026-10-19",
+          "status": "Repricing the work",
+          "note": "Muse Spark Open weights; DeepSeek V4.1 Flash absorbs V4-Pro."
+        }
       ]
     },
     {
       "id": "agentic-coding",
       "name": "Agentic coding and orchestration replacing prompt-level help",
       "status": "Repricing the work",
-      "note": "Fork subagents are now on by default in scripted Claude Code runs. The cost effect is unmeasured.",
+      "note": "Fork subagents are on by default in scripted Claude Code runs, and 2.1.307 patched a duplicate-work failure mode. The cost effect is unmeasured.",
       "history": [
-        { "date": "2026-10-12", "status": "Repricing the work", "note": "Per-subagent compaction and workflow-wide model pinning." },
-        { "date": "2026-10-19", "status": "Repricing the work", "note": "Fork subagents on by default for claude -p and the Agent SDK." }
+        {
+          "date": "2026-10-12",
+          "status": "Repricing the work",
+          "note": "Per-subagent compaction and workflow-wide model pinning."
+        },
+        {
+          "date": "2026-10-19",
+          "status": "Repricing the work",
+          "note": "Fork subagents on by default for claude -p and the Agent SDK."
+        },
+        {
+          "date": "2026-10-22",
+          "status": "Repricing the work",
+          "note": "2.1.307: each fork told which launch is its own."
+        }
       ]
     },
     {
@@ -28,19 +53,44 @@
       "status": "Repricing the work",
       "note": "Supporting evidence in every issue so far: idle compaction, per-subagent context windows, cache-aware usage warnings.",
       "history": [
-        { "date": "2026-10-12", "status": "Repricing the work", "note": "Per-subagent autoCompactWindow; MCP description cap doubled." },
-        { "date": "2026-10-15", "status": "Repricing the work", "note": "Idle compaction and split cache metrics reported." },
-        { "date": "2026-10-19", "status": "Repricing the work", "note": "Idle-compaction setting exposed in /config." }
+        {
+          "date": "2026-10-12",
+          "status": "Repricing the work",
+          "note": "Per-subagent autoCompactWindow; MCP description cap doubled."
+        },
+        {
+          "date": "2026-10-15",
+          "status": "Repricing the work",
+          "note": "Idle compaction and split cache metrics reported."
+        },
+        {
+          "date": "2026-10-19",
+          "status": "Repricing the work",
+          "note": "Idle-compaction setting exposed in /config."
+        }
       ]
     },
     {
       "id": "mcp",
       "name": "MCP and tool protocols standardising the integration layer",
       "status": "Repricing the work",
-      "note": "Spec 2026-07-28 is now the cloud default, and clients are patching around servers that implement it partially.",
+      "note": "Spec 2026-07-28 is the cloud default. HTTP MCP calls are now retried only for read-only or idempotent tools, so annotations are load-bearing.",
       "history": [
-        { "date": "2026-10-15", "status": "Repricing the work", "note": "Cloud sessions negotiate spec 2026-07-28 by default; MCP permission-rule matching tightened." },
-        { "date": "2026-10-19", "status": "Repricing the work", "note": "Client fix for servers omitting resultType, ttlMs or cacheScope." }
+        {
+          "date": "2026-10-15",
+          "status": "Repricing the work",
+          "note": "Cloud sessions negotiate spec 2026-07-28 by default; MCP permission-rule matching tightened."
+        },
+        {
+          "date": "2026-10-19",
+          "status": "Repricing the work",
+          "note": "Client fix for servers omitting resultType, ttlMs or cacheScope."
+        },
+        {
+          "date": "2026-10-22",
+          "status": "Repricing the work",
+          "note": "2.1.307: retries limited to read-only or idempotent tools."
+        }
       ]
     },
     {
@@ -56,19 +106,44 @@
       "status": "Hitting the market",
       "note": "Calibrated yes/no and scoring models are replacing prompted frontier-model calls for route, approve and escalate steps.",
       "history": [
-        { "date": "2026-10-12", "status": "Hitting the market", "note": "New entry. Microsoft-Decision-1 shipped in Foundry on 9 October, after three inference projects added decision-model APIs the week before." },
-        { "date": "2026-10-16", "status": "Hitting the market", "note": "Ollama 0.40.4 runs decision models locally." }
+        {
+          "date": "2026-10-12",
+          "status": "Hitting the market",
+          "note": "New entry. Microsoft-Decision-1 shipped in Foundry on 9 October, after three inference projects added decision-model APIs the week before."
+        },
+        {
+          "date": "2026-10-16",
+          "status": "Hitting the market",
+          "note": "Ollama 0.40.4 runs decision models locally."
+        }
       ]
     },
     {
       "id": "harness-layer",
       "name": "Harness and plugin layer: hooks, skills, mods",
       "status": "Hitting the market",
-      "note": "Hooks can now fail closed and rewrite a subagent's model and prompt at spawn time. More control surface, not yet a new rung.",
+      "note": "Hooks can fail closed, rewrite a subagent at spawn, and now demand a human decider and see isReadOnly. More control surface, not yet a new rung.",
       "history": [
-        { "date": "2026-10-12", "status": "Hitting the market", "note": "Fail-closed hooks (onFailure: \"block\")." },
-        { "date": "2026-10-15", "status": "Hitting the market", "note": "agent.spawn hooks can rewrite model and prompt." },
-        { "date": "2026-10-19", "status": "Hitting the market", "note": "12-hook concurrency cap; settable classifier model." }
+        {
+          "date": "2026-10-12",
+          "status": "Hitting the market",
+          "note": "Fail-closed hooks (onFailure: \"block\")."
+        },
+        {
+          "date": "2026-10-15",
+          "status": "Hitting the market",
+          "note": "agent.spawn hooks can rewrite model and prompt."
+        },
+        {
+          "date": "2026-10-19",
+          "status": "Hitting the market",
+          "note": "12-hook concurrency cap; settable classifier model."
+        },
+        {
+          "date": "2026-10-22",
+          "status": "Hitting the market",
+          "note": "2.1.304: decider \"person\" and isReadOnly on tool.check."
+        }
       ]
     },
     {
@@ -84,7 +159,11 @@
       "status": "Hitting the market",
       "note": "CheckerBench put a ceiling on it: the best agent wrote a working static-analysis checker for 45% of real CVEs.",
       "history": [
-        { "date": "2026-10-12", "status": "Hitting the market", "note": "CheckerBench reading: best model and harness 45.33%, C/C++ far behind Python." }
+        {
+          "date": "2026-10-12",
+          "status": "Hitting the market",
+          "note": "CheckerBench reading: best model and harness 45.33%, C/C++ far behind Python."
+        }
       ]
     },
     {
@@ -93,7 +172,11 @@
       "status": "Accelerating",
       "note": "Standalone Claude Design closes on 14 December 2026. That's consolidation, not a breakthrough.",
       "history": [
-        { "date": "2026-10-19", "status": "Accelerating", "note": "Claude Design shutdown date announced in the Claude Code changelog." }
+        {
+          "date": "2026-10-19",
+          "status": "Accelerating",
+          "note": "Claude Design shutdown date announced in the Claude Code changelog."
+        }
       ]
     },
     {
@@ -109,7 +192,24 @@
       "status": "Watching",
       "note": "Cursor Origin is in early beta and GitLab is reported to be reworking its architecture for agent concurrency. No independent benchmarks yet.",
       "history": [
-        { "date": "2026-10-15", "status": "Watching", "note": "New entry." }
+        {
+          "date": "2026-10-15",
+          "status": "Watching",
+          "note": "New entry."
+        }
+      ]
+    },
+    {
+      "id": "agent-audit-trail",
+      "name": "Observable and auditable agent actions",
+      "status": "Watching",
+      "note": "Claude Code now emits classifier verdicts and a safety event for each blocked or prompted tool call. One vendor so far.",
+      "history": [
+        {
+          "date": "2026-10-22",
+          "status": "Watching",
+          "note": "New entry. Classifier-verdict fields (2.1.301), decider \"person\" (2.1.304) and claude_code.safety_event (2.1.307)."
+        }
       ]
     }
   ]

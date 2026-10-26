@@ -94,6 +94,9 @@ for (const e of watch.entries) {
   if (!RUNGS.includes(e.status)) fail(`watch.json: "${e.id}" has unknown status "${e.status}"`);
   for (const h of e.history ?? []) {
     if (!RUNGS.includes(h.status)) fail(`watch.json: "${e.id}" history has unknown status "${h.status}"`);
+    if (h.source !== undefined && !/^https:\/\/\S+$/.test(h.source)) {
+      fail(`watch.json: "${e.id}" history on ${h.date} has a source that isn't an https URL`);
+    }
   }
   for (const pattern of PRIVATE) {
     const hit = JSON.stringify(e).match(pattern);

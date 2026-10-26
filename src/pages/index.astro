@@ -1,31 +1,31 @@
 ---
+import { render } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import Ladder from '../components/Ladder.astro';
 import { SITE, url } from '../config';
-import { getIssues } from '../lib/issues';
+import { getIssues, topThree, tagCounts, titleHtml } from '../lib/issues';
 import { formatDate } from '../lib/watch';
 
 const issues = await getIssues();
 const [latest, ...older] = issues;
+const top = latest ? topThree((await render(latest)).headings) : [];
+const actNow = latest ? tagCounts(latest.body ?? '')['ACT NOW'] : 0;
 ---
 
 <Base>
-  <section class="intro">
+  <section class="front">
     <h1>{SITE.tagline}</h1>
-    <p>
-      A twice-weekly brief on the tools, AI capabilities and shifts in the economics of software that reach
-      developers before they become headlines. By <a href={SITE.authorUrl}>{SITE.author}</a>.
+    <p class="front-lede">
+      Twice a week, Ahead of Main reads the changelogs, papers and pricing pages most coverage skips, and tells you
+      which shifts will change how you work, how sure to be, and what to try. By <a href={SITE.authorUrl}
+        >{SITE.author}</a
+      >.
     </p>
     <div class="actions">
-      {
-        SITE.linkedinNewsletter && (
-          <a class="button primary" href={SITE.linkedinNewsletter}>
-            Subscribe on LinkedIn
-          </a>
-        )
-      }
-      {latest && <a class={SITE.linkedinNewsletter ? 'button' : 'button primary'} href={url(`/issues/${latest.id}`)}>Read the latest issue</a>}
-      <a class="button" href={url('/rss.xml')}>RSS feed</a>
+      {latest && <a class="button primary" href={url(`/issues/${latest.id}`)}>Read issue {latest.data.issue}</a>}
+      <a class="button" href={SITE.linkedinNewsletter || url('/follow')}>
+        {SITE.linkedinNewsletter ? 'Subscribe on LinkedIn' : 'Follow'}
+      </a>
     </div>
   </section>
 
@@ -36,14 +36,33 @@ const [latest, ...older] = issues;
       <section class="section" aria-labelledby="latest-title">
         <h2 id="latest-title">Latest issue</h2>
         <article class="latest">
-          <p class="meta">
-            Issue {latest.data.issue}, {formatDate(latest.data.date)}
-          </p>
-          <h3>
-            <a href={url(`/issues/${latest.id}`)}>{latest.data.title}</a>
-          </h3>
-          <p>{latest.data.summary}</p>
-          <a class="sans" href={url(`/issues/${latest.id}`)}>Read issue {latest.data.issue}</a>
+          <div>
+            <p class="meta">
+              Issue {latest.data.issue}, <time datetime={latest.data.date.toISOString()}>{formatDate(latest.data.date)}</time
+              >. Covers {latest.data.window}.
+            </p>
+            <h3>
+              <a href={url(`/issues/${latest.id}`)} set:html={titleHtml(latest.data.title)} />
+            </h3>
+            <p class="latest-summary">{latest.data.summary}</p>
+          </div>
+          {top.length > 0 && (
+            <div class="top3">
+              <h4>The top 3</h4>
+              <ol class="quiet-links">
+                {top.map((h) => (
+                  <li>
+                    <a href={url(`/issues/${latest.id}#${h.slug}`)}>{h.text}</a>
+                  </li>
+                ))}
+              </ol>
+              {actNow > 0 && (
+                <p class="try">
+                  {actNow} {actNow === 1 ? 'thing' : 'things'} to try this week, plus the experiment.
+                </p>
+              )}
+            </div>
+          )}
         </article>
       </section>
     )
@@ -57,9 +76,7 @@ const [latest, ...older] = issues;
           {older.map((i) => (
             <li>
               <time datetime={i.data.date.toISOString()}>{formatDate(i.data.date)}</time>
-              <a href={url(`/issues/${i.id}`)}>
-                {i.data.issue}. {i.data.title}
-              </a>
+              <a href={url(`/issues/${i.id}`)} set:html={`${i.data.issue}. ${titleHtml(i.data.title)}`} />
             </li>
           ))}
         </ul>

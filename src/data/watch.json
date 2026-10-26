@@ -10,17 +10,20 @@
         {
           "date": "2026-10-12",
           "status": "Repricing the work",
-          "note": "Haiku 5.5 at $0.10 / $0.50 confirmed on Anthropic's model page, with a reported price step above 100K tokens."
+          "note": "Haiku 5.5 at $0.10 / $0.50 confirmed on Anthropic's model page, with a reported price step above 100K tokens.",
+          "source": "https://platform.claude.com/docs/models/haiku-5-5/overview"
         },
         {
           "date": "2026-10-15",
           "status": "Repricing the work",
-          "note": "Counter-signal: Gemini 4 Argon's introductory price is explicitly temporary."
+          "note": "Counter-signal: Gemini 4 Argon's introductory price is explicitly temporary.",
+          "source": "https://www.eesel.ai/blog/gemini-4-argon-pricing"
         },
         {
           "date": "2026-10-19",
           "status": "Repricing the work",
-          "note": "Muse Spark Open weights; DeepSeek V4.1 Flash absorbs V4-Pro."
+          "note": "Muse Spark Open weights; DeepSeek V4.1 Flash absorbs V4-Pro.",
+          "source": "https://thenewstack.io/meta-muse-spark-open/"
         }
       ]
     },
@@ -33,17 +36,20 @@
         {
           "date": "2026-10-12",
           "status": "Repricing the work",
-          "note": "Per-subagent compaction and workflow-wide model pinning."
+          "note": "Per-subagent compaction and workflow-wide model pinning.",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
         },
         {
           "date": "2026-10-19",
           "status": "Repricing the work",
-          "note": "Fork subagents on by default for claude -p and the Agent SDK."
+          "note": "Fork subagents on by default for claude -p and the Agent SDK.",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
         },
         {
           "date": "2026-10-22",
           "status": "Repricing the work",
-          "note": "2.1.307: each fork told which launch is its own."
+          "note": "2.1.307: each fork told which launch is its own.",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
         }
       ]
     },
@@ -56,7 +62,8 @@
         {
           "date": "2026-10-12",
           "status": "Repricing the work",
-          "note": "Per-subagent autoCompactWindow; MCP description cap doubled."
+          "note": "Per-subagent autoCompactWindow; MCP description cap doubled.",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
         },
         {
           "date": "2026-10-15",
@@ -79,17 +86,20 @@
         {
           "date": "2026-10-15",
           "status": "Repricing the work",
-          "note": "Cloud sessions negotiate spec 2026-07-28 by default; MCP permission-rule matching tightened."
+          "note": "Cloud sessions negotiate spec 2026-07-28 by default; MCP permission-rule matching tightened.",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
         },
         {
           "date": "2026-10-19",
           "status": "Repricing the work",
-          "note": "Client fix for servers omitting resultType, ttlMs or cacheScope."
+          "note": "Client fix for servers omitting resultType, ttlMs or cacheScope.",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
         },
         {
           "date": "2026-10-22",
           "status": "Repricing the work",
-          "note": "2.1.307: retries limited to read-only or idempotent tools."
+          "note": "2.1.307: retries limited to read-only or idempotent tools.",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
         }
       ]
     },
@@ -109,7 +119,8 @@
         {
           "date": "2026-10-12",
           "status": "Hitting the market",
-          "note": "New entry. Microsoft-Decision-1 shipped in Foundry on 9 October, after three inference projects added decision-model APIs the week before."
+          "note": "New entry. Microsoft-Decision-1 shipped in Foundry on 9 October, after three inference projects added decision-model APIs the week before.",
+          "source": "https://runtimewire.com/article/microsoft-decision-1-achint-srivastava-agent-workflows"
         },
         {
           "date": "2026-10-16",
@@ -127,22 +138,26 @@
         {
           "date": "2026-10-12",
           "status": "Hitting the market",
-          "note": "Fail-closed hooks (onFailure: \"block\")."
+          "note": "Fail-closed hooks (onFailure: \"block\").",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
         },
         {
           "date": "2026-10-15",
           "status": "Hitting the market",
-          "note": "agent.spawn hooks can rewrite model and prompt."
+          "note": "agent.spawn hooks can rewrite model and prompt.",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
         },
         {
           "date": "2026-10-19",
           "status": "Hitting the market",
-          "note": "12-hook concurrency cap; settable classifier model."
+          "note": "12-hook concurrency cap; settable classifier model.",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
         },
         {
           "date": "2026-10-22",
           "status": "Hitting the market",
-          "note": "2.1.304: decider \"person\" and isReadOnly on tool.check."
+          "note": "2.1.304: decider \"person\" and isReadOnly on tool.check.",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
         }
       ]
     },
@@ -162,7 +177,8 @@
         {
           "date": "2026-10-12",
           "status": "Hitting the market",
-          "note": "CheckerBench reading: best model and harness 45.33%, C/C++ far behind Python."
+          "note": "CheckerBench reading: best model and harness 45.33%, C/C++ far behind Python.",
+          "source": "https://arxiv.org/abs/2610.07557"
         }
       ]
     },
@@ -175,7 +191,8 @@
         {
           "date": "2026-10-19",
           "status": "Accelerating",
-          "note": "Claude Design shutdown date announced in the Claude Code changelog."
+          "note": "Claude Design shutdown date announced in the Claude Code changelog.",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
         }
       ]
     },
@@ -195,7 +212,8 @@
         {
           "date": "2026-10-15",
           "status": "Watching",
-          "note": "New entry."
+          "note": "New entry.",
+          "source": "https://pub.towardsai.net/coding-agents-are-starting-to-reshape-source-control-49fc0aae8e01"
         }
       ]
     },
@@ -208,7 +226,8 @@
         {
           "date": "2026-10-22",
           "status": "Watching",
-          "note": "New entry. Classifier-verdict fields (2.1.301), decider \"person\" (2.1.304) and claude_code.safety_event (2.1.307)."
+          "note": "New entry. Classifier-verdict fields (2.1.301), decider \"person\" (2.1.304) and claude_code.safety_event (2.1.307).",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
         }
       ]
     }

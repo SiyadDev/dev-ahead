@@ -17,6 +17,6 @@ export default defineConfig({
   integrations: [sitemap()],
   markdown: {
     processor: unified({ rehypePlugins: [[rehypeTags, { base }]] }),
-    shikiConfig: { theme: 'github-light' },
+    shikiConfig: { themes: { light: 'github-light', dark: 'github-dark' } },
   },
 });

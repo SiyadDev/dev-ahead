@@ -334,9 +334,10 @@ AI-hype and hacker-aesthetic brands, which is exactly what this brand rejects.
 
 ### Typefaces
 
-- **Newsreader**, the voice of the brief: issue text and anything the reader reads at length.
-  Fallback: `'Iowan Old Style', Georgia, serif`. Licensing: SIL Open Font License 1.1
-  (Production Type, via Google Fonts). Verified 2026-10-26.
+- **Source Serif 4**, the voice of the brief: issue text and anything the reader reads at
+  length. Chosen on 2026-10-26 to replace Newsreader, for a crisper, more technical reading
+  voice. Fallback: `'Iowan Old Style', Georgia, serif`. Licensing: SIL Open Font License 1.1
+  (Adobe, via Google Fonts).
 - **Schibsted Grotesk**, for the wordmark, headings, labels, tags and metadata. Fallback:
   `ui-sans-serif, system-ui, sans-serif`. Licensing: SIL Open Font License 1.1 (Schibsted, via
   Google Fonts). Verified 2026-10-26.

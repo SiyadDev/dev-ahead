@@ -2,7 +2,7 @@
 import { render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import { SITE, url, repoUrl } from '../../config';
-import { getIssues } from '../../lib/issues';
+import { getIssues, sections, tagCounts, titleHtml, plainTitle } from '../../lib/issues';
 import { formatDate } from '../../lib/watch';
 
 export async function getStaticPaths() {
@@ -14,53 +14,119 @@ export async function getStaticPaths() {
 }
 
 const { issue, newer, older } = Astro.props;
-const { Content } = await render(issue);
+const { Content, headings } = await render(issue);
 const { data } = issue;
+const contents = sections(headings);
+const tags = tagCounts(issue.body ?? '');
+// The tags used in this issue, with what each one asks of the reader.
+const tally = [
+  { tag: 'ACT NOW', kind: 'act', means: 'Try it this week', count: tags['ACT NOW'] },
+  { tag: 'WATCH', kind: 'watch', means: 'Likely to matter, not yet actionable', count: tags.WATCH },
+  { tag: 'CONTEXT', kind: 'context', means: 'Worth knowing', count: tags.CONTEXT },
+].filter((t) => t.count > 0);
 
 const suggestUrl = repoUrl
   ? `${repoUrl}/issues/new?title=${encodeURIComponent(`Re: issue ${data.issue}: `)}`
   : '';
 ---
 
-<Base title={data.title} description={data.summary} type="article" published={data.date}>
-  <article>
+<Base title={plainTitle(data.title)} description={data.summary} type="article" published={data.date}>
+  <article class="issue">
     <header class="issue-head">
-      <p class="meta">
-        Issue {data.issue}, <time datetime={data.date.toISOString()}>{formatDate(data.date)}</time>. Covers {
-          data.window
-        }.
-      </p>
-      <h1>{data.title}</h1>
+      <div class="issue-strap">
+        <p class="issue-date">
+          <span class="no">Issue {data.issue}</span>
+          <span><time datetime={data.date.toISOString()}>{formatDate(data.date)}</time>. </span>
+          <span>Covers {data.window}.</span>
+        </p>
+        <p class="issue-about">
+          <a href={url('/')}>Ahead of Main</a> is a twice-weekly brief on what's moving underneath developer news.
+        </p>
+      </div>
+      <h1 set:html={titleHtml(data.title)} />
       <p class="summary">{data.summary}</p>
     </header>
 
-    <div class="issue-body">
+    {(contents.length > 0 || tally.length > 0) && (
+    <aside class="issue-rail">
+      <div class="issue-rail-inner">
+        {
+          contents.length > 0 && (
+            <nav class="contents" aria-labelledby="contents-title">
+              <h2 id="contents-title">In this issue</h2>
+              <ol class="quiet-links">
+                {contents.map((s) => (
+                  <li>
+                    <a href={`#${s.slug}`}>{s.text}</a>
+                    {s.items > 0 && (
+                      <span class="count">
+                        {s.items}
+                        <span class="visually-hidden"> items</span>
+                      </span>
+                    )}
+                  </li>
+                ))}
+              </ol>
+            </nav>
+          )
+        }
+        {
+          tally.length > 0 && (
+            <dl class="tag-key">
+              {tally.map((t) => (
+                <div>
+                  <dt>
+                    <span class={`tag tag-${t.kind}`}>{t.tag}</span> {t.count}
+                  </dt>
+                  <dd>{t.means}</dd>
+                </div>
+              ))}
+            </dl>
+          )
+        }
+      </div>
+    </aside>
+    )}
+
+    <div class="issue-main prose-body issue-body">
       <Content />
     </div>
 
-    <footer class="issue-foot">
+    <footer class="issue-close">
+      <div class="close-follow">
+        <div>
+          <h2>Get the next issue</h2>
+          <p>
+            A new one twice a week, in full by RSS or on{' '}
+            {SITE.devto ? <a href={SITE.devto}>dev.to</a> : 'dev.to'}{SITE.linkedinNewsletter && ', or on LinkedIn'}.
+          </p>
+        </div>
+        <a class="button primary" href={url('/follow')}>Follow Ahead of Main</a>
+      </div>
       {
         suggestUrl && (
-          <p>
+          <p class="close-challenge">
             Spotted something I missed, or think a rating is wrong? <a href={suggestUrl}>Open an issue on GitHub</a>.
           </p>
         )
       }
-      {
-        SITE.linkedinNewsletter ? (
-          <p>
-            Get the next one: <a href={SITE.linkedinNewsletter}>subscribe on LinkedIn</a> or follow the{' '}
-            <a href={url('/rss.xml')}>RSS feed</a>.
-          </p>
-        ) : (
-          <p>
-            Get the next one through the <a href={url('/rss.xml')}>RSS feed</a>.
-          </p>
-        )
-      }
       <nav class="pager" aria-label="More issues">
-        {older ? <a href={url(`/issues/${older.id}`)}>Previous: issue {older.data.issue}</a> : <span />}
-        {newer ? <a href={url(`/issues/${newer.id}`)}>Next: issue {newer.data.issue}</a> : <span />}
+        {
+          older && (
+            <a class="prev" href={url(`/issues/${older.id}`)}>
+              <span class="pager-dir">Previous: issue {older.data.issue}</span>
+              <span class="pager-title" set:html={titleHtml(older.data.title)} />
+            </a>
+          )
+        }
+        {
+          newer && (
+            <a class="next" href={url(`/issues/${newer.id}`)}>
+              <span class="pager-dir">Next: issue {newer.data.issue}</span>
+              <span class="pager-title" set:html={titleHtml(newer.data.title)} />
+            </a>
+          )
+        }
       </nav>
     </footer>
   </article>

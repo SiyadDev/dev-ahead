@@ -1,36 +1,50 @@
 ---
-import { RUNGS } from '../config';
-import { url } from '../config';
-import { watch, isNew, formatDate } from '../lib/watch';
+import { RUNGS, RUNG_MEANING, url } from '../config';
+import { watch, isNew, formatDate, latestChanges } from '../lib/watch';
+
+const { added, moved, held } = latestChanges();
+const names = (list: { name: string }[]) => list.map((e) => e.name).join(', ');
+const changes = [
+  added.length > 0 && `${added.length} new (${names(added)})`,
+  moved.length > 0 ? `${moved.length} moved rung (${names(moved)})` : 'no rung changes',
+  held.length > 0 && `${held.length} held with new evidence`,
+].filter(Boolean);
 ---
 
 <section class="ladder-wrap" aria-labelledby="ladder-title">
   <div class="ladder-head">
     <h2 id="ladder-title">Disruption Watch</h2>
-    <p>Where each shift stands, updated {formatDate(watch.updated)}</p>
+    <p>Where each shift stands, updated <time datetime={watch.updated}>{formatDate(watch.updated)}</time></p>
   </div>
   <div class="ladder">
     {
-      RUNGS.map((rung) => (
-        <div class="step">
-          <h3>{rung}</h3>
-          <ul>
-            {watch.entries
-              .filter((e) => e.status === rung)
-              .map((e) => (
+      RUNGS.map((rung) => {
+        const entries = watch.entries.filter((e) => e.status === rung);
+        return (
+          <div class="step">
+            <h3>
+              {rung}
+              <span class="count">{entries.length}</span>
+            </h3>
+            <p class="step-meaning">{RUNG_MEANING[rung]}</p>
+            {entries.length === 0 && <p class="step-empty">Nothing on this rung right now.</p>}
+            <ul class="quiet-links">
+              {entries.map((e) => (
                 <li>
                   <a href={url(`/watch#${e.id}`)}>{e.name}</a>
                   {isNew(e) && <span class="new">New</span>}
                 </li>
               ))}
-          </ul>
-        </div>
-      ))
+            </ul>
+          </div>
+        );
+      })
     }
   </div>
-  <p class="ladder-foot">
-    Each shift climbs from Watching to Repricing the work as the evidence builds. <a href={url('/watch')}
-      >See the evidence for each one</a
-    >.
-  </p>
+  <div class="ladder-foot">
+    <p>
+      <strong>This update:</strong>{' '}{changes.join(', ')}. A shift moves only on specific evidence.
+    </p>
+    <a href={url('/watch')}>See the evidence for each one</a>
+  </div>
 </section>

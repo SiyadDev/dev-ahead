@@ -2,7 +2,7 @@
 // anything left empty is hidden on the site.
 export const SITE = {
   title: 'Ahead of Main',
-  tagline: "What main hasn't merged yet.",
+  tagline: 'What main hasn’t merged yet.',
   description:
     'A twice-weekly brief on the tooling, AI capabilities and structural shifts that reach developers before they become headlines. Tracks a running Disruption Watch board.',
   author: 'SiyadDev',
@@ -25,6 +25,13 @@ export const RUNGS = [
 ] as const;
 
 export type Rung = (typeof RUNGS)[number];
+
+export const RUNG_MEANING: Record<Rung, string> = {
+  Watching: 'Early evidence. Worth knowing about, not yet worth acting on.',
+  Accelerating: 'Multiple independent signals, and the pace is picking up.',
+  'Hitting the market': 'Shipping products you can use or buy today.',
+  'Repricing the work': 'Changing what clients expect to pay for, or what a team needs to staff.',
+};
 
 // Prefixes a site-relative path with the configured base path.
 export function url(path = '/'): string {

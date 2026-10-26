@@ -1,7 +1,7 @@
 import rss from '@astrojs/rss';
 import type { APIContext } from 'astro';
 import { SITE, url } from '../config';
-import { getIssues } from '../lib/issues';
+import { getIssues, plainTitle } from '../lib/issues';
 
 // Each item carries the full issue as HTML (content:encoded), so feed readers
 // and dev.to's RSS import get the whole issue, not just the summary. The HTML
@@ -21,7 +21,7 @@ export async function GET(context: APIContext) {
       const body = absolute(i.rendered?.html ?? `<p>${i.data.summary}</p>`);
       const footer = `<hr /><p><em>Originally published at <a href="${link}">${link}</a>. The full Disruption Watch board is at <a href="${origin}${url('/watch/')}">${origin}${url('/watch/')}</a>.</em></p>`;
       return {
-        title: `Ahead of Main #${i.data.issue}: ${i.data.title}`,
+        title: `Ahead of Main #${i.data.issue}: ${plainTitle(i.data.title)}`,
         description: i.data.summary,
         pubDate: i.data.date,
         link,

@@ -6,10 +6,10 @@ import { SITE, url, repoUrl } from '../config';
 <Base title="About" description="What Ahead of Main covers, how it's researched, and how to contribute.">
   <header class="page-head">
     <h1>About Ahead of Main</h1>
-    <p>{SITE.tagline}</p>
+    <p class="standfirst">{SITE.tagline}</p>
   </header>
 
-  <div class="issue-body">
+  <div class="prose-body">
     <p>
       Most developer newsletters tell you what shipped. Ahead of Main looks at the layer underneath: early signals that
       tend to reach the headlines weeks later, capabilities you can adopt this week, and shifts in what software
@@ -28,7 +28,7 @@ import { SITE, url, repoUrl } from '../config';
       <li><strong>Research frontier.</strong> Papers explained in plain language, with an honest time horizon.</li>
       <li><strong>New capabilities.</strong> Things you can wire up this week, with a rough time cost.</li>
       <li>
-        <strong>Disruption watch.</strong> A running board, rated on a four-step ladder. See the <a
+        <strong>Disruption Watch.</strong> A running board, rated on a four-rung ladder. See the <a
           href={url('/watch')}>current board</a
         >.
       </li>
@@ -64,14 +64,8 @@ import { SITE, url, repoUrl } from '../config';
 
     <h2 id="follow">Follow</h2>
     <p>
-      {
-        SITE.linkedinNewsletter && (
-          <>
-            Subscribe to the <a href={SITE.linkedinNewsletter}>LinkedIn newsletter</a>, or{' '}
-          </>
-        )
-      }
-      use the <a href={url('/rss.xml')}>RSS feed</a> in any reader.
+      Get each issue as it's published, by RSS or on dev.to{SITE.linkedinNewsletter && ', or through the LinkedIn newsletter'}.
+      The <a href={url('/follow')}>follow page</a> has the feed address and the links.
     </p>
   </div>
 </Base>

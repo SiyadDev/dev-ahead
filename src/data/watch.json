@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22",
+  "updated": "2026-10-26",
   "entries": [
     {
       "id": "open-weight-models",
@@ -90,6 +90,11 @@
           "date": "2026-10-22",
           "status": "Repricing the work",
           "note": "2.1.307: retries limited to read-only or idempotent tools."
+        },
+        {
+          "date": "2026-10-26",
+          "status": "Repricing the work",
+          "note": "2.1.310: a timed-out call with an unanswered elicitation now tells the model not to repeat it."
         }
       ]
     },
@@ -122,7 +127,7 @@
       "id": "harness-layer",
       "name": "Harness and plugin layer: hooks, skills, mods",
       "status": "Hitting the market",
-      "note": "Hooks can fail closed, rewrite a subagent at spawn, and now demand a human decider and see isReadOnly. More control surface, not yet a new rung.",
+      "note": "Hooks can fail closed, rewrite a subagent at spawn, and demand a human decider. 2.1.309 and 2.1.310 fixed several fail-open cases, so test the failure path of every blocking hook.",
       "history": [
         {
           "date": "2026-10-12",
@@ -143,6 +148,11 @@
           "date": "2026-10-22",
           "status": "Hitting the market",
           "note": "2.1.304: decider \"person\" and isReadOnly on tool.check."
+        },
+        {
+          "date": "2026-10-26",
+          "status": "Hitting the market",
+          "note": "2.1.309 and 2.1.310 fix hooks that failed open on Windows and in sandboxes. Repair work, no new rung."
         }
       ]
     },
@@ -209,6 +219,19 @@
           "date": "2026-10-22",
           "status": "Watching",
           "note": "New entry. Classifier-verdict fields (2.1.301), decider \"person\" (2.1.304) and claude_code.safety_event (2.1.307)."
+        }
+      ]
+    },
+    {
+      "id": "portable-skills",
+      "name": "Portable agent skills (SKILL.md)",
+      "status": "Hitting the market",
+      "note": "Anthropic donated Agent Skills to the Agentic AI Foundation. Adoption figures are Anthropic's own; security guidance for skill authors and installers is only a roadmap item.",
+      "history": [
+        {
+          "date": "2026-10-26",
+          "status": "Hitting the market",
+          "note": "New entry. Donated to the Agentic AI Foundation on 22 October; Anthropic reports 70+ integrating platforms and about a million published skills."
         }
       ]
     }

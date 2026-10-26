@@ -300,8 +300,9 @@ Identity boundaries:
 
 ### Logo & Marks
 
-Primary mark: the wordmark "Ahead of Main" set in Schibsted Grotesk, in Ink on Paper. "of" is
-never dropped or replaced with a symbol.
+Primary mark: the wordmark "Ahead of Main" set in Schibsted Grotesk on Paper, with "Ahead of" in
+Ink and "Main" in Cobalt. "of" is never dropped or replaced with a symbol. A one-colour version
+in Ink is used wherever Cobalt isn't available.
 
 Interim symbol: the current favicon, four rising bars in the Disruption Watch rung colours on an
 Ink square, is carried over from DEV Ahead. It represents the board, not the name, and a symbol

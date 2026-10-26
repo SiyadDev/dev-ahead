@@ -1,6 +1,6 @@
 name: Check issue
 
-# Runs on every pull request, including the ones the DEV Ahead routine opens,
+# Runs on every pull request, including the ones the routine opens,
 # so formatting problems show up before you review the content.
 on:
   pull_request:

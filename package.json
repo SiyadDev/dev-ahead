@@ -1,7 +1,7 @@
 {
-  "name": "dev-ahead",
+  "name": "ahead-of-main",
   "version": "1.0.0",
-  "description": "DEV Ahead: what is moving underneath developer news, twice a week.",
+  "description": "Ahead of Main: what is moving underneath developer news, twice a week.",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",

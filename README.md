@@ -1,4 +1,4 @@
-# DEV Ahead
+# Ahead of Main
 
 What's moving underneath developer news, twice a week. Early signals, capabilities you can adopt this week, and a running [Disruption Watch](src/data/watch.json) board that rates how far each shift has got.
 
@@ -7,7 +7,7 @@ Written by [SiyadDev](https://github.com/SiyadDev). Suggestions and challenges t
 ## How it works
 
 ```
-DEV Ahead routine (twice weekly)
+Routine (twice weekly)
   └─ opens a pull request with the public edition + Watch board update
        └─ review, add your take, merge
             ├─ site rebuilds on GitHub Pages

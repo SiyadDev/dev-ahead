@@ -26,7 +26,7 @@ tags: [ai, claude, mcp, devops] # max 4, lowercase letters and numbers only (dev
 1. One short intro paragraph (no heading). Say plainly if it was a quiet window.
 2. `## The top 3`: three `### 1. …` items, ranked. Each one: what changed (one paragraph), then a paragraph starting `**Why it matters:**`, then a `Source:` line.
 3. `## Signal radar`: 2–4 items as `###` headings. The first line of each is a tag and a confidence level, e.g. `**WATCH** Medium confidence.`
-4. `## Research frontier`: 0–3 papers. Link the arXiv abstract page. Give the horizon (`already shipping`, `12 months`, `2+ years`, `may never leave the lab`). If you couldn't read any paper at source, say so in one line and stop.
+4. `## Research frontier`: 0–3 papers. Link the arXiv abstract page. Give the institution and the horizon (`already shipping`, `12 months`, `2+ years`, `may never leave the lab`). Papers come from the arXiv API and Hugging Face Daily Papers (the routine prompt has the exact queries); the Hugging Face `organization` field is usually the institution. Describe a paper only after reading its abstract page, never from its title or a machine summary. If you couldn't read any paper at source, say so in one line and stop.
 5. `## New capabilities to adopt`: things a reader can wire up this week, each with a rough time cost.
 6. `## Disruption watch`: a bullet list. Moved or new entries first, with the evidence; then held entries in a line or two. Link the board as `[Watch page](/watch)`.
 7. `## Practice shifts`: what a working engineer does differently on Monday.

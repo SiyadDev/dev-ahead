@@ -42,14 +42,14 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --paper: #10161c;
+    --paper: #141517;
     --ink: #e6ebef;
     --graphite: #96a3ae;
-    --rule: #27323c;
+    --rule: #2b2e33;
     --rule-strong: #5f6b76;
-    --wash: #18212a;
+    --wash: #1d1f22;
     --cobalt: #86a8ff;
-    --cobalt-wash: #1b2640;
+    --cobalt-wash: #1c2433;
     --rung-1: #8d9cab;
     --rung-2: #4cc0b6;
     --rung-3: #e5ac3a;

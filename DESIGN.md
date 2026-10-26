@@ -17,12 +17,12 @@ colors:
   rung-4: "#8e2b2b"
   # Dark scheme. Same custom properties, redefined under prefers-color-scheme: dark
   ink-dark: "#e6ebef"
-  paper-dark: "#10161c"
+  paper-dark: "#141517"
   cobalt-dark: "#86a8ff"
-  cobalt-wash-dark: "#1b2640"
+  cobalt-wash-dark: "#1c2433"
   graphite-dark: "#96a3ae"
-  wash-dark: "#18212a"
-  rule-dark: "#27323c"
+  wash-dark: "#1d1f22"
+  rule-dark: "#2b2e33"
   rule-strong-dark: "#5f6b76"
   rung-1-dark: "#8d9cab"
   rung-2-dark: "#4cc0b6"
@@ -220,14 +220,14 @@ A near-monochrome briefing palette (blue-black ink on cool off-white) with a sin
 
 ### Primary
 - **Cobalt** (#2b59d1; dark #86a8ff): the thread to follow. Every link, the ACT NOW tag fill, the WATCH tag outline, the "New" marker on the board, the experiment heading, the primary button's hover fill, the focus ring and the text caret. "Main" in the wordmark. 5.66:1 on Paper in light, 7.85:1 in dark.
-- **Cobalt Wash** (#e3eaf9; dark #1b2640): the only tinted surface. Fills the experiment panel, text selection, and the highlight on a targeted /watch entry.
+- **Cobalt Wash** (#e3eaf9; dark #1c2433): the only tinted surface. Fills the experiment panel, text selection, and the highlight on a targeted /watch entry.
 
 ### Neutral
 - **Ink** (#16202a; dark #e6ebef): all primary text, headings, the primary button fill, the 2px section rules and the active-nav underline. A blue-black that reads as printed type, never pure black.
-- **Paper** (#f6f7f5; dark #10161c): the page ground, and text on Ink or Cobalt fills.
+- **Paper** (#f6f7f5; dark #141517): the page ground, and text on Ink or Cobalt fills. In dark mode the ground is a neutral graphite with no blue tint, so Cobalt and the rung colours carry the only hue on the page.
 - **Graphite** (#5a6570; dark #96a3ae): secondary text. Ledes, summaries, metadata, dates, counts, source lines, footer, inactive nav. 5.54:1 on Paper.
-- **Board Wash** (#eceff0; dark #18212a): the ladder steps, the /watch rung index, inline code and the feed address field. The only "surface" besides Paper.
-- **Rule** (#d8dde1; dark #27323c): 1px hairlines between list items, archive rows, evidence rows and around the contents list. Decorative separation only; never the sole carrier of meaning.
+- **Board Wash** (#eceff0; dark #1d1f22): the ladder steps, the /watch rung index, inline code and the feed address field. The only "surface" besides Paper.
+- **Rule** (#d8dde1; dark #2b2e33): 1px hairlines between list items, archive rows, evidence rows and around the contents list. Decorative separation only; never the sole carrier of meaning.
 - **Rule Strong** (#7b858e; dark #5f6b76): a hairline that still reads as a mark, at 3:1 or better on Paper. Empty confidence dots, empty rung pips, the CONTEXT tag outline.
 
 ### Data Encoding (the ladder)

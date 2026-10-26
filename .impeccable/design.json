@@ -256,18 +256,18 @@
         "displayName": "Paper, dark scheme",
         "cssVar": "--paper",
         "scheme": "dark",
-        "canonical": "#10161c",
-        "oklch": "oklch(19.7% 0.015 248.6)",
+        "canonical": "#141517",
+        "oklch": "oklch(19.5% 0.004 264.5)",
         "lightCounterpart": "paper",
         "tonalRamp": [
-          "#0a0b0c",
-          "#242729",
-          "#41464b",
-          "#60676f",
-          "#838a91",
-          "#a9afb4",
-          "#ced1d4",
-          "#edeef0"
+          "#0a0b0d",
+          "#252729",
+          "#444548",
+          "#656669",
+          "#88898c",
+          "#adaeb1",
+          "#cfd1d4",
+          "#edeef1"
         ]
       },
       "cobalt-dark": {
@@ -294,18 +294,18 @@
         "displayName": "Cobalt Wash, dark scheme",
         "cssVar": "--cobalt-wash",
         "scheme": "dark",
-        "canonical": "#1b2640",
-        "oklch": "oklch(27.2% 0.051 265.7)",
+        "canonical": "#1c2433",
+        "oklch": "oklch(26.0% 0.031 262.7)",
         "lightCounterpart": "cobalt-wash",
         "tonalRamp": [
-          "#0a0b0e",
-          "#212631",
-          "#3c4559",
-          "#586684",
-          "#7c89a6",
-          "#a4aec3",
-          "#cbd1dd",
-          "#eceef4"
+          "#050b18",
+          "#1e2635",
+          "#3c4556",
+          "#5d6778",
+          "#7f8a9c",
+          "#a4aec2",
+          "#c6d1e6",
+          "#e3efff"
         ]
       },
       "graphite-dark": {
@@ -332,18 +332,18 @@
         "displayName": "Board Wash, dark scheme",
         "cssVar": "--wash",
         "scheme": "dark",
-        "canonical": "#18212a",
-        "oklch": "oklch(24.3% 0.022 248.7)",
+        "canonical": "#1d1f22",
+        "oklch": "oklch(23.8% 0.006 258.4)",
         "lightCounterpart": "wash",
         "tonalRamp": [
-          "#0a0b0c",
-          "#23272b",
-          "#3f464d",
-          "#5d6772",
-          "#808a95",
-          "#a8afb6",
-          "#cdd1d6",
-          "#edeff0"
+          "#090b0e",
+          "#25272a",
+          "#434549",
+          "#64666a",
+          "#86898d",
+          "#acaeb2",
+          "#ced1d5",
+          "#eceff3"
         ]
       },
       "rule-dark": {
@@ -351,18 +351,18 @@
         "displayName": "Rule, dark scheme",
         "cssVar": "--rule",
         "scheme": "dark",
-        "canonical": "#27323c",
-        "oklch": "oklch(31.1% 0.023 246.1)",
+        "canonical": "#2b2e33",
+        "oklch": "oklch(30.0% 0.010 260.7)",
         "lightCounterpart": "rule",
         "tonalRamp": [
-          "#0a0b0d",
-          "#23272b",
-          "#3e464e",
-          "#5b6873",
-          "#7f8b96",
-          "#a7afb7",
-          "#cdd2d6",
-          "#edeff1"
+          "#090b0f",
+          "#24272c",
+          "#42454a",
+          "#63666c",
+          "#868990",
+          "#aaaeb4",
+          "#ced1d8",
+          "#ebeff6"
         ]
       },
       "rule-strong-dark": {

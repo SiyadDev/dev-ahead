@@ -26,6 +26,7 @@ const PRIVATE = [
   /compiled for/i,
   /\bSovera\b/i,
   /I can'?t see your machine/i,
+  /\bDEV Digest\b/i,
   /docs\.google\.com|drive\.google\.com/i,
   /\bfolder ID\b/i,
 ];

@@ -1,6 +1,6 @@
-# DEV Ahead public edition: editorial guide
+# Ahead of Main: editorial guide
 
-This is the spec for every public issue. The DEV Ahead routine follows it when it drafts an issue, and `npm run check` enforces the parts that can be checked mechanically.
+This is the spec for every public issue. The routine follows it when it drafts an issue, and `npm run check` enforces the parts that can be checked mechanically.
 
 ## Who it's for
 

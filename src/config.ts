@@ -1,13 +1,13 @@
 // Site-wide settings. Fill in the empty links once the accounts exist;
 // anything left empty is hidden on the site.
 export const SITE = {
-  title: 'DEV Ahead',
-  tagline: "What's moving underneath developer news, twice a week.",
+  title: 'Ahead of Main',
+  tagline: "What main hasn't merged yet.",
   description:
     'A twice-weekly brief on the tooling, AI capabilities and structural shifts that reach developers before they become headlines. Tracks a running Disruption Watch board.',
   author: 'SiyadDev',
   authorUrl: 'https://github.com/SiyadDev',
-  // e.g. https://www.linkedin.com/newsletters/dev-ahead-1234567890/
+  // e.g. https://www.linkedin.com/newsletters/ahead-of-main-1234567890/
   linkedinNewsletter: '',
   // e.g. https://www.linkedin.com/in/your-handle/
   linkedinProfile: '',

@@ -65,13 +65,13 @@ for (const file of files) {
   try {
     res = await postWithRetry({
       article: {
-        title: `DEV Ahead #${data.issue}: ${data.title}`,
+        title: `Ahead of Main #${data.issue}: ${data.title}`,
         body_markdown: markdown,
         published: true,
         canonical_url: canonical,
         description: data.summary.slice(0, 250),
         tags: data.tags ?? [],
-        series: 'DEV Ahead',
+        series: 'Ahead of Main',
       },
     });
   } catch (e) {

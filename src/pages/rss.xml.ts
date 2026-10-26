@@ -21,7 +21,7 @@ export async function GET(context: APIContext) {
       const body = absolute(i.rendered?.html ?? `<p>${i.data.summary}</p>`);
       const footer = `<hr /><p><em>Originally published at <a href="${link}">${link}</a>. The full Disruption Watch board is at <a href="${origin}${url('/watch/')}">${origin}${url('/watch/')}</a>.</em></p>`;
       return {
-        title: `DEV Ahead #${i.data.issue}: ${i.data.title}`,
+        title: `Ahead of Main #${i.data.issue}: ${i.data.title}`,
         description: i.data.summary,
         pubDate: i.data.date,
         link,

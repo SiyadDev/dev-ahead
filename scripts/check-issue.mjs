@@ -6,14 +6,16 @@ import { readIssue } from './lib.mjs';
 
 const DIR = 'src/content/issues';
 const RUNGS = ['Watching', 'Accelerating', 'Hitting the market', 'Repricing the work'];
+// Each section with the headings it may use. Issues before 27 October 2026
+// used "Practice shifts"; later issues use "Architecture & practice shifts".
 const SECTIONS = [
-  'The top 3',
-  'Signal radar',
-  'Research frontier',
-  'New capabilities to adopt',
-  'Disruption watch',
-  'Practice shifts',
-  "This week's experiment",
+  ['The top 3'],
+  ['Signal radar'],
+  ['Research frontier'],
+  ['New capabilities to adopt'],
+  ['Disruption watch'],
+  ['Architecture & practice shifts', 'Practice shifts'],
+  ["This week's experiment"],
 ];
 
 // Phrases from the private brief that must never reach the public edition.
@@ -62,8 +64,8 @@ for (const file of files) {
   if (tags.length > 4) fail(`${file}: dev.to allows at most 4 tags`);
   for (const t of tags) if (!/^[a-z0-9]+$/.test(t)) fail(`${file}: tag "${t}" must be lowercase letters and numbers`);
 
-  for (const section of SECTIONS) {
-    if (!body.includes(`\n## ${section}\n`)) fail(`${file}: missing section "## ${section}"`);
+  for (const names of SECTIONS) {
+    if (!names.some((name) => body.includes(`\n## ${name}\n`))) fail(`${file}: missing section "## ${names[0]}"`);
   }
 
   const text = `${JSON.stringify(data)}\n${body}`;

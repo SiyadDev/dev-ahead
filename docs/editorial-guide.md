@@ -29,7 +29,7 @@ tags: [ai, claude, mcp, devops] # max 4, lowercase letters and numbers only (dev
 4. `## Research frontier`: 0–3 papers. Link the arXiv abstract page. Give the institution and the horizon (`already shipping`, `12 months`, `2+ years`, `may never leave the lab`). Papers come from the arXiv API and Hugging Face Daily Papers (the routine prompt has the exact queries); the Hugging Face `organization` field is usually the institution. Describe a paper only after reading its abstract page, never from its title or a machine summary. If you couldn't read any paper at source, say so in one line and stop.
 5. `## New capabilities to adopt`: things a reader can wire up this week, each with a rough time cost.
 6. `## Disruption watch`: a bullet list. Moved or new entries first, with the evidence; then held entries in a line or two. Link the board as `[Watch page](/watch)`.
-7. `## Practice shifts`: what a working engineer does differently on Monday.
+7. `## Architecture & practice shifts`: how the way software is built and run is changing, and what a working engineer does differently on Monday. (Issues before 27 October 2026 used `## Practice shifts`.)
 8. `## This week's experiment`: a 30–90 minute build anyone can do. A `**Build:**` paragraph, then `**Done when:**` and a numbered list.
 9. A `---` rule and one italic sourcing line.
 

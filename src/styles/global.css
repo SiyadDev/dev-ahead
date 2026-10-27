@@ -15,6 +15,30 @@
   --rung-3: #8a5a00;
   --rung-4: #8e2b2b;
 
+  /* Section labels inside an issue: a deeper, quieter cobalt than the links. */
+  --label: #23408e;
+
+  /* Soft fills and hairlines for rung badges, in the same hue as each rung. */
+  --rung-1-wash: #eceff1;
+  --rung-1-line: #c9d0d6;
+  --rung-2-wash: #dcefed;
+  --rung-2-line: #a9d6d1;
+  --rung-3-wash: #f7ecd4;
+  --rung-3-line: #e8cf96;
+  --rung-4-wash: #f3e1df;
+  --rung-4-line: #e2b9b5;
+
+  /* Tag pills: what an item asks of you. Pale fill, coloured text, thin border. */
+  --act-bg: #dff2e6;
+  --act-fg: #146c3f;
+  --act-line: #b6e4c9;
+  --watch-bg: #fdf1d8;
+  --watch-fg: #8a5a00;
+  --watch-line: #f3dfa4;
+  --context-bg: #eaeef5;
+  --context-fg: #38507a;
+  --context-line: #cdd8ea;
+
   --serif: 'Literata', 'Iowan Old Style', Georgia, serif;
   --sans: 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif;
   --mono: ui-monospace, 'SF Mono', Menlo, monospace;
@@ -54,6 +78,24 @@
     --rung-2: #4cc0b6;
     --rung-3: #e5ac3a;
     --rung-4: #e3928a;
+    --label: #a3b8f0;
+    --rung-1-wash: #22262b;
+    --rung-1-line: #3a424b;
+    --rung-2-wash: #15302d;
+    --rung-2-line: #23504b;
+    --rung-3-wash: #33280f;
+    --rung-3-line: #5a4517;
+    --rung-4-wash: #3a2220;
+    --rung-4-line: #5c3431;
+    --act-bg: #163a29;
+    --act-fg: #7fe0ae;
+    --act-line: #24573d;
+    --watch-bg: #3a2c0d;
+    --watch-fg: #f0c467;
+    --watch-line: #5a4517;
+    --context-bg: #1c2433;
+    --context-fg: #a9c1e8;
+    --context-line: #2d3d59;
     color-scheme: dark;
   }
 }
@@ -986,16 +1028,78 @@ pre code {
 }
 
 /* Inside an issue */
+
+/* Section headings: a numbered label in small capitals over a hairline. */
+.issue-body {
+  counter-reset: section;
+}
+
+.issue-body h2 {
+  counter-increment: section;
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  line-height: 1.35;
+  text-transform: uppercase;
+  color: var(--label);
+  border-top: 2px solid var(--label);
+  border-bottom: 0;
+  padding: var(--s3) 0 0;
+  margin: 80px 0 var(--s6);
+}
+
+.issue-body h2::before {
+  content: counter(section) '  ·  ';
+  white-space: pre;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+/* A section's opening line reads as its standfirst. */
 .issue-body h2 + p {
+  margin-top: calc(-1 * var(--s3));
+  font-style: italic;
   color: var(--graphite);
 }
 
-.issue-body h2#the-top-3 ~ h3 {
-  font-size: 1.4rem;
+/* Items: the tag line leads, then the headline, then the text, with a hairline between items. */
+.issue-body .item {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: var(--s6);
+  margin-bottom: var(--s6);
+  border-bottom: 1px solid var(--rule);
 }
 
-.issue-body h2#the-top-3 ~ h2 ~ h3 {
-  font-size: 1.3rem;
+.issue-body .item:last-child,
+.issue-body .item:has(+ h2),
+.issue-body .item:has(+ hr),
+.issue-body .item:has(+ section),
+.issue-body .item:has(+ p.aside) {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.issue-body .item > .tagline {
+  order: -1;
+  margin-bottom: 10px;
+}
+
+/* Item headlines: clearly heavier and larger than the text under them. */
+.issue-body .item h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  margin: 0 0 var(--s3);
+}
+
+.issue-body .item > :last-child {
+  margin-bottom: 0;
+}
+
+.issue-body .item[data-section='top'] h3 {
+  font-size: 1.55rem;
 }
 
 .issue-body .src {
@@ -1006,6 +1110,11 @@ pre code {
 }
 
 .issue-body .src a {
+  color: var(--graphite);
+  text-decoration-color: var(--rule-strong);
+}
+
+.issue-body .src a:hover {
   color: var(--cobalt);
 }
 
@@ -1014,50 +1123,51 @@ pre code {
   font-size: 1rem;
 }
 
-/* An item's tag line: tag pill, then the confidence mark */
+/* An item's tag line: tag pill, then the confidence in muted text */
 .tagline {
   font-family: var(--sans);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   line-height: 1.8;
   color: var(--graphite);
 }
 
-/* Inline, so any note after the mark (", unverified") stays on the same line. */
 .tagline .tag {
-  margin-right: var(--s3);
-  vertical-align: 0.06em;
+  margin-right: var(--s2);
 }
 
 /* Tags written in Markdown as **ACT NOW**, **WATCH**, **CONTEXT** */
 .tag {
   display: inline-block;
   font-family: var(--sans);
-  font-size: 0.74rem;
+  font-size: 0.72rem;
   font-weight: 700;
-  letter-spacing: 0.02em;
-  line-height: 1;
-  padding: 5px 8px;
-  border-radius: 4px;
-  margin-right: 6px;
-  vertical-align: 0.12em;
+  letter-spacing: 0.05em;
+  line-height: 1.4;
+  padding: 2px 9px;
+  border: 1px solid;
+  border-radius: 999px;
+  vertical-align: 0.1em;
 }
 
 .tag-act {
-  background: var(--cobalt);
-  color: var(--paper);
+  background: var(--act-bg);
+  color: var(--act-fg);
+  border-color: var(--act-line);
 }
 
 .tag-watch {
-  color: var(--cobalt);
-  box-shadow: inset 0 0 0 1px var(--cobalt);
+  background: var(--watch-bg);
+  color: var(--watch-fg);
+  border-color: var(--watch-line);
 }
 
 .tag-context {
-  color: var(--graphite);
-  box-shadow: inset 0 0 0 1px var(--rule-strong);
+  background: var(--context-bg);
+  color: var(--context-fg);
+  border-color: var(--context-line);
 }
 
-/* Confidence: three dots, filled to the level, with the level in words */
+/* Confidence: three small dots filled to the level, with the level in words */
 .confidence {
   display: inline-flex;
   vertical-align: -0.1em;
@@ -1065,7 +1175,7 @@ pre code {
   gap: 6px;
   font-family: var(--sans);
   font-weight: 600;
-  color: var(--ink);
+  color: var(--graphite);
 }
 
 .confidence .dots {
@@ -1074,15 +1184,181 @@ pre code {
 }
 
 .confidence i {
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   box-shadow: inset 0 0 0 1px var(--rule-strong);
 }
 
 .confidence i.on {
-  background: var(--ink);
+  background: var(--graphite);
   box-shadow: none;
+}
+
+/* Research papers: one card each */
+.issue-body .item.paper {
+  background: var(--wash);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: var(--s5);
+  margin-bottom: var(--s5);
+}
+
+.issue-body .item.paper:has(+ h2),
+.issue-body .item.paper:has(+ p.aside),
+.issue-body .item.paper:last-child {
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: var(--s5);
+}
+
+.paper-meta {
+  order: -1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s2) var(--s3);
+  margin: 0 0 var(--s3);
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--graphite);
+}
+
+.paper-meta .inst {
+  order: -1;
+  flex: 1 1 16rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.paper-tags {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.horizon {
+  padding: 2px 9px;
+  border: 1px solid var(--context-line);
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--context-fg);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+/* Run-in labels ("Why it matters", "Build", "Done when") sit on their own line. */
+.run-label {
+  display: block;
+  margin: 0 0 6px;
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: var(--label);
+}
+
+/* The takeaway gets its own quiet box, so it reads apart from the account above it. */
+.issue-body p.labelled-why {
+  margin: var(--s4) 0;
+  padding: 14px 18px;
+  background: var(--wash);
+  border-radius: 8px;
+}
+
+.issue-body .item.paper p.labelled-why {
+  background: var(--paper);
+}
+
+.issue-body .experiment p.labelled {
+  margin-top: var(--s4);
+}
+
+/* Disruption watch inside an issue: a small board, one row per entry */
+.r1 { --rw: var(--rung-1-wash); --rl: var(--rung-1-line); }
+.r2 { --rw: var(--rung-2-wash); --rl: var(--rung-2-line); }
+.r3 { --rw: var(--rung-3-wash); --rl: var(--rung-3-line); }
+.r4 { --rw: var(--rung-4-wash); --rl: var(--rung-4-line); }
+
+.issue-body .dw-board {
+  list-style: none;
+  margin: 0 0 var(--s4);
+  padding: 0;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.issue-body .dw-board > li {
+  margin: 0;
+  padding: var(--s4) var(--s5);
+  border-bottom: 1px solid var(--rule);
+}
+
+.issue-body .dw-board > li:last-child {
+  border-bottom: 0;
+}
+
+/* Rows with news this issue (a move or a new entry) share one quiet highlight;
+   the rung badge alone carries the rung's colour. */
+.issue-body .dw-row.is-moved,
+.issue-body .dw-row.is-new {
+  background: var(--wash);
+}
+
+.dw-name {
+  margin: 0 0 6px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.dw-flag {
+  margin-left: var(--s2);
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: var(--label);
+}
+
+.dw-status {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s2);
+  margin: 0 0 6px !important;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--graphite);
+}
+
+.dw-badge {
+  padding: 2px 10px;
+  border: 1px solid var(--rl);
+  border-radius: 999px;
+  background: var(--rw);
+  color: var(--rung);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.dw-detail {
+  margin: 0 !important;
+  font-size: 0.95rem;
+}
+
+.issue-body .dw-compact {
+  font-size: 0.9rem;
+  color: var(--graphite);
+  padding-top: var(--s3);
+  padding-bottom: var(--s3);
 }
 
 /* The experiment: one panel, the thing to build this week */
@@ -1097,10 +1373,12 @@ pre code {
   border-top: 0;
   margin-top: var(--s4);
   padding-top: 0;
-  color: var(--cobalt);
+  color: var(--label);
 }
 
 .issue-body .experiment h2 + p {
+  font-style: normal;
+  margin-top: 0;
   color: var(--ink);
   font-size: 1.2rem;
 }

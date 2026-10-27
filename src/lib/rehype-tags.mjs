@@ -82,8 +82,161 @@ export default function rehypeTags({ base = '/' } = {}) {
       }
     });
 
+    structureSections(tree);
+    labelParagraphs(tree);
     wrapExperiment(tree);
   };
+}
+
+// Section names are fixed by the editorial guide.
+const SECTIONS = {
+  'the top 3': 'top',
+  'signal radar': 'radar',
+  'research frontier': 'research',
+  'new capabilities to adopt': 'capabilities',
+  'disruption watch': 'watch',
+  'architecture & practice shifts': 'practice',
+  'practice shifts': 'practice',
+  "this week's experiment": 'experiment',
+};
+
+const el = (tagName, className, children = [], extra = {}) => ({
+  type: 'element',
+  tagName,
+  properties: { ...(className ? { className: [].concat(className) } : {}), ...extra },
+  children,
+});
+
+const sectionKey = (h2) => SECTIONS[textOf(h2).trim().toLowerCase().replace(/[’']/g, "'")];
+
+// Groups each section's items (an h3 and what follows it) so they can be set
+// apart, turns research papers into cards and the Disruption watch list into
+// a board. Everything is derived from the Markdown conventions in the
+// editorial guide; anything that doesn't match is left as written.
+function structureSections(tree) {
+  const kids = tree.children ?? [];
+  const out = [];
+  let section;
+  let item;
+  for (const node of kids) {
+    const tag = node.type === 'element' ? node.tagName : null;
+    if (tag === 'h2' || tag === 'hr') {
+      item = undefined;
+      section = tag === 'h2' ? sectionKey(node) : undefined;
+      if (tag === 'h2' && section) node.properties = { ...node.properties, dataSection: section };
+      out.push(node);
+      continue;
+    }
+    if (tag === 'h3' && section && section !== 'experiment') {
+      item = el('div', section === 'research' ? ['item', 'paper'] : 'item', [], { dataSection: section });
+      out.push(item);
+    }
+    if (item) {
+      item.children.push(node);
+      continue;
+    }
+    if (tag === 'ul' && section === 'watch') {
+      out.push(boardFrom(node));
+      continue;
+    }
+    out.push(node);
+  }
+  tree.children = out;
+  for (const node of out) {
+    if (node.properties?.className?.includes('paper')) paperCard(node);
+  }
+}
+
+const RUNG_NAMES = ['Watching', 'Accelerating', 'Hitting the market', 'Repricing the work'];
+const RUNG = RUNG_NAMES.join('|');
+// "Repricing the work, held." / ": enters at Watching." / "Watching → Accelerating." / "moves from A to B"
+const STATUS = new RegExp(
+  `^[\\s:,.]*(?:enters at |moves? (?:up )?(?:from )?)?(${RUNG})(?:\\s*(?:→|->|to)\\s*(${RUNG}))?\\s*[,.;]?\\s*(held)?[,.;]?\\s*`,
+  'i',
+);
+const rungNo = (name) => RUNG_NAMES.findIndex((r) => r.toLowerCase() === name.toLowerCase()) + 1;
+const canon = (name) => RUNG_NAMES[rungNo(name) - 1];
+
+// A bullet "**Name**: Rung, held. Detail" becomes a row with a rung badge.
+function boardFrom(ul) {
+  const rows = [];
+  for (const li of ul.children ?? []) {
+    if (li.type !== 'element' || li.tagName !== 'li') continue;
+    const kids = li.children.filter((c) => !(c.type === 'text' && !c.value.trim()));
+    const [first, second] = kids;
+    if (!(first?.tagName === 'strong' && second?.type === 'text')) {
+      rows.push(el('li', 'dw-compact', li.children));
+      continue;
+    }
+    let name = textOf(first).trim().replace(/[.:]$/, '');
+    const isNew = /^new:\s*/i.test(name);
+    name = name.replace(/^new:\s*/i, '');
+    const m = second.value.match(STATUS);
+    if (!m) {
+      rows.push(el('li', 'dw-compact', li.children));
+      continue;
+    }
+    const from = canon(m[1]);
+    const to = m[2] ? canon(m[2]) : undefined;
+    const moved = Boolean(to && to !== from);
+    const rung = to ?? from;
+    const rest = [{ type: 'text', value: second.value.slice(m[0].length) }, ...kids.slice(2)];
+    const flag = moved ? 'Moved up' : isNew ? 'New' : undefined;
+    const note = moved ? null : isNew ? 'New entry' : m[3] ? 'Held' : null;
+    rows.push(
+      el('li', ['dw-row', `r${rungNo(rung)}`, moved ? 'is-moved' : isNew ? 'is-new' : 'is-held'], [
+        el('p', 'dw-name', [{ type: 'text', value: name }, ...(flag ? [el('span', 'dw-flag', [{ type: 'text', value: flag }])] : [])]),
+        el('p', 'dw-status', [
+          el('span', 'dw-badge', [{ type: 'text', value: moved ? `${from} → ${to}` : rung }]),
+          ...(note ? [el('span', 'dw-note', [{ type: 'text', value: note }])] : []),
+        ]),
+        ...(rest.some((n) => textOf(n).trim()) ? [el('p', 'dw-detail', rest)] : []),
+      ]),
+    );
+  }
+  return el('ul', 'dw-board', rows);
+}
+
+// A research item's tag line "**WATCH** Horizon: 12 months. Institution."
+// becomes a meta row: institution in small capitals, then the horizon pill.
+function paperCard(item) {
+  for (const p of item.children) {
+    if (p.type !== 'element' || p.tagName !== 'p') continue;
+    if (p.properties?.className?.includes('tagline')) {
+      const [tag, text, ...more] = p.children;
+      const m = text?.type === 'text' ? text.value.match(/^\s*Horizon:\s*([^.]+)\.\s*(.*)$/is) : null;
+      if (m) {
+        const inst = m[2].trim().replace(/\.$/, '');
+        p.properties = { className: ['paper-meta'] };
+        p.children = [
+          el('span', 'paper-tags', [tag, el('span', 'horizon', [{ type: 'text', value: m[1].trim() }])]),
+          ...(inst ? [el('span', 'inst', [{ type: 'text', value: inst }, ...more])] : []),
+        ];
+      }
+      continue;
+    }
+  }
+}
+
+// Run-in labels ("**Why it matters:**", "**Build:**", "**Done when:**") become a
+// small label on their own line, so the takeaway reads as its own block.
+const LABELS = { 'why it matters': 'why', build: 'build', 'done when': 'done' };
+
+function labelParagraphs(tree) {
+  walk(tree, (p) => {
+    if (p.type !== 'element' || p.tagName !== 'p') return;
+    const lead = p.children.find((c) => !(c.type === 'text' && !c.value.trim()));
+    if (lead?.tagName !== 'strong') return;
+    const name = textOf(lead).trim().replace(/:$/, '');
+    const kind = LABELS[name.toLowerCase()];
+    if (!kind) return;
+    lead.properties = { className: ['run-label'] };
+    lead.children = [{ type: 'text', value: name }];
+    p.properties = { ...p.properties, className: [...(p.properties?.className ?? []), 'labelled', `labelled-${kind}`] };
+    // The sentence after the label now starts the block, so it takes a capital.
+    const next = p.children[p.children.indexOf(lead) + 1];
+    if (next?.type === 'text') next.value = next.value.replace(/^\s*([a-z])/, (_, c) => c.toUpperCase());
+  });
 }
 
 function isTag(node) {

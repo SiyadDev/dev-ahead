@@ -20,9 +20,10 @@ The private brief above stays exactly as it is. Now produce a separate public ed
    - **Summary:** two sentences.
    - **Needs your check:** every claim you could not verify at a primary source, as a list, so the author knows exactly what to fact-check.
    - **Watch changes:** which entries moved or were added, or "none".
+   - **Sources checked:** the coverage log from Step 1 as a short table: each fixed source, reached or failed, and how many entries fell inside the window.
    - **Add your take:** one suggested place in the issue where a paragraph of the author's own opinion would add the most, and why.
    - **LinkedIn post draft:** a 120–180 word post announcing the issue, with a hook in the first two lines and the link left as `[link]`. Opinions are fine; do not invent personal experiences or anecdotes. Mark it clearly as a draft.
 7. If you cannot open a pull request from this environment, push the branch anyway and put the compare link (`https://github.com/SiyadDev/dev-ahead/compare/main...claude/issue-YYYY-MM-DD`) and the description text in your final summary instead.
-8. Note the pull request link in your final summary, next to the Drive file link.
+8. Note the pull request link in your final summary, next to the Drive file link, and list any fixed source that failed.
 
 If the repository is not available in your workspace, skip this section, say so in your final summary, and do not fail the run.

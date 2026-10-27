@@ -25,6 +25,11 @@ const changes = [
         return (
           <div class="step">
             <h3>
+              <span class="pips" aria-hidden="true">
+                {RUNGS.map((_, j) => (
+                  <i class={j <= i ? 'on' : ''} />
+                ))}
+              </span>
               {rung}
               <span class="visually-hidden">, rung {i + 1} of {RUNGS.length}, </span>
               <span class="count">

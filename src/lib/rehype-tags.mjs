@@ -162,6 +162,15 @@ const STATUS = new RegExp(
 const rungNo = (name) => RUNG_NAMES.findIndex((r) => r.toLowerCase() === name.toLowerCase()) + 1;
 const canon = (name) => RUNG_NAMES[rungNo(name) - 1];
 
+// Four small bars filled to the rung, as on /watch, so a badge shows how high it sits.
+const pips = (n) =>
+  el(
+    'span',
+    'pips',
+    RUNG_NAMES.map((_, i) => el('i', i < n ? 'on' : null)),
+    { ariaHidden: 'true' },
+  );
+
 // A bullet "**Name**: Rung, held. Detail" becomes a row with a rung badge.
 function boardFrom(ul) {
   const rows = [];
@@ -192,6 +201,7 @@ function boardFrom(ul) {
       el('li', ['dw-row', `r${rungNo(rung)}`, moved ? 'is-moved' : isNew ? 'is-new' : 'is-held'], [
         el('p', 'dw-name', [{ type: 'text', value: name }, ...(flag ? [el('span', 'dw-flag', [{ type: 'text', value: flag }])] : [])]),
         el('p', 'dw-status', [
+          pips(rungNo(rung)),
           el('span', 'dw-badge', [{ type: 'text', value: moved ? `${from} → ${to}` : rung }]),
           ...(note ? [el('span', 'dw-note', [{ type: 'text', value: note }])] : []),
         ]),

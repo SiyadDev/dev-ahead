@@ -29,7 +29,8 @@ const shifts = (n: number) => `${n} ${n === 1 ? 'shift' : 'shifts'}`;
   <nav aria-label="Rungs">
     <ol class="rung-index">
       {
-        rungs.map(({ rung, n, entries }) => (
+        // Lowest first, like the home ladder: a small staircase rising to the right.
+        [...rungs].reverse().map(({ rung, n, entries }) => (
           <li class={`r${n}`}>
             <a href={`#${rungSlug(rung)}`}>
               <span class="pips" aria-hidden="true">

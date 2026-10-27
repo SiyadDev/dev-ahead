@@ -512,7 +512,7 @@ pre code {
 
 .step h3 {
   display: flex;
-  justify-content: space-between;
+  align-items: baseline;
   gap: var(--s2);
   margin: 0 0 var(--s3);
   font-size: 0.95rem;
@@ -521,7 +521,13 @@ pre code {
 }
 
 .step h3 .count {
+  margin-left: auto;
   font-weight: 600;
+}
+
+/* The staircase shows the height on wide screens; the pips take over when it stacks. */
+.step h3 .pips {
+  display: none;
 }
 
 .step-empty,
@@ -599,8 +605,17 @@ pre code {
   .step:nth-child(2) { order: 3; }
   .step:nth-child(3) { order: 2; }
   .step:nth-child(4) { order: 1; }
+  /* Each rung sits a step further right than the one below it, the way the
+     wide staircase rises, and its pips say how high it is. */
   .step {
     margin-top: 0;
+    margin-left: calc(var(--lift) / 4);
+  }
+  .step h3 {
+    align-items: center;
+  }
+  .step h3 .pips {
+    display: inline-flex;
   }
 }
 
@@ -1544,20 +1559,44 @@ pre code {
 }
 
 /* Watch page */
+/* The rung index echoes the ladder: a small staircase, each rung 12px higher
+   (wide) or 12px further right (stacked, highest first) than the one below. */
 .rung-index {
   list-style: none;
   margin: 0 0 var(--s7);
   padding: 0;
   max-width: 820px;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1fr);
   gap: 3px;
   font-family: var(--sans);
+}
+
+.rung-index .r1 { --rise: 0px; }
+.rung-index .r2 { --rise: 12px; }
+.rung-index .r3 { --rise: 24px; }
+.rung-index .r4 { --rise: 36px; }
+
+.rung-index li {
+  display: grid;
+}
+
+@media (max-width: 899px) {
+  .rung-index li {
+    margin-left: var(--rise);
+  }
+  .rung-index .r1 { order: 4; }
+  .rung-index .r2 { order: 3; }
+  .rung-index .r3 { order: 2; }
+  .rung-index .r4 { order: 1; }
 }
 
 @media (min-width: 900px) {
   .rung-index {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .rung-index li {
+    margin-top: calc(36px - var(--rise));
   }
 }
 

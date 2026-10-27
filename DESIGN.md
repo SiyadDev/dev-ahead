@@ -15,6 +15,16 @@ colors:
   rung-2: "#15665f"
   rung-3: "#8a5a00"
   rung-4: "#8e2b2b"
+  label: "#23408e"
+  act-bg: "#dff2e6"
+  act-fg: "#146c3f"
+  act-line: "#b6e4c9"
+  watch-bg: "#fdf1d8"
+  watch-fg: "#8a5a00"
+  watch-line: "#f3dfa4"
+  context-bg: "#eaeef5"
+  context-fg: "#38507a"
+  context-line: "#cdd8ea"
   # Dark scheme. Same custom properties, redefined under prefers-color-scheme: dark
   ink-dark: "#e6ebef"
   paper-dark: "#141517"
@@ -28,6 +38,16 @@ colors:
   rung-2-dark: "#4cc0b6"
   rung-3-dark: "#e5ac3a"
   rung-4-dark: "#e3928a"
+  label-dark: "#a3b8f0"
+  act-bg-dark: "#163a29"
+  act-fg-dark: "#7fe0ae"
+  act-line-dark: "#24573d"
+  watch-bg-dark: "#3a2c0d"
+  watch-fg-dark: "#f0c467"
+  watch-line-dark: "#5a4517"
+  context-bg-dark: "#1c2433"
+  context-fg-dark: "#a9c1e8"
+  context-line-dark: "#2d3d59"
 typography:
   display:
     fontFamily: "Literata, 'Iowan Old Style', Georgia, serif"
@@ -146,21 +166,23 @@ components:
   nav-link-active:
     textColor: "{colors.ink}"
   tag-act-now:
-    backgroundColor: "{colors.cobalt}"
-    textColor: "{colors.paper}"
+    backgroundColor: "{colors.act-bg}"
+    textColor: "{colors.act-fg}"
     typography: "{typography.tag}"
-    rounded: "{rounded.tag}"
-    padding: "5px 8px"
+    rounded: "999px"
+    padding: "2px 9px"
   tag-watch:
-    textColor: "{colors.cobalt}"
+    backgroundColor: "{colors.watch-bg}"
+    textColor: "{colors.watch-fg}"
     typography: "{typography.tag}"
-    rounded: "{rounded.tag}"
-    padding: "5px 8px"
+    rounded: "999px"
+    padding: "2px 9px"
   tag-context:
-    textColor: "{colors.graphite}"
+    backgroundColor: "{colors.context-bg}"
+    textColor: "{colors.context-fg}"
     typography: "{typography.tag}"
-    rounded: "{rounded.tag}"
-    padding: "5px 8px"
+    rounded: "999px"
+    padding: "2px 9px"
   ladder-step:
     backgroundColor: "{colors.wash}"
     padding: "12px 16px 16px"
@@ -219,7 +241,7 @@ Rejected outright: purple-to-blue gradients, neon "terminal" greens, glow, decor
 A near-monochrome briefing palette (blue-black ink on cool off-white) with a single cobalt for links and actions, plus a four-step data ramp for the ladder that runs from cool slate to warm oxblood.
 
 ### Primary
-- **Cobalt** (#2b59d1; dark #86a8ff): the thread to follow. Every link, the ACT NOW tag fill, the WATCH tag outline, the "New" marker on the board, the experiment heading, the primary button's hover fill, the focus ring and the text caret. "Main" in the wordmark. 5.66:1 on Paper in light, 7.85:1 in dark.
+- **Cobalt** (#2b59d1; dark #86a8ff): the thread to follow. Every link, the "New" marker on the board, the experiment heading, the primary button's hover fill, the focus ring and the text caret. "Main" in the wordmark. 5.66:1 on Paper in light, 7.85:1 in dark.
 - **Cobalt Wash** (#e3eaf9; dark #1c2433): the only tinted surface. Fills the experiment panel, text selection, and the highlight on a targeted /watch entry.
 
 ### Neutral
@@ -238,7 +260,7 @@ The four rung colours are a data encoding of the Disruption Watch ladder, not id
 - **Oxblood** (#8e2b2b; dark #e3928a): Repricing the work. Serious, not alarming.
 
 ### Named Rules
-**The One Thread Rule.** Cobalt means "go here" or "do this": links, the ACT NOW tag, focus, the experiment. It never fills anything larger than the experiment panel and never decorates.
+**The One Thread Rule.** Cobalt means "go here": links and focus. Issue section labels use Label, a deeper navy from the same family, so a heading never looks like a link, and tags carry their own meaning colours. It never fills anything larger than the experiment panel and never decorates.
 
 **The Data-Not-Identity Rule.** Rung colours appear only where a rung is being shown: the ladder's top caps and labels, the /watch rung index, rung section heads and their pips. A rung colour always sits with the rung's name in text; colour is never the only signal.
 
@@ -260,9 +282,10 @@ The four rung colours are a data encoding of the Disruption Watch ladder, not id
 - **Standfirst** (Literata 400, 1.45rem, 1.3, Ink): the one-line promise under a page title ("Ratings move on evidence, not on noise.").
 - **Lede** (Literata 400, 1.2rem, 1.5–1.55, Graphite): the home lede, page intros, the issue summary.
 - **Body** (Literata 400, 1.125rem, 1.62): all running text, capped at the 34em measure (about 70 characters). Headings use `text-wrap: balance`; paragraphs and list items use `text-wrap: pretty`.
-- **Section** (Schibsted Grotesk 700, 1.4rem, 1.2, -0.015em): section heads inside issues and About, and rung heads on /watch, each sitting under a rule. Index-page sections, the ladder head, the follow cards and the issue close use the smaller 1.15rem step.
+- **Issue section label** (Schibsted Grotesk 700, 0.82rem, +0.14em, uppercase, Label navy): the numbered section heads inside an issue ("2 · SIGNAL RADAR"), over a 1px Rule. The paragraph straight after one is its standfirst, in Graphite italic.
+- **Section** (Schibsted Grotesk 700, 1.4rem, 1.2, -0.015em): section heads on About, and rung heads on /watch, each sitting under a rule. Index-page sections, the ladder head, the follow cards and the issue close use the smaller 1.15rem step.
 - **Label** (Schibsted Grotesk 400–700, 0.85–0.95rem, Graphite, tabular figures): datelines, meta lines, counts, source lines, evidence rows, contents list, nav (0.95rem), footer.
-- **Tag** (Schibsted Grotesk 700, 0.74rem, line-height 1, +0.02em): ACT NOW, WATCH, CONTEXT. Capitals come from the text itself, not from `text-transform`.
+- **Tag** (Schibsted Grotesk 700, 0.72rem, line-height 1.4, +0.05em): ACT NOW, WATCH, CONTEXT, and the rung badges in an issue's board. 0.72rem keeps them above the 11px floor for functional text.
 - **Mono** (system monospace, 0.84em inline; 0.9rem/1.5 in blocks): code, commands, version numbers, environment variables, the RSS address.
 
 ### Named Rules
@@ -270,7 +293,7 @@ The four rung colours are a data encoding of the Disruption Watch ladder, not id
 
 **The Measure Rule.** Running text never exceeds the measure (34em, about 70 characters of Literata at body size).
 
-**The Quiet Caps Rule.** The three tags are the only text set in capitals, and they are typed that way in the Markdown. No uppercase labels, no letter-spaced small caps elsewhere.
+**The Quiet Caps Rule.** Capitals are reserved for labels inside an issue: section labels, tags, rung badges, research-card meta and the "Why it matters" card label. Nowhere else, and never for running text.
 
 ## Layout
 
@@ -322,14 +345,23 @@ Plain, firm and few: at most two per view.
 - **Skip link:** an Ink pill with Paper text that appears on focus.
 
 ### Tag pills (chips)
-The three tags are applied at build time from plain `**ACT NOW**`, `**WATCH**`, `**CONTEXT**` in the Markdown.
-- **ACT NOW:** solid Cobalt with Paper text.
-- **WATCH:** Cobalt text with a 1px inset Cobalt outline.
-- **CONTEXT:** Graphite text with a 1px inset Rule Strong outline.
-- **Shape:** 4px radius, 5px × 8px padding, 0.74rem bold grotesk. Fill strength tracks urgency: filled, outlined, quiet.
+The three tags are applied at build time from plain `**ACT NOW**`, `**WATCH**`, `**CONTEXT**` in the Markdown. They use the common soft-badge pattern (pale fill, coloured text, thin border, fully rounded), coloured by what the item asks of you:
+- **ACT NOW:** green, try it this week.
+- **WATCH:** amber, keep an eye on it.
+- **CONTEXT:** slate blue, worth knowing.
+- **Shape:** 999px radius, 2px × 9px padding, 1px border in the tag's line colour.
+
+### Items
+Inside a section, each `###` item and what follows it form an item, separated from the next by a 1px Rule. The tag line sits above the headline visually; in the DOM the headline still comes first.
+
+### Research frontier cards
+Each paper is a card: Board Wash fill, 1px Rule border, 8px radius, 24px padding. The tag line "**WATCH** Horizon: 12 months. Institution." becomes a meta row: the institution in small capitals on the left, the tag pill and a horizon pill (Paper fill, Context line) on the right. "**Why it matters:**" becomes a small-capitals card label on its own line.
+
+### Disruption watch board (in an issue)
+The section's bullets ("**Name**: Rung, held. Detail.") become a bordered board, one row each: the name in serif 600, a rung badge (the rung's colour on its pale wash, with a thin line), a status note ("Held", "New entry"), then the detail. A move shows as "WATCHING → ACCELERATING" with a "Moved up" flag in Label navy; new entries get a "New" flag. Rows with news (moved or new) share one quiet Board Wash highlight, so the badge alone carries the rung's colour. Bullets that don't follow the pattern ("Everything else held.") become compact Graphite rows.
 
 ### Tag line and confidence mark
-A paragraph that opens with a tag becomes the item's tag line: the pill, then a confidence mark, in Graphite sans at 0.85rem. The confidence mark is three 7px dots filled in Ink to the level (one for low, two for medium, three for high; empty dots are Rule Strong outlines), followed by the level in words ("Medium confidence") in Ink 600. The words always appear; the dots never stand alone.
+A paragraph that opens with a tag becomes the item's tag line: the pill, then a confidence mark, in Graphite sans at 0.85rem. The confidence mark is three 6px dots filled in Graphite to the level (one for low, two for medium, three for high; empty dots are Rule Strong outlines), followed by the level in words ("Medium confidence") in Graphite 600, so the pill leads and the confidence supports it. The words always appear; the dots never stand alone.
 
 ### Source line and aside
 A paragraph starting "Source:" or "Sources:" is set as a quiet source line: Graphite sans at 0.85rem, its links Graphite and turning Cobalt on hover. A paragraph that is only italics is an aside, in Graphite serif at 1rem.

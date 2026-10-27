@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "entries": [
     {
       "id": "open-weight-models",
@@ -24,6 +24,12 @@
           "status": "Repricing the work",
           "note": "Muse Spark Open weights; DeepSeek V4.1 Flash absorbs V4-Pro.",
           "source": "https://thenewstack.io/meta-muse-spark-open/"
+        },
+        {
+          "date": "2026-10-27",
+          "status": "Repricing the work",
+          "note": "GPT-6.1 Terra listed at $1 / $5 per million tokens, half of GPT-6.1 Sol and Sonnet 5.5. Flint (40B total, 2.5B active, Apache-2.0) runs on one GPU; its scores are the vendor's own.",
+          "source": "https://openrouter.ai/api/v1/models"
         }
       ]
     },
@@ -50,6 +56,12 @@
           "status": "Repricing the work",
           "note": "2.1.307: each fork told which launch is its own.",
           "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+        },
+        {
+          "date": "2026-10-27",
+          "status": "Repricing the work",
+          "note": "Simple harnesses beat hand-crafted root-cause-analysis agent pipelines (65–77% vs 16–53%) in a Peking University study.",
+          "source": "https://arxiv.org/abs/2610.35767"
         }
       ]
     },
@@ -106,6 +118,12 @@
           "status": "Repricing the work",
           "note": "2.1.310: a timed-out call with an unanswered elicitation now tells the model not to repeat it.",
           "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+        },
+        {
+          "date": "2026-10-27",
+          "status": "Repricing the work",
+          "note": "The official registry logged more than 6,100 entries in about three days (count from the registry API for this issue).",
+          "source": "https://registry.modelcontextprotocol.io/v0/servers?updated_since=2026-10-24T00:00:00Z&limit=100"
         }
       ]
     },
@@ -178,7 +196,14 @@
       "name": "AI-native infrastructure: sandboxes, computer use, cloud dev environments",
       "status": "Hitting the market",
       "note": "Cloud sessions and routines keep maturing; computer-use agents are still rough on Windows.",
-      "history": []
+      "history": [
+        {
+          "date": "2026-10-27",
+          "status": "Hitting the market",
+          "note": "Cloudflare Computer 0.7.0 adds replay after deploys or crashes and an approval pause for agent code.",
+          "source": "https://developers.cloudflare.com/changelog/post/2026-10-26-computer-durable-javascript/"
+        }
+      ]
     },
     {
       "id": "autonomous-qa",
@@ -218,28 +243,40 @@
     {
       "id": "agent-scale-source-control",
       "name": "Source control and review built for many agents on one repo",
-      "status": "Watching",
-      "note": "Cursor Origin is in early beta and GitLab is reported to be reworking its architecture for agent concurrency. No independent benchmarks yet.",
+      "status": "Accelerating",
+      "note": "Cursor's Origin hosts code with GitHub out of the path and has a public app marketplace; cloud-agent environments span up to 300 repos. Keep CI and review integrations portable.",
       "history": [
         {
           "date": "2026-10-15",
           "status": "Watching",
           "note": "New entry.",
           "source": "https://pub.towardsai.net/coding-agents-are-starting-to-reshape-source-control-49fc0aae8e01"
+        },
+        {
+          "date": "2026-10-27",
+          "status": "Accelerating",
+          "note": "Moved up from Watching: Cursor's changelog confirms Origin code hosting (GitHub out of the path for hosted repos) and a public app marketplace with 20+ CI, review, security and deploy vendors.",
+          "source": "https://cursor.com/changelog/origin-app-marketplace"
         }
       ]
     },
     {
       "id": "agent-audit-trail",
       "name": "Observable and auditable agent actions",
-      "status": "Watching",
-      "note": "Claude Code now emits classifier verdicts and a safety event for each blocked or prompted tool call. One vendor so far.",
+      "status": "Accelerating",
+      "note": "Claude Code and GitHub Copilot both let a model judge tool permissions under admin policy, and Cloudflare Computer can pause a run for approval. Permissions are settling into three tiers: automatic, model-judged and human-only.",
       "history": [
         {
           "date": "2026-10-22",
           "status": "Watching",
           "note": "New entry. Classifier-verdict fields (2.1.301), decider \"person\" (2.1.304) and claude_code.safety_event (2.1.307).",
           "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+        },
+        {
+          "date": "2026-10-27",
+          "status": "Accelerating",
+          "note": "Moved up from Watching: GitHub made model-judged (assisted) permissions GA in Copilot with enterprise policy controls, and Cloudflare Computer added an approval interrupt. A second vendor now ships it.",
+          "source": "https://github.blog/changelog/2026-10-26-github-copilot-assisted-permissions-generally-available"
         }
       ]
     },
@@ -254,6 +291,12 @@
           "status": "Hitting the market",
           "note": "New entry. Donated to the Agentic AI Foundation on 22 October; Anthropic reports 70+ integrating platforms and about a million published skills.",
           "source": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"
+        },
+        {
+          "date": "2026-10-27",
+          "status": "Hitting the market",
+          "note": "CoSA measures skill-composition attacks: adding up to 5% more skills raised policy violations from 35.0% to 58.5%.",
+          "source": "https://arxiv.org/abs/2610.35082"
         }
       ]
     }

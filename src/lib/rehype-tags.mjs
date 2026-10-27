@@ -6,7 +6,7 @@
 // It also strips anything executable that raw HTML in an issue could carry
 // (script-like elements, on* handlers, javascript: URLs), as a second line of
 // defence behind `npm run check`.
-const TAGS = { 'ACT NOW': 'act', WATCH: 'watch', CONTEXT: 'context' };
+import { TAGS, LEVELS, parseConfidence } from './tagline.mjs';
 
 function textOf(node) {
   if (node.type === 'text') return node.value;
@@ -71,8 +71,8 @@ export default function rehypeTags({ base = '/' } = {}) {
       if (isTag(first)) {
         node.properties = { ...node.properties, className: ['tagline'] };
         if (second?.type === 'text') {
-          const m = second.value.match(/^\s*(low|medium|high) confidence\.?(.*)$/is);
-          if (m) node.children.splice(1, 1, confidenceMark(m[1].toLowerCase()), ...rest(m[2]));
+          const c = parseConfidence(second.value);
+          if (c) node.children.splice(1, 1, confidenceMark(c.level, c.unverified), ...rest(c.rest));
         }
       }
       // A paragraph that is only italics is an aside, such as the closing sourcing note.
@@ -197,19 +197,26 @@ function boardFrom(ul) {
   return el('ul', 'dw-board', rows);
 }
 
-// A research item's tag line "**WATCH** Horizon: 12 months. Institution."
-// becomes a meta row: institution in small capitals, then the horizon pill.
+// A research item's tag line "**WATCH** Medium confidence. Horizon: 12 months.
+// Institution." becomes a meta row: institution in small capitals, then the
+// tag, the horizon pill and the confidence mark. Older issues have no level.
 function paperCard(item) {
   for (const p of item.children) {
     if (p.type !== 'element' || p.tagName !== 'p') continue;
     if (p.properties?.className?.includes('tagline')) {
-      const [tag, text, ...more] = p.children;
+      const [tag, ...after] = p.children;
+      const conf = after[0]?.properties?.className?.includes('confidence') ? after.shift() : null;
+      const [text, ...more] = after;
       const m = text?.type === 'text' ? text.value.match(/^\s*Horizon:\s*([^.]+)\.\s*(.*)$/is) : null;
       if (m) {
         const inst = m[2].trim().replace(/\.$/, '');
         p.properties = { className: ['paper-meta'] };
         p.children = [
-          el('span', 'paper-tags', [tag, el('span', 'horizon', [{ type: 'text', value: m[1].trim() }])]),
+          el('span', 'paper-tags', [
+            tag,
+            el('span', 'horizon', [{ type: 'text', value: m[1].trim() }]),
+            ...(conf ? [conf] : []),
+          ]),
           ...(inst ? [el('span', 'inst', [{ type: 'text', value: inst }, ...more])] : []),
         ];
       }
@@ -243,20 +250,21 @@ function isTag(node) {
   return node?.type === 'element' && node.properties?.className?.includes('tag');
 }
 
-const LEVELS = { low: 1, medium: 2, high: 3 };
-
-function confidenceMark(level) {
+// An unverified item still shows its level, but its dots are drawn as rings:
+// a filled dot means a primary source was read.
+function confidenceMark(level, unverified) {
   const dots = [1, 2, 3].map((i) => ({
     type: 'element',
     tagName: 'i',
     properties: { className: i <= LEVELS[level] ? ['on'] : [] },
     children: [],
   }));
-  const label = `${level[0].toUpperCase()}${level.slice(1)} confidence`;
+  const name = `${level[0].toUpperCase()}${level.slice(1)}`;
+  const label = level === 'speculative' ? name : `${name} confidence`;
   return {
     type: 'element',
     tagName: 'span',
-    properties: { className: ['confidence', `confidence-${level}`] },
+    properties: { className: ['confidence', `confidence-${level}`, ...(unverified ? ['is-unverified'] : [])] },
     children: [
       { type: 'element', tagName: 'span', properties: { className: ['dots'], ariaHidden: 'true' }, children: dots },
       { type: 'text', value: label },

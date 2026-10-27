@@ -1195,6 +1195,12 @@ pre code {
   box-shadow: none;
 }
 
+/* Unverified: the level still shows, as rings rather than solid dots */
+.confidence.is-unverified i.on {
+  background: none;
+  box-shadow: inset 0 0 0 2px var(--graphite);
+}
+
 /* Research papers: one card each */
 .issue-body .item.paper {
   background: var(--wash);
@@ -1237,7 +1243,15 @@ pre code {
 .paper-tags {
   display: inline-flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 6px;
+}
+
+/* The level reads as words, like every other tag line, not as a caps label */
+.paper-meta .confidence {
+  font-size: 0.8rem;
+  letter-spacing: normal;
+  text-transform: none;
 }
 
 .horizon {

@@ -3,6 +3,7 @@
 import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { readIssue } from './lib.mjs';
+import { HORIZONS, STRICT_FROM } from '../src/lib/tagline.mjs';
 
 const DIR = 'src/content/issues';
 const RUNGS = ['Watching', 'Accelerating', 'Hitting the market', 'Repricing the work'];
@@ -32,6 +33,49 @@ const PRIVATE = [
   /docs\.google\.com|drive\.google\.com/i,
   /\bfolder ID\b/i,
 ];
+
+// The tag line each section's items open with (editorial guide, "Tag lines").
+// Anything else would render without its confidence mark, or with the wrong one.
+const TAG = '\\*\\*(?:ACT NOW|WATCH|CONTEXT)\\*\\*';
+const LEVEL = ' (?:Low|Medium|High) confidence(?:, unverified)?\\.';
+const escape = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const TAGLINES = {
+  levelled: [new RegExp(`^${TAG}${LEVEL}$`), '**WATCH** Medium confidence.'],
+  paper: [
+    new RegExp(`^${TAG}${LEVEL} Horizon: (?:${HORIZONS.map(escape).join('|')})\\. \\S.*$`),
+    `**WATCH** Medium confidence. Horizon: 12 months. Institution. (horizon is one of: ${HORIZONS.join(', ')})`,
+  ],
+  plain: [new RegExp(`^${TAG}(?:${LEVEL})?$`), '**ACT NOW**'],
+};
+const SECTION_TAGLINE = {
+  'The top 3': 'levelled',
+  'Signal radar': 'levelled',
+  'Research frontier': 'paper',
+  'New capabilities to adopt': 'plain',
+  'Architecture & practice shifts': 'plain',
+};
+
+function checkTaglines(file, body) {
+  let section;
+  const lines = body.split('\n');
+  const opening = new Set();
+  lines.forEach((line, i) => {
+    const h2 = line.match(/^## (.+)$/);
+    if (h2) section = h2[1].trim();
+    const rule = SECTION_TAGLINE[section];
+    if (rule && /^### /.test(line)) {
+      const at = lines.findIndex((l, j) => j > i && l.trim());
+      const first = at === -1 ? '' : lines[at];
+      opening.add(at);
+      const [pattern, example] = TAGLINES[rule];
+      if (!pattern.test(first.trim())) {
+        fail(`${file}: "${line.slice(4, 60)}" in ${section} must open with a tag line like ${example}; found "${first.slice(0, 60)}"`);
+      }
+    } else if (!opening.has(i) && new RegExp(`^${TAG}`).test(line) && !Object.values(TAGLINES).some(([p]) => p.test(line.trim()))) {
+      fail(`${file}: tag line "${line.slice(0, 60)}" doesn't match any tag-line format in the editorial guide`);
+    }
+  });
+}
 
 const errors = [];
 const fail = (msg) => errors.push(msg);
@@ -68,6 +112,8 @@ for (const file of files) {
     if (!names.some((name) => body.includes(`\n## ${name}\n`))) fail(`${file}: missing section "## ${names[0]}"`);
   }
 
+  if (date >= STRICT_FROM) checkTaglines(file, body);
+
   const text = `${JSON.stringify(data)}\n${body}`;
   for (const pattern of PRIVATE) {
     const hit = text.match(pattern);
@@ -98,6 +144,9 @@ for (const e of watch.entries) {
     if (!RUNGS.includes(h.status)) fail(`watch.json: "${e.id}" history has unknown status "${h.status}"`);
     if (h.source !== undefined && !/^https:\/\/\S+$/.test(h.source)) {
       fail(`watch.json: "${e.id}" history on ${h.date} has a source that isn't an https URL`);
+    }
+    if (h.source === undefined && h.date >= STRICT_FROM) {
+      fail(`watch.json: "${e.id}" history on ${h.date} has no source; log only evidence the issue cites`);
     }
   }
   for (const pattern of PRIVATE) {

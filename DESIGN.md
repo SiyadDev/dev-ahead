@@ -282,7 +282,9 @@ The four rung colours are a data encoding of the Disruption Watch ladder, not id
 - **Standfirst** (Literata 400, 1.45rem, 1.3, Ink): the one-line promise under a page title ("Ratings move on evidence, not on noise.").
 - **Lede** (Literata 400, 1.2rem, 1.5–1.55, Graphite): the home lede, page intros, the issue summary.
 - **Body** (Literata 400, 1.125rem, 1.62): all running text, capped at the 34em measure (about 70 characters). Headings use `text-wrap: balance`; paragraphs and list items use `text-wrap: pretty`.
-- **Issue section label** (Schibsted Grotesk 700, 0.82rem, +0.14em, uppercase, Label navy): the numbered section heads inside an issue ("2 · SIGNAL RADAR"), over a 1px Rule. The paragraph straight after one is its standfirst, in Graphite italic.
+- **Issue section label** (Schibsted Grotesk 800, 1.05rem, +0.1em, uppercase, Label navy): the numbered section heads inside an issue ("2 · SIGNAL RADAR"), under a 2px Label rule with 80px of space above, so each section is a clear landmark while scrolling. The number is lighter (600, 70% opacity). The paragraph straight after one is its standfirst, in Graphite italic.
+- **Item headline** (Literata 700, 1.35rem, 1.25, -0.01em; 1.55rem in The top 3): each item's `###` heading, clearly heavier and larger than the 400-weight body under it.
+- **Run-in label** (Schibsted Grotesk 800, 0.74rem, +0.08em, uppercase, Label navy): "Why it matters", "Build" and "Done when", lifted out of the sentence onto their own line.
 - **Section** (Schibsted Grotesk 700, 1.4rem, 1.2, -0.015em): section heads on About, and rung heads on /watch, each sitting under a rule. Index-page sections, the ladder head, the follow cards and the issue close use the smaller 1.15rem step.
 - **Label** (Schibsted Grotesk 400–700, 0.85–0.95rem, Graphite, tabular figures): datelines, meta lines, counts, source lines, evidence rows, contents list, nav (0.95rem), footer.
 - **Tag** (Schibsted Grotesk 700, 0.72rem, line-height 1.4, +0.05em): ACT NOW, WATCH, CONTEXT, and the rung badges in an issue's board. 0.72rem keeps them above the 11px floor for functional text.
@@ -352,10 +354,13 @@ The three tags are applied at build time from plain `**ACT NOW**`, `**WATCH**`, 
 - **Shape:** 999px radius, 2px × 9px padding, 1px border in the tag's line colour.
 
 ### Items
-Inside a section, each `###` item and what follows it form an item, separated from the next by a 1px Rule. The tag line sits above the headline visually; in the DOM the headline still comes first.
+Inside a section, each `###` item and what follows it form an item, separated from the next by a 1px Rule with 32px either side. The tag line sits above the headline visually; in the DOM the headline still comes first.
+
+### Takeaway box
+A paragraph that opens with "**Why it matters:**" becomes a takeaway: a Board Wash box (Paper inside research cards), 8px radius, 14px × 18px padding, with the run-in label on its own line. It separates the editor's judgement from the account of what happened.
 
 ### Research frontier cards
-Each paper is a card: Board Wash fill, 1px Rule border, 8px radius, 24px padding. The tag line "**WATCH** Horizon: 12 months. Institution." becomes a meta row: the institution in small capitals on the left, the tag pill and a horizon pill (Paper fill, Context line) on the right. "**Why it matters:**" becomes a small-capitals card label on its own line.
+Each paper is a card: Board Wash fill, 1px Rule border, 8px radius, 24px padding. The tag line "**WATCH** Horizon: 12 months. Institution." becomes a meta row: the institution in small capitals on the left, the tag pill and a horizon pill (Paper fill, Context line) on the right. "**Why it matters:**" becomes a takeaway box (see below), on Paper so it shows against the card.
 
 ### Disruption watch board (in an issue)
 The section's bullets ("**Name**: Rung, held. Detail.") become a bordered board, one row each: the name in serif 600, a rung badge (the rung's colour on its pale wash, with a thin line), a status note ("Held", "New entry"), then the detail. A move shows as "WATCHING → ACCELERATING" with a "Moved up" flag in Label navy; new entries get a "New" flag. Rows with news (moved or new) share one quiet Board Wash highlight, so the badge alone carries the rung's colour. Bullets that don't follow the pattern ("Everything else held.") become compact Graphite rows.

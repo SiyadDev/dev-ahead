@@ -83,6 +83,7 @@ export default function rehypeTags({ base = '/' } = {}) {
     });
 
     structureSections(tree);
+    labelParagraphs(tree);
     wrapExperiment(tree);
   };
 }
@@ -213,16 +214,28 @@ function paperCard(item) {
       }
       continue;
     }
-    // "**Why it matters:** ..." gets its label on its own line, as in a card.
-    const lead = p.children.find((c) => !(c.type === 'text' && !c.value.trim()));
-    if (lead?.tagName === 'strong' && /^why it matters:?$/i.test(textOf(lead).trim())) {
-      lead.properties = { className: ['card-label'] };
-      lead.children = [{ type: 'text', value: 'Why it matters' }];
-      // The sentence after the label now starts the paragraph, so it takes a capital.
-      const next = p.children[p.children.indexOf(lead) + 1];
-      if (next?.type === 'text') next.value = next.value.replace(/^\s*([a-z])/, (_, c) => c.toUpperCase());
-    }
   }
+}
+
+// Run-in labels ("**Why it matters:**", "**Build:**", "**Done when:**") become a
+// small label on their own line, so the takeaway reads as its own block.
+const LABELS = { 'why it matters': 'why', build: 'build', 'done when': 'done' };
+
+function labelParagraphs(tree) {
+  walk(tree, (p) => {
+    if (p.type !== 'element' || p.tagName !== 'p') return;
+    const lead = p.children.find((c) => !(c.type === 'text' && !c.value.trim()));
+    if (lead?.tagName !== 'strong') return;
+    const name = textOf(lead).trim().replace(/:$/, '');
+    const kind = LABELS[name.toLowerCase()];
+    if (!kind) return;
+    lead.properties = { className: ['run-label'] };
+    lead.children = [{ type: 'text', value: name }];
+    p.properties = { ...p.properties, className: [...(p.properties?.className ?? []), 'labelled', `labelled-${kind}`] };
+    // The sentence after the label now starts the block, so it takes a capital.
+    const next = p.children[p.children.indexOf(lead) + 1];
+    if (next?.type === 'text') next.value = next.value.replace(/^\s*([a-z])/, (_, c) => c.toUpperCase());
+  });
 }
 
 function isTag(node) {

@@ -1036,25 +1036,28 @@ pre code {
 
 .issue-body h2 {
   counter-increment: section;
-  font-size: 0.82rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  line-height: 1.4;
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  line-height: 1.35;
   text-transform: uppercase;
   color: var(--label);
-  border-top: 0;
-  border-bottom: 1px solid var(--rule);
-  padding: 0 0 var(--s3);
-  margin: var(--s8) 0 var(--s5);
+  border-top: 2px solid var(--label);
+  border-bottom: 0;
+  padding: var(--s3) 0 0;
+  margin: 80px 0 var(--s6);
 }
 
 .issue-body h2::before {
-  content: counter(section) ' · ';
+  content: counter(section) '  ·  ';
+  white-space: pre;
+  font-weight: 600;
+  opacity: 0.7;
 }
 
 /* A section's opening line reads as its standfirst. */
 .issue-body h2 + p {
-  margin-top: calc(-1 * var(--s2));
+  margin-top: calc(-1 * var(--s3));
   font-style: italic;
   color: var(--graphite);
 }
@@ -1063,8 +1066,8 @@ pre code {
 .issue-body .item {
   display: flex;
   flex-direction: column;
-  padding-bottom: var(--s5);
-  margin-bottom: var(--s5);
+  padding-bottom: var(--s6);
+  margin-bottom: var(--s6);
   border-bottom: 1px solid var(--rule);
 }
 
@@ -1079,11 +1082,16 @@ pre code {
 
 .issue-body .item > .tagline {
   order: -1;
-  margin-bottom: var(--s2);
+  margin-bottom: 10px;
 }
 
+/* Item headlines: clearly heavier and larger than the text under them. */
 .issue-body .item h3 {
-  margin: 0 0 var(--s2);
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  margin: 0 0 var(--s3);
 }
 
 .issue-body .item > :last-child {
@@ -1091,7 +1099,7 @@ pre code {
 }
 
 .issue-body .item[data-section='top'] h3 {
-  font-size: 1.4rem;
+  font-size: 1.55rem;
 }
 
 .issue-body .src {
@@ -1242,15 +1250,33 @@ pre code {
   letter-spacing: 0.05em;
 }
 
-.card-label {
+/* Run-in labels ("Why it matters", "Build", "Done when") sit on their own line. */
+.run-label {
   display: block;
-  margin: var(--s3) 0 var(--s1);
+  margin: 0 0 6px;
   font-family: var(--sans);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
   text-transform: uppercase;
-  color: var(--graphite);
+  color: var(--label);
+}
+
+/* The takeaway gets its own quiet box, so it reads apart from the account above it. */
+.issue-body p.labelled-why {
+  margin: var(--s4) 0;
+  padding: 14px 18px;
+  background: var(--wash);
+  border-radius: 8px;
+}
+
+.issue-body .item.paper p.labelled-why {
+  background: var(--paper);
+}
+
+.issue-body .experiment p.labelled {
+  margin-top: var(--s4);
 }
 
 /* Disruption watch inside an issue: a small board, one row per entry */

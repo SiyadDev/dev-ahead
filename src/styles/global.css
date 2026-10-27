@@ -1055,6 +1055,43 @@ pre code {
   opacity: 0.7;
 }
 
+/* Below 1000px the contents list is only at the top of a long issue, so each
+   section ends with a quiet way back to it. The sticky margin column does this job on wide screens. */
+.issue-body .to-contents {
+  margin: var(--s5) 0 0;
+  text-align: right;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+}
+
+.issue-body .to-contents a {
+  display: inline-block;
+  padding: 12px 0;
+  color: var(--graphite);
+  text-decoration-color: var(--rule-strong);
+}
+
+.issue-body .to-contents a:hover {
+  color: var(--cobalt);
+}
+
+.issue-body .to-contents + h2 {
+  margin-top: var(--s7);
+}
+
+#contents {
+  scroll-margin-top: var(--s4);
+}
+
+@media (min-width: 1000px) {
+  .issue-body .to-contents {
+    display: none;
+  }
+  .issue-body .to-contents + h2 {
+    margin-top: 80px;
+  }
+}
+
 /* A section's opening line reads as its standfirst. */
 .issue-body h2 + p {
   margin-top: calc(-1 * var(--s3));
@@ -1073,6 +1110,7 @@ pre code {
 
 .issue-body .item:last-child,
 .issue-body .item:has(+ h2),
+.issue-body .item:has(+ .to-contents),
 .issue-body .item:has(+ hr),
 .issue-body .item:has(+ section),
 .issue-body .item:has(+ p.aside) {
@@ -1211,6 +1249,7 @@ pre code {
 }
 
 .issue-body .item.paper:has(+ h2),
+.issue-body .item.paper:has(+ .to-contents),
 .issue-body .item.paper:has(+ p.aside),
 .issue-body .item.paper:last-child {
   border-bottom: 1px solid var(--rule);

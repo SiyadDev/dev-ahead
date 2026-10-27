@@ -122,6 +122,11 @@ function structureSections(tree) {
     const tag = node.type === 'element' ? node.tagName : null;
     if (tag === 'h2' || tag === 'hr') {
       item = undefined;
+      // Each section ends with a way back to the contents (shown on narrow
+      // screens only; the feed strips it).
+      if (tag === 'h2' && section) {
+        out.push(el('p', 'to-contents', [el('a', null, [{ type: 'text', value: 'Back to contents' }], { href: '#contents' })]));
+      }
       section = tag === 'h2' ? sectionKey(node) : undefined;
       if (tag === 'h2' && section) node.properties = { ...node.properties, dataSection: section };
       out.push(node);

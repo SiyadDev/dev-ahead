@@ -59,8 +59,10 @@ const actNow = latest ? tagCounts(latest.body ?? '')['ACT NOW'] : 0;
                 ))}
               </ol>
               {actNow > 0 && (
-                <p class="try">
-                  {actNow} {actNow === 1 ? 'thing' : 'things'} to try this week, plus the experiment.
+                <p class="try quiet-links">
+                  <a href={url(`/issues/${latest.id}#new-capabilities-to-adopt`)}>
+                    {actNow} {actNow === 1 ? 'thing' : 'things'} to try this week
+                  </a>, plus <a href={url(`/issues/${latest.id}#this-weeks-experiment`)}>the experiment</a>.
                 </p>
               )}
             </div>

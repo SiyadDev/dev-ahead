@@ -278,11 +278,11 @@ A single centred shell (max 1120px) with 16px side padding, widening to 32px fro
 
 **Home.** The first viewport is the board. The tagline spans the full width; below it the lede (max 36em) and the two actions sit side by side from 900px, then the ladder follows directly. Below the fold: the latest issue in two columns from 900px (title and summary left, the top 3 and the "things to try" line right), then the archive.
 
-**The ladder.** Four equal columns with 3px gutters, bottom-aligned, each step lifted 64px more than the last (120px, 184px, 248px, 312px minimum heights), so the board reads as a rising staircase. Below 720px it becomes a single stacked column with the highest rung first.
+**The ladder.** Four equal columns with 3px gutters. Every step stretches to the busiest one and starts 48px higher than the rung below (offsets 144, 96, 48 and 0px from the top), so the board always reads as a rising staircase whatever the entry counts. Below 720px it becomes a single stacked column with the highest rung first.
 
 **Issue pages.** From 1000px, a two-column grid: a 13rem margin column and the 33em reading column, 64px apart. The margin column holds the dateline ("Issue 4", the date, the window covered) and the "In this issue" contents list with item counts and a tag tally, and stays sticky as you read. Below 1000px the margin column dissolves and the order becomes dateline, title, contents (as a wrapping inline list), text, close.
 
-**/watch.** Page head, then a four-column rung index (a miniature staircase with 14px lifts; 2×2 below 720px), then one section per rung, highest first, each capped at 820px wide. Each entry shows its name, "On this rung since", its note at the measure, the latest dated evidence with its source host inline, and earlier evidence behind a disclosure.
+**/watch.** Page head, then a four-column rung index (four rung tiles, highest first, each with pips for its level; 2×2 below 900px), then one section per rung, highest first, each capped at 820px wide. Each entry shows its name, "On this rung since", its note at the measure, the latest dated evidence with its source host inline, and earlier evidence behind a disclosure.
 
 **Responsive steps** observed: 520px (archive rows, evidence rows and the pager stack; the experiment panel bleeds 8px wider), 640px (issue close goes two-column), 720px (shell padding, ladder and rung index), 760px (follow cards two-up), 900px (home front and latest issue), 1000px (issue margin column).
 

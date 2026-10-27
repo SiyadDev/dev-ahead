@@ -425,7 +425,9 @@ pre code {
 .ladder {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  align-items: end;
+  /* Steps stretch to the busiest one and start lower the lower the rung, so
+     the staircase always rises, whatever the entry counts. */
+  align-items: stretch;
   gap: 0 3px;
   font-family: var(--sans);
 }
@@ -434,16 +436,16 @@ pre code {
   --lift: 0px;
   display: flex;
   flex-direction: column;
-  min-height: calc(120px + var(--lift));
+  margin-top: calc(144px - var(--lift));
   padding: var(--s3) var(--s4) var(--s4);
   border-top: 4px solid var(--rung);
   background: var(--wash);
 }
 
 .step:nth-child(1) { --rung: var(--rung-1); }
-.step:nth-child(2) { --rung: var(--rung-2); --lift: 64px; }
-.step:nth-child(3) { --rung: var(--rung-3); --lift: 128px; }
-.step:nth-child(4) { --rung: var(--rung-4); --lift: 192px; }
+.step:nth-child(2) { --rung: var(--rung-2); --lift: 48px; }
+.step:nth-child(3) { --rung: var(--rung-3); --lift: 96px; }
+.step:nth-child(4) { --rung: var(--rung-4); --lift: 144px; }
 
 .step h3 {
   display: flex;
@@ -535,7 +537,7 @@ pre code {
   .step:nth-child(3) { order: 2; }
   .step:nth-child(4) { order: 1; }
   .step {
-    min-height: 0;
+    margin-top: 0;
   }
 }
 

@@ -1,16 +1,16 @@
 ---
 import Base from '../layouts/Base.astro';
-import { RUNGS } from '../config';
-import { watch, rungIndex, isNew, formatDate } from '../lib/watch';
+import { RUNGS, RUNG_MEANING, repoUrl } from '../config';
+import { watch, rungIndex, isNew, formatDate, onRungSince, rungSlug, sourceLabel, type WatchEvent } from '../lib/watch';
 
-const entries = [...watch.entries].sort((a, b) => rungIndex(b.status) - rungIndex(a.status));
+// Highest rung first: the most advanced shifts lead.
+const rungs = [...RUNGS].reverse().map((rung) => ({
+  rung,
+  n: rungIndex(rung),
+  entries: watch.entries.filter((e) => e.status === rung),
+}));
 
-const meaning: Record<string, string> = {
-  Watching: 'Early evidence. Worth knowing about, not yet worth acting on.',
-  Accelerating: 'Multiple independent signals, and the pace is picking up.',
-  'Hitting the market': 'Shipping products you can use or buy today.',
-  'Repricing the work': 'Changing what clients expect to pay for, or what a team needs to staff.',
-};
+const shifts = (n: number) => `${n} ${n === 1 ? 'shift' : 'shifts'}`;
 ---
 
 <Base
@@ -19,63 +19,128 @@ const meaning: Record<string, string> = {
 >
   <header class="page-head">
     <h1>Disruption Watch</h1>
+    <p class="standfirst">Ratings move on evidence, not on noise.</p>
     <p>
-      The shifts changing how software gets built and paid for, rated on a four-step ladder and updated every
-      issue. Last updated {formatDate(watch.updated)}.
+      {watch.entries.length} shifts changing how software gets built and paid for, each rated on a four-rung ladder and
+      updated every issue. Last updated <time datetime={watch.updated}>{formatDate(watch.updated)}</time>.
     </p>
   </header>
 
-  <ol class="board">
-    {
-      entries.map((e) => {
-        const n = rungIndex(e.status);
-        return (
-          <li id={e.id} class={`r${n}`}>
-            <div class="status">
+  <nav aria-label="Rungs">
+    <ol class="rung-index">
+      {
+        rungs.map(({ rung, n, entries }) => (
+          <li class={`r${n}`}>
+            <a href={`#${rungSlug(rung)}`}>
               <span class="pips" aria-hidden="true">
                 {RUNGS.map((_, i) => (
                   <i class={i < n ? 'on' : ''} />
                 ))}
               </span>
-              {e.status}
-              {isNew(e) && <span class="muted">(new)</span>}
-            </div>
-            <h3>{e.name}</h3>
-            <p>{e.note}</p>
-            {e.history.length > 0 && (
-              <details>
-                <summary>Evidence log ({e.history.length})</summary>
-                <ol>
-                  {[...e.history].reverse().map((h) => (
-                    <li>
-                      <time datetime={h.date}>{formatDate(h.date)}</time>
-                      <span>{h.note}</span>
-                    </li>
-                  ))}
-                </ol>
-              </details>
-            )}
+              <span class="rung-name">{rung}</span>
+              <span class="count">{entries.length}</span>
+            </a>
           </li>
-        );
-      })
-    }
-  </ol>
-
-  <section class="section" aria-labelledby="key-title">
-    <h2 id="key-title">How the ladder works</h2>
-    <dl class="ladder-key">
-      {
-        RUNGS.map((r, i) => (
-          <div class={`r${i + 1}`}>
-            <dt>{r}</dt>
-            <dd>{meaning[r]}</dd>
-          </div>
         ))
       }
-    </dl>
-    <p class="prose muted sans">
-      An entry only moves when there's specific evidence, and each issue says what moved it. Entries can be held
-      for lack of new evidence; the issue says when that's the case.
-    </p>
-  </section>
+    </ol>
+  </nav>
+
+  {
+    rungs.map(({ rung, n, entries }) => (
+      <section class={`rung r${n}`} id={rungSlug(rung)} aria-labelledby={`${rungSlug(rung)}-title`}>
+        <header class="rung-head">
+          <h2 id={`${rungSlug(rung)}-title`}>
+            <span class="pips" aria-hidden="true">
+              {RUNGS.map((_, i) => (
+                <i class={i < n ? 'on' : ''} />
+              ))}
+            </span>
+            {rung}
+            <span class="count">{shifts(entries.length)}</span>
+          </h2>
+          <p>{RUNG_MEANING[rung]}</p>
+        </header>
+        {entries.length === 0 && <p class="rung-empty">Nothing on this rung right now.</p>}
+        <ol class="board">
+          {entries.map((e) => {
+            const history: WatchEvent[] = [...e.history].reverse();
+            const [latest, ...earlier] = history;
+            const since = onRungSince(e);
+            return (
+              <li id={e.id}>
+                <h3>
+                  {e.name}
+                  {isNew(e) && <span class="new">New</span>}
+                </h3>
+                {since && (
+                  <p class="since">
+                    On this rung since <time datetime={since}>{formatDate(since)}</time>
+                  </p>
+                )}
+                <p class="note">{e.note}</p>
+                <div class="evidence">
+                  {latest ? (
+                    <div class="evidence-latest">
+                      <time datetime={latest.date}>{formatDate(latest.date)}</time>
+                      <span>
+                        {latest.note}{' '}
+                        {latest.source ? (
+                          <a class="src-link" href={latest.source}>
+                            {sourceLabel(latest.source)}
+                          </a>
+                        ) : (
+                          <span class="no-src">Source not logged</span>
+                        )}
+                      </span>
+                    </div>
+                  ) : (
+                    <p class="evidence-none">No dated evidence logged yet.</p>
+                  )}
+                  {earlier.length > 0 && (
+                    <details>
+                      <summary>
+                        <span class="when-closed">Show {earlier.length} earlier {earlier.length === 1 ? 'entry' : 'entries'}</span>
+                        <span class="when-open">Hide earlier entries</span>
+                      </summary>
+                      <ol>
+                        {earlier.map((h) => (
+                          <li>
+                            <time datetime={h.date}>{formatDate(h.date)}</time>
+                            <span>
+                              {h.note}{' '}
+                              {h.source ? (
+                                <a class="src-link" href={h.source}>
+                                  {sourceLabel(h.source)}
+                                </a>
+                              ) : (
+                                <span class="no-src">Source not logged</span>
+                              )}
+                            </span>
+                          </li>
+                        ))}
+                      </ol>
+                    </details>
+                  )}
+                </div>
+              </li>
+            );
+          })}
+        </ol>
+      </section>
+    ))
+  }
+
+  <p class="board-foot">
+    An entry only moves when there's specific evidence, and each issue says what moved it. Entries can be held for lack
+    of new evidence; the issue says when that's the case.
+    {
+      repoUrl && (
+        <>
+          {' '}
+          Disagree with a rating? <a href={`${repoUrl}/issues/new`}>Open an issue</a>.
+        </>
+      )
+    }
+  </p>
 </Base>

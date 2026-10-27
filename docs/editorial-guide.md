@@ -56,7 +56,7 @@ tags: [ai, claude, mcp, devops] # max 4, lowercase letters and numbers only (dev
 ## The Watch board (`src/data/watch.json`)
 
 - Update `updated` to the issue date.
-- For any entry with new evidence, append `{ "date", "status", "note" }` to its `history` and update its `note`.
+- For any entry with new evidence, append `{ "date", "status", "note", "source" }` to its `history` and update its `note`. `source` is the URL the issue cites for that evidence (the first-party page when there is one); leave it out when the issue cites none.
 - A status changes only with specific evidence, and the issue's Disruption watch section says what moved it.
 - A new entry's first history note starts with `New entry.`
 - Statuses are exactly: `Watching`, `Accelerating`, `Hitting the market`, `Repricing the work`.

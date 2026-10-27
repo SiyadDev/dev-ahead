@@ -3,7 +3,11 @@ import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
 const issues = defineCollection({
-  loader: glob({ pattern: '*.md', base: './src/content/issues' }),
+  // FIXTURE=worst swaps in worst-case issues for stress-testing the layout locally.
+  loader: glob({
+    pattern: '*.md',
+    base: process.env.FIXTURE === 'worst' ? './src/content/fixtures/worst' : './src/content/issues',
+  }),
   schema: z.object({
     title: z.string(),
     issue: z.number().int().positive(),

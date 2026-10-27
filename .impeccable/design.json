@@ -1,0 +1,762 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-26T09:46:05.497Z",
+  "title": "Design System: Ahead of Main",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "cssVar": "--ink",
+        "scheme": "light",
+        "canonical": "#16202a",
+        "oklch": "oklch(23.9% 0.024 248.9)",
+        "darkCounterpart": "ink-dark",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#23272b",
+          "#3e464e",
+          "#5c6874",
+          "#7f8b96",
+          "#a7afb7",
+          "#cdd1d6",
+          "#edeff1"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "cssVar": "--paper",
+        "scheme": "light",
+        "canonical": "#f6f7f5",
+        "oklch": "oklch(97.5% 0.003 128.5)",
+        "darkCounterpart": "paper-dark",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#262626",
+          "#454544",
+          "#656665",
+          "#898988",
+          "#adaead",
+          "#d1d1d0",
+          "#eeeeee"
+        ]
+      },
+      "cobalt": {
+        "role": "primary",
+        "displayName": "Cobalt",
+        "cssVar": "--cobalt",
+        "scheme": "light",
+        "canonical": "#2b59d1",
+        "oklch": "oklch(50.7% 0.192 264.5)",
+        "darkCounterpart": "cobalt-dark",
+        "tonalRamp": [
+          "#060b17",
+          "#12234e",
+          "#1e3d8e",
+          "#2c5ad2",
+          "#5282f3",
+          "#88acfa",
+          "#bbd1fe",
+          "#e7effe"
+        ]
+      },
+      "cobalt-wash": {
+        "role": "primary",
+        "displayName": "Cobalt Wash",
+        "cssVar": "--cobalt-wash",
+        "scheme": "light",
+        "canonical": "#e3eaf9",
+        "oklch": "oklch(93.6% 0.022 265.8)",
+        "darkCounterpart": "cobalt-wash-dark",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#24262b",
+          "#41454e",
+          "#606673",
+          "#838996",
+          "#aaaeb7",
+          "#ced1d6",
+          "#edeef1"
+        ]
+      },
+      "graphite": {
+        "role": "neutral",
+        "displayName": "Graphite",
+        "cssVar": "--graphite",
+        "scheme": "light",
+        "canonical": "#5a6570",
+        "oklch": "oklch(50.1% 0.022 248.3)",
+        "darkCounterpart": "graphite-dark",
+        "tonalRamp": [
+          "#0a0b0c",
+          "#23272b",
+          "#3e464d",
+          "#5c6773",
+          "#808b95",
+          "#a7afb7",
+          "#cdd1d6",
+          "#edeff1"
+        ]
+      },
+      "wash": {
+        "role": "neutral",
+        "displayName": "Board Wash",
+        "cssVar": "--wash",
+        "scheme": "light",
+        "canonical": "#eceff0",
+        "oklch": "oklch(95.0% 0.003 219.5)",
+        "darkCounterpart": "wash-dark",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#262727",
+          "#444546",
+          "#646667",
+          "#878a8a",
+          "#acaeaf",
+          "#d0d1d1",
+          "#eeeeef"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule",
+        "cssVar": "--rule",
+        "scheme": "light",
+        "canonical": "#d8dde1",
+        "oklch": "oklch(89.5% 0.008 241.7)",
+        "darkCounterpart": "rule-dark",
+        "tonalRamp": [
+          "#0b0b0c",
+          "#252728",
+          "#424548",
+          "#62676a",
+          "#858a8d",
+          "#abaeb1",
+          "#cfd1d2",
+          "#eeeeef"
+        ]
+      },
+      "rule-strong": {
+        "role": "neutral",
+        "displayName": "Rule Strong",
+        "cssVar": "--rule-strong",
+        "scheme": "light",
+        "canonical": "#7b858e",
+        "oklch": "oklch(61.1% 0.018 245.2)",
+        "darkCounterpart": "rule-strong-dark",
+        "tonalRamp": [
+          "#0a0b0c",
+          "#23272a",
+          "#3f464c",
+          "#5e6770",
+          "#818a93",
+          "#a8afb5",
+          "#ced1d5",
+          "#edeff0"
+        ]
+      },
+      "rung-1": {
+        "role": "data",
+        "displayName": "Survey Slate (Watching)",
+        "cssVar": "--rung-1",
+        "scheme": "light",
+        "canonical": "#56636f",
+        "oklch": "oklch(49.3% 0.025 246.2)",
+        "darkCounterpart": "rung-1-dark",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#22272b",
+          "#3d464e",
+          "#5b6874",
+          "#7e8b97",
+          "#a6afb7",
+          "#ccd2d6",
+          "#eceff1"
+        ]
+      },
+      "rung-2": {
+        "role": "data",
+        "displayName": "Harbour Teal (Accelerating)",
+        "cssVar": "--rung-2",
+        "scheme": "light",
+        "canonical": "#15665f",
+        "oklch": "oklch(46.2% 0.075 186.2)",
+        "darkCounterpart": "rung-2-dark",
+        "tonalRamp": [
+          "#060d0c",
+          "#122b29",
+          "#1c4e49",
+          "#28746d",
+          "#55978f",
+          "#8db8b2",
+          "#bfd7d3",
+          "#e7f1ef"
+        ]
+      },
+      "rung-3": {
+        "role": "data",
+        "displayName": "Burnt Ochre (Hitting the market)",
+        "cssVar": "--rung-3",
+        "scheme": "light",
+        "canonical": "#8a5a00",
+        "oklch": "oklch(50.8% 0.108 73.3)",
+        "darkCounterpart": "rung-3-dark",
+        "tonalRamp": [
+          "#0f0a05",
+          "#34230a",
+          "#5e3d08",
+          "#8b5b01",
+          "#ae7f3e",
+          "#c8a87e",
+          "#e1ceb6",
+          "#f5ede3"
+        ]
+      },
+      "rung-4": {
+        "role": "data",
+        "displayName": "Oxblood (Repricing the work)",
+        "cssVar": "--rung-4",
+        "scheme": "light",
+        "canonical": "#8e2b2b",
+        "oklch": "oklch(44.1% 0.134 24.5)",
+        "darkCounterpart": "rung-4-dark",
+        "tonalRamp": [
+          "#130807",
+          "#3e1a18",
+          "#702c2a",
+          "#a5403e",
+          "#c96863",
+          "#de9994",
+          "#efc6c2",
+          "#fceae8"
+        ]
+      },
+      "ink-dark": {
+        "role": "neutral",
+        "displayName": "Ink, dark scheme",
+        "cssVar": "--ink",
+        "scheme": "dark",
+        "canonical": "#e6ebef",
+        "oklch": "oklch(93.7% 0.008 241.7)",
+        "lightCounterpart": "ink",
+        "tonalRamp": [
+          "#0b0b0c",
+          "#252728",
+          "#424548",
+          "#62676a",
+          "#868a8d",
+          "#abaeb1",
+          "#cfd1d2",
+          "#eeeeef"
+        ]
+      },
+      "paper-dark": {
+        "role": "neutral",
+        "displayName": "Paper, dark scheme",
+        "cssVar": "--paper",
+        "scheme": "dark",
+        "canonical": "#141517",
+        "oklch": "oklch(19.5% 0.004 264.5)",
+        "lightCounterpart": "paper",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#252729",
+          "#444548",
+          "#656669",
+          "#88898c",
+          "#adaeb1",
+          "#cfd1d4",
+          "#edeef1"
+        ]
+      },
+      "cobalt-dark": {
+        "role": "primary",
+        "displayName": "Cobalt, dark scheme",
+        "cssVar": "--cobalt",
+        "scheme": "dark",
+        "canonical": "#86a8ff",
+        "oklch": "oklch(74.2% 0.132 267.0)",
+        "lightCounterpart": "cobalt",
+        "tonalRamp": [
+          "#080b14",
+          "#1a2542",
+          "#2e4178",
+          "#4460b1",
+          "#6886d3",
+          "#96ade3",
+          "#c3d1f0",
+          "#e8eefc"
+        ]
+      },
+      "cobalt-wash-dark": {
+        "role": "primary",
+        "displayName": "Cobalt Wash, dark scheme",
+        "cssVar": "--cobalt-wash",
+        "scheme": "dark",
+        "canonical": "#1c2433",
+        "oklch": "oklch(26.0% 0.031 262.7)",
+        "lightCounterpart": "cobalt-wash",
+        "tonalRamp": [
+          "#050b18",
+          "#1e2635",
+          "#3c4556",
+          "#5d6778",
+          "#7f8a9c",
+          "#a4aec2",
+          "#c6d1e6",
+          "#e3efff"
+        ]
+      },
+      "graphite-dark": {
+        "role": "neutral",
+        "displayName": "Graphite, dark scheme",
+        "cssVar": "--graphite",
+        "scheme": "dark",
+        "canonical": "#96a3ae",
+        "oklch": "oklch(70.9% 0.022 243.5)",
+        "lightCounterpart": "graphite",
+        "tonalRamp": [
+          "#0a0b0c",
+          "#23272b",
+          "#3e464d",
+          "#5c6872",
+          "#7f8b95",
+          "#a7afb6",
+          "#cdd2d6",
+          "#edeff0"
+        ]
+      },
+      "wash-dark": {
+        "role": "neutral",
+        "displayName": "Board Wash, dark scheme",
+        "cssVar": "--wash",
+        "scheme": "dark",
+        "canonical": "#1d1f22",
+        "oklch": "oklch(23.8% 0.006 258.4)",
+        "lightCounterpart": "wash",
+        "tonalRamp": [
+          "#090b0e",
+          "#25272a",
+          "#434549",
+          "#64666a",
+          "#86898d",
+          "#acaeb2",
+          "#ced1d5",
+          "#eceff3"
+        ]
+      },
+      "rule-dark": {
+        "role": "neutral",
+        "displayName": "Rule, dark scheme",
+        "cssVar": "--rule",
+        "scheme": "dark",
+        "canonical": "#2b2e33",
+        "oklch": "oklch(30.0% 0.010 260.7)",
+        "lightCounterpart": "rule",
+        "tonalRamp": [
+          "#090b0f",
+          "#24272c",
+          "#42454a",
+          "#63666c",
+          "#868990",
+          "#aaaeb4",
+          "#ced1d8",
+          "#ebeff6"
+        ]
+      },
+      "rule-strong-dark": {
+        "role": "neutral",
+        "displayName": "Rule Strong, dark scheme",
+        "cssVar": "--rule-strong",
+        "scheme": "dark",
+        "canonical": "#5f6b76",
+        "oklch": "oklch(52.2% 0.023 245.9)",
+        "lightCounterpart": "rule-strong",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#23272b",
+          "#3e464e",
+          "#5c6873",
+          "#7f8b95",
+          "#a7afb7",
+          "#cdd2d6",
+          "#edeff1"
+        ]
+      },
+      "rung-1-dark": {
+        "role": "data",
+        "displayName": "Survey Slate (Watching), dark scheme",
+        "cssVar": "--rung-1",
+        "scheme": "dark",
+        "canonical": "#8d9cab",
+        "oklch": "oklch(68.6% 0.028 248.2)",
+        "lightCounterpart": "rung-1",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#22272c",
+          "#3d4650",
+          "#5a6876",
+          "#7d8b98",
+          "#a6afb9",
+          "#ccd2d7",
+          "#eceff1"
+        ]
+      },
+      "rung-2-dark": {
+        "role": "data",
+        "displayName": "Harbour Teal (Accelerating), dark scheme",
+        "cssVar": "--rung-2",
+        "scheme": "dark",
+        "canonical": "#4cc0b6",
+        "oklch": "oklch(74.0% 0.105 187.3)",
+        "lightCounterpart": "rung-2",
+        "tonalRamp": [
+          "#040d0c",
+          "#032d2a",
+          "#00504b",
+          "#01766f",
+          "#2f9c93",
+          "#7dbcb5",
+          "#b7d9d5",
+          "#e3f2f0"
+        ]
+      },
+      "rung-3-dark": {
+        "role": "data",
+        "displayName": "Burnt Ochre (Hitting the market), dark scheme",
+        "cssVar": "--rung-3",
+        "scheme": "dark",
+        "canonical": "#e5ac3a",
+        "oklch": "oklch(77.8% 0.141 80.7)",
+        "lightCounterpart": "rung-3",
+        "tonalRamp": [
+          "#100a03",
+          "#342301",
+          "#5b3f00",
+          "#855e00",
+          "#b17f07",
+          "#cba86c",
+          "#e2cead",
+          "#f6eddf"
+        ]
+      },
+      "rung-4-dark": {
+        "role": "data",
+        "displayName": "Oxblood (Repricing the work), dark scheme",
+        "cssVar": "--rung-4",
+        "scheme": "dark",
+        "canonical": "#e3928a",
+        "oklch": "oklch(74.0% 0.100 25.9)",
+        "lightCounterpart": "rung-4",
+        "tonalRamp": [
+          "#110908",
+          "#391e1b",
+          "#663430",
+          "#974d47",
+          "#bb736c",
+          "#d39f9a",
+          "#e7c9c5",
+          "#f8ebe9"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The home page tagline only."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Page titles on /watch, /about, /follow, /issues and 404."
+      },
+      "headline-issue": {
+        "displayName": "Issue headline",
+        "purpose": "The issue title, three short clauses, max 22em."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Item headings in issues (1.4rem for the top 3) and entry names on /watch."
+      },
+      "standfirst": {
+        "displayName": "Standfirst",
+        "purpose": "The one-line promise under a page title, in Ink."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Home lede, page intros and issue summaries, in Graphite."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All running text, capped at the 33em measure (about 70 characters)."
+      },
+      "section": {
+        "displayName": "Section",
+        "purpose": "Section heads in issues and About, rung heads on /watch; sits under a rule."
+      },
+      "section-sm": {
+        "displayName": "Section, small",
+        "purpose": "Index-page sections, the ladder head, follow cards, the issue close."
+      },
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "\"Ahead of\" in Ink, \"Main\" in Cobalt."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Primary and secondary buttons, the copy button."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Datelines, meta, counts, source lines, evidence rows, contents, footer. Tabular figures."
+      },
+      "tag": {
+        "displayName": "Tag",
+        "purpose": "ACT NOW, WATCH, CONTEXT pills; capitals come from the source text."
+      },
+      "mono": {
+        "displayName": "Mono",
+        "purpose": "Code, commands, version numbers, env vars, the feed address."
+      }
+    },
+    "shadows": [
+      {
+        "name": "none",
+        "value": "none",
+        "purpose": "The system is flat. No drop shadows are used for elevation anywhere."
+      },
+      {
+        "name": "outline-inset-cobalt",
+        "value": "inset 0 0 0 1px var(--cobalt)",
+        "purpose": "Outline for the WATCH tag pill (an outline, not elevation)."
+      },
+      {
+        "name": "outline-inset-rule-strong",
+        "value": "inset 0 0 0 1px var(--rule-strong)",
+        "purpose": "Outline for the CONTEXT tag, empty confidence dots and empty rung pips."
+      },
+      {
+        "name": "target-spread",
+        "value": "0 0 0 var(--s3) var(--cobalt-wash)",
+        "purpose": "Extends the flat Cobalt Wash highlight 12px around a targeted /watch entry."
+      }
+    ],
+    "motion": [
+      {
+        "name": "state-transition",
+        "value": "160ms ease-out",
+        "purpose": "The only motion: background, border and colour changes on buttons, and the /watch evidence chevron turning. Nothing animates on load."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "xs",
+        "value": "520px",
+        "purpose": "Below: archive, evidence rows and pager stack; experiment panel bleeds 8px."
+      },
+      {
+        "name": "sm",
+        "value": "640px",
+        "purpose": "Issue close goes two-column."
+      },
+      {
+        "name": "md",
+        "value": "720px",
+        "purpose": "Shell padding 16px to 32px; ladder becomes a staircase (stacked, highest first, below); rung index 4 columns (2x2 below)."
+      },
+      {
+        "name": "md-follow",
+        "value": "760px",
+        "purpose": "Follow cards two-up."
+      },
+      {
+        "name": "lg",
+        "value": "900px",
+        "purpose": "Home front (lede beside actions) and latest issue go two-column."
+      },
+      {
+        "name": "xl",
+        "value": "1000px",
+        "purpose": "Issue margin column (13rem rail beside the 33em measure, sticky)."
+      }
+    ],
+    "layout": {
+      "shell": "max-width var(--wide) 1120px; padding 0 16px, 0 32px from 720px",
+      "measure": "33em (about 70 characters of Source Serif 4 at 1.125rem)",
+      "rail": "13rem margin column on issues, 64px column gap",
+      "ladderLift": "64px per step on home (min-heights 120/184/248/312px); 14px per cell on the /watch rung index"
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Ink fill, Paper text; turns Cobalt on hover. The one main action in a view.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Read issue 4</a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; min-height: 44px; padding: 0 24px; border-radius: 6px; border: 1px solid var(--ink, #16202a); background: var(--ink, #16202a); color: var(--paper, #f6f7f5); font: 600 1rem var(--sans, 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif); text-decoration: none; transition: background-color 160ms ease-out, border-color 160ms ease-out, color 160ms ease-out; } .ds-btn-primary:hover { background: var(--cobalt, #2b59d1); border-color: var(--cobalt, #2b59d1); } .ds-btn-primary:focus-visible { outline: 2px solid var(--cobalt, #2b59d1); outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Transparent with a 1px Ink border; border and text turn Cobalt on hover.",
+      "html": "<a class=\"ds-btn-secondary\" href=\"#\">Follow</a>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; min-height: 44px; padding: 0 24px; border-radius: 6px; border: 1px solid var(--ink, #16202a); background: transparent; color: var(--ink, #16202a); font: 600 1rem var(--sans, 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif); text-decoration: none; transition: border-color 160ms ease-out, color 160ms ease-out; } .ds-btn-secondary:hover { border-color: var(--cobalt, #2b59d1); color: var(--cobalt, #2b59d1); } .ds-btn-secondary:focus-visible { outline: 2px solid var(--cobalt, #2b59d1); outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Masthead and Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Wordmark with Cobalt \"Main\", Graphite links with 44px targets, current page in Ink with a 2px underline.",
+      "html": "<header class=\"ds-masthead\"><a class=\"ds-wordmark\" href=\"#\">Ahead of <span>Main</span></a><nav class=\"ds-nav\" aria-label=\"Main\"><a href=\"#\">Issues</a><a href=\"#\" aria-current=\"page\">Disruption Watch</a><a href=\"#\">About</a><a href=\"#\">Follow</a></nav></header>",
+      "css": ".ds-masthead { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0 24px; padding: 12px 0 8px; border-bottom: 1px solid var(--rule, #d8dde1); font-family: var(--sans, 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif); background: var(--paper, #f6f7f5); } .ds-wordmark { font: 800 1.15rem var(--sans, 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif); letter-spacing: -0.02em; color: var(--ink, #16202a); text-decoration: none; padding: 8px 0; } .ds-wordmark span { color: var(--cobalt, #2b59d1); } .ds-nav { display: flex; flex-wrap: wrap; gap: 0 24px; font-size: 0.95rem; } .ds-nav a { display: inline-block; padding: 10px 0; color: var(--graphite, #5a6570); text-decoration: none; border-bottom: 2px solid transparent; } .ds-nav a:hover { color: var(--ink, #16202a); } .ds-nav a[aria-current='page'] { color: var(--ink, #16202a); border-bottom-color: var(--ink, #16202a); } .ds-nav a:focus-visible { outline: 2px solid var(--cobalt, #2b59d1); outline-offset: 3px; border-radius: 2px; } .ds-wordmark:focus-visible { outline: 2px solid var(--cobalt, #2b59d1); outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Tag Pills",
+      "kind": "chip",
+      "refersTo": "tag-act-now",
+      "description": "ACT NOW filled, WATCH outlined in Cobalt, CONTEXT outlined in Rule Strong. Applied from bold Markdown at build time.",
+      "html": "<span class=\"ds-tag ds-tag-act\">ACT NOW</span> <span class=\"ds-tag ds-tag-watch\">WATCH</span> <span class=\"ds-tag ds-tag-context\">CONTEXT</span>",
+      "css": ".ds-tag { display: inline-block; font: 700 0.74rem/1 var(--sans, 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif); letter-spacing: 0.02em; padding: 5px 8px; border-radius: 4px; margin-right: 6px; } .ds-tag-act { background: var(--cobalt, #2b59d1); color: var(--paper, #f6f7f5); } .ds-tag-watch { color: var(--cobalt, #2b59d1); box-shadow: inset 0 0 0 1px var(--cobalt, #2b59d1); } .ds-tag-context { color: var(--graphite, #5a6570); box-shadow: inset 0 0 0 1px var(--rule-strong, #7b858e); }"
+    },
+    {
+      "name": "Tag Line with Confidence Mark",
+      "kind": "custom",
+      "refersTo": "tag-watch",
+      "description": "An item's tag line: the pill, then three dots filled to the level and the level in words.",
+      "html": "<p class=\"ds-tagline\"><span class=\"ds-tl-tag\">WATCH</span><span class=\"ds-confidence\"><span class=\"ds-dots\" aria-hidden=\"true\"><i class=\"on\"></i><i class=\"on\"></i><i></i></span>Medium confidence</span>, unverified.</p>",
+      "css": ".ds-tagline { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; margin: 0; font: 0.85rem var(--sans, 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif); color: var(--graphite, #5a6570); } .ds-tl-tag { display: inline-block; font: 700 0.74rem/1 var(--sans, 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif); letter-spacing: 0.02em; padding: 5px 8px; border-radius: 4px; color: var(--cobalt, #2b59d1); box-shadow: inset 0 0 0 1px var(--cobalt, #2b59d1); } .ds-confidence { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; color: var(--ink, #16202a); } .ds-dots { display: inline-flex; gap: 3px; } .ds-dots i { width: 7px; height: 7px; border-radius: 50%; box-shadow: inset 0 0 0 1px var(--rule-strong, #7b858e); } .ds-dots i.on { background: var(--ink, #16202a); box-shadow: none; }"
+    },
+    {
+      "name": "Disruption Watch Ladder",
+      "kind": "custom",
+      "refersTo": "ladder-step",
+      "description": "The signature object: four Board Wash steps rising left to right, each capped in its rung colour.",
+      "html": "<div class=\"ds-ladder\"><div class=\"ds-step\"><h3>Watching <span>2</span></h3><ul><li><a href=\"#\">Observable agent actions</a> <b>New</b></li></ul></div><div class=\"ds-step\"><h3>Accelerating <span>2</span></h3><ul><li><a href=\"#\">Design generation</a></li></ul></div><div class=\"ds-step\"><h3>Hitting the market <span>4</span></h3><ul><li><a href=\"#\">AI-native infrastructure</a></li></ul></div><div class=\"ds-step\"><h3>Repricing the work <span>5</span></h3><ul><li><a href=\"#\">Ultra-cheap open-weight models</a></li></ul></div></div>",
+      "css": ".ds-ladder { display: grid; grid-template-columns: repeat(4, 1fr); align-items: stretch; gap: 0 3px; font-family: var(--sans, 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif); } .ds-step { --lift: 0px; display: flex; flex-direction: column; margin-top: calc(144px - var(--lift)); padding: 12px 16px 16px; border-top: 4px solid var(--rung); background: var(--wash, #eceff0); } .ds-step:nth-child(1) { --rung: var(--rung-1, #56636f); } .ds-step:nth-child(2) { --rung: var(--rung-2, #15665f); --lift: 48px; } .ds-step:nth-child(3) { --rung: var(--rung-3, #8a5a00); --lift: 96px; } .ds-step:nth-child(4) { --rung: var(--rung-4, #8e2b2b); --lift: 144px; } .ds-step h3 { display: flex; justify-content: space-between; gap: 8px; margin: 0 0 12px; font-size: 0.95rem; font-weight: 700; color: var(--rung); } .ds-step h3 span { font-weight: 600; font-variant-numeric: tabular-nums; } .ds-step ul { list-style: none; margin: 0; padding: 0; } .ds-step li { font-size: 0.9rem; line-height: 1.35; } .ds-step a { color: var(--ink, #16202a); text-decoration-color: color-mix(in srgb, var(--ink, #16202a) 28%, transparent); text-underline-offset: 0.18em; } .ds-step a:hover { text-decoration-color: currentColor; } .ds-step a:focus-visible { outline: 2px solid var(--cobalt, #2b59d1); outline-offset: 3px; border-radius: 2px; } .ds-step b { font-size: 0.72rem; font-weight: 700; color: var(--cobalt, #2b59d1); margin-left: 4px; }"
+    },
+    {
+      "name": "Rung Head with Pips",
+      "kind": "custom",
+      "refersTo": "ladder-step-repricing-the-work",
+      "description": "Opens each rung section on /watch: 4px rung cap, pips filled to the rung, name in rung colour, count and meaning in Graphite.",
+      "html": "<header class=\"ds-rung-head\"><h2><span class=\"ds-pips\" aria-hidden=\"true\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i></span>Repricing the work <span class=\"ds-count\">5 shifts</span></h2><p>Changing what clients expect to pay for, or what a team needs to staff.</p></header><header class=\"ds-rung-head ds-r2\"><h2><span class=\"ds-pips\" aria-hidden=\"true\"><i class=\"on\"></i><i class=\"on\"></i><i></i><i></i></span>Accelerating <span class=\"ds-count\">2 shifts</span></h2><p>Multiple independent signals, and the pace is picking up.</p></header>",
+      "css": ".ds-rung-head { --rung: var(--rung-4, #8e2b2b); padding-top: 12px; border-top: 4px solid var(--rung); margin-bottom: 24px; } .ds-rung-head.ds-r2 { --rung: var(--rung-2, #15665f); } .ds-rung-head h2 { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; font: 700 1.4rem var(--sans, 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif); letter-spacing: -0.015em; color: var(--rung); margin: 0 0 4px; } .ds-count { font-size: 0.95rem; font-weight: 600; color: var(--graphite, #5a6570); } .ds-rung-head p { margin: 0; font: 0.95rem var(--sans, 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif); color: var(--graphite, #5a6570); } .ds-pips { display: inline-flex; gap: 3px; } .ds-pips i { width: 16px; height: 6px; border-radius: 1px; box-shadow: inset 0 0 0 1px var(--rule-strong, #7b858e); } .ds-pips i.on { background: var(--rung); box-shadow: none; }"
+    },
+    {
+      "name": "Experiment Panel",
+      "kind": "card",
+      "refersTo": "experiment-panel",
+      "description": "The only filled block in an issue: this week's 30-90 minute build, on Cobalt Wash.",
+      "html": "<section class=\"ds-experiment\"><h2>This week's experiment</h2><p class=\"ds-exp-lead\">Log every blocked tool call for a day and read the reasons.</p><p><strong>Done when</strong> you can name the three rules that fired most.</p></section>",
+      "css": ".ds-experiment { padding: 8px 32px 24px; background: var(--cobalt-wash, #e3eaf9); border-radius: 8px; max-width: 33em; font: 1.125rem/1.62 var(--serif, 'Source Serif 4', 'Iowan Old Style', Georgia, serif); color: var(--ink, #16202a); } .ds-experiment h2 { font: 700 1.4rem/1.2 var(--sans, 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif); letter-spacing: -0.015em; color: var(--cobalt, #2b59d1); margin: 16px 0 12px; } .ds-exp-lead { font-size: 1.2rem; margin: 0 0 16px; } .ds-experiment p:last-child { margin-bottom: 0; }"
+    },
+    {
+      "name": "Feed Address Field",
+      "kind": "input",
+      "refersTo": "feed-field",
+      "description": "The RSS address in monospace on Board Wash, selectable in one click, with an Ink copy button.",
+      "html": "<div class=\"ds-feed\"><code>https://aheadofmain.com/rss.xml</code><button type=\"button\">Copy address</button></div>",
+      "css": ".ds-feed { display: flex; flex-wrap: wrap; align-items: stretch; gap: 8px; } .ds-feed code { display: flex; align-items: center; flex: 1 1 18rem; min-height: 44px; padding: 0 12px; font: 0.95rem var(--mono, ui-monospace, 'SF Mono', Menlo, monospace); background: var(--wash, #eceff0); color: var(--ink, #16202a); border-radius: 6px; user-select: all; } .ds-feed button { min-height: 44px; padding: 0 24px; border: 1px solid var(--ink, #16202a); border-radius: 6px; background: var(--ink, #16202a); color: var(--paper, #f6f7f5); font: 600 1rem var(--sans, 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif); cursor: pointer; transition: background-color 160ms ease-out, border-color 160ms ease-out; } .ds-feed button:hover { background: var(--cobalt, #2b59d1); border-color: var(--cobalt, #2b59d1); } .ds-feed button:focus-visible { outline: 2px solid var(--cobalt, #2b59d1); outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Section Head",
+      "kind": "custom",
+      "refersTo": "section",
+      "description": "A grotesk section heading under a 2px Ink rule; the device that opens every section on the site.",
+      "html": "<div class=\"ds-section\"><h2>Latest issue</h2><p class=\"ds-meta\">Issue 4, 22 October 2026. Covers 19-22 October 2026.</p></div>",
+      "css": ".ds-section h2 { font: 700 1.15rem var(--sans, 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif); letter-spacing: -0.01em; margin: 0 0 24px; padding-top: 12px; border-top: 2px solid var(--ink, #16202a); color: var(--ink, #16202a); } .ds-meta { font: 0.9rem var(--sans, 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif); font-variant-numeric: tabular-nums; color: var(--graphite, #5a6570); margin: 0; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Forecaster's Briefing Sheet",
+    "overview": "Ahead of Main looks like the morning sheet in a forecasting office: one ink on pale, cool paper, a dated header, short blocks of judgement, a source line at the foot of each, and a small mark saying how sure to be. One blue picks out the threads to follow. A single chart, the Disruption Watch ladder, is what everyone looks at first, and it is the site's signature object: a rising four-step staircase that opens the home page and is echoed on /watch, in the favicon and on the social card.\n\nThe system is flat, typographic and quiet. Depth comes from a pale wash and hairline rules, never from shadows. The type is split by meaning: the serif (Source Serif 4) carries the editor's judgement, the grotesk (Schibsted Grotesk) carries structure, and the system monospace carries anything you'd paste into a terminal. Density is that of a reading page, not an app: a single 70-character column for prose, generous section breaks (64px), and small, tabular sans metadata around it. Colour beyond Ink, Paper and Cobalt is reserved for data: the four rung colours encode the ladder and nothing else.\n\nThe current layouts were re-composed around the board. The home page's first viewport is the tagline, a lede, two actions and the ladder. Issue pages put a margin column (dateline and an \"In this issue\" contents list) beside the reading column. /watch groups entries by rung, highest first, with each rung's meaning stated inline and the latest evidence and its source visible without a click. The rung colours were re-tuned to pass WCAG AA, and the top rung moved from alarm red to oxblood to keep the brand's \"calm, not doom\". Nothing animates on load: the brief says nothing animates for attention, so state changes are the only motion.\n\nRejected outright: purple-to-blue gradients, neon \"terminal\" greens, glow, decorative imagery (stock photos, glowing brains, AI-generated heroes), coloured side-stripe callouts, and kickers or eyebrows above headlines.",
+    "keyCharacteristics": [
+      "One ink on cool paper; Cobalt only for the way onward.",
+      "The ladder is the front page and the only chart; its four colours are data, not decoration.",
+      "Serif for judgement, grotesk for structure, monospace for anything pasteable.",
+      "Flat: tone (wash) and rules (1px, 2px, 4px) do all the separating.",
+      "Light and dark schemes follow the reader's system setting; there is no toggle.",
+      "No load or entrance animation; motion is limited to 160ms colour and chevron transitions on interaction."
+    ],
+    "rules": [
+      {
+        "name": "The One Thread Rule",
+        "body": "Cobalt means \"go here\" or \"do this\": links, the ACT NOW tag, focus, the experiment. It never fills anything larger than the experiment panel and never decorates.",
+        "section": "colors"
+      },
+      {
+        "name": "The Data-Not-Identity Rule",
+        "body": "Rung colours appear only where a rung is being shown: the ladder's top caps and labels, the /watch rung index, rung section heads and their pips. A rung colour always sits with the rung's name in text; colour is never the only signal.",
+        "section": "colors"
+      },
+      {
+        "name": "The Calm Ceiling Rule",
+        "body": "Nothing on the site may read as an alert. The highest rung is oxblood, not red; there is no error red, no warning yellow and no glow anywhere in the palette.",
+        "section": "colors"
+      },
+      {
+        "name": "The Semantic Split Rule",
+        "body": "Serif for what the reader weighs (headlines, item titles, prose, the pager's issue titles), grotesk for how the page is organised (nav, section heads, dates, counts, tags, buttons), monospace for anything pasteable. Pick the face by role, never by looks.",
+        "section": "typography"
+      },
+      {
+        "name": "The Measure Rule",
+        "body": "Running text never exceeds the measure (33em, about 70 characters of Source Serif 4 at body size).",
+        "section": "typography"
+      },
+      {
+        "name": "The Quiet Caps Rule",
+        "body": "The three tags are the only text set in capitals, and they are typed that way in the Markdown. No uppercase labels, no letter-spaced small caps elsewhere.",
+        "section": "typography"
+      },
+      {
+        "name": "The Board First Rule",
+        "body": "On the home page, the ladder is in the first viewport at desktop widths. Nothing is placed between the actions and the board.",
+        "section": "layout"
+      },
+      {
+        "name": "The Highest First Rule",
+        "body": "Wherever rungs stack vertically (the /watch sections, the narrow-screen ladder), the most advanced rung leads.",
+        "section": "layout"
+      },
+      {
+        "name": "The Margin Column Rule",
+        "body": "On an issue, orientation (date, window, contents) lives in the margin; the reading column carries only the issue.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Sheet Rule",
+        "body": "Nothing floats. If something needs to stand apart, give it Board Wash or a rule, never a shadow or glow.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Three Rules Rule",
+        "body": "A 1px Rule separates items in a list; a 2px Ink rule opens a section; a 4px rung-coloured rule caps a rung. Each weight has one meaning.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do open the home page with the tagline, the lede, two actions and the ladder, in that order, with the ladder inside the first desktop viewport.",
+      "Do use the four rung colours only to show a rung, always next to the rung's name, and list rungs highest first wherever they stack.",
+      "Do keep running text inside the 33em measure, and put issue orientation (dateline, contents) in the 13rem margin column.",
+      "Do separate with rules: 1px Rule between items, 2px Ink above a section, 4px rung colour above a rung.",
+      "Do set ACT NOW, WATCH and CONTEXT as filled, outlined and quiet pills, and pair every confidence mark's dots with the level in words.",
+      "Do give every interactive target at least 44px of height and the 2px Cobalt focus outline.",
+      "Do check every new colour pairing for 4.5:1 text contrast (3:1 for marks) in both light and dark.",
+      "Do keep motion to transform, and wrap any animation in `prefers-reduced-motion: no-preference`."
+    ],
+    "donts": [
+      "Don't use gradients, glow, neon greens or purple-to-blue anything; surfaces are flat Paper, Board Wash or Cobalt Wash.",
+      "Don't use drop shadows to lift a surface.",
+      "Don't add coloured side-stripe (border-left) callouts; emphasis comes from the experiment panel's fill or a top rule.",
+      "Don't put kickers or eyebrows above headlines, or set any label other than the three tags in capitals.",
+      "Don't use decorative imagery: no stock photos, glowing brains, robot hands, git-branch ornaments or AI-generated images. Social cards are rendered from HTML in the brand fonts.",
+      "Don't use red for the top rung or anywhere else; the ceiling is oxblood.",
+      "Don't use Cobalt as a decorative or background colour beyond Cobalt Wash in the experiment panel, selection and targeted entries.",
+      "Don't set prose in the grotesk or headlines in the monospace; choose the face by its role.",
+      "Don't add load, entrance or scroll animation; interface state changes stay at 160ms transitions."
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE, url, repoUrl } from '../config';
+
+const feed = new URL(url('/rss.xml'), Astro.site).href;
+---
+
+<Base title="Follow" description="Get each issue of Ahead of Main as it's published: RSS, dev.to, or the GitHub repository.">
+  <header class="page-head">
+    <h1>Follow Ahead of Main</h1>
+    <p>A new issue twice a week. Use whichever you already read in.</p>
+  </header>
+
+  <div class="follow">
+    <section class="feed" aria-labelledby="rss-title">
+      <h2 id="rss-title">RSS</h2>
+      <p class="prose">
+        Each issue arrives in full, not just a summary. Paste this address into any feed reader, such as Feedly,
+        NetNewsWire or Inoreader.
+      </p>
+      <div class="feed-url">
+        <code id="feed-url">{feed}</code>
+        <button type="button" data-copy={feed} hidden>Copy address</button>
+      </div>
+      <p class="feed-status" role="status" aria-live="polite"></p>
+    </section>
+
+    {
+      SITE.linkedinNewsletter && (
+        <section aria-labelledby="linkedin-title">
+          <h2 id="linkedin-title">LinkedIn</h2>
+          <p>Subscribe to the newsletter edition and get each issue in your LinkedIn inbox.</p>
+          <a class="button" href={SITE.linkedinNewsletter}>Subscribe on LinkedIn</a>
+        </section>
+      )
+    }
+
+    {
+      SITE.devto && (
+        <section aria-labelledby="devto-title">
+          <h2 id="devto-title">dev.to</h2>
+          <p>Every issue is cross-posted to dev.to. Follow {SITE.author} there and it shows up in your feed.</p>
+          <a class="button" href={SITE.devto}>Follow on dev.to</a>
+        </section>
+      )
+    }
+
+    {
+      repoUrl && (
+        <section aria-labelledby="github-title">
+          <h2 id="github-title">GitHub</h2>
+          <p>
+            Every issue and every Disruption Watch rating lives in a public repository. Watch it to follow the board's
+            history, or open an issue to challenge a rating.
+          </p>
+          <a class="button" href={repoUrl}>Open the repository</a>
+        </section>
+      )
+    }
+  </div>
+</Base>
+
+<script>
+  const button = document.querySelector<HTMLButtonElement>('[data-copy]');
+  const status = document.querySelector('.feed-status');
+  let reset: ReturnType<typeof setTimeout> | undefined;
+  if (button && navigator.clipboard) {
+    button.hidden = false;
+    button.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(button.dataset.copy ?? '');
+        button.textContent = 'Copied';
+        if (status) status.textContent = 'Copied. Paste it into your reader to subscribe.';
+        clearTimeout(reset);
+        reset = setTimeout(() => (button.textContent = 'Copy address'), 1600);
+      } catch {
+        if (status) status.textContent = 'Copying was blocked. Select the address and copy it instead.';
+      }
+    });
+  }
+</script>

@@ -1,0 +1,246 @@
+{
+  "updated": "2026-10-29",
+  "entries": [
+    {
+      "id": "agent-observability",
+      "name": "Agent-native observability: OpenTelemetry GenAI semantic conventions, eval harnesses and trace-based regression testing",
+      "status": "Repricing the work",
+      "note": "Every major harness now emits OpenTelemetry spans for tool calls, and two observability vendors price per agent step rather than per seat. Treat traces as the regression suite: replay last week's failing runs against every harness upgrade before you roll it out, and keep the replay set small enough to run in under ten minutes on a laptop, or nobody will run it. Every major harness now emits OpenTelemetry spans for tool calls, and two observability vendors price per agent step rather than per seat. Treat traces as the regression suite: replay last week's failing runs against every harness upgrade before you roll it out, and keep the replay set small enough to run in under ten minutes on a laptop, or nobody will run it. ",
+      "history": [
+        {
+          "date": "2026-08-03",
+          "status": "Repricing the work",
+          "note": "Held: pricing page snapshot 1.",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+        },
+        {
+          "date": "2026-08-10",
+          "status": "Repricing the work",
+          "note": "Held: pricing page snapshot 2.",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+        },
+        {
+          "date": "2026-08-17",
+          "status": "Repricing the work",
+          "note": "Held: pricing page snapshot 3.",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+        },
+        {
+          "date": "2026-08-24",
+          "status": "Repricing the work",
+          "note": "Held: pricing page snapshot 4.",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+        },
+        {
+          "date": "2026-08-31",
+          "status": "Repricing the work",
+          "note": "Held: pricing page snapshot 5.",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+        },
+        {
+          "date": "2026-09-07",
+          "status": "Repricing the work",
+          "note": "Held: pricing page snapshot 6.",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+        },
+        {
+          "date": "2026-09-14",
+          "status": "Repricing the work",
+          "note": "Held: pricing page snapshot 7.",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+        },
+        {
+          "date": "2026-09-21",
+          "status": "Repricing the work",
+          "note": "Held: pricing page snapshot 8.",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+        },
+        {
+          "date": "2026-09-28",
+          "status": "Repricing the work",
+          "note": "Held: pricing page snapshot 9.",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+        },
+        {
+          "date": "2026-10-05",
+          "status": "Repricing the work",
+          "note": "Held: pricing page snapshot 10.",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+        },
+        {
+          "date": "2026-10-12",
+          "status": "Repricing the work",
+          "note": "Held: pricing page snapshot 11.",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+        },
+        {
+          "date": "2026-10-19",
+          "status": "Repricing the work",
+          "note": "Held: pricing page snapshot 12.",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+        },
+        {
+          "date": "2026-10-29",
+          "status": "Repricing the work",
+          "note": "Grafana and Honeycomb both ship agent-step pricing; Datadog's GenAI conventions reach stable.",
+          "source": "https://developer.northwind-industries-holdings.example.com/blog/2026/10/agent-step-pricing-and-the-end-of-per-seat-observability"
+        }
+      ]
+    },
+    {
+      "id": "moved-up",
+      "name": "Realtime voice agents",
+      "status": "Repricing the work",
+      "note": "Moved up this update.",
+      "history": [
+        {
+          "date": "2026-10-12",
+          "status": "Hitting the market",
+          "note": "Two vendors ship."
+        },
+        {
+          "date": "2026-10-29",
+          "status": "Repricing the work",
+          "note": "A call-centre platform reprices per resolved call."
+        }
+      ]
+    },
+    {
+      "id": "r3",
+      "name": "OpenAI's gpt-realtime-mini-2026-09-15 pricing",
+      "status": "Repricing the work",
+      "note": "Short.",
+      "history": [
+        {
+          "date": "2026-10-29",
+          "status": "Repricing the work",
+          "note": "Held."
+        }
+      ]
+    },
+    {
+      "id": "r4",
+      "name": "Jo",
+      "status": "Repricing the work",
+      "note": "A one-letter-ish name.",
+      "history": []
+    },
+    {
+      "id": "r5",
+      "name": "Sandboxes",
+      "status": "Repricing the work",
+      "note": "n",
+      "history": [
+        {
+          "date": "2026-10-01",
+          "status": "Repricing the work",
+          "note": "Logged."
+        }
+      ]
+    },
+    {
+      "id": "r6",
+      "name": "Evaluation-driven development replacing ad-hoc prompt tweaking in production teams",
+      "status": "Repricing the work",
+      "note": "Mid-length note about evals.",
+      "history": [
+        {
+          "date": "2026-10-12",
+          "status": "Repricing the work",
+          "note": "Logged."
+        }
+      ]
+    },
+    {
+      "id": "r7",
+      "name": "Context caching",
+      "status": "Repricing the work",
+      "note": "Cache.",
+      "history": [
+        {
+          "date": "2026-10-12",
+          "status": "Repricing the work",
+          "note": "Logged."
+        }
+      ]
+    },
+    {
+      "id": "r8",
+      "name": "Spec-driven development with agent-readable acceptance criteria",
+      "status": "Repricing the work",
+      "note": "Specs.",
+      "history": [
+        {
+          "date": "2026-10-12",
+          "status": "Repricing the work",
+          "note": "Logged."
+        }
+      ]
+    },
+    {
+      "id": "r9",
+      "name": "Per-token pricing collapse",
+      "status": "Repricing the work",
+      "note": "Cheap.",
+      "history": [
+        {
+          "date": "2026-10-12",
+          "status": "Repricing the work",
+          "note": "Logged."
+        }
+      ]
+    },
+    {
+      "id": "h1",
+      "name": "Background agents in CI",
+      "status": "Hitting the market",
+      "note": "Only entry on its rung.",
+      "history": [
+        {
+          "date": "2026-10-12",
+          "status": "Hitting the market",
+          "note": "Logged."
+        }
+      ]
+    },
+    {
+      "id": "w1",
+      "name": "Agent-to-agent payment rails and machine-readable pricing manifests for autonomous procurement",
+      "status": "Watching",
+      "note": "New and long.",
+      "history": [
+        {
+          "date": "2026-10-29",
+          "status": "Watching",
+          "note": "New entry. Two pilots announced."
+        }
+      ]
+    },
+    {
+      "id": "w2",
+      "name": "Signed tool manifests",
+      "status": "Watching",
+      "note": "New and short.",
+      "history": [
+        {
+          "date": "2026-10-29",
+          "status": "Watching",
+          "note": "New entry."
+        }
+      ]
+    },
+    {
+      "id": "w3",
+      "name": "Local-first agent memory",
+      "status": "Watching",
+      "note": "Older entry.",
+      "history": [
+        {
+          "date": "2026-10-15",
+          "status": "Watching",
+          "note": "Logged."
+        }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { url } from '../../config';
-import { getIssues } from '../../lib/issues';
+import { getIssues, titleHtml } from '../../lib/issues';
 import { formatDate } from '../../lib/watch';
 
 const issues = await getIssues();
@@ -17,9 +17,10 @@ const issues = await getIssues();
       issues.map((i) => (
         <li>
           <time datetime={i.data.date.toISOString()}>{formatDate(i.data.date)}</time>
-          <a href={url(`/issues/${i.id}`)}>
-            {i.data.issue}. {i.data.title}
-          </a>
+          <div>
+            <a href={url(`/issues/${i.id}`)} set:html={`${i.data.issue}. ${titleHtml(i.data.title)}`} />
+            <p class="archive-summary">{i.data.summary}</p>
+          </div>
         </li>
       ))
     }

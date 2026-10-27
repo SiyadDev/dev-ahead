@@ -9,3 +9,6 @@ dist-worst/
 .impeccable/questions/
 .impeccable/fonts/
 .impeccable/live/
+
+# Local-only backups (routine prompt has private details)
+.private/

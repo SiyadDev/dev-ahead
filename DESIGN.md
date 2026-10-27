@@ -30,40 +30,40 @@ colors:
   rung-4-dark: "#e3928a"
 typography:
   display:
-    fontFamily: "Source Serif 4, 'Iowan Old Style', Georgia, serif"
+    fontFamily: "Literata, 'Iowan Old Style', Georgia, serif"
     fontSize: "clamp(2.3rem, 5.4vw, 4rem)"
     fontWeight: 500
     lineHeight: 1.02
     letterSpacing: "-0.025em"
   headline:
-    fontFamily: "Source Serif 4, 'Iowan Old Style', Georgia, serif"
+    fontFamily: "Literata, 'Iowan Old Style', Georgia, serif"
     fontSize: "clamp(2.1rem, 5vw, 3rem)"
     fontWeight: 500
     lineHeight: 1.06
     letterSpacing: "-0.02em"
   headline-issue:
-    fontFamily: "Source Serif 4, 'Iowan Old Style', Georgia, serif"
+    fontFamily: "Literata, 'Iowan Old Style', Georgia, serif"
     fontSize: "clamp(1.9rem, 4.6vw, 2.8rem)"
     fontWeight: 500
     lineHeight: 1.08
     letterSpacing: "-0.02em"
   title:
-    fontFamily: "Source Serif 4, 'Iowan Old Style', Georgia, serif"
+    fontFamily: "Literata, 'Iowan Old Style', Georgia, serif"
     fontSize: "1.3rem"
     fontWeight: 600
     lineHeight: 1.25
   standfirst:
-    fontFamily: "Source Serif 4, 'Iowan Old Style', Georgia, serif"
+    fontFamily: "Literata, 'Iowan Old Style', Georgia, serif"
     fontSize: "1.45rem"
     fontWeight: 400
     lineHeight: 1.3
   lede:
-    fontFamily: "Source Serif 4, 'Iowan Old Style', Georgia, serif"
+    fontFamily: "Literata, 'Iowan Old Style', Georgia, serif"
     fontSize: "1.2rem"
     fontWeight: 400
     lineHeight: 1.55
   body:
-    fontFamily: "Source Serif 4, 'Iowan Old Style', Georgia, serif"
+    fontFamily: "Literata, 'Iowan Old Style', Georgia, serif"
     fontSize: "1.125rem"
     fontWeight: 400
     lineHeight: 1.62
@@ -117,7 +117,7 @@ spacing:
   s7: "48px"
   s8: "64px"
   s9: "96px"
-  measure: "33em"
+  measure: "34em"
   rail: "13rem"
   wide: "1120px"
 components:
@@ -200,7 +200,7 @@ components:
 
 Ahead of Main looks like the morning sheet in a forecasting office: one ink on pale, cool paper, a dated header, short blocks of judgement, a source line at the foot of each, and a small mark saying how sure to be. One blue picks out the threads to follow. A single chart, the Disruption Watch ladder, is what everyone looks at first, and it is the site's signature object: a rising four-step staircase that opens the home page and is echoed on /watch, in the favicon and on the social card.
 
-The system is flat, typographic and quiet. Depth comes from a pale wash and hairline rules, never from shadows. The type is split by meaning: the serif (Source Serif 4) carries the editor's judgement, the grotesk (Schibsted Grotesk) carries structure, and the system monospace carries anything you'd paste into a terminal. Density is that of a reading page, not an app: a single 70-character column for prose, generous section breaks (64px), and small, tabular sans metadata around it. Colour beyond Ink, Paper and Cobalt is reserved for data: the four rung colours encode the ladder and nothing else.
+The system is flat, typographic and quiet. Depth comes from a pale wash and hairline rules, never from shadows. The type is split by meaning: the serif (Literata) carries the editor's judgement, the grotesk (Schibsted Grotesk) carries structure, and the system monospace carries anything you'd paste into a terminal. Density is that of a reading page, not an app: a single 70-character column for prose, generous section breaks (64px), and small, tabular sans metadata around it. Colour beyond Ink, Paper and Cobalt is reserved for data: the four rung colours encode the ladder and nothing else.
 
 The current layouts were re-composed around the board. The home page's first viewport is the tagline, a lede, two actions and the ladder. Issue pages put a margin column (dateline and an "In this issue" contents list) beside the reading column. /watch groups entries by rung, highest first, with each rung's meaning stated inline and the latest evidence and its source visible without a click. The rung colours were re-tuned to pass WCAG AA, and the top rung moved from alarm red to oxblood to keep the brand's "calm, not doom". Nothing animates on load: the brief says nothing animates for attention, so state changes are the only motion.
 
@@ -246,20 +246,20 @@ The four rung colours are a data encoding of the Disruption Watch ladder, not id
 
 ## Typography
 
-**Display Font:** Source Serif 4 (with 'Iowan Old Style', Georgia, serif), variable optical size 8–60, weights 400–700, italic 400
+**Display Font:** Literata (with 'Iowan Old Style', Georgia, serif), variable optical size 7–72, weights 400–700, italic 400
 **Structure Font:** Schibsted Grotesk (with ui-sans-serif, system-ui, sans-serif), weights 400, 600, 700, 800
 **Mono Font:** system monospace (ui-monospace, 'SF Mono', Menlo, monospace)
 
 **Character:** A bookish newspaper serif with optical sizing does the talking; a compact Scandinavian grotesk does the signposting. Headlines are serif at a light-medium weight (500) with tight negative tracking, so they read as judgement rather than shouting.
 
 ### Hierarchy
-- **Display** (Source Serif 4 500, clamp(2.3rem, 5.4vw, 4rem), line-height 1.02, -0.025em): the home page tagline only.
-- **Headline** (Source Serif 4 500, clamp(2.1rem, 5vw, 3rem), 1.06, -0.02em): page titles on /watch, /about, /follow, /issues, 404.
-- **Issue headline** (Source Serif 4 500, clamp(1.9rem, 4.6vw, 2.8rem), 1.08, -0.02em, max 22em): the issue title, set as three short clauses.
-- **Title** (Source Serif 4 600, 1.3rem, 1.25): item headings inside issues (the top-3 items step up to 1.4rem), and entry names on /watch. The latest-issue title on home is serif 500 at clamp(1.5rem, 3.2vw, 2rem).
-- **Standfirst** (Source Serif 4 400, 1.45rem, 1.3, Ink): the one-line promise under a page title ("Ratings move on evidence, not on noise.").
-- **Lede** (Source Serif 4 400, 1.2rem, 1.5–1.55, Graphite): the home lede, page intros, the issue summary.
-- **Body** (Source Serif 4 400, 1.125rem, 1.62): all running text, capped at the 33em measure (about 70 characters). Headings use `text-wrap: balance`; paragraphs and list items use `text-wrap: pretty`.
+- **Display** (Literata 500, clamp(2.3rem, 5.4vw, 4rem), line-height 1.02, -0.025em): the home page tagline only.
+- **Headline** (Literata 500, clamp(2.1rem, 5vw, 3rem), 1.06, -0.02em): page titles on /watch, /about, /follow, /issues, 404.
+- **Issue headline** (Literata 500, clamp(1.9rem, 4.6vw, 2.8rem), 1.08, -0.02em, max 22em): the issue title, set as three short clauses.
+- **Title** (Literata 600, 1.3rem, 1.25): item headings inside issues (the top-3 items step up to 1.4rem), and entry names on /watch. The latest-issue title on home is serif 500 at clamp(1.5rem, 3.2vw, 2rem).
+- **Standfirst** (Literata 400, 1.45rem, 1.3, Ink): the one-line promise under a page title ("Ratings move on evidence, not on noise.").
+- **Lede** (Literata 400, 1.2rem, 1.5–1.55, Graphite): the home lede, page intros, the issue summary.
+- **Body** (Literata 400, 1.125rem, 1.62): all running text, capped at the 34em measure (about 70 characters). Headings use `text-wrap: balance`; paragraphs and list items use `text-wrap: pretty`.
 - **Section** (Schibsted Grotesk 700, 1.4rem, 1.2, -0.015em): section heads inside issues and About, and rung heads on /watch, each sitting under a rule. Index-page sections, the ladder head, the follow cards and the issue close use the smaller 1.15rem step.
 - **Label** (Schibsted Grotesk 400–700, 0.85–0.95rem, Graphite, tabular figures): datelines, meta lines, counts, source lines, evidence rows, contents list, nav (0.95rem), footer.
 - **Tag** (Schibsted Grotesk 700, 0.74rem, line-height 1, +0.02em): ACT NOW, WATCH, CONTEXT. Capitals come from the text itself, not from `text-transform`.
@@ -268,7 +268,7 @@ The four rung colours are a data encoding of the Disruption Watch ladder, not id
 ### Named Rules
 **The Semantic Split Rule.** Serif for what the reader weighs (headlines, item titles, prose, the pager's issue titles), grotesk for how the page is organised (nav, section heads, dates, counts, tags, buttons), monospace for anything pasteable. Pick the face by role, never by looks.
 
-**The Measure Rule.** Running text never exceeds the measure (33em, about 70 characters of Source Serif 4 at body size).
+**The Measure Rule.** Running text never exceeds the measure (34em, about 70 characters of Literata at body size).
 
 **The Quiet Caps Rule.** The three tags are the only text set in capitals, and they are typed that way in the Markdown. No uppercase labels, no letter-spaced small caps elsewhere.
 
@@ -280,7 +280,7 @@ A single centred shell (max 1120px) with 16px side padding, widening to 32px fro
 
 **The ladder.** Four equal columns with 3px gutters. Every step stretches to the busiest one and starts 48px higher than the rung below (offsets 144, 96, 48 and 0px from the top), so the board always reads as a rising staircase whatever the entry counts. Below 720px it becomes a single stacked column with the highest rung first.
 
-**Issue pages.** From 1000px, a two-column grid: a 13rem margin column and the 33em reading column, 64px apart. The margin column holds the dateline ("Issue 4", the date, the window covered) and the "In this issue" contents list with item counts and a tag tally, and stays sticky as you read. Below 1000px the margin column dissolves and the order becomes dateline, title, contents (as a wrapping inline list), text, close.
+**Issue pages.** From 1000px, a two-column grid: a 13rem margin column and the 34em reading column, 64px apart. The margin column holds the dateline ("Issue 4", the date, the window covered) and the "In this issue" contents list with item counts and a tag tally, and stays sticky as you read. Below 1000px the margin column dissolves and the order becomes dateline, title, contents (as a wrapping inline list), text, close.
 
 **/watch.** Page head, then a four-column rung index (four rung tiles, highest first, each with pips for its level; 2×2 below 900px), then one section per rung, highest first, each capped at 820px wide. Each entry shows its name, "On this rung since", its note at the measure, the latest dated evidence with its source host inline, and earlier evidence behind a disclosure.
 
@@ -359,7 +359,7 @@ Inline code sits on Board Wash with a 3px radius. Code blocks use Shiki's github
 ### Do:
 - **Do** open the home page with the tagline, the lede, two actions and the ladder, in that order, with the ladder inside the first desktop viewport.
 - **Do** use the four rung colours only to show a rung, always next to the rung's name, and list rungs highest first wherever they stack.
-- **Do** keep running text inside the 33em measure, and put issue orientation (dateline, contents) in the 13rem margin column.
+- **Do** keep running text inside the 34em measure, and put issue orientation (dateline, contents) in the 13rem margin column.
 - **Do** separate with rules: 1px Rule between items, 2px Ink above a section, 4px rung colour above a rung.
 - **Do** set ACT NOW, WATCH and CONTEXT as filled, outlined and quiet pills, and pair every confidence mark's dots with the level in words.
 - **Do** give every interactive target at least 44px of height and the 2px Cobalt focus outline.

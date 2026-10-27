@@ -488,7 +488,7 @@
       },
       "body": {
         "displayName": "Body",
-        "purpose": "All running text, capped at the 33em measure (about 70 characters)."
+        "purpose": "All running text, capped at the 34em measure (about 70 characters)."
       },
       "section": {
         "displayName": "Section",
@@ -577,12 +577,12 @@
       {
         "name": "xl",
         "value": "1000px",
-        "purpose": "Issue margin column (13rem rail beside the 33em measure, sticky)."
+        "purpose": "Issue margin column (13rem rail beside the 34em measure, sticky)."
       }
     ],
     "layout": {
       "shell": "max-width var(--wide) 1120px; padding 0 16px, 0 32px from 720px",
-      "measure": "33em (about 70 characters of Source Serif 4 at 1.125rem)",
+      "measure": "34em (about 70 characters of Literata at 1.125rem)",
       "rail": "13rem margin column on issues, 64px column gap",
       "ladderLift": "64px per step on home (min-heights 120/184/248/312px); 14px per cell on the /watch rung index"
     }
@@ -650,7 +650,7 @@
       "refersTo": "experiment-panel",
       "description": "The only filled block in an issue: this week's 30-90 minute build, on Cobalt Wash.",
       "html": "<section class=\"ds-experiment\"><h2>This week's experiment</h2><p class=\"ds-exp-lead\">Log every blocked tool call for a day and read the reasons.</p><p><strong>Done when</strong> you can name the three rules that fired most.</p></section>",
-      "css": ".ds-experiment { padding: 8px 32px 24px; background: var(--cobalt-wash, #e3eaf9); border-radius: 8px; max-width: 33em; font: 1.125rem/1.62 var(--serif, 'Source Serif 4', 'Iowan Old Style', Georgia, serif); color: var(--ink, #16202a); } .ds-experiment h2 { font: 700 1.4rem/1.2 var(--sans, 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif); letter-spacing: -0.015em; color: var(--cobalt, #2b59d1); margin: 16px 0 12px; } .ds-exp-lead { font-size: 1.2rem; margin: 0 0 16px; } .ds-experiment p:last-child { margin-bottom: 0; }"
+      "css": ".ds-experiment { padding: 8px 32px 24px; background: var(--cobalt-wash, #e3eaf9); border-radius: 8px; max-width: 34em; font: 1.125rem/1.62 var(--serif, 'Literata', 'Iowan Old Style', Georgia, serif); color: var(--ink, #16202a); } .ds-experiment h2 { font: 700 1.4rem/1.2 var(--sans, 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif); letter-spacing: -0.015em; color: var(--cobalt, #2b59d1); margin: 16px 0 12px; } .ds-exp-lead { font-size: 1.2rem; margin: 0 0 16px; } .ds-experiment p:last-child { margin-bottom: 0; }"
     },
     {
       "name": "Feed Address Field",
@@ -671,7 +671,7 @@
   ],
   "narrative": {
     "northStar": "The Forecaster's Briefing Sheet",
-    "overview": "Ahead of Main looks like the morning sheet in a forecasting office: one ink on pale, cool paper, a dated header, short blocks of judgement, a source line at the foot of each, and a small mark saying how sure to be. One blue picks out the threads to follow. A single chart, the Disruption Watch ladder, is what everyone looks at first, and it is the site's signature object: a rising four-step staircase that opens the home page and is echoed on /watch, in the favicon and on the social card.\n\nThe system is flat, typographic and quiet. Depth comes from a pale wash and hairline rules, never from shadows. The type is split by meaning: the serif (Source Serif 4) carries the editor's judgement, the grotesk (Schibsted Grotesk) carries structure, and the system monospace carries anything you'd paste into a terminal. Density is that of a reading page, not an app: a single 70-character column for prose, generous section breaks (64px), and small, tabular sans metadata around it. Colour beyond Ink, Paper and Cobalt is reserved for data: the four rung colours encode the ladder and nothing else.\n\nThe current layouts were re-composed around the board. The home page's first viewport is the tagline, a lede, two actions and the ladder. Issue pages put a margin column (dateline and an \"In this issue\" contents list) beside the reading column. /watch groups entries by rung, highest first, with each rung's meaning stated inline and the latest evidence and its source visible without a click. The rung colours were re-tuned to pass WCAG AA, and the top rung moved from alarm red to oxblood to keep the brand's \"calm, not doom\". Nothing animates on load: the brief says nothing animates for attention, so state changes are the only motion.\n\nRejected outright: purple-to-blue gradients, neon \"terminal\" greens, glow, decorative imagery (stock photos, glowing brains, AI-generated heroes), coloured side-stripe callouts, and kickers or eyebrows above headlines.",
+    "overview": "Ahead of Main looks like the morning sheet in a forecasting office: one ink on pale, cool paper, a dated header, short blocks of judgement, a source line at the foot of each, and a small mark saying how sure to be. One blue picks out the threads to follow. A single chart, the Disruption Watch ladder, is what everyone looks at first, and it is the site's signature object: a rising four-step staircase that opens the home page and is echoed on /watch, in the favicon and on the social card.\n\nThe system is flat, typographic and quiet. Depth comes from a pale wash and hairline rules, never from shadows. The type is split by meaning: the serif (Literata) carries the editor's judgement, the grotesk (Schibsted Grotesk) carries structure, and the system monospace carries anything you'd paste into a terminal. Density is that of a reading page, not an app: a single 70-character column for prose, generous section breaks (64px), and small, tabular sans metadata around it. Colour beyond Ink, Paper and Cobalt is reserved for data: the four rung colours encode the ladder and nothing else.\n\nThe current layouts were re-composed around the board. The home page's first viewport is the tagline, a lede, two actions and the ladder. Issue pages put a margin column (dateline and an \"In this issue\" contents list) beside the reading column. /watch groups entries by rung, highest first, with each rung's meaning stated inline and the latest evidence and its source visible without a click. The rung colours were re-tuned to pass WCAG AA, and the top rung moved from alarm red to oxblood to keep the brand's \"calm, not doom\". Nothing animates on load: the brief says nothing animates for attention, so state changes are the only motion.\n\nRejected outright: purple-to-blue gradients, neon \"terminal\" greens, glow, decorative imagery (stock photos, glowing brains, AI-generated heroes), coloured side-stripe callouts, and kickers or eyebrows above headlines.",
     "keyCharacteristics": [
       "One ink on cool paper; Cobalt only for the way onward.",
       "The ladder is the front page and the only chart; its four colours are data, not decoration.",
@@ -703,7 +703,7 @@
       },
       {
         "name": "The Measure Rule",
-        "body": "Running text never exceeds the measure (33em, about 70 characters of Source Serif 4 at body size).",
+        "body": "Running text never exceeds the measure (34em, about 70 characters of Literata at body size).",
         "section": "typography"
       },
       {
@@ -740,7 +740,7 @@
     "dos": [
       "Do open the home page with the tagline, the lede, two actions and the ladder, in that order, with the ladder inside the first desktop viewport.",
       "Do use the four rung colours only to show a rung, always next to the rung's name, and list rungs highest first wherever they stack.",
-      "Do keep running text inside the 33em measure, and put issue orientation (dateline, contents) in the 13rem margin column.",
+      "Do keep running text inside the 34em measure, and put issue orientation (dateline, contents) in the 13rem margin column.",
       "Do separate with rules: 1px Rule between items, 2px Ink above a section, 4px rung colour above a rung.",
       "Do set ACT NOW, WATCH and CONTEXT as filled, outlined and quiet pills, and pair every confidence mark's dots with the level in words.",
       "Do give every interactive target at least 44px of height and the 2px Cobalt focus outline.",

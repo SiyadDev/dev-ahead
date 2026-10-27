@@ -15,7 +15,7 @@
   --rung-3: #8a5a00;
   --rung-4: #8e2b2b;
 
-  --serif: 'Source Serif 4', 'Iowan Old Style', Georgia, serif;
+  --serif: 'Literata', 'Iowan Old Style', Georgia, serif;
   --sans: 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif;
   --mono: ui-monospace, 'SF Mono', Menlo, monospace;
 
@@ -33,8 +33,8 @@
   --s8: 64px;
   --s9: 96px;
 
-  /* About 70 characters of Source Serif 4 at body size. */
-  --measure: 33em;
+  /* About 70 characters of Literata at body size. */
+  --measure: 34em;
   --wide: 1120px;
   --rail: 13rem;
   color-scheme: light;

@@ -95,6 +95,7 @@ const SECTIONS = {
   'research frontier': 'research',
   'new capabilities to adopt': 'capabilities',
   'disruption watch': 'watch',
+  'architecture & practice shifts': 'practice',
   'practice shifts': 'practice',
   "this week's experiment": 'experiment',
 };

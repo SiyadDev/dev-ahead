@@ -16,7 +16,7 @@ The private brief above stays exactly as it is. Now produce a separate public ed
    - Use the highest existing `issue` number plus one.
 4. Update `src/data/watch.json` from today's Disruption Watch, as the guide describes.
 5. Run `npm ci`, then `npm run check`, then `npm run build`. Fix every failure before going on.
-6. Commit with the message `Issue N: <title>`, push the branch, and open a pull request titled `DEV Ahead #N: <title>`. The pull request description must contain:
+6. Commit with the message `Issue N: <title>`, push the branch, and open a pull request titled `Ahead of Main #N: <title>`. The pull request description must contain:
    - **Summary:** two sentences.
    - **Needs your check:** every claim you could not verify at a primary source, as a list, so the author knows exactly what to fact-check.
    - **Watch changes:** which entries moved or were added, or "none".

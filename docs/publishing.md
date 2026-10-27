@@ -49,3 +49,14 @@ The domain is registered on Cloudflare.
 3. In the repository go to Settings, then Pages, then Custom domain, enter `aheadofmain.com` and save. Once the DNS check passes and the certificate is issued, tick **Enforce HTTPS**.
 4. Re-run the "Deploy site" workflow. The workflow reads the live URL from Pages, so canonical links, the RSS feed and dev.to links switch to the new domain with no code changes. The old github.io address redirects to the domain.
 5. In dev.to's RSS settings, change the feed URL to `https://aheadofmain.com/rss.xml`.
+
+## Analytics: Cloudflare Web Analytics
+
+1. In Cloudflare, go to **Analytics & Logs**, then **Web Analytics**, then **Add a site**, and enter `aheadofmain.com`. Because the DNS records are "DNS only", choose the JavaScript snippet option rather than automatic setup.
+2. Copy the `token` value from the snippet (the string after `"token":`). It isn't a secret; it ends up in every page.
+3. Put it in `cloudflareAnalyticsToken` in `src/config.ts` and merge. The script is added to production builds only, and the About page then mentions it.
+4. Visits show up in Cloudflare under Web Analytics within a few minutes of the deploy.
+
+## Countdown to the next issue
+
+The home page and the end of every issue say when the next issue is due ("Next issue Thursday, in about 1 day, 21 hours"). It counts down to the routine's run time, set in `SCHEDULE` in `src/config.ts`. If you change the routine's schedule, change `SCHEDULE` to match. When a run has happened but its issue isn't merged yet, the line says the issue is being edited instead.

@@ -393,6 +393,27 @@ pre code {
   }
 }
 
+/* When the next issue is due */
+.next-issue {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  color: var(--graphite);
+}
+
+.next-issue time {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.front .next-issue {
+  grid-column: 1 / -1;
+}
+
+.close-follow .next-issue {
+  margin-top: var(--s2);
+}
+
 /* The ladder */
 .ladder-wrap {
   margin: 0 0 var(--s8);

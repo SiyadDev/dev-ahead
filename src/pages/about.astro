@@ -47,6 +47,14 @@ import { SITE, url, repoUrl } from '../config';
       issue before it's published. Where a claim comes from a secondary source or couldn't be verified, the issue
       says so.
     </p>
+    {
+      SITE.cloudflareAnalyticsToken && (
+        <p>
+          The site counts visits with Cloudflare Web Analytics, which sets no cookies and doesn't track you across
+          sites.
+        </p>
+      )
+    }
 
     <h2 id="contribute">Contribute</h2>
     <p>

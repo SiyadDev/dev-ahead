@@ -1,0 +1,81 @@
+---
+// "Next issue Thursday, in about 2 days, 6 hours." Worked out in the reader's
+// browser, so it stays right between deploys. Without JavaScript it falls back
+// to the plain schedule.
+import { SCHEDULE } from '../config';
+
+interface Props {
+  latest: Date; // date of the newest published issue
+  class?: string;
+}
+
+const { latest, class: className } = Astro.props;
+---
+
+<p
+  class:list={['next-issue', className]}
+  data-next-issue
+  data-latest={latest.toISOString().slice(0, 10)}
+  data-weekdays={SCHEDULE.weekdays.join(',')}
+  data-hour={SCHEDULE.hourUtc}
+  data-minute={SCHEDULE.minuteUtc}
+>
+  New issues every {SCHEDULE.label}.
+</p>
+
+<script>
+  const HOUR = 3_600_000;
+  const DAY = 24 * HOUR;
+
+  // Scheduled run times around `now`, in UTC.
+  function slots(now: Date, weekdays: number[], hour: number, minute: number) {
+    let prev: Date | undefined;
+    let next: Date | undefined;
+    for (let d = -7; d <= 7; d++) {
+      const t = new Date(
+        Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + d, hour, minute),
+      );
+      if (!weekdays.includes(t.getUTCDay())) continue;
+      if (t <= now) prev = t;
+      else if (!next) next = t;
+    }
+    return { prev, next };
+  }
+
+  function until(ms: number) {
+    const days = Math.floor(ms / DAY);
+    const hours = Math.floor((ms % DAY) / HOUR);
+    const minutes = Math.max(1, Math.round((ms % HOUR) / 60_000));
+    const unit = (n: number, word: string) => `${n} ${word}${n === 1 ? '' : 's'}`;
+    if (days > 0) return hours > 0 ? `${unit(days, 'day')}, ${unit(hours, 'hour')}` : unit(days, 'day');
+    if (hours > 0) return unit(hours, 'hour');
+    return unit(minutes, 'minute');
+  }
+
+  function update(el: HTMLElement) {
+    const now = new Date();
+    const weekdays = (el.dataset.weekdays ?? '').split(',').map(Number);
+    const { prev, next } = slots(now, weekdays, Number(el.dataset.hour), Number(el.dataset.minute));
+    if (!next) return;
+
+    // A run has happened but its issue isn't on the site yet: it's being edited.
+    const latest = el.dataset.latest ?? '';
+    const prevDay = prev?.toISOString().slice(0, 10) ?? '';
+    if (prev && prevDay > latest && now.getTime() - prev.getTime() < 2 * DAY) {
+      el.textContent = 'The next issue is being edited and should be out soon.';
+      return;
+    }
+
+    const day = next.toLocaleDateString(undefined, { weekday: 'long' });
+    const time = document.createElement('time');
+    time.dateTime = next.toISOString();
+    time.title = next.toLocaleString(undefined, { dateStyle: 'full', timeStyle: 'short' });
+    time.textContent = day;
+    el.replaceChildren('Next issue ', time, `, in about ${until(next.getTime() - now.getTime())}.`);
+  }
+
+  const els = document.querySelectorAll<HTMLElement>('[data-next-issue]');
+  const tick = () => els.forEach(update);
+  tick();
+  if (els.length) setInterval(tick, 60_000);
+</script>

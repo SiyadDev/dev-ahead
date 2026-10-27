@@ -70,7 +70,7 @@ tutorial site. What a neighbouring product can't truthfully copy:
 ## Brand Commitments
 
 `BRAND.md` is binding for name, voice, tagline, claims, core colours (Ink, Paper, Cobalt) and
-typefaces (Source Serif 4, Schibsted Grotesk, system monospace, split semantically). Byline is the
+typefaces (Literata, Schibsted Grotesk, system monospace, split semantically). Byline is the
 handle SiyadDev only. No exclamation marks, no emoji in body copy, never "we".
 
 ## Evidence on Hand

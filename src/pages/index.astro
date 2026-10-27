@@ -2,6 +2,7 @@
 import { render } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import Ladder from '../components/Ladder.astro';
+import NextIssue from '../components/NextIssue.astro';
 import { SITE, url } from '../config';
 import { getIssues, topThree, tagCounts, titleHtml } from '../lib/issues';
 import { formatDate } from '../lib/watch';
@@ -27,6 +28,7 @@ const actNow = latest ? tagCounts(latest.body ?? '')['ACT NOW'] : 0;
         {SITE.linkedinNewsletter ? 'Subscribe on LinkedIn' : 'Follow'}
       </a>
     </div>
+    {latest && <NextIssue latest={latest.data.date} />}
   </section>
 
   <Ladder />

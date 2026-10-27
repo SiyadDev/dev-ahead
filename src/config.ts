@@ -15,6 +15,18 @@ export const SITE = {
   devto: 'https://dev.to/siyaddev',
   // Set automatically in GitHub Actions (owner/repo); override here if needed.
   repo: process.env.GITHUB_REPOSITORY ?? '',
+  // Cloudflare Web Analytics site token (Cloudflare > Analytics & Logs >
+  // Web Analytics > Add a site). It is public: it ends up in every page.
+  cloudflareAnalyticsToken: '',
+};
+
+// When the routine runs, in UTC. Keep in step with its cron (30 3 * * 1,4).
+// The countdown on the site counts down to the next of these.
+export const SCHEDULE = {
+  weekdays: [1, 4], // Monday, Thursday (0 = Sunday)
+  hourUtc: 3,
+  minuteUtc: 30,
+  label: 'Monday and Thursday',
 };
 
 export const RUNGS = [

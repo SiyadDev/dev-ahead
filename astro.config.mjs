@@ -13,7 +13,9 @@ const base = process.env.BASE_PATH || '/';
 export default defineConfig({
   site,
   base,
-  trailingSlash: 'ignore',
+  // GitHub Pages serves each page at its slashed address and redirects the
+  // rest, so every internal link (url() in src/config.ts) ends in a slash.
+  trailingSlash: 'always',
   integrations: [sitemap()],
   markdown: {
     processor: unified({ rehypePlugins: [[rehypeTags, { base }]] }),

@@ -54,7 +54,10 @@ export default function rehypeTags({ base = '/' } = {}) {
       if (node.tagName === 'a') {
         const href = node.properties?.href;
         if (typeof href === 'string' && href.startsWith('/') && !href.startsWith('//')) {
-          node.properties.href = `${prefix}${href}`;
+          // Same rule as url() in src/config.ts: pages get their trailing slash.
+          const [, page, rest] = href.match(/^([^#?]*)(.*)$/);
+          const slashed = page.endsWith('/') || /\.[a-z0-9]+$/i.test(page) ? page : `${page}/`;
+          node.properties.href = `${prefix}${slashed}${rest}`;
         }
       }
 

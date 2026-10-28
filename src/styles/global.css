@@ -39,8 +39,8 @@
   --context-fg: #38507a;
   --context-line: #cdd8ea;
 
-  --serif: 'Literata', 'Iowan Old Style', Georgia, serif;
-  --sans: 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --serif: 'Literata Variable', 'Iowan Old Style', Georgia, serif;
+  --sans: 'Schibsted Grotesk Variable', ui-sans-serif, system-ui, sans-serif;
   --mono: ui-monospace, 'SF Mono', Menlo, monospace;
 
   /* A strong ease-out for anything that moves; colour changes use plain ease. */

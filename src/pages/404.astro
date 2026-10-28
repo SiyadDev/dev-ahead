@@ -1,6 +1,9 @@
 ---
 import Base from '../layouts/Base.astro';
 import { url } from '../config';
+import { getIssues } from '../lib/issues';
+
+const [latest] = await getIssues();
 ---
 
 <Base title="Page not found">
@@ -11,5 +14,12 @@ import { url } from '../config';
         >all issues</a
       >.
     </p>
+    {
+      latest && (
+        <div class="actions recover">
+          <a class="button primary" href={url(`/issues/${latest.id}`)}>Read issue {latest.data.issue}</a>
+        </div>
+      )
+    }
   </header>
 </Base>

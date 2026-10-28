@@ -768,6 +768,10 @@ pre code {
   margin: 0 0 var(--s2);
 }
 
+.page-head .recover {
+  margin-top: var(--s5);
+}
+
 .page-head .standfirst {
   font-size: 1.45rem;
   line-height: 1.3;

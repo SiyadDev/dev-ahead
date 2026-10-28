@@ -46,10 +46,14 @@ export const RUNG_MEANING: Record<Rung, string> = {
 };
 
 // Prefixes a site-relative path with the configured base path.
+// Pages are linked with their trailing slash, the address GitHub Pages serves
+// them at, so a click never costs a redirect. Files (/rss.xml) are left alone.
 export function url(path = '/'): string {
   const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   const clean = path.startsWith('/') ? path : `/${path}`;
-  return `${base}${clean}` || '/';
+  const [, page, rest] = clean.match(/^([^#?]*)(.*)$/)!;
+  const slashed = page.endsWith('/') || /\.[a-z0-9]+$/i.test(page) ? page : `${page}/`;
+  return `${base}${slashed}${rest}`;
 }
 
 export const repoUrl = SITE.repo ? `https://github.com/${SITE.repo}` : '';

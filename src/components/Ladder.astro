@@ -18,13 +18,24 @@ const changes = [
   </div>
   <div class="ladder">
     {
-      RUNGS.map((rung) => {
+      RUNGS.map((rung, i) => {
         const entries = watch.entries.filter((e) => e.status === rung);
+        // Phones stack the steps highest first while the markup runs lowest
+        // first, so each heading says where it sits for anyone hearing it.
         return (
           <div class="step">
             <h3>
+              <span class="pips" aria-hidden="true">
+                {RUNGS.map((_, j) => (
+                  <i class={j <= i ? 'on' : ''} />
+                ))}
+              </span>
               {rung}
-              <span class="count">{entries.length}</span>
+              <span class="visually-hidden">, rung {i + 1} of {RUNGS.length}, </span>
+              <span class="count">
+                {entries.length}
+                <span class="visually-hidden"> {entries.length === 1 ? 'shift' : 'shifts'}</span>
+              </span>
             </h3>
             <p class="step-meaning">{RUNG_MEANING[rung]}</p>
             {entries.length === 0 && <p class="step-empty">Nothing on this rung right now.</p>}
@@ -32,7 +43,11 @@ const changes = [
               {entries.map((e) => (
                 <li>
                   <a href={url(`/watch#${e.id}`)}>{e.name}</a>
-                  {isNew(e) && <span class="new">New</span>}
+                  {isNew(e) && (
+                    <span class="new">
+                      <span class="visually-hidden">, </span>New
+                    </span>
+                  )}
                 </li>
               ))}
             </ul>

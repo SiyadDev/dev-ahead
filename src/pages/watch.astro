@@ -29,7 +29,8 @@ const shifts = (n: number) => `${n} ${n === 1 ? 'shift' : 'shifts'}`;
   <nav aria-label="Rungs">
     <ol class="rung-index">
       {
-        rungs.map(({ rung, n, entries }) => (
+        // Lowest first, like the home ladder: a small staircase rising to the right.
+        [...rungs].reverse().map(({ rung, n, entries }) => (
           <li class={`r${n}`}>
             <a href={`#${rungSlug(rung)}`}>
               <span class="pips" aria-hidden="true">
@@ -38,7 +39,11 @@ const shifts = (n: number) => `${n} ${n === 1 ? 'shift' : 'shifts'}`;
                 ))}
               </span>
               <span class="rung-name">{rung}</span>
-              <span class="count">{entries.length}</span>
+              <span class="visually-hidden">, rung {n} of {RUNGS.length}, </span>
+              <span class="count">
+                {entries.length}
+                <span class="visually-hidden"> {entries.length === 1 ? 'shift' : 'shifts'}</span>
+              </span>
             </a>
           </li>
         ))
@@ -57,6 +62,7 @@ const shifts = (n: number) => `${n} ${n === 1 ? 'shift' : 'shifts'}`;
               ))}
             </span>
             {rung}
+            <span class="visually-hidden">, rung {n} of {RUNGS.length}, </span>
             <span class="count">{shifts(entries.length)}</span>
           </h2>
           <p>{RUNG_MEANING[rung]}</p>
@@ -71,7 +77,11 @@ const shifts = (n: number) => `${n} ${n === 1 ? 'shift' : 'shifts'}`;
               <li id={e.id}>
                 <h3>
                   {e.name}
-                  {isNew(e) && <span class="new">New</span>}
+                  {isNew(e) && (
+                    <span class="new">
+                      <span class="visually-hidden">, </span>New
+                    </span>
+                  )}
                 </h3>
                 {since && (
                   <p class="since">
@@ -90,7 +100,7 @@ const shifts = (n: number) => `${n} ${n === 1 ? 'shift' : 'shifts'}`;
                             {sourceLabel(latest.source)}
                           </a>
                         ) : (
-                          <span class="no-src">Source not logged</span>
+                          <span class="no-src">No source cited</span>
                         )}
                       </span>
                     </div>
@@ -114,7 +124,7 @@ const shifts = (n: number) => `${n} ${n === 1 ? 'shift' : 'shifts'}`;
                                   {sourceLabel(h.source)}
                                 </a>
                               ) : (
-                                <span class="no-src">Source not logged</span>
+                                <span class="no-src">No source cited</span>
                               )}
                             </span>
                           </li>

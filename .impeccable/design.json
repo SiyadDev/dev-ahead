@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-26T09:46:05.497Z",
+  "generatedAt": "2026-10-28T07:08:58.906Z",
   "title": "Design System: Ahead of Main",
   "extensions": {
     "colorMeta": {
@@ -16,11 +16,11 @@
           "#0a0b0d",
           "#23272b",
           "#3e464e",
-          "#5c6874",
-          "#7f8b96",
-          "#a7afb7",
-          "#cdd1d6",
-          "#edeff1"
+          "#5d6773",
+          "#7d8792",
+          "#a1a9b1",
+          "#c6cbd1",
+          "#eceff2"
         ]
       },
       "paper": {
@@ -36,9 +36,9 @@
           "#262626",
           "#454544",
           "#656665",
-          "#898988",
-          "#adaead",
-          "#d1d1d0",
+          "#868685",
+          "#a7a8a7",
+          "#cacaca",
           "#eeeeee"
         ]
       },
@@ -51,13 +51,13 @@
         "oklch": "oklch(50.7% 0.192 264.5)",
         "darkCounterpart": "cobalt-dark",
         "tonalRamp": [
-          "#060b17",
-          "#12234e",
-          "#1e3d8e",
-          "#2c5ad2",
-          "#5282f3",
-          "#88acfa",
-          "#bbd1fe",
+          "#040a1b",
+          "#11234f",
+          "#203f8a",
+          "#315cca",
+          "#5380e9",
+          "#81a6f5",
+          "#b1cbff",
           "#e7effe"
         ]
       },
@@ -72,11 +72,11 @@
         "tonalRamp": [
           "#0a0b0d",
           "#24262b",
-          "#41454e",
-          "#606673",
-          "#838996",
-          "#aaaeb7",
-          "#ced1d6",
+          "#41454d",
+          "#616672",
+          "#818692",
+          "#a3a8b1",
+          "#c8cad1",
           "#edeef1"
         ]
       },
@@ -89,14 +89,14 @@
         "oklch": "oklch(50.1% 0.022 248.3)",
         "darkCounterpart": "graphite-dark",
         "tonalRamp": [
-          "#0a0b0c",
+          "#0a0b0d",
           "#23272b",
-          "#3e464d",
-          "#5c6773",
-          "#808b95",
-          "#a7afb7",
-          "#cdd1d6",
-          "#edeff1"
+          "#3f464d",
+          "#5d6772",
+          "#7d8791",
+          "#a1a9b0",
+          "#c6cbd0",
+          "#eceff1"
         ]
       },
       "wash": {
@@ -112,9 +112,9 @@
           "#262727",
           "#444546",
           "#646667",
-          "#878a8a",
-          "#acaeaf",
-          "#d0d1d1",
+          "#848687",
+          "#a6a8a9",
+          "#c9cbcb",
           "#eeeeef"
         ]
       },
@@ -129,12 +129,12 @@
         "tonalRamp": [
           "#0b0b0c",
           "#252728",
-          "#424548",
-          "#62676a",
-          "#858a8d",
-          "#abaeb1",
-          "#cfd1d2",
-          "#eeeeef"
+          "#434548",
+          "#63676a",
+          "#83878a",
+          "#a5a8aa",
+          "#c9cbcc",
+          "#edeeef"
         ]
       },
       "rule-strong": {
@@ -146,14 +146,14 @@
         "oklch": "oklch(61.1% 0.018 245.2)",
         "darkCounterpart": "rule-strong-dark",
         "tonalRamp": [
-          "#0a0b0c",
+          "#0a0b0d",
           "#23272a",
-          "#3f464c",
-          "#5e6770",
-          "#818a93",
-          "#a8afb5",
-          "#ced1d5",
-          "#edeff0"
+          "#40464b",
+          "#5e676f",
+          "#7f878f",
+          "#a2a9af",
+          "#c7cbcf",
+          "#eceff1"
         ]
       },
       "rung-1": {
@@ -165,14 +165,14 @@
         "oklch": "oklch(49.3% 0.025 246.2)",
         "darkCounterpart": "rung-1-dark",
         "tonalRamp": [
-          "#0a0b0d",
-          "#22272b",
-          "#3d464e",
-          "#5b6874",
-          "#7e8b97",
-          "#a6afb7",
-          "#ccd2d6",
-          "#eceff1"
+          "#090b0d",
+          "#22272c",
+          "#3e464e",
+          "#5c6873",
+          "#7c8893",
+          "#a0a9b1",
+          "#c5cbd1",
+          "#eceff2"
         ]
       },
       "rung-2": {
@@ -184,14 +184,14 @@
         "oklch": "oklch(46.2% 0.075 186.2)",
         "darkCounterpart": "rung-2-dark",
         "tonalRamp": [
-          "#060d0c",
-          "#122b29",
-          "#1c4e49",
-          "#28746d",
-          "#55978f",
-          "#8db8b2",
-          "#bfd7d3",
-          "#e7f1ef"
+          "#050d0c",
+          "#112c29",
+          "#204e49",
+          "#30736c",
+          "#57938c",
+          "#86b2ac",
+          "#b5d2cd",
+          "#e4f2f0"
         ]
       },
       "rung-3": {
@@ -203,14 +203,14 @@
         "oklch": "oklch(50.8% 0.108 73.3)",
         "darkCounterpart": "rung-3-dark",
         "tonalRamp": [
-          "#0f0a05",
-          "#34230a",
-          "#5e3d08",
-          "#8b5b01",
-          "#ae7f3e",
-          "#c8a87e",
-          "#e1ceb6",
-          "#f5ede3"
+          "#110a03",
+          "#342208",
+          "#5c3e0f",
+          "#885c16",
+          "#a87d42",
+          "#c2a177",
+          "#ddc7ab",
+          "#f8eddf"
         ]
       },
       "rung-4": {
@@ -222,19 +222,361 @@
         "oklch": "oklch(44.1% 0.134 24.5)",
         "darkCounterpart": "rung-4-dark",
         "tonalRamp": [
-          "#130807",
-          "#3e1a18",
-          "#702c2a",
-          "#a5403e",
-          "#c96863",
-          "#de9994",
-          "#efc6c2",
-          "#fceae8"
+          "#150706",
+          "#3f1918",
+          "#6e2e2c",
+          "#a14541",
+          "#c26863",
+          "#d9938d",
+          "#edbdb9",
+          "#ffe9e6"
+        ]
+      },
+      "rung-1-wash": {
+        "role": "data",
+        "displayName": "Watching badge wash",
+        "cssVar": "--rung-1-wash",
+        "scheme": "light",
+        "canonical": "#eceff1",
+        "oklch": "oklch(95.0% 0.004 236.5)",
+        "darkCounterpart": "rung-1-wash-dark",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#262727",
+          "#444546",
+          "#646668",
+          "#848688",
+          "#a6a8a9",
+          "#c9cbcb",
+          "#eeeeef"
+        ]
+      },
+      "rung-1-line": {
+        "role": "data",
+        "displayName": "Watching badge line",
+        "cssVar": "--rung-1-line",
+        "scheme": "light",
+        "canonical": "#c9d0d6",
+        "oklch": "oklch(85.4% 0.011 243.7)",
+        "darkCounterpart": "rung-1-line-dark",
+        "tonalRamp": [
+          "#0a0b0c",
+          "#242729",
+          "#424649",
+          "#61676c",
+          "#81878c",
+          "#a4a8ac",
+          "#c8cbcd",
+          "#edeff0"
+        ]
+      },
+      "rung-2-wash": {
+        "role": "data",
+        "displayName": "Accelerating badge wash",
+        "cssVar": "--rung-2-wash",
+        "scheme": "light",
+        "canonical": "#dcefed",
+        "oklch": "oklch(93.8% 0.020 189.2)",
+        "darkCounterpart": "rung-2-wash-dark",
+        "tonalRamp": [
+          "#090c0b",
+          "#222827",
+          "#3d4746",
+          "#5a6a68",
+          "#7b8a88",
+          "#9faaa9",
+          "#c5cccb",
+          "#ecefef"
+        ]
+      },
+      "rung-2-line": {
+        "role": "data",
+        "displayName": "Accelerating badge line",
+        "cssVar": "--rung-2-line",
+        "scheme": "light",
+        "canonical": "#a9d6d1",
+        "oklch": "oklch(84.3% 0.047 187.9)",
+        "darkCounterpart": "rung-2-line-dark",
+        "tonalRamp": [
+          "#070c0c",
+          "#1a2a28",
+          "#314b48",
+          "#486e6b",
+          "#6a8e8b",
+          "#93aeab",
+          "#bdcfcd",
+          "#e8f1ef"
+        ]
+      },
+      "rung-3-wash": {
+        "role": "data",
+        "displayName": "Hitting the market badge wash",
+        "cssVar": "--rung-3-wash",
+        "scheme": "light",
+        "canonical": "#f7ecd4",
+        "oklch": "oklch(94.5% 0.034 86.3)",
+        "darkCounterpart": "rung-3-wash-dark",
+        "tonalRamp": [
+          "#0c0b08",
+          "#2a261e",
+          "#4a4437",
+          "#6e6552",
+          "#8e8573",
+          "#aea799",
+          "#cecac0",
+          "#f0eee9"
+        ]
+      },
+      "rung-3-line": {
+        "role": "data",
+        "displayName": "Hitting the market badge line",
+        "cssVar": "--rung-3-line",
+        "scheme": "light",
+        "canonical": "#e8cf96",
+        "oklch": "oklch(86.2% 0.079 87.0)",
+        "darkCounterpart": "rung-3-line-dark",
+        "tonalRamp": [
+          "#0e0b05",
+          "#2e2512",
+          "#514321",
+          "#786332",
+          "#988456",
+          "#b5a684",
+          "#d4cab3",
+          "#f3eee3"
+        ]
+      },
+      "rung-4-wash": {
+        "role": "data",
+        "displayName": "Repricing the work badge wash",
+        "cssVar": "--rung-4-wash",
+        "scheme": "light",
+        "canonical": "#f3e1df",
+        "oklch": "oklch(92.4% 0.020 25.2)",
+        "darkCounterpart": "rung-4-wash-dark",
+        "tonalRamp": [
+          "#0d0b0a",
+          "#2b2524",
+          "#4c4241",
+          "#706261",
+          "#908281",
+          "#b0a5a4",
+          "#d0c8c8",
+          "#f1eded"
+        ]
+      },
+      "rung-4-line": {
+        "role": "data",
+        "displayName": "Repricing the work badge line",
+        "cssVar": "--rung-4-line",
+        "scheme": "light",
+        "canonical": "#e2b9b5",
+        "oklch": "oklch(82.1% 0.048 24.7)",
+        "darkCounterpart": "rung-4-line-dark",
+        "tonalRamp": [
+          "#0f0a09",
+          "#302321",
+          "#553e3c",
+          "#7e5d59",
+          "#9e7d7a",
+          "#baa19e",
+          "#d7c6c4",
+          "#f5eceb"
+        ]
+      },
+      "label": {
+        "role": "primary",
+        "displayName": "Label Navy",
+        "cssVar": "--label",
+        "scheme": "light",
+        "canonical": "#23408e",
+        "oklch": "oklch(39.7% 0.134 265.3)",
+        "darkCounterpart": "label-dark",
+        "tonalRamp": [
+          "#060b16",
+          "#182543",
+          "#2d4276",
+          "#4362ac",
+          "#6484cc",
+          "#8ea7de",
+          "#b9cbf0",
+          "#e7effe"
+        ]
+      },
+      "act-bg": {
+        "role": "semantic",
+        "displayName": "ACT NOW fill",
+        "cssVar": "--act-bg",
+        "scheme": "light",
+        "canonical": "#dff2e6",
+        "oklch": "oklch(94.4% 0.026 158.2)",
+        "darkCounterpart": "act-bg-dark",
+        "tonalRamp": [
+          "#090c0a",
+          "#222824",
+          "#3e4841",
+          "#5b6a61",
+          "#7c8a81",
+          "#a0aba4",
+          "#c5cdc8",
+          "#ecefed"
+        ]
+      },
+      "act-fg": {
+        "role": "semantic",
+        "displayName": "ACT NOW text",
+        "cssVar": "--act-fg",
+        "scheme": "light",
+        "canonical": "#146c3f",
+        "oklch": "oklch(47.0% 0.108 155.1)",
+        "darkCounterpart": "act-fg-dark",
+        "tonalRamp": [
+          "#040e07",
+          "#112d1c",
+          "#1f5033",
+          "#2e774c",
+          "#55976d",
+          "#85b595",
+          "#b4d4be",
+          "#e4f3e8"
+        ]
+      },
+      "act-line": {
+        "role": "semantic",
+        "displayName": "ACT NOW line",
+        "cssVar": "--act-line",
+        "scheme": "light",
+        "canonical": "#b6e4c9",
+        "oklch": "oklch(87.9% 0.060 159.1)",
+        "darkCounterpart": "act-line-dark",
+        "tonalRamp": [
+          "#070d09",
+          "#1b2b22",
+          "#314c3d",
+          "#4a705b",
+          "#6b907b",
+          "#94b09f",
+          "#bdd0c5",
+          "#e8f1eb"
+        ]
+      },
+      "watch-bg": {
+        "role": "semantic",
+        "displayName": "WATCH fill",
+        "cssVar": "--watch-bg",
+        "scheme": "light",
+        "canonical": "#fdf1d8",
+        "oklch": "oklch(96.1% 0.035 85.4)",
+        "darkCounterpart": "watch-bg-dark",
+        "tonalRamp": [
+          "#0c0b08",
+          "#2a261e",
+          "#4b4437",
+          "#6f6551",
+          "#8e8572",
+          "#aea798",
+          "#cfcac0",
+          "#f1eee9"
+        ]
+      },
+      "watch-fg": {
+        "role": "semantic",
+        "displayName": "WATCH text",
+        "cssVar": "--watch-fg",
+        "scheme": "light",
+        "canonical": "#8a5a00",
+        "oklch": "oklch(50.8% 0.108 73.3)",
+        "darkCounterpart": "watch-fg-dark",
+        "tonalRamp": [
+          "#110a03",
+          "#342208",
+          "#5c3e0f",
+          "#885c16",
+          "#a87d42",
+          "#c2a177",
+          "#ddc7ab",
+          "#f8eddf"
+        ]
+      },
+      "watch-line": {
+        "role": "semantic",
+        "displayName": "WATCH line",
+        "cssVar": "--watch-line",
+        "scheme": "light",
+        "canonical": "#f3dfa4",
+        "oklch": "oklch(90.6% 0.079 91.5)",
+        "darkCounterpart": "watch-line-dark",
+        "tonalRamp": [
+          "#0e0b05",
+          "#2d2612",
+          "#4f4421",
+          "#756532",
+          "#958556",
+          "#b3a784",
+          "#d2cab3",
+          "#f2eee3"
+        ]
+      },
+      "context-bg": {
+        "role": "semantic",
+        "displayName": "CONTEXT fill",
+        "cssVar": "--context-bg",
+        "scheme": "light",
+        "canonical": "#eaeef5",
+        "oklch": "oklch(94.8% 0.010 261.8)",
+        "darkCounterpart": "context-bg-dark",
+        "tonalRamp": [
+          "#0b0b0c",
+          "#252629",
+          "#434549",
+          "#63666c",
+          "#83868c",
+          "#a5a8ac",
+          "#c9cacd",
+          "#eeeef0"
+        ]
+      },
+      "context-fg": {
+        "role": "semantic",
+        "displayName": "CONTEXT text",
+        "cssVar": "--context-fg",
+        "scheme": "light",
+        "canonical": "#38507a",
+        "oklch": "oklch(43.2% 0.076 261.1)",
+        "darkCounterpart": "context-fg-dark",
+        "tonalRamp": [
+          "#080b12",
+          "#1d2737",
+          "#354561",
+          "#4f668e",
+          "#7087ae",
+          "#97a9c7",
+          "#bfcbe0",
+          "#e9eff9"
+        ]
+      },
+      "context-line": {
+        "role": "semantic",
+        "displayName": "CONTEXT line",
+        "cssVar": "--context-line",
+        "scheme": "light",
+        "canonical": "#cdd8ea",
+        "oklch": "oklch(87.9% 0.028 260.3)",
+        "darkCounterpart": "context-line-dark",
+        "tonalRamp": [
+          "#0a0b0e",
+          "#23272d",
+          "#3f454f",
+          "#5e6775",
+          "#7e8795",
+          "#a1a8b3",
+          "#c6cbd2",
+          "#eceff2"
         ]
       },
       "ink-dark": {
         "role": "neutral",
-        "displayName": "Ink, dark scheme",
+        "displayName": "Ink, dark",
         "cssVar": "--ink",
         "scheme": "dark",
         "canonical": "#e6ebef",
@@ -243,131 +585,131 @@
         "tonalRamp": [
           "#0b0b0c",
           "#252728",
-          "#424548",
-          "#62676a",
-          "#868a8d",
-          "#abaeb1",
-          "#cfd1d2",
-          "#eeeeef"
+          "#434548",
+          "#63676a",
+          "#83878a",
+          "#a5a8aa",
+          "#c9cbcc",
+          "#edeeef"
         ]
       },
       "paper-dark": {
         "role": "neutral",
-        "displayName": "Paper, dark scheme",
+        "displayName": "Paper, dark",
         "cssVar": "--paper",
         "scheme": "dark",
         "canonical": "#141517",
         "oklch": "oklch(19.5% 0.004 264.5)",
         "lightCounterpart": "paper",
         "tonalRamp": [
-          "#0a0b0d",
-          "#252729",
-          "#444548",
-          "#656669",
-          "#88898c",
-          "#adaeb1",
-          "#cfd1d4",
-          "#edeef1"
+          "#0b0b0b",
+          "#262627",
+          "#444547",
+          "#656668",
+          "#858688",
+          "#a7a8a9",
+          "#cacacc",
+          "#eeeeef"
         ]
       },
       "cobalt-dark": {
         "role": "primary",
-        "displayName": "Cobalt, dark scheme",
+        "displayName": "Cobalt, dark",
         "cssVar": "--cobalt",
         "scheme": "dark",
         "canonical": "#86a8ff",
         "oklch": "oklch(74.2% 0.132 267.0)",
         "lightCounterpart": "cobalt",
         "tonalRamp": [
-          "#080b14",
-          "#1a2542",
-          "#2e4178",
-          "#4460b1",
-          "#6886d3",
-          "#96ade3",
-          "#c3d1f0",
-          "#e8eefc"
+          "#070b16",
+          "#1a2543",
+          "#2f4275",
+          "#4762ab",
+          "#6783cb",
+          "#90a7de",
+          "#bacaf0",
+          "#e8eefe"
         ]
       },
       "cobalt-wash-dark": {
         "role": "primary",
-        "displayName": "Cobalt Wash, dark scheme",
+        "displayName": "Cobalt Wash, dark",
         "cssVar": "--cobalt-wash",
         "scheme": "dark",
         "canonical": "#1c2433",
         "oklch": "oklch(26.0% 0.031 262.7)",
         "lightCounterpart": "cobalt-wash",
         "tonalRamp": [
-          "#050b18",
-          "#1e2635",
-          "#3c4556",
-          "#5d6778",
-          "#7f8a9c",
-          "#a4aec2",
-          "#c6d1e6",
-          "#e3efff"
+          "#0a0b0e",
+          "#23272d",
+          "#3f4551",
+          "#5e6677",
+          "#7e8797",
+          "#a1a8b4",
+          "#c6cbd3",
+          "#eceef3"
         ]
       },
       "graphite-dark": {
         "role": "neutral",
-        "displayName": "Graphite, dark scheme",
+        "displayName": "Graphite, dark",
         "cssVar": "--graphite",
         "scheme": "dark",
         "canonical": "#96a3ae",
         "oklch": "oklch(70.9% 0.022 243.5)",
         "lightCounterpart": "graphite",
         "tonalRamp": [
-          "#0a0b0c",
+          "#0a0b0d",
           "#23272b",
           "#3e464d",
-          "#5c6872",
-          "#7f8b95",
-          "#a7afb6",
-          "#cdd2d6",
-          "#edeff0"
+          "#5d6871",
+          "#7d8891",
+          "#a1a9b0",
+          "#c6cbd0",
+          "#eceff1"
         ]
       },
       "wash-dark": {
         "role": "neutral",
-        "displayName": "Board Wash, dark scheme",
+        "displayName": "Board Wash, dark",
         "cssVar": "--wash",
         "scheme": "dark",
         "canonical": "#1d1f22",
         "oklch": "oklch(23.8% 0.006 258.4)",
         "lightCounterpart": "wash",
         "tonalRamp": [
-          "#090b0e",
-          "#25272a",
-          "#434549",
+          "#0b0b0c",
+          "#262628",
+          "#444547",
           "#64666a",
-          "#86898d",
-          "#acaeb2",
-          "#ced1d5",
-          "#eceff3"
+          "#84868a",
+          "#a6a8aa",
+          "#c9cacc",
+          "#eeeeef"
         ]
       },
       "rule-dark": {
         "role": "neutral",
-        "displayName": "Rule, dark scheme",
+        "displayName": "Rule, dark",
         "cssVar": "--rule",
         "scheme": "dark",
         "canonical": "#2b2e33",
         "oklch": "oklch(30.0% 0.010 260.7)",
         "lightCounterpart": "rule",
         "tonalRamp": [
-          "#090b0f",
-          "#24272c",
-          "#42454a",
-          "#63666c",
-          "#868990",
-          "#aaaeb4",
-          "#ced1d8",
-          "#ebeff6"
+          "#0b0b0c",
+          "#252629",
+          "#434549",
+          "#63666b",
+          "#83868b",
+          "#a5a8ac",
+          "#c9cacd",
+          "#eeeef0"
         ]
       },
       "rule-strong-dark": {
         "role": "neutral",
-        "displayName": "Rule Strong, dark scheme",
+        "displayName": "Rule Strong, dark",
         "cssVar": "--rule-strong",
         "scheme": "dark",
         "canonical": "#5f6b76",
@@ -376,88 +718,430 @@
         "tonalRamp": [
           "#0a0b0d",
           "#23272b",
-          "#3e464e",
-          "#5c6873",
-          "#7f8b95",
-          "#a7afb7",
-          "#cdd2d6",
-          "#edeff1"
+          "#3e464d",
+          "#5d6872",
+          "#7d8892",
+          "#a1a9b0",
+          "#c6cbd0",
+          "#eceff1"
         ]
       },
       "rung-1-dark": {
         "role": "data",
-        "displayName": "Survey Slate (Watching), dark scheme",
+        "displayName": "Survey Slate (Watching), dark",
         "cssVar": "--rung-1",
         "scheme": "dark",
         "canonical": "#8d9cab",
         "oklch": "oklch(68.6% 0.028 248.2)",
         "lightCounterpart": "rung-1",
         "tonalRamp": [
-          "#0a0b0d",
+          "#090b0d",
           "#22272c",
-          "#3d4650",
-          "#5a6876",
-          "#7d8b98",
-          "#a6afb9",
-          "#ccd2d7",
-          "#eceff1"
+          "#3d464f",
+          "#5b6874",
+          "#7b8894",
+          "#9fa9b3",
+          "#c5cbd2",
+          "#eceff2"
         ]
       },
       "rung-2-dark": {
         "role": "data",
-        "displayName": "Harbour Teal (Accelerating), dark scheme",
+        "displayName": "Harbour Teal (Accelerating), dark",
         "cssVar": "--rung-2",
         "scheme": "dark",
         "canonical": "#4cc0b6",
         "oklch": "oklch(74.0% 0.105 187.3)",
         "lightCounterpart": "rung-2",
         "tonalRamp": [
-          "#040d0c",
-          "#032d2a",
-          "#00504b",
-          "#01766f",
-          "#2f9c93",
-          "#7dbcb5",
-          "#b7d9d5",
-          "#e3f2f0"
+          "#020e0d",
+          "#012e2a",
+          "#02504b",
+          "#03766f",
+          "#37988f",
+          "#75b6af",
+          "#abd4cf",
+          "#e0f3f1"
         ]
       },
       "rung-3-dark": {
         "role": "data",
-        "displayName": "Burnt Ochre (Hitting the market), dark scheme",
+        "displayName": "Burnt Ochre (Hitting the market), dark",
         "cssVar": "--rung-3",
         "scheme": "dark",
         "canonical": "#e5ac3a",
         "oklch": "oklch(77.8% 0.141 80.7)",
         "lightCounterpart": "rung-3",
         "tonalRamp": [
-          "#100a03",
-          "#342301",
-          "#5b3f00",
-          "#855e00",
-          "#b17f07",
-          "#cba86c",
-          "#e2cead",
-          "#f6eddf"
+          "#110a01",
+          "#342300",
+          "#5b3f01",
+          "#845e04",
+          "#ab7d18",
+          "#c5a264",
+          "#dfc79f",
+          "#f8edda"
         ]
       },
       "rung-4-dark": {
         "role": "data",
-        "displayName": "Oxblood (Repricing the work), dark scheme",
+        "displayName": "Oxblood (Repricing the work), dark",
         "cssVar": "--rung-4",
         "scheme": "dark",
         "canonical": "#e3928a",
         "oklch": "oklch(74.0% 0.100 25.9)",
         "lightCounterpart": "rung-4",
         "tonalRamp": [
-          "#110908",
+          "#130807",
           "#391e1b",
-          "#663430",
-          "#974d47",
-          "#bb736c",
-          "#d39f9a",
-          "#e7c9c5",
-          "#f8ebe9"
+          "#653632",
+          "#94504a",
+          "#b4726b",
+          "#cd9993",
+          "#e5c1bc",
+          "#fceae8"
+        ]
+      },
+      "rung-1-wash-dark": {
+        "role": "data",
+        "displayName": "Watching badge wash, dark",
+        "cssVar": "--rung-1-wash",
+        "scheme": "dark",
+        "canonical": "#22262b",
+        "oklch": "oklch(26.7% 0.011 254.0)",
+        "lightCounterpart": "rung-1-wash",
+        "tonalRamp": [
+          "#0a0b0c",
+          "#252729",
+          "#424549",
+          "#62666c",
+          "#82878c",
+          "#a5a8ac",
+          "#c8cbcd",
+          "#edeef0"
+        ]
+      },
+      "rung-1-line-dark": {
+        "role": "data",
+        "displayName": "Watching badge line, dark",
+        "cssVar": "--rung-1-line",
+        "scheme": "dark",
+        "canonical": "#3a424b",
+        "oklch": "oklch(37.5% 0.019 251.4)",
+        "lightCounterpart": "rung-1-line",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#24272a",
+          "#40464c",
+          "#5f6770",
+          "#7f8790",
+          "#a2a8af",
+          "#c7cbd0",
+          "#edeff1"
+        ]
+      },
+      "rung-2-wash-dark": {
+        "role": "data",
+        "displayName": "Accelerating badge wash, dark",
+        "cssVar": "--rung-2-wash",
+        "scheme": "dark",
+        "canonical": "#15302d",
+        "oklch": "oklch(28.7% 0.034 186.1)",
+        "lightCounterpart": "rung-2-wash",
+        "tonalRamp": [
+          "#080c0c",
+          "#1e2927",
+          "#374947",
+          "#526c69",
+          "#738c89",
+          "#99acaa",
+          "#c1cecc",
+          "#eaf0ef"
+        ]
+      },
+      "rung-2-line-dark": {
+        "role": "data",
+        "displayName": "Accelerating badge line, dark",
+        "cssVar": "--rung-2-line",
+        "scheme": "dark",
+        "canonical": "#23504b",
+        "oklch": "oklch(39.8% 0.050 185.8)",
+        "lightCounterpart": "rung-2-line",
+        "tonalRamp": [
+          "#070d0c",
+          "#1a2a28",
+          "#2f4b48",
+          "#466f6a",
+          "#698f8a",
+          "#92afaa",
+          "#bccfcc",
+          "#e7f1ef"
+        ]
+      },
+      "rung-3-wash-dark": {
+        "role": "data",
+        "displayName": "Hitting the market badge wash, dark",
+        "cssVar": "--rung-3-wash",
+        "scheme": "dark",
+        "canonical": "#33280f",
+        "oklch": "oklch(28.3% 0.042 85.7)",
+        "lightCounterpart": "rung-3-wash",
+        "tonalRamp": [
+          "#0d0b07",
+          "#2b261c",
+          "#4c4433",
+          "#70654d",
+          "#90856e",
+          "#afa795",
+          "#d0cabe",
+          "#f1eee8"
+        ]
+      },
+      "rung-3-line-dark": {
+        "role": "data",
+        "displayName": "Hitting the market badge line, dark",
+        "cssVar": "--rung-3-line",
+        "scheme": "dark",
+        "canonical": "#5a4517",
+        "oklch": "oklch(40.3% 0.068 83.9)",
+        "lightCounterpart": "rung-3-line",
+        "tonalRamp": [
+          "#0e0b05",
+          "#2d2515",
+          "#514327",
+          "#77633b",
+          "#97845d",
+          "#b5a689",
+          "#d3c9b6",
+          "#f3eee4"
+        ]
+      },
+      "rung-4-wash-dark": {
+        "role": "data",
+        "displayName": "Repricing the work badge wash, dark",
+        "cssVar": "--rung-4-wash",
+        "scheme": "dark",
+        "canonical": "#3a2220",
+        "oklch": "oklch(28.2% 0.037 24.9)",
+        "lightCounterpart": "rung-4-wash",
+        "tonalRamp": [
+          "#0e0a0a",
+          "#2e2322",
+          "#52403e",
+          "#795f5c",
+          "#997f7c",
+          "#b6a2a0",
+          "#d5c7c5",
+          "#f3edec"
+        ]
+      },
+      "rung-4-line-dark": {
+        "role": "data",
+        "displayName": "Repricing the work badge line, dark",
+        "cssVar": "--rung-4-line",
+        "scheme": "dark",
+        "canonical": "#5c3431",
+        "oklch": "oklch(37.4% 0.058 24.8)",
+        "lightCounterpart": "rung-4-line",
+        "tonalRamp": [
+          "#100909",
+          "#322220",
+          "#593d3a",
+          "#825a57",
+          "#a37b77",
+          "#be9f9c",
+          "#dac5c3",
+          "#f6ecea"
+        ]
+      },
+      "label-dark": {
+        "role": "primary",
+        "displayName": "Label Navy, dark",
+        "cssVar": "--label",
+        "scheme": "dark",
+        "canonical": "#a3b8f0",
+        "oklch": "oklch(78.7% 0.083 268.5)",
+        "lightCounterpart": "label",
+        "tonalRamp": [
+          "#080b12",
+          "#1f2639",
+          "#384464",
+          "#546493",
+          "#7485b2",
+          "#99a7ca",
+          "#c1cae2",
+          "#eaeefa"
+        ]
+      },
+      "act-bg-dark": {
+        "role": "semantic",
+        "displayName": "ACT NOW fill, dark",
+        "cssVar": "--act-bg",
+        "scheme": "dark",
+        "canonical": "#163a29",
+        "oklch": "oklch(31.6% 0.052 160.7)",
+        "lightCounterpart": "act-bg",
+        "tonalRamp": [
+          "#080d0a",
+          "#1d2a23",
+          "#344b3f",
+          "#4d6f5d",
+          "#6f8f7d",
+          "#96afa1",
+          "#bfcfc6",
+          "#e9f1ec"
+        ]
+      },
+      "act-fg-dark": {
+        "role": "semantic",
+        "displayName": "ACT NOW text, dark",
+        "cssVar": "--act-fg",
+        "scheme": "dark",
+        "canonical": "#7fe0ae",
+        "oklch": "oklch(83.3% 0.117 159.9)",
+        "lightCounterpart": "act-fg",
+        "tonalRamp": [
+          "#030e08",
+          "#0a2e1d",
+          "#115236",
+          "#177850",
+          "#489971",
+          "#7eb797",
+          "#b0d5c0",
+          "#e2f4e9"
+        ]
+      },
+      "act-line-dark": {
+        "role": "semantic",
+        "displayName": "ACT NOW line, dark",
+        "cssVar": "--act-line",
+        "scheme": "dark",
+        "canonical": "#24573d",
+        "oklch": "oklch(41.4% 0.071 158.8)",
+        "lightCounterpart": "act-line",
+        "tonalRamp": [
+          "#060d09",
+          "#192b21",
+          "#2e4d3c",
+          "#447258",
+          "#669279",
+          "#90b19d",
+          "#bbd1c3",
+          "#e7f2eb"
+        ]
+      },
+      "watch-bg-dark": {
+        "role": "semantic",
+        "displayName": "WATCH fill, dark",
+        "cssVar": "--watch-bg",
+        "scheme": "dark",
+        "canonical": "#3a2c0d",
+        "oklch": "oklch(30.2% 0.050 84.4)",
+        "lightCounterpart": "watch-bg",
+        "tonalRamp": [
+          "#0d0b07",
+          "#2b261a",
+          "#4e4430",
+          "#726448",
+          "#928469",
+          "#b1a791",
+          "#d1cabc",
+          "#f2eee7"
+        ]
+      },
+      "watch-fg-dark": {
+        "role": "semantic",
+        "displayName": "WATCH text, dark",
+        "cssVar": "--watch-fg",
+        "scheme": "dark",
+        "canonical": "#f0c467",
+        "oklch": "oklch(84.1% 0.122 84.3)",
+        "lightCounterpart": "watch-fg",
+        "tonalRamp": [
+          "#100a02",
+          "#332401",
+          "#594102",
+          "#826001",
+          "#a48031",
+          "#bfa46e",
+          "#dac8a5",
+          "#f6eedd"
+        ]
+      },
+      "watch-line-dark": {
+        "role": "semantic",
+        "displayName": "WATCH line, dark",
+        "cssVar": "--watch-line",
+        "scheme": "dark",
+        "canonical": "#5a4517",
+        "oklch": "oklch(40.3% 0.068 83.9)",
+        "lightCounterpart": "watch-line",
+        "tonalRamp": [
+          "#0e0b05",
+          "#2d2515",
+          "#514327",
+          "#77633b",
+          "#97845d",
+          "#b5a689",
+          "#d3c9b6",
+          "#f3eee4"
+        ]
+      },
+      "context-bg-dark": {
+        "role": "semantic",
+        "displayName": "CONTEXT fill, dark",
+        "cssVar": "--context-bg",
+        "scheme": "dark",
+        "canonical": "#1c2433",
+        "oklch": "oklch(26.0% 0.031 262.7)",
+        "lightCounterpart": "context-bg",
+        "tonalRamp": [
+          "#0a0b0e",
+          "#23272d",
+          "#3f4551",
+          "#5e6677",
+          "#7e8797",
+          "#a1a8b4",
+          "#c6cbd3",
+          "#eceef3"
+        ]
+      },
+      "context-fg-dark": {
+        "role": "semantic",
+        "displayName": "CONTEXT text, dark",
+        "cssVar": "--context-fg",
+        "scheme": "dark",
+        "canonical": "#a9c1e8",
+        "oklch": "oklch(80.6% 0.061 260.1)",
+        "lightCounterpart": "context-fg",
+        "tonalRamp": [
+          "#080b10",
+          "#1f2734",
+          "#38465c",
+          "#536787",
+          "#7487a7",
+          "#9aa9c1",
+          "#c1cbdc",
+          "#eaeff7"
+        ]
+      },
+      "context-line-dark": {
+        "role": "semantic",
+        "displayName": "CONTEXT line, dark",
+        "cssVar": "--context-line",
+        "scheme": "dark",
+        "canonical": "#2d3d59",
+        "oklch": "oklch(35.9% 0.053 261.2)",
+        "lightCounterpart": "context-line",
+        "tonalRamp": [
+          "#090b10",
+          "#202732",
+          "#3a4559",
+          "#566783",
+          "#7787a2",
+          "#9ca8be",
+          "#c2cbda",
+          "#eaeff6"
         ]
       }
     },
@@ -472,11 +1156,11 @@
       },
       "headline-issue": {
         "displayName": "Issue headline",
-        "purpose": "The issue title, three short clauses, max 22em."
+        "purpose": "The issue title, set as three short clauses, max 22em."
       },
       "title": {
         "displayName": "Title",
-        "purpose": "Item headings in issues (1.4rem for the top 3) and entry names on /watch."
+        "purpose": "Item headings inside issues and entry names on /watch; the latest-issue title on home is serif 500 at clamp(1.5rem, 3.2vw, 2rem)."
       },
       "standfirst": {
         "displayName": "Standfirst",
@@ -484,7 +1168,7 @@
       },
       "lede": {
         "displayName": "Lede",
-        "purpose": "Home lede, page intros and issue summaries, in Graphite."
+        "purpose": "The home lede, page intros and the issue summary, in Graphite."
       },
       "body": {
         "displayName": "Body",
@@ -492,11 +1176,11 @@
       },
       "section": {
         "displayName": "Section",
-        "purpose": "Section heads in issues and About, rung heads on /watch; sits under a rule."
+        "purpose": "Section heads on About and rung heads on /watch, each under a rule."
       },
       "section-sm": {
         "displayName": "Section, small",
-        "purpose": "Index-page sections, the ladder head, follow cards, the issue close."
+        "purpose": "Index-page sections, the ladder head, the follow cards and the issue close."
       },
       "wordmark": {
         "displayName": "Wordmark",
@@ -504,19 +1188,19 @@
       },
       "button": {
         "displayName": "Button",
-        "purpose": "Primary and secondary buttons, the copy button."
+        "purpose": "Primary and secondary buttons and the copy button."
       },
       "label": {
         "displayName": "Label",
-        "purpose": "Datelines, meta, counts, source lines, evidence rows, contents, footer. Tabular figures."
+        "purpose": "Datelines, meta lines, counts, source lines, evidence rows, the contents list, nav and footer. Tabular figures."
       },
       "tag": {
         "displayName": "Tag",
-        "purpose": "ACT NOW, WATCH, CONTEXT pills; capitals come from the source text."
+        "purpose": "ACT NOW, WATCH and CONTEXT pills, and the rung badges on an issue's board."
       },
       "mono": {
         "displayName": "Mono",
-        "purpose": "Code, commands, version numbers, env vars, the feed address."
+        "purpose": "Code, commands, version numbers, environment variables and the RSS address."
       }
     },
     "shadows": [
@@ -526,14 +1210,14 @@
         "purpose": "The system is flat. No drop shadows are used for elevation anywhere."
       },
       {
-        "name": "outline-inset-cobalt",
-        "value": "inset 0 0 0 1px var(--cobalt)",
-        "purpose": "Outline for the WATCH tag pill (an outline, not elevation)."
+        "name": "outline-empty-mark",
+        "value": "inset 0 0 0 1px var(--rule-strong)",
+        "purpose": "Empty confidence dots and empty rung pips: a hairline that still reads as a mark (3:1 on Paper)."
       },
       {
-        "name": "outline-inset-rule-strong",
-        "value": "inset 0 0 0 1px var(--rule-strong)",
-        "purpose": "Outline for the CONTEXT tag, empty confidence dots and empty rung pips."
+        "name": "ring-unverified",
+        "value": "inset 0 0 0 2px var(--graphite)",
+        "purpose": "A filled confidence dot drawn as a ring when the tag line says \"unverified\"."
       },
       {
         "name": "target-spread",
@@ -543,16 +1227,31 @@
     ],
     "motion": [
       {
-        "name": "state-transition",
-        "value": "160ms ease-out",
-        "purpose": "The only motion: background, border and colour changes on buttons, and the /watch evidence chevron turning. Nothing animates on load."
+        "name": "colour-change",
+        "value": "160ms ease",
+        "purpose": "Button background, border and text, nav link colour and link underline colour on hover. Hover colour applies only under (hover: hover) and (pointer: fine)."
+      },
+      {
+        "name": "press",
+        "value": "transform: scale(0.97), 160ms cubic-bezier(0.23, 1, 0.32, 1)",
+        "purpose": "Buttons and the copy button while pressed."
+      },
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "purpose": "The --ease-out token, for anything that moves rather than changes colour."
+      },
+      {
+        "name": "disclosure",
+        "value": "200ms var(--ease-out)",
+        "purpose": "The /watch evidence-log chevron turning and the earlier evidence fading in (with a small rise only under prefers-reduced-motion: no-preference). Nothing animates on load."
       }
     ],
     "breakpoints": [
       {
         "name": "xs",
         "value": "520px",
-        "purpose": "Below: archive, evidence rows and pager stack; experiment panel bleeds 8px."
+        "purpose": "Below: archive rows, evidence rows and the pager stack; the experiment panel bleeds 8px wider."
       },
       {
         "name": "sm",
@@ -562,7 +1261,7 @@
       {
         "name": "md",
         "value": "720px",
-        "purpose": "Shell padding 16px to 32px; ladder becomes a staircase (stacked, highest first, below); rung index 4 columns (2x2 below)."
+        "purpose": "Shell padding 16px to 32px. Below (and on coarse pointers): the ladder stacks highest first, each rung 12px further right than the one below, with pips in its heading; small stand-alone links get 44px targets."
       },
       {
         "name": "md-follow",
@@ -572,19 +1271,21 @@
       {
         "name": "lg",
         "value": "900px",
-        "purpose": "Home front (lede beside actions) and latest issue go two-column."
+        "purpose": "Home front (lede beside actions) and latest issue go two-column; the /watch rung index becomes four rising tiles (one stepped column below)."
       },
       {
         "name": "xl",
         "value": "1000px",
-        "purpose": "Issue margin column (13rem rail beside the 34em measure, sticky)."
+        "purpose": "Issue margin column (13rem rail beside the 34em measure, sticky); below it each section ends with \"Back to contents\"."
       }
     ],
     "layout": {
       "shell": "max-width var(--wide) 1120px; padding 0 16px, 0 32px from 720px",
       "measure": "34em (about 70 characters of Literata at 1.125rem)",
       "rail": "13rem margin column on issues, 64px column gap",
-      "ladderLift": "64px per step on home (min-heights 120/184/248/312px); 14px per cell on the /watch rung index"
+      "ladderLift": "48px per step on home (offsets 144, 96, 48, 0px); 12px per rung when stacked below 720px",
+      "rungIndexRise": "12px per tile on /watch (--rise 0, 12, 24, 36px)",
+      "tapTarget": "--tap-pad: calc((44px - 1lh) / 2), the vertical padding that makes one line a 44px target"
     }
   },
   "components": [
@@ -592,9 +1293,9 @@
       "name": "Primary Button",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Ink fill, Paper text; turns Cobalt on hover. The one main action in a view.",
-      "html": "<a class=\"ds-btn-primary\" href=\"#\">Read issue 4</a>",
-      "css": ".ds-btn-primary { display: inline-flex; align-items: center; min-height: 44px; padding: 0 24px; border-radius: 6px; border: 1px solid var(--ink, #16202a); background: var(--ink, #16202a); color: var(--paper, #f6f7f5); font: 600 1rem var(--sans, 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif); text-decoration: none; transition: background-color 160ms ease-out, border-color 160ms ease-out, color 160ms ease-out; } .ds-btn-primary:hover { background: var(--cobalt, #2b59d1); border-color: var(--cobalt, #2b59d1); } .ds-btn-primary:focus-visible { outline: 2px solid var(--cobalt, #2b59d1); outline-offset: 3px; border-radius: 2px; }"
+      "description": "Ink fill, Paper text; turns Cobalt on hover and presses to 97%. The one main action in a view.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Read issue 5</a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 24px; border-radius: 6px; border: 1px solid var(--ink, #16202a); background: var(--ink, #16202a); color: var(--paper, #f6f7f5); font: 600 1rem var(--sans, 'Schibsted Grotesk Variable', ui-sans-serif, system-ui, sans-serif); text-decoration: none; transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease, transform 160ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-btn-primary:hover { background: var(--cobalt, #2b59d1); border-color: var(--cobalt, #2b59d1); } .ds-btn-primary:active { transform: scale(0.97); } .ds-btn-primary:focus-visible { outline: 2px solid var(--cobalt, #2b59d1); outline-offset: 3px; }"
     },
     {
       "name": "Secondary Button",
@@ -602,71 +1303,71 @@
       "refersTo": "button-secondary",
       "description": "Transparent with a 1px Ink border; border and text turn Cobalt on hover.",
       "html": "<a class=\"ds-btn-secondary\" href=\"#\">Follow</a>",
-      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; min-height: 44px; padding: 0 24px; border-radius: 6px; border: 1px solid var(--ink, #16202a); background: transparent; color: var(--ink, #16202a); font: 600 1rem var(--sans, 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif); text-decoration: none; transition: border-color 160ms ease-out, color 160ms ease-out; } .ds-btn-secondary:hover { border-color: var(--cobalt, #2b59d1); color: var(--cobalt, #2b59d1); } .ds-btn-secondary:focus-visible { outline: 2px solid var(--cobalt, #2b59d1); outline-offset: 3px; border-radius: 2px; }"
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 24px; border-radius: 6px; border: 1px solid var(--ink, #16202a); background: transparent; color: var(--ink, #16202a); font: 600 1rem var(--sans, 'Schibsted Grotesk Variable', ui-sans-serif, system-ui, sans-serif); text-decoration: none; transition: border-color 160ms ease, color 160ms ease, transform 160ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-btn-secondary:hover { border-color: var(--cobalt, #2b59d1); color: var(--cobalt, #2b59d1); } .ds-btn-secondary:active { transform: scale(0.97); } .ds-btn-secondary:focus-visible { outline: 2px solid var(--cobalt, #2b59d1); outline-offset: 3px; }"
     },
     {
       "name": "Masthead and Navigation",
       "kind": "nav",
       "refersTo": "nav-link",
-      "description": "Wordmark with Cobalt \"Main\", Graphite links with 44px targets, current page in Ink with a 2px underline.",
+      "description": "Wordmark with Cobalt \"Main\"; Graphite links with 44px targets; the current page in Ink with a 2px underline.",
       "html": "<header class=\"ds-masthead\"><a class=\"ds-wordmark\" href=\"#\">Ahead of <span>Main</span></a><nav class=\"ds-nav\" aria-label=\"Main\"><a href=\"#\">Issues</a><a href=\"#\" aria-current=\"page\">Disruption Watch</a><a href=\"#\">About</a><a href=\"#\">Follow</a></nav></header>",
-      "css": ".ds-masthead { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0 24px; padding: 12px 0 8px; border-bottom: 1px solid var(--rule, #d8dde1); font-family: var(--sans, 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif); background: var(--paper, #f6f7f5); } .ds-wordmark { font: 800 1.15rem var(--sans, 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif); letter-spacing: -0.02em; color: var(--ink, #16202a); text-decoration: none; padding: 8px 0; } .ds-wordmark span { color: var(--cobalt, #2b59d1); } .ds-nav { display: flex; flex-wrap: wrap; gap: 0 24px; font-size: 0.95rem; } .ds-nav a { display: inline-block; padding: 10px 0; color: var(--graphite, #5a6570); text-decoration: none; border-bottom: 2px solid transparent; } .ds-nav a:hover { color: var(--ink, #16202a); } .ds-nav a[aria-current='page'] { color: var(--ink, #16202a); border-bottom-color: var(--ink, #16202a); } .ds-nav a:focus-visible { outline: 2px solid var(--cobalt, #2b59d1); outline-offset: 3px; border-radius: 2px; } .ds-wordmark:focus-visible { outline: 2px solid var(--cobalt, #2b59d1); outline-offset: 3px; border-radius: 2px; }"
+      "css": ".ds-masthead { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0 24px; padding: 12px 0 8px; border-bottom: 1px solid var(--rule, #d8dde1); font-family: var(--sans, 'Schibsted Grotesk Variable', ui-sans-serif, system-ui, sans-serif); } .ds-wordmark { font: 800 1.15rem var(--sans, 'Schibsted Grotesk Variable', ui-sans-serif, system-ui, sans-serif); letter-spacing: -0.02em; color: var(--ink, #16202a); text-decoration: none; padding: 8px 0; } .ds-wordmark span { color: var(--cobalt, #2b59d1); } .ds-nav { display: flex; flex-wrap: wrap; gap: 0 24px; font-size: 0.95rem; } .ds-nav a { display: inline-block; padding: 10px 0; color: var(--graphite, #5a6570); text-decoration: none; border-bottom: 2px solid transparent; transition: color 160ms ease; } .ds-nav a:hover { color: var(--ink, #16202a); } .ds-nav a[aria-current='page'] { color: var(--ink, #16202a); border-bottom-color: var(--ink, #16202a); } .ds-nav a:focus-visible, .ds-wordmark:focus-visible { outline: 2px solid var(--cobalt, #2b59d1); outline-offset: 3px; border-radius: 2px; }"
     },
     {
       "name": "Tag Pills",
       "kind": "chip",
       "refersTo": "tag-act-now",
-      "description": "ACT NOW filled, WATCH outlined in Cobalt, CONTEXT outlined in Rule Strong. Applied from bold Markdown at build time.",
+      "description": "What an item asks of you: ACT NOW green, WATCH amber, CONTEXT slate blue. Pale fill, coloured text, thin border, fully rounded. Applied from bold Markdown at build time.",
       "html": "<span class=\"ds-tag ds-tag-act\">ACT NOW</span> <span class=\"ds-tag ds-tag-watch\">WATCH</span> <span class=\"ds-tag ds-tag-context\">CONTEXT</span>",
-      "css": ".ds-tag { display: inline-block; font: 700 0.74rem/1 var(--sans, 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif); letter-spacing: 0.02em; padding: 2px 9px; border-radius: 999px; } .ds-tag-act { background: var(--act-bg, #dff2e6); color: var(--act-fg, #146c3f); border: 1px solid var(--act-line, #b6e4c9); } .ds-tag-watch { background: var(--watch-bg, #fdf1d8); color: var(--watch-fg, #8a5a00); border: 1px solid var(--watch-line, #f3dfa4); } .ds-tag-context { color: var(--graphite, #5a6570); box-shadow: inset 0 0 0 1px var(--rule-strong, #7b858e); }"
+      "css": ".ds-tag { display: inline-block; font: 700 0.72rem/1.4 var(--sans, 'Schibsted Grotesk Variable', ui-sans-serif, system-ui, sans-serif); letter-spacing: 0.05em; padding: 2px 9px; border: 1px solid; border-radius: 999px; } .ds-tag-act { background: var(--act-bg, #dff2e6); color: var(--act-fg, #146c3f); border-color: var(--act-line, #b6e4c9); } .ds-tag-watch { background: var(--watch-bg, #fdf1d8); color: var(--watch-fg, #8a5a00); border-color: var(--watch-line, #f3dfa4); } .ds-tag-context { background: var(--context-bg, #eaeef5); color: var(--context-fg, #38507a); border-color: var(--context-line, #cdd8ea); }"
     },
     {
       "name": "Tag Line with Confidence Mark",
       "kind": "custom",
       "refersTo": "tag-watch",
-      "description": "An item's tag line: the pill, then three dots filled to the level and the level in words.",
-      "html": "<p class=\"ds-tagline\"><span class=\"ds-tl-tag\">WATCH</span><span class=\"ds-confidence\"><span class=\"ds-dots\" aria-hidden=\"true\"><i class=\"on\"></i><i class=\"on\"></i><i></i></span>Medium confidence</span>, unverified.</p>",
-      "css": ".ds-tagline { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; margin: 0; font: 0.85rem var(--sans, 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif); color: var(--graphite, #5a6570); } .ds-tl-tag { display: inline-block; font: 700 0.74rem/1 var(--sans, 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif); letter-spacing: 0.02em; padding: 5px 8px; border-radius: 4px; background: var(--watch-bg, #fdf1d8); color: var(--watch-fg, #8a5a00); border: 1px solid var(--watch-line, #f3dfa4); border-radius: 999px; } .ds-confidence { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; color: var(--ink, #16202a); } .ds-dots { display: inline-flex; gap: 3px; } .ds-dots i { width: 7px; height: 7px; border-radius: 50%; box-shadow: inset 0 0 0 1px var(--rule-strong, #7b858e); } .ds-dots i.on { background: var(--ink, #16202a); box-shadow: none; }"
+      "description": "An item's tag line: the pill, then three 6px dots filled in Graphite to the level and the level in words. \"Unverified\" draws the level's dots as rings, so a solid mark never sits beside it.",
+      "html": "<p class=\"ds-tagline\"><span class=\"ds-tag ds-tag-watch\">WATCH</span><span class=\"ds-confidence\"><span class=\"ds-dots\" aria-hidden=\"true\"><i class=\"on\"></i><i class=\"on\"></i><i></i></span>Medium confidence</span></p><p class=\"ds-tagline\"><span class=\"ds-tag ds-tag-act\">ACT NOW</span><span class=\"ds-confidence is-unverified\"><span class=\"ds-dots\" aria-hidden=\"true\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i></span>High confidence</span>, unverified.</p>",
+      "css": ".ds-tagline { margin: 0 0 8px; font: 0.8rem/1.8 var(--sans, 'Schibsted Grotesk Variable', ui-sans-serif, system-ui, sans-serif); color: var(--graphite, #5a6570); } .ds-tag { display: inline-block; margin-right: 8px; font: 700 0.72rem/1.4 var(--sans, 'Schibsted Grotesk Variable', ui-sans-serif, system-ui, sans-serif); letter-spacing: 0.05em; padding: 2px 9px; border: 1px solid; border-radius: 999px; vertical-align: 0.1em; } .ds-tag-act { background: var(--act-bg, #dff2e6); color: var(--act-fg, #146c3f); border-color: var(--act-line, #b6e4c9); } .ds-tag-watch { background: var(--watch-bg, #fdf1d8); color: var(--watch-fg, #8a5a00); border-color: var(--watch-line, #f3dfa4); } .ds-confidence { display: inline-flex; align-items: center; gap: 6px; vertical-align: -0.1em; font-weight: 600; color: var(--graphite, #5a6570); } .ds-dots { display: inline-flex; gap: 3px; } .ds-dots i { width: 6px; height: 6px; border-radius: 50%; box-shadow: inset 0 0 0 1px var(--rule-strong, #7b858e); } .ds-dots i.on { background: var(--graphite, #5a6570); box-shadow: none; } .ds-confidence.is-unverified i.on { background: none; box-shadow: inset 0 0 0 2px var(--graphite, #5a6570); }"
     },
     {
       "name": "Disruption Watch Ladder",
       "kind": "custom",
       "refersTo": "ladder-step",
-      "description": "The signature object: four Board Wash steps rising left to right, each capped in its rung colour.",
-      "html": "<div class=\"ds-ladder\"><div class=\"ds-step\"><h3>Watching <span>2</span></h3><ul><li><a href=\"#\">Observable agent actions</a> <b>New</b></li></ul></div><div class=\"ds-step\"><h3>Accelerating <span>2</span></h3><ul><li><a href=\"#\">Design generation</a></li></ul></div><div class=\"ds-step\"><h3>Hitting the market <span>4</span></h3><ul><li><a href=\"#\">AI-native infrastructure</a></li></ul></div><div class=\"ds-step\"><h3>Repricing the work <span>5</span></h3><ul><li><a href=\"#\">Ultra-cheap open-weight models</a></li></ul></div></div>",
-      "css": ".ds-ladder { display: grid; grid-template-columns: repeat(4, 1fr); align-items: stretch; gap: 0 3px; font-family: var(--sans, 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif); } .ds-step { --lift: 0px; display: flex; flex-direction: column; margin-top: calc(144px - var(--lift)); padding: 12px 16px 16px; border-top: 4px solid var(--rung); background: var(--wash, #eceff0); } .ds-step:nth-child(1) { --rung: var(--rung-1, #56636f); } .ds-step:nth-child(2) { --rung: var(--rung-2, #15665f); --lift: 48px; } .ds-step:nth-child(3) { --rung: var(--rung-3, #8a5a00); --lift: 96px; } .ds-step:nth-child(4) { --rung: var(--rung-4, #8e2b2b); --lift: 144px; } .ds-step h3 { display: flex; justify-content: space-between; gap: 8px; margin: 0 0 12px; font-size: 0.95rem; font-weight: 700; color: var(--rung); } .ds-step h3 span { font-weight: 600; font-variant-numeric: tabular-nums; } .ds-step ul { list-style: none; margin: 0; padding: 0; } .ds-step li { font-size: 0.9rem; line-height: 1.35; } .ds-step a { color: var(--ink, #16202a); text-decoration-color: color-mix(in srgb, var(--ink, #16202a) 28%, transparent); text-underline-offset: 0.18em; } .ds-step a:hover { text-decoration-color: currentColor; } .ds-step a:focus-visible { outline: 2px solid var(--cobalt, #2b59d1); outline-offset: 3px; border-radius: 2px; } .ds-step b { font-size: 0.72rem; font-weight: 700; color: var(--cobalt, #2b59d1); margin-left: 4px; }"
+      "description": "The signature object: four Board Wash steps rising left to right, each starting 48px higher than the rung below and capped in its rung colour.",
+      "html": "<div class=\"ds-ladder\"><div class=\"ds-step ds-r1\"><h3>Watching <span>2</span></h3><ul><li><a href=\"#\">Observable and auditable agent actions</a><b>New</b></li></ul></div><div class=\"ds-step ds-r2\"><h3>Accelerating <span>2</span></h3><ul><li><a href=\"#\">Design generation</a></li></ul></div><div class=\"ds-step ds-r3\"><h3>Hitting the market <span>5</span></h3><ul><li><a href=\"#\">Portable agent skills (SKILL.md)</a></li></ul></div><div class=\"ds-step ds-r4\"><h3>Repricing the work <span>5</span></h3><ul><li><a href=\"#\">Ultra-cheap and open-weight models</a></li></ul></div></div>",
+      "css": ".ds-ladder { display: grid; grid-template-columns: repeat(4, 1fr); align-items: stretch; gap: 0 3px; font-family: var(--sans, 'Schibsted Grotesk Variable', ui-sans-serif, system-ui, sans-serif); } .ds-r1 { --rung: var(--rung-1, #56636f); } .ds-r2 { --rung: var(--rung-2, #15665f); } .ds-r3 { --rung: var(--rung-3, #8a5a00); } .ds-r4 { --rung: var(--rung-4, #8e2b2b); } .ds-step { --lift: 0px; display: flex; flex-direction: column; margin-top: calc(144px - var(--lift)); padding: 12px 16px 16px; border-top: 4px solid var(--rung); background: var(--wash, #eceff0); } .ds-r2.ds-step { --lift: 48px; } .ds-r3.ds-step { --lift: 96px; } .ds-r4.ds-step { --lift: 144px; } .ds-step h3 { display: flex; align-items: baseline; gap: 8px; margin: 0 0 12px; font-size: 0.95rem; font-weight: 700; color: var(--rung); } .ds-step h3 span { margin-left: auto; font-weight: 600; } .ds-step ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; } .ds-step li { font-size: 0.9rem; line-height: 1.35; } .ds-step a { color: var(--ink, #16202a); text-decoration-color: color-mix(in srgb, var(--ink, #16202a) 28%, transparent); text-underline-offset: 0.18em; text-decoration-thickness: 1px; transition: text-decoration-color 160ms ease; } .ds-step a:hover { text-decoration-color: currentColor; } .ds-step a:focus-visible { outline: 2px solid var(--cobalt, #2b59d1); outline-offset: 3px; border-radius: 2px; } .ds-step b { font-size: 0.72rem; font-weight: 700; color: var(--cobalt, #2b59d1); margin-left: 4px; white-space: nowrap; }"
     },
     {
-      "name": "Rung Head with Pips",
+      "name": "Rung Index (/watch)",
+      "kind": "custom",
+      "refersTo": "ladder-step-hitting-the-market",
+      "description": "A small staircase that echoes the ladder at the top of /watch: four Board Wash tiles rising 12px each, with pips, rung name and count, each linking to its rung section.",
+      "html": "<ol class=\"ds-rung-index\"><li class=\"ds-r1\"><a href=\"#\"><span class=\"ds-pips\" aria-hidden=\"true\"><i class=\"on\"></i><i></i><i></i><i></i></span><span class=\"ds-rung-name\">Watching</span><span class=\"ds-count\">2</span></a></li><li class=\"ds-r2\"><a href=\"#\"><span class=\"ds-pips\" aria-hidden=\"true\"><i class=\"on\"></i><i class=\"on\"></i><i></i><i></i></span><span class=\"ds-rung-name\">Accelerating</span><span class=\"ds-count\">2</span></a></li><li class=\"ds-r3\"><a href=\"#\"><span class=\"ds-pips\" aria-hidden=\"true\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i></i></span><span class=\"ds-rung-name\">Hitting the market</span><span class=\"ds-count\">5</span></a></li><li class=\"ds-r4\"><a href=\"#\"><span class=\"ds-pips\" aria-hidden=\"true\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i></span><span class=\"ds-rung-name\">Repricing the work</span><span class=\"ds-count\">5</span></a></li></ol>",
+      "css": ".ds-rung-index { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 3px; font-family: var(--sans, 'Schibsted Grotesk Variable', ui-sans-serif, system-ui, sans-serif); } .ds-r1 { --rung: var(--rung-1, #56636f); } .ds-r2 { --rung: var(--rung-2, #15665f); } .ds-r3 { --rung: var(--rung-3, #8a5a00); } .ds-r4 { --rung: var(--rung-4, #8e2b2b); } .ds-r1 { --rise: 0px; } .ds-r2 { --rise: 12px; } .ds-r3 { --rise: 24px; } .ds-r4 { --rise: 36px; } .ds-rung-index li { display: grid; margin-top: calc(36px - var(--rise)); } .ds-rung-index a { display: grid; grid-template-columns: 1fr auto; gap: 4px 8px; align-items: center; min-height: 44px; padding: 8px 12px; border-top: 4px solid var(--rung); background: var(--wash, #eceff0); color: var(--rung); font-weight: 700; font-size: 0.9rem; line-height: 1.25; text-decoration: none; } .ds-rung-index .ds-pips { grid-column: 1 / -1; } .ds-rung-index a:hover .ds-rung-name { text-decoration: underline; } .ds-rung-index a:focus-visible { outline: 2px solid var(--cobalt, #2b59d1); outline-offset: 3px; } .ds-count { color: var(--ink, #16202a); font-weight: 600; } .ds-pips { display: inline-flex; gap: 3px; } .ds-pips i { width: 16px; height: 6px; border-radius: 1px; box-shadow: inset 0 0 0 1px var(--rule-strong, #7b858e); } .ds-pips i.on { background: var(--rung); box-shadow: none; }"
+    },
+    {
+      "name": "Issue Board Row",
       "kind": "custom",
       "refersTo": "ladder-step-repricing-the-work",
-      "description": "Opens each rung section on /watch: 4px rung cap, pips filled to the rung, name in rung colour, count and meaning in Graphite.",
-      "html": "<header class=\"ds-rung-head\"><h2><span class=\"ds-pips\" aria-hidden=\"true\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i></span>Repricing the work <span class=\"ds-count\">5 shifts</span></h2><p>Changing what clients expect to pay for, or what a team needs to staff.</p></header><header class=\"ds-rung-head ds-r2\"><h2><span class=\"ds-pips\" aria-hidden=\"true\"><i class=\"on\"></i><i class=\"on\"></i><i></i><i></i></span>Accelerating <span class=\"ds-count\">2 shifts</span></h2><p>Multiple independent signals, and the pace is picking up.</p></header>",
-      "css": ".ds-rung-head { --rung: var(--rung-4, #8e2b2b); padding-top: 12px; border-top: 4px solid var(--rung); margin-bottom: 24px; } .ds-rung-head.ds-r2 { --rung: var(--rung-2, #15665f); } .ds-rung-head h2 { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; font: 700 1.4rem var(--sans, 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif); letter-spacing: -0.015em; color: var(--rung); margin: 0 0 4px; } .ds-count { font-size: 0.95rem; font-weight: 600; color: var(--graphite, #5a6570); } .ds-rung-head p { margin: 0; font: 0.95rem var(--sans, 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif); color: var(--graphite, #5a6570); } .ds-pips { display: inline-flex; gap: 3px; } .ds-pips i { width: 16px; height: 6px; border-radius: 1px; box-shadow: inset 0 0 0 1px var(--rule-strong, #7b858e); } .ds-pips i.on { background: var(--rung); box-shadow: none; }"
+      "description": "The Disruption watch section inside an issue: a bordered board, one row per entry, with the name in serif 600, rung pips, a rung badge on the rung's pale wash, and a status. Moves and new entries share one Board Wash highlight.",
+      "html": "<ul class=\"ds-board\"><li class=\"ds-row is-moved ds-r3\"><p class=\"ds-name\">Harness and plugin layer<span class=\"ds-flag\">Moved up</span></p><p class=\"ds-status\"><span class=\"ds-pips\" aria-hidden=\"true\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i></i></span><span class=\"ds-badge\">Hitting the market</span>From Accelerating</p><p class=\"ds-detail\">Hooks and skills now ship in the default install.</p></li><li class=\"ds-row ds-r4\"><p class=\"ds-name\">MCP and tool protocols</p><p class=\"ds-status\"><span class=\"ds-pips\" aria-hidden=\"true\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i></span><span class=\"ds-badge\">Repricing the work</span>Held</p><p class=\"ds-detail\">The retry error adds to the repeat-semantics story.</p></li></ul>",
+      "css": ".ds-board { list-style: none; margin: 0; padding: 0; border: 1px solid var(--rule, #d8dde1); border-radius: 8px; overflow: hidden; font: 1.125rem/1.62 var(--serif, 'Literata Variable', 'Iowan Old Style', Georgia, serif); color: var(--ink, #16202a); } .ds-row { padding: 16px 24px; border-bottom: 1px solid var(--rule, #d8dde1); } .ds-row:last-child { border-bottom: 0; } .ds-row.is-moved, .ds-row.is-new { background: var(--wash, #eceff0); } .ds-r3 { --rung: var(--rung-3, #8a5a00); --rw: var(--rung-3-wash, #f7ecd4); --rl: var(--rung-3-line, #e8cf96); } .ds-r4 { --rung: var(--rung-4, #8e2b2b); --rw: var(--rung-4-wash, #f3e1df); --rl: var(--rung-4-line, #e2b9b5); } .ds-name { margin: 0 0 6px; font-weight: 600; line-height: 1.35; } .ds-flag { margin-left: 8px; font: 800 0.78rem var(--sans, 'Schibsted Grotesk Variable', ui-sans-serif, system-ui, sans-serif); color: var(--label, #23408e); } .ds-status { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0 0 6px; font: 0.8rem var(--sans, 'Schibsted Grotesk Variable', ui-sans-serif, system-ui, sans-serif); color: var(--graphite, #5a6570); } .ds-badge { padding: 2px 10px; border: 1px solid var(--rl); border-radius: 999px; background: var(--rw); color: var(--rung); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.04em; line-height: 1.4; text-transform: uppercase; } .ds-detail { margin: 0; font-size: 0.95rem; } .ds-pips { display: inline-flex; gap: 3px; } .ds-pips i { width: 16px; height: 6px; border-radius: 1px; box-shadow: inset 0 0 0 1px var(--rule-strong, #7b858e); } .ds-pips i.on { background: var(--rung); box-shadow: none; }"
     },
     {
       "name": "Experiment Panel",
       "kind": "card",
       "refersTo": "experiment-panel",
-      "description": "The only filled block in an issue: this week's 30-90 minute build, on Cobalt Wash.",
-      "html": "<section class=\"ds-experiment\"><h2>This week's experiment</h2><p class=\"ds-exp-lead\">Log every blocked tool call for a day and read the reasons.</p><p><strong>Done when</strong> you can name the three rules that fired most.</p></section>",
-      "css": ".ds-experiment { padding: 8px 32px 24px; background: var(--cobalt-wash, #e3eaf9); border-radius: 8px; max-width: 34em; font: 1.125rem/1.62 var(--serif, 'Literata', 'Iowan Old Style', Georgia, serif); color: var(--ink, #16202a); } .ds-experiment h2 { font: 700 1.4rem/1.2 var(--sans, 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif); letter-spacing: -0.015em; color: var(--cobalt, #2b59d1); margin: 16px 0 12px; } .ds-exp-lead { font-size: 1.2rem; margin: 0 0 16px; } .ds-experiment p:last-child { margin-bottom: 0; }"
+      "description": "The only filled block in an issue: this week's 30 to 90 minute build, on Cobalt Wash, its heading in Label navy without the section rule.",
+      "html": "<section class=\"ds-experiment\"><h2>This week's experiment</h2><p class=\"ds-exp-lead\">Log every blocked tool call for a day and read the reasons.</p><p><span class=\"ds-run-label\">Done when</span>you can name the three rules that fired most.</p></section>",
+      "css": ".ds-experiment { padding: 8px 32px 24px; background: var(--cobalt-wash, #e3eaf9); border-radius: 8px; max-width: 34em; font: 1.125rem/1.62 var(--serif, 'Literata Variable', 'Iowan Old Style', Georgia, serif); color: var(--ink, #16202a); } .ds-experiment h2 { margin: 16px 0 24px; font: 800 1.05rem/1.35 var(--sans, 'Schibsted Grotesk Variable', ui-sans-serif, system-ui, sans-serif); letter-spacing: 0.1em; text-transform: uppercase; color: var(--label, #23408e); } .ds-exp-lead { font-size: 1.2rem; margin: 0 0 16px; } .ds-run-label { display: block; margin: 0 0 6px; font: 800 0.74rem/1.4 var(--sans, 'Schibsted Grotesk Variable', ui-sans-serif, system-ui, sans-serif); letter-spacing: 0.08em; text-transform: uppercase; color: var(--label, #23408e); } .ds-experiment p:last-child { margin-bottom: 0; }"
     },
     {
       "name": "Feed Address Field",
       "kind": "input",
       "refersTo": "feed-field",
-      "description": "The RSS address in monospace on Board Wash, selectable in one click, with an Ink copy button.",
+      "description": "The RSS address in monospace on Board Wash, selectable in one click, with an Ink copy button that turns Cobalt on hover.",
       "html": "<div class=\"ds-feed\"><code>https://aheadofmain.com/rss.xml</code><button type=\"button\">Copy address</button></div>",
-      "css": ".ds-feed { display: flex; flex-wrap: wrap; align-items: stretch; gap: 8px; } .ds-feed code { display: flex; align-items: center; flex: 1 1 18rem; min-height: 44px; padding: 0 12px; font: 0.95rem var(--mono, ui-monospace, 'SF Mono', Menlo, monospace); background: var(--wash, #eceff0); color: var(--ink, #16202a); border-radius: 6px; user-select: all; } .ds-feed button { min-height: 44px; padding: 0 24px; border: 1px solid var(--ink, #16202a); border-radius: 6px; background: var(--ink, #16202a); color: var(--paper, #f6f7f5); font: 600 1rem var(--sans, 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif); cursor: pointer; transition: background-color 160ms ease-out, border-color 160ms ease-out; } .ds-feed button:hover { background: var(--cobalt, #2b59d1); border-color: var(--cobalt, #2b59d1); } .ds-feed button:focus-visible { outline: 2px solid var(--cobalt, #2b59d1); outline-offset: 3px; border-radius: 2px; }"
-    },
-    {
-      "name": "Section Head",
-      "kind": "custom",
-      "refersTo": "section",
-      "description": "A grotesk section heading under a 2px Ink rule; the device that opens every section on the site.",
-      "html": "<div class=\"ds-section\"><h2>Latest issue</h2><p class=\"ds-meta\">Issue 4, 22 October 2026. Covers 19-22 October 2026.</p></div>",
-      "css": ".ds-section h2 { font: 700 1.15rem var(--sans, 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif); letter-spacing: -0.01em; margin: 0 0 24px; padding-top: 12px; border-top: 2px solid var(--ink, #16202a); color: var(--ink, #16202a); } .ds-meta { font: 0.9rem var(--sans, 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif); font-variant-numeric: tabular-nums; color: var(--graphite, #5a6570); margin: 0; }"
+      "css": ".ds-feed { display: flex; flex-wrap: wrap; align-items: stretch; gap: 8px; } .ds-feed code { display: flex; align-items: center; flex: 1 1 18rem; min-height: 44px; padding: 0 12px; font: 0.95rem var(--mono, ui-monospace, 'SF Mono', Menlo, monospace); background: var(--wash, #eceff0); color: var(--ink, #16202a); border-radius: 6px; user-select: all; } .ds-feed button { min-height: 44px; min-width: 9.5rem; padding: 0 24px; border: 1px solid var(--ink, #16202a); border-radius: 6px; background: var(--ink, #16202a); color: var(--paper, #f6f7f5); font: 600 1rem var(--sans, 'Schibsted Grotesk Variable', ui-sans-serif, system-ui, sans-serif); cursor: pointer; transition: background-color 160ms ease, border-color 160ms ease, transform 160ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-feed button:hover { background: var(--cobalt, #2b59d1); border-color: var(--cobalt, #2b59d1); } .ds-feed button:active { transform: scale(0.97); } .ds-feed button:focus-visible { outline: 2px solid var(--cobalt, #2b59d1); outline-offset: 3px; }"
     }
   ],
   "narrative": {
@@ -683,7 +1384,7 @@
     "rules": [
       {
         "name": "The One Thread Rule",
-        "body": "Cobalt means \"go here\" or \"do this\": links, the ACT NOW tag, focus, the experiment. It never fills anything larger than the experiment panel and never decorates.",
+        "body": "Cobalt means \"go here\": links and focus. Issue section labels use Label, a deeper navy from the same family, so a heading never looks like a link, and tags carry their own meaning colours. It never fills anything larger than the experiment panel and never decorates.",
         "section": "colors"
       },
       {
@@ -708,7 +1409,7 @@
       },
       {
         "name": "The Quiet Caps Rule",
-        "body": "The three tags are the only text set in capitals, and they are typed that way in the Markdown. No uppercase labels, no letter-spaced small caps elsewhere.",
+        "body": "Capitals are reserved for labels inside an issue: section labels, tags, rung badges, research-card meta and the \"Why it matters\" card label. Nowhere else, and never for running text.",
         "section": "typography"
       },
       {
@@ -738,25 +1439,25 @@
       }
     ],
     "dos": [
-      "Do open the home page with the tagline, the lede, two actions and the ladder, in that order, with the ladder inside the first desktop viewport.",
-      "Do use the four rung colours only to show a rung, always next to the rung's name, and list rungs highest first wherever they stack.",
-      "Do keep running text inside the 34em measure, and put issue orientation (dateline, contents) in the 13rem margin column.",
-      "Do separate with rules: 1px Rule between items, 2px Ink above a section, 4px rung colour above a rung.",
-      "Do set ACT NOW, WATCH and CONTEXT as filled, outlined and quiet pills, and pair every confidence mark's dots with the level in words.",
-      "Do give every interactive target at least 44px of height and the 2px Cobalt focus outline.",
-      "Do check every new colour pairing for 4.5:1 text contrast (3:1 for marks) in both light and dark.",
-      "Do keep motion to transform, and wrap any animation in `prefers-reduced-motion: no-preference`."
+      "**Do** open the home page with the tagline, the lede, two actions and the ladder, in that order, with the ladder inside the first desktop viewport.",
+      "**Do** use the four rung colours only to show a rung, always next to the rung's name, and list rungs highest first wherever they stack.",
+      "**Do** keep running text inside the 34em measure, and put issue orientation (dateline, contents) in the 13rem margin column.",
+      "**Do** separate with rules: 1px Rule between items, 2px Ink above a section, 4px rung colour above a rung.",
+      "**Do** set ACT NOW, WATCH and CONTEXT as filled, outlined and quiet pills, and pair every confidence mark's dots with the level in words.",
+      "**Do** give every interactive target at least 44px of height and the 2px Cobalt focus outline.",
+      "**Do** check every new colour pairing for 4.5:1 text contrast (3:1 for marks) in both light and dark.",
+      "**Do** keep motion to short interaction feedback (colour, a chevron turning), and wrap anything larger in `prefers-reduced-motion: no-preference`."
     ],
     "donts": [
-      "Don't use gradients, glow, neon greens or purple-to-blue anything; surfaces are flat Paper, Board Wash or Cobalt Wash.",
-      "Don't use drop shadows to lift a surface.",
-      "Don't add coloured side-stripe (border-left) callouts; emphasis comes from the experiment panel's fill or a top rule.",
-      "Don't put kickers or eyebrows above headlines, or set any label other than the three tags in capitals.",
-      "Don't use decorative imagery: no stock photos, glowing brains, robot hands, git-branch ornaments or AI-generated images. Social cards are rendered from HTML in the brand fonts.",
-      "Don't use red for the top rung or anywhere else; the ceiling is oxblood.",
-      "Don't use Cobalt as a decorative or background colour beyond Cobalt Wash in the experiment panel, selection and targeted entries.",
-      "Don't set prose in the grotesk or headlines in the monospace; choose the face by its role.",
-      "Don't add load, entrance or scroll animation; interface state changes stay at 160ms transitions."
+      "**Don't** use gradients, glow, neon greens or purple-to-blue anything; surfaces are flat Paper, Board Wash or Cobalt Wash.",
+      "**Don't** use drop shadows to lift a surface.",
+      "**Don't** add coloured side-stripe (border-left) callouts; emphasis comes from the experiment panel's fill or a top rule.",
+      "**Don't** put kickers or eyebrows above headlines, or set any label other than the three tags in capitals.",
+      "**Don't** use decorative imagery: no stock photos, glowing brains, robot hands, git-branch ornaments or AI-generated images. Social cards are rendered from HTML in the brand fonts.",
+      "**Don't** use red for the top rung or anywhere else; the ceiling is oxblood.",
+      "**Don't** use Cobalt as a decorative or background colour beyond Cobalt Wash in the experiment panel, selection and targeted entries.",
+      "**Don't** set prose in the grotesk or headlines in the monospace; choose the face by its role.",
+      "**Don't** add load, entrance or scroll animation; interface state changes stay at 160ms transitions."
     ]
   }
 }

@@ -18,7 +18,7 @@ const { issue, newer, older } = Astro.props;
 const latest = (await getIssues())[0];
 const { Content, headings } = await render(issue);
 const { data } = issue;
-const contents = sections(headings);
+const contents = sections(headings, issue.body ?? '');
 const tags = tagCounts(issue.body ?? '');
 // The tags used in this issue, with what each one asks of the reader.
 const tally = [
@@ -50,11 +50,11 @@ const suggestUrl = repoUrl
     </header>
 
     {(contents.length > 0 || tally.length > 0) && (
-    <aside class="issue-rail">
+    <div class="issue-rail">
       <div class="issue-rail-inner">
         {
           contents.length > 0 && (
-            <nav class="contents" aria-labelledby="contents-title">
+            <nav class="contents" id="contents" aria-labelledby="contents-title">
               <h2 id="contents-title">In this issue</h2>
               <ol class="quiet-links">
                 {contents.map((s) => (
@@ -63,7 +63,7 @@ const suggestUrl = repoUrl
                     {s.items > 0 && (
                       <span class="count">
                         {s.items}
-                        <span class="visually-hidden"> items</span>
+                        <span class="visually-hidden"> {s.unit}</span>
                       </span>
                     )}
                   </li>
@@ -87,7 +87,7 @@ const suggestUrl = repoUrl
           )
         }
       </div>
-    </aside>
+    </div>
     )}
 
     <div class="issue-main prose-body issue-body">

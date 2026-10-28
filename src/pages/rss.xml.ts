@@ -6,11 +6,13 @@ import { getIssues, plainTitle } from '../lib/issues';
 // Each item carries the full issue as HTML (content:encoded), so feed readers
 // and dev.to's RSS import get the whole issue, not just the summary. The HTML
 // is the same sanitised output the site renders; site-relative links are made
-// absolute so they still work off-site.
+// absolute so they still work off-site, and the site's "Back to contents"
+// links, which point at the page's own contents list, are dropped.
 export async function GET(context: APIContext) {
   const issues = await getIssues();
   const origin = new URL(context.site!).origin;
-  const absolute = (html: string) => html.replace(/(href|src)="\/(?!\/)/g, `$1="${origin}/`);
+  const absolute = (html: string) =>
+    html.replace(/<p class="to-contents">[\s\S]*?<\/p>/g, '').replace(/(href|src)="\/(?!\/)/g, `$1="${origin}/`);
 
   return rss({
     title: SITE.title,

@@ -15,6 +15,14 @@ colors:
   rung-2: "#15665f"
   rung-3: "#8a5a00"
   rung-4: "#8e2b2b"
+  rung-1-wash: "#eceff1"
+  rung-1-line: "#c9d0d6"
+  rung-2-wash: "#dcefed"
+  rung-2-line: "#a9d6d1"
+  rung-3-wash: "#f7ecd4"
+  rung-3-line: "#e8cf96"
+  rung-4-wash: "#f3e1df"
+  rung-4-line: "#e2b9b5"
   label: "#23408e"
   act-bg: "#dff2e6"
   act-fg: "#146c3f"
@@ -38,6 +46,14 @@ colors:
   rung-2-dark: "#4cc0b6"
   rung-3-dark: "#e5ac3a"
   rung-4-dark: "#e3928a"
+  rung-1-wash-dark: "#22262b"
+  rung-1-line-dark: "#3a424b"
+  rung-2-wash-dark: "#15302d"
+  rung-2-line-dark: "#23504b"
+  rung-3-wash-dark: "#33280f"
+  rung-3-line-dark: "#5a4517"
+  rung-4-wash-dark: "#3a2220"
+  rung-4-line-dark: "#5c3431"
   label-dark: "#a3b8f0"
   act-bg-dark: "#163a29"
   act-fg-dark: "#7fe0ae"
@@ -50,83 +66,84 @@ colors:
   context-line-dark: "#2d3d59"
 typography:
   display:
-    fontFamily: "Literata, 'Iowan Old Style', Georgia, serif"
+    fontFamily: "'Literata Variable', 'Iowan Old Style', Georgia, serif"
     fontSize: "clamp(2.3rem, 5.4vw, 4rem)"
     fontWeight: 500
     lineHeight: 1.02
     letterSpacing: "-0.025em"
   headline:
-    fontFamily: "Literata, 'Iowan Old Style', Georgia, serif"
+    fontFamily: "'Literata Variable', 'Iowan Old Style', Georgia, serif"
     fontSize: "clamp(2.1rem, 5vw, 3rem)"
     fontWeight: 500
     lineHeight: 1.06
     letterSpacing: "-0.02em"
   headline-issue:
-    fontFamily: "Literata, 'Iowan Old Style', Georgia, serif"
+    fontFamily: "'Literata Variable', 'Iowan Old Style', Georgia, serif"
     fontSize: "clamp(1.9rem, 4.6vw, 2.8rem)"
     fontWeight: 500
     lineHeight: 1.08
     letterSpacing: "-0.02em"
   title:
-    fontFamily: "Literata, 'Iowan Old Style', Georgia, serif"
+    fontFamily: "'Literata Variable', 'Iowan Old Style', Georgia, serif"
     fontSize: "1.3rem"
     fontWeight: 600
     lineHeight: 1.25
   standfirst:
-    fontFamily: "Literata, 'Iowan Old Style', Georgia, serif"
+    fontFamily: "'Literata Variable', 'Iowan Old Style', Georgia, serif"
     fontSize: "1.45rem"
     fontWeight: 400
     lineHeight: 1.3
   lede:
-    fontFamily: "Literata, 'Iowan Old Style', Georgia, serif"
+    fontFamily: "'Literata Variable', 'Iowan Old Style', Georgia, serif"
     fontSize: "1.2rem"
     fontWeight: 400
     lineHeight: 1.55
   body:
-    fontFamily: "Literata, 'Iowan Old Style', Georgia, serif"
+    fontFamily: "'Literata Variable', 'Iowan Old Style', Georgia, serif"
     fontSize: "1.125rem"
     fontWeight: 400
     lineHeight: 1.62
   section:
-    fontFamily: "'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif"
+    fontFamily: "'Schibsted Grotesk Variable', ui-sans-serif, system-ui, sans-serif"
     fontSize: "1.4rem"
     fontWeight: 700
     lineHeight: 1.2
     letterSpacing: "-0.015em"
   section-sm:
-    fontFamily: "'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif"
+    fontFamily: "'Schibsted Grotesk Variable', ui-sans-serif, system-ui, sans-serif"
     fontSize: "1.15rem"
     fontWeight: 700
     letterSpacing: "-0.01em"
   wordmark:
-    fontFamily: "'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif"
+    fontFamily: "'Schibsted Grotesk Variable', ui-sans-serif, system-ui, sans-serif"
     fontSize: "1.15rem"
     fontWeight: 800
     letterSpacing: "-0.02em"
   button:
-    fontFamily: "'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif"
+    fontFamily: "'Schibsted Grotesk Variable', ui-sans-serif, system-ui, sans-serif"
     fontSize: "1rem"
     fontWeight: 600
   label:
-    fontFamily: "'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif"
+    fontFamily: "'Schibsted Grotesk Variable', ui-sans-serif, system-ui, sans-serif"
     fontSize: "0.9rem"
     fontWeight: 400
     fontFeature: "tnum"
   tag:
-    fontFamily: "'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif"
-    fontSize: "0.74rem"
+    fontFamily: "'Schibsted Grotesk Variable', ui-sans-serif, system-ui, sans-serif"
+    fontSize: "0.72rem"
     fontWeight: 700
-    lineHeight: 1
-    letterSpacing: "0.02em"
+    lineHeight: 1.4
+    letterSpacing: "0.05em"
   mono:
     fontFamily: "ui-monospace, 'SF Mono', Menlo, monospace"
     fontSize: "0.84em"
 rounded:
   focus: "2px"
   code: "3px"
-  tag: "4px"
+  skip: "4px"
   control: "6px"
   panel: "8px"
+  pill: "999px"
 spacing:
   s1: "4px"
   s2: "8px"
@@ -169,19 +186,19 @@ components:
     backgroundColor: "{colors.act-bg}"
     textColor: "{colors.act-fg}"
     typography: "{typography.tag}"
-    rounded: "999px"
+    rounded: "{rounded.pill}"
     padding: "2px 9px"
   tag-watch:
     backgroundColor: "{colors.watch-bg}"
     textColor: "{colors.watch-fg}"
     typography: "{typography.tag}"
-    rounded: "999px"
+    rounded: "{rounded.pill}"
     padding: "2px 9px"
   tag-context:
     backgroundColor: "{colors.context-bg}"
     textColor: "{colors.context-fg}"
     typography: "{typography.tag}"
-    rounded: "999px"
+    rounded: "{rounded.pill}"
     padding: "2px 9px"
   ladder-step:
     backgroundColor: "{colors.wash}"
@@ -195,6 +212,30 @@ components:
     textColor: "{colors.rung-3}"
   ladder-step-repricing-the-work:
     textColor: "{colors.rung-4}"
+  rung-badge-watching:
+    backgroundColor: "{colors.rung-1-wash}"
+    textColor: "{colors.rung-1}"
+    typography: "{typography.tag}"
+    rounded: "{rounded.pill}"
+    padding: "2px 10px"
+  rung-badge-accelerating:
+    backgroundColor: "{colors.rung-2-wash}"
+    textColor: "{colors.rung-2}"
+    typography: "{typography.tag}"
+    rounded: "{rounded.pill}"
+    padding: "2px 10px"
+  rung-badge-hitting-the-market:
+    backgroundColor: "{colors.rung-3-wash}"
+    textColor: "{colors.rung-3}"
+    typography: "{typography.tag}"
+    rounded: "{rounded.pill}"
+    padding: "2px 10px"
+  rung-badge-repricing-the-work:
+    backgroundColor: "{colors.rung-4-wash}"
+    textColor: "{colors.rung-4}"
+    typography: "{typography.tag}"
+    rounded: "{rounded.pill}"
+    padding: "2px 10px"
   experiment-panel:
     backgroundColor: "{colors.cobalt-wash}"
     rounded: "{rounded.panel}"
@@ -241,8 +282,9 @@ Rejected outright: purple-to-blue gradients, neon "terminal" greens, glow, decor
 A near-monochrome briefing palette (blue-black ink on cool off-white) with a single cobalt for links and actions, plus a four-step data ramp for the ladder that runs from cool slate to warm oxblood.
 
 ### Primary
-- **Cobalt** (#2b59d1; dark #86a8ff): the thread to follow. Every link, the "New" marker on the board, the experiment heading, the primary button's hover fill, the focus ring and the text caret. "Main" in the wordmark. 5.66:1 on Paper in light, 7.85:1 in dark.
+- **Cobalt** (#2b59d1; dark #86a8ff): the thread to follow. Every link, the "New" marker on the board, the primary button's hover fill, the focus ring and the text caret. "Main" in the wordmark. 5.66:1 on Paper in light, 7.85:1 in dark.
 - **Cobalt Wash** (#e3eaf9; dark #1c2433): the only tinted surface. Fills the experiment panel, text selection, and the highlight on a targeted /watch entry.
+- **Label Navy** (#23408e; dark #a3b8f0): issue section labels, run-in labels ("Why it matters", "Done when"), the experiment heading and the "Moved up" flag. A deeper navy from Cobalt's family, so a heading never reads as a link.
 
 ### Neutral
 - **Ink** (#16202a; dark #e6ebef): all primary text, headings, the primary button fill, the 2px section rules and the active-nav underline. A blue-black that reads as printed type, never pure black.
@@ -258,6 +300,7 @@ The four rung colours are a data encoding of the Disruption Watch ladder, not id
 - **Harbour Teal** (#15665f; dark #4cc0b6): Accelerating.
 - **Burnt Ochre** (#8a5a00; dark #e5ac3a): Hitting the market.
 - **Oxblood** (#8e2b2b; dark #e3928a): Repricing the work. Serious, not alarming.
+- **Rung washes and lines** (`rung-N-wash`, `rung-N-line`): a pale fill and a hairline in each rung's own hue, used only for the rung badges on an issue's board, where the rung colour is the badge text.
 
 ### Named Rules
 **The One Thread Rule.** Cobalt means "go here": links and focus. Issue section labels use Label, a deeper navy from the same family, so a heading never looks like a link, and tags carry their own meaning colours. It never fills anything larger than the experiment panel and never decorates.
@@ -268,8 +311,8 @@ The four rung colours are a data encoding of the Disruption Watch ladder, not id
 
 ## Typography
 
-**Display Font:** Literata (with 'Iowan Old Style', Georgia, serif), variable optical size 7–72, weights 400–700, italic 400
-**Structure Font:** Schibsted Grotesk (with ui-sans-serif, system-ui, sans-serif), weights 400, 600, 700, 800
+**Display Font:** Literata (with 'Iowan Old Style', Georgia, serif), self-hosted from Fontsource as 'Literata Variable': optical size 7–72, weights 200–900, with italic. The Latin upright file is preloaded.
+**Structure Font:** Schibsted Grotesk (with ui-sans-serif, system-ui, sans-serif), self-hosted as 'Schibsted Grotesk Variable', weights 400–900; the site uses 400, 600, 700 and 800
 **Mono Font:** system monospace (ui-monospace, 'SF Mono', Menlo, monospace)
 
 **Character:** A bookish newspaper serif with optical sizing does the talking; a compact Scandinavian grotesk does the signposting. Headlines are serif at a light-medium weight (500) with tight negative tracking, so they read as judgement rather than shouting.
@@ -329,7 +372,7 @@ The system is flat. There are no drop shadows anywhere. Depth is conveyed by two
 
 ## Shapes
 
-Mostly square. Ladder steps, rung index cells and rung heads have no radius; their only shape is the coloured cap on top. Small radii appear only on interactive or inline objects: the focus ring and targeted-entry highlight (2px), inline code (3px), tag pills and the skip link (4px), buttons, code blocks and the feed field (6px), and the experiment panel (8px), the one rounded block on the page. Confidence dots are 7px circles; rung pips are 16×6px bars with a 1px radius, a small echo of the ladder's steps.
+Mostly square. Ladder steps, rung index cells and rung heads have no radius; their only shape is the coloured cap on top. Small radii appear only on interactive or inline objects: the focus ring and targeted-entry highlight (2px), inline code (3px), the skip link (4px), buttons, code blocks and the feed field (6px), and the experiment panel (8px), the one rounded block on the page. Tag pills, badges and the horizon pill are fully rounded (999px). Confidence dots are 6px circles; rung pips are 16×6px bars with a 1px radius, a small echo of the ladder's steps.
 
 ## Components
 
@@ -338,7 +381,7 @@ Plain, firm and few: at most two per view.
 - **Shape:** gently rounded (6px), 44px minimum height, 24px horizontal padding, Schibsted Grotesk 600 at 1rem.
 - **Primary:** Ink fill with Paper text ("Read issue 4", "Follow Ahead of Main").
 - **Secondary:** transparent with a 1px Ink border and Ink text ("Follow", the follow-page links).
-- **Hover / Focus:** primary turns Cobalt; secondary's border and text turn Cobalt. Background, border and colour transition at 160ms ease-out. Focus is the global 2px Cobalt outline at 3px offset.
+- **Hover / Focus:** primary turns Cobalt; secondary's border and text turn Cobalt. Background, border and colour transition at 160ms ease, and a button presses to 97% while held. Focus is the global 2px Cobalt outline at 3px offset.
 
 ### Navigation
 - **Masthead:** the wordmark (Schibsted Grotesk 800, "Ahead of" in Ink, "Main" in Cobalt) left, four links right, a 1px Rule below. Wraps onto two lines on mobile.
@@ -373,7 +416,7 @@ A paragraph that opens with a tag becomes the item's tag line: the pill, then a 
 A paragraph starting "Source:" or "Sources:" is set as a quiet source line: Graphite sans at 0.85rem, its links Graphite and turning Cobalt on hover. A paragraph that is only italics is an aside, in Graphite serif at 1rem.
 
 ### The experiment panel
-The issue's closing build ("This week's experiment") is gathered into one block: Cobalt Wash fill, 8px radius, 8px/32px/24px padding (16px sides and an 8px bleed below 520px). Its heading drops the section rule and turns Cobalt; the first paragraph after it is Ink at 1.2rem. It is the only filled block in an issue.
+The issue's closing build ("This week's experiment") is gathered into one block: Cobalt Wash fill, 8px radius, 8px/32px/24px padding (16px sides and an 8px bleed below 520px). Its heading keeps the section label's capitals in Label navy but drops the rule; the first paragraph after it is Ink at 1.2rem. It is the only filled block in an issue.
 
 ### Cards / Containers
 There are no cards. Grouping is done with rules and Board Wash: follow-page sections open with a 2px Ink rule, archive and board rows are separated by 1px Rules, earlier evidence by 1px dashed Rules.

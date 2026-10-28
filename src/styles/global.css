@@ -57,6 +57,10 @@
   --s8: 64px;
   --s9: 96px;
 
+  /* Vertical padding that makes one line of a link a 44px touch target,
+     whatever its size (1lh resolves on the link itself). */
+  --tap-pad: calc((44px - 1lh) / 2);
+
   /* About 70 characters of Literata at body size. */
   --measure: 34em;
   --wide: 1120px;
@@ -659,16 +663,6 @@ pre code {
   font-weight: 500;
   letter-spacing: -0.01em;
   margin: 0 0 var(--s3);
-}
-
-.latest h3 a {
-  color: var(--ink);
-  text-decoration: none;
-}
-
-.latest h3 a:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
 }
 
 .latest-summary {
@@ -1965,28 +1959,32 @@ pre code {
 /* Touch: on coarse pointers, small link marks get full-size targets. */
 @media (pointer: coarse), (max-width: 720px) {
   .footer a,
-  .ladder-foot > a {
+  .ladder-foot > a,
+  .step li a {
     display: inline-block;
-    padding: 10px 0;
+    padding: var(--tap-pad) 0;
   }
   .footer nav {
     gap: 0 var(--s5);
   }
   .step ul {
-    gap: var(--s3);
-  }
-  .step li a {
-    padding: 10px 0;
+    gap: 0;
   }
   .contents a {
     padding: 11px 0;
   }
+  /* The whole Top 3 row is the link. */
   .top3 li {
-    padding: var(--s3) 0;
+    position: relative;
+  }
+  .top3 li a::after {
+    content: '';
+    position: absolute;
+    inset: 0;
   }
   .evidence .src-link {
     display: inline-block;
-    padding: 10px 0;
-    margin: -10px 0;
+    padding: var(--tap-pad) 0;
+    margin: calc(-1 * var(--tap-pad)) 0;
   }
 }

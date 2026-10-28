@@ -43,7 +43,7 @@ const actNow = latest ? tagCounts(latest.body ?? '')['ACT NOW'] : 0;
               Issue {latest.data.issue}, <time datetime={latest.data.date.toISOString()}>{formatDate(latest.data.date)}</time
               >. Covers {latest.data.window}.
             </p>
-            <h3>
+            <h3 class="quiet-links">
               <a href={url(`/issues/${latest.id}`)} set:html={titleHtml(latest.data.title)} />
             </h3>
             <p class="latest-summary">{latest.data.summary}</p>

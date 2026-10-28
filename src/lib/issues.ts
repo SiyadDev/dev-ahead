@@ -24,13 +24,23 @@ export function topThree(headings: Heading[]): Heading[] {
 }
 
 // The issue's sections, each with how many items it holds.
-export function sections(headings: Heading[]) {
-  const out: (Heading & { items: number })[] = [];
+// The Disruption Watch board has no ### items: its entries are the bullets that
+// open with a bold name ("Everything else held." is not one). The Markdown
+// heading is "Disruption watch"; the contents use the board's proper name.
+export function sections(headings: Heading[], markdown = '') {
+  const out: (Heading & { items: number; unit: string })[] = [];
   for (const h of headings) {
-    if (h.depth === 2) out.push({ ...h, items: 0 });
+    if (h.depth === 2) out.push({ ...h, items: 0, unit: 'items' });
     else if (h.depth === 3 && out.length) out[out.length - 1].items++;
   }
+  const board = out.find((s) => s.slug === 'disruption-watch');
+  if (board) Object.assign(board, { text: 'Disruption Watch', unit: 'entries', items: boardEntries(markdown) });
   return out;
+}
+
+function boardEntries(markdown: string): number {
+  const section = markdown.split(/^## /m).find((s) => /^disruption watch\s*$/im.test(s.split('\n')[0]));
+  return section ? (section.match(/^- \*\*/gm) ?? []).length : 0;
 }
 
 export function tagCounts(markdown: string): Record<'ACT NOW' | 'WATCH' | 'CONTEXT', number> {

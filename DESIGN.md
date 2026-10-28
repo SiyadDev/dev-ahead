@@ -278,7 +278,7 @@ The four rung colours are a data encoding of the Disruption Watch ladder, not id
 - **Display** (Literata 500, clamp(2.3rem, 5.4vw, 4rem), line-height 1.02, -0.025em): the home page tagline only.
 - **Headline** (Literata 500, clamp(2.1rem, 5vw, 3rem), 1.06, -0.02em): page titles on /watch, /about, /follow, /issues, 404.
 - **Issue headline** (Literata 500, clamp(1.9rem, 4.6vw, 2.8rem), 1.08, -0.02em, max 22em): the issue title, set as three short clauses.
-- **Title** (Literata 600, 1.3rem, 1.25): item headings inside issues (the top-3 items step up to 1.4rem), and entry names on /watch. The latest-issue title on home is serif 500 at clamp(1.5rem, 3.2vw, 2rem).
+- **Title** (Literata 600, 1.3rem, 1.25): item headings inside issues (the top-3 items step up to 1.4rem), and entry names on /watch. The latest-issue title on home is serif 500 at clamp(1.5rem, 3.2vw, 2rem), an Ink link with the same soft underline as the Top 3 beside it.
 - **Standfirst** (Literata 400, 1.45rem, 1.3, Ink): the one-line promise under a page title ("Ratings move on evidence, not on noise.").
 - **Lede** (Literata 400, 1.2rem, 1.5–1.55, Graphite): the home lede, page intros, the issue summary.
 - **Body** (Literata 400, 1.125rem, 1.62): all running text, capped at the 34em measure (about 70 characters). Headings use `text-wrap: balance`; paragraphs and list items use `text-wrap: pretty`.
@@ -305,7 +305,7 @@ A single centred shell (max 1120px) with 16px side padding, widening to 32px fro
 
 **The ladder.** Four equal columns with 3px gutters. Every step stretches to the busiest one and starts 48px higher than the rung below (offsets 144, 96, 48 and 0px from the top), so the board always reads as a rising staircase whatever the entry counts. Below 720px it becomes a single stacked column with the highest rung first; each rung sits 12px further right than the one below it (0, 12, 24, 36px), and its heading gains the rung pips, so the stack still reads as a staircase.
 
-**Issue pages.** From 1000px, a two-column grid: a 13rem margin column and the 34em reading column, 64px apart. The margin column holds the dateline ("Issue 4", the date, the window covered) and the "In this issue" contents list with item counts and a tag tally, and stays sticky as you read. Below 1000px the margin column dissolves and the order becomes dateline, title, contents (as a wrapping inline list), text, close.
+**Issue pages.** From 1000px, a two-column grid: a 13rem margin column and the 34em reading column, 64px apart. The margin column holds the dateline ("Issue 4", the date, the window covered) and the "In this issue" contents list with item counts (the board counts its entries and always reads "Disruption Watch", whatever the Markdown heading's case) and a tag tally, and stays sticky as you read. Below 1000px the margin column dissolves and the order becomes dateline, title, contents (as a wrapping inline list), text, close.
 
 **/watch.** Page head, then the rung index, a small staircase that echoes the ladder: from 900px, four tiles rising left to right (Watching to Repricing the work), each starting 12px higher than the one before; below 900px, one column with the highest rung first, each tile 12px further right than the one below. Each tile has pips for its level. Then one section per rung, highest first, each capped at 820px wide. Each entry shows its name, "On this rung since", its note at the measure, the latest dated evidence with its source host inline, and earlier evidence behind a disclosure.
 
@@ -344,6 +344,7 @@ Plain, firm and few: at most two per view.
 - **Masthead:** the wordmark (Schibsted Grotesk 800, "Ahead of" in Ink, "Main" in Cobalt) left, four links right, a 1px Rule below. Wraps onto two lines on mobile.
 - **Links:** Graphite, no underline, 10px vertical padding so each target is at least 44px tall. Hover goes to Ink. The current page is Ink with a 2px Ink underline.
 - **Footer:** Graphite sans at 0.9rem with a 1px Rule above; byline left, "Elsewhere" links right.
+- **Touch targets:** on touch screens and below 720px, small stand-alone links (footer, ladder entries and foot, /watch source hosts) get `--tap-pad`, the vertical padding that makes one line exactly 44px tall, and each Top 3 row on home is a link from edge to edge. Links inside running prose and source lines keep their line height.
 - **Skip link:** an Ink pill with Paper text that appears on focus.
 
 ### Tag pills (chips)

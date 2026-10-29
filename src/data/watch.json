@@ -37,7 +37,7 @@
         ],
         "comparison": "Cloud compute and storage prices fell steadily for a decade; LLM prices per capability fell much faster in 2023–2025.",
         "movesUpWhen": [
-          "A frontier lab cuts a price tier by 50% or more (OpenRouter)."
+          "Holds the top rung while a frontier lab lowers the list price of an existing model by 50% or more on OpenRouter. A new model launched below its predecessor's price is noted, but does not count."
         ],
         "stallsWhen": [
           "Anthropic, OpenAI, Google or DeepSeek raises a list price on OpenRouter.",
@@ -199,7 +199,7 @@
           "Neutral governance: donated to the Agentic AI Foundation on 9 December 2025."
         ],
         "movesUpWhen": [
-          "Combined weekly downloads keep growing above 2% a week for 8 weeks."
+          "Two independent reports or surveys show integration work being priced or staffed lower because tools connect over MCP."
         ],
         "stallsWhen": [
           "A competing protocol is documented as supported by 2 or more of OpenAI, Google, GitHub and Cursor.",
@@ -213,8 +213,8 @@
     {
       "id": "app-generation",
       "name": "Generated software and UI replacing build work",
-      "status": "Accelerating",
-      "note": "App generation and design generation, merged: the same shift, with v0 as evidence for both. Figma reports over half its customers above $10k a year use the Figma agent weekly; standalone Claude Design closes on 14 December.",
+      "status": "Hitting the market",
+      "note": "Lovable, Bolt and v0 all sell generally available paid plans up to enterprise tiers, and Figma reports over half its customers above $10k a year use the Figma agent weekly. Whether this replaces build work, rather than adding to it, is still unmeasured.",
       "history": [
         {
           "date": "2026-10-19",
@@ -227,6 +227,12 @@
           "status": "Accelerating",
           "note": "Re-rated from Repricing the work and merged with design generation under the board's evidence rules: no repricing evidence was logged. Figma: over 50% of paid customers above $10k ARR used the Figma agent weekly as of 31 July 2026.",
           "source": "https://investor.figma.com/news-events/news/news-details/2026/Figma-Announces-Second-Quarter-2026-Financial-Results/default.aspx"
+        },
+        {
+          "date": "2026-10-29",
+          "status": "Hitting the market",
+          "note": "Moved up from Accelerating under the Hitting the market rule (generally available from two major vendors, with paid use): Lovable sells Business and Enterprise plans with SSO and audit logs; Bolt and v0 also sell paid plans up to Enterprise.",
+          "source": "https://docs.lovable.dev/introduction/lovable-for-enterprise"
         }
       ],
       "register": {
@@ -258,8 +264,8 @@
     {
       "id": "decision-models",
       "name": "Model routing and decision models",
-      "status": "Accelerating",
-      "note": "Cheap frontier models (Haiku 5.5 at $0.10 / $0.50 per million tokens) weaken the case for separate decision models; routing is mostly a gateway feature so far. Moves opposite to the open-weight entry.",
+      "status": "Hitting the market",
+      "note": "Automatic model routing is now generally available and paid for from two major vendors: GitHub Copilot Fusion and Vercel AI Gateway Virtual Models, both on 28 October. Small decision models are still a minority of what gets routed to.",
       "history": [
         {
           "date": "2026-10-12",
@@ -277,6 +283,18 @@
           "status": "Accelerating",
           "note": "Re-rated from Hitting the market under the board's evidence rules: its own stall sign is met, because frontier models got cheap enough that a separate decision model saves little.",
           "source": "https://github.com/SiyadDev/dev-ahead/blob/main/docs/hypothesis-register.md"
+        },
+        {
+          "date": "2026-10-29",
+          "status": "Hitting the market",
+          "note": "Moved up from Accelerating under the Hitting the market rule (generally available from two major vendors, with paid use): GitHub Copilot Fusion, generally available on 28 October, routes each prompt among models and bills per model used.",
+          "source": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion"
+        },
+        {
+          "date": "2026-10-29",
+          "status": "Hitting the market",
+          "note": "Second vendor for the rule: Vercel launched Virtual Models on its paid AI Gateway on 28 October, so the model behind a task can change without a redeploy.",
+          "source": "https://vercel.com/changelog/virtual-models-now-available-on-ai-gateway"
         }
       ],
       "register": {
@@ -290,7 +308,7 @@
         ],
         "comparison": "The move from one big database to specialised stores (cache, search, queue).",
         "movesUpWhen": [
-          "Two independent published cost studies show routing halving spend at the same quality."
+          "Two independent sources show AI-backed services cutting what they charge clients because of routing, or teams staffing differently because of it."
         ],
         "stallsWhen": [
           "Cheap frontier model prices keep falling (OpenRouter), which removes the cost advantage."
@@ -350,7 +368,7 @@
           "Blocking hooks in Claude Code, Cursor, Copilot CLI and Codex; plugin marketplaces in Claude Code and Cursor."
         ],
         "movesUpWhen": [
-          "A paid plugin marketplace launches."
+          "Hiring data or two independent surveys show teams staffing a dedicated agent-platform or agent-tooling role."
         ],
         "stallsWhen": [
           "A vendor removes or restricts third-party hooks or plugins, citing security."
@@ -392,7 +410,7 @@
           "Generally available agent sandboxes from AWS (13 October 2025) and Azure (23 September 2026)."
         ],
         "movesUpWhen": [
-          "Coding agents run background tasks in a cloud sandbox by default."
+          "Two independent reports or surveys show development teams budgeting or staffing differently because agents run in cloud sandboxes, for example a separate sandbox budget line or fewer local machines."
         ],
         "stallsWhen": [
           "A sandbox-escape CVE with a CVSS score of 8 or more in any of these products (NVD).",
@@ -432,7 +450,7 @@
         ],
         "comparison": "SWE-bench scores rose from about 2% on the full set (2023) to above 70% on the easier Verified subset, so the history is not like for like.",
         "movesUpWhen": [
-          "GitHub or GitLab ship native test generation as generally available."
+          "Two of GitHub, GitLab, Atlassian, JetBrains and Microsoft ship a generally available, paid feature whose documentation is about generating tests. A general agent runner that can be asked to write tests does not count."
         ],
         "stallsWhen": [
           "GitHub or GitLab deprecate or roll back a test-generation feature."
@@ -569,7 +587,7 @@
           "Moved to the Agentic AI Foundation on 22 October 2026, with maintainers from Anthropic, Google and OpenAI."
         ],
         "movesUpWhen": [
-          "Skill marketplaces with verified publishers appear."
+          "Two independent sources show skill authoring sold as a priced service by agencies or freelancers."
         ],
         "stallsWhen": [
           "A malicious-skill incident is reported by two independent security outlets.",

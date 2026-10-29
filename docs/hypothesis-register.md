@@ -15,7 +15,7 @@ The Disruption Watch board asks one question per entry: how far has this shift g
 
 ### Rung rules
 
-Moving up needs the next rung's evidence. An entry whose evidence for its current rung hasn't been seen for three issues is flagged for review.
+Moving up needs the next rung's evidence. An entry's "moves up when" signs say what evidence counts towards the next rung for that entry; a sign is never a shortcut past the rule. An entry whose evidence for its current rung hasn't been seen for three issues is flagged for review.
 
 | Rung | Evidence required |
 |---|---|
@@ -105,7 +105,7 @@ Moving up needs the next rung's evidence. An entry whose evidence for its curren
 - **Review by:** 31 January 2027.
 
 ### Generated software and UI replacing build work (app generation and design generation, merged)
-- **Rung:** Accelerating.
+- **Rung:** Hitting the market (moved up 29 October; see section 5).
 - **Claim:** Generation platforms take over a share of greenfield build and routine UI work.
 - **Forecast A (market):** by 30 June 2027, Lovable or its CEO publicly states annual recurring revenue of at least $1B. Mid-2026 figures were about $500–600M, from secondary sources that conflict. **50%.** This is vendor-reported and tests the market, not replacement.
 - **Forecast B (use):** a Figma results release published by 30 June 2027 reports that at least 70% of paid customers with more than $10k ARR use the Figma agent weekly. It was over 50% as of 31 July 2026. If Figma stops reporting the figure, this resolves No. **40%.**
@@ -116,7 +116,7 @@ Moving up needs the next rung's evidence. An entry whose evidence for its curren
 - **Review by:** 31 March 2027.
 
 ### Model routing and decision models
-- **Rung:** Accelerating.
+- **Rung:** Hitting the market (moved up 29 October; see section 5).
 - **Claim:** Cheap, specialised calls and automatic routers replace one big model call for routine agent steps.
 - **Forecast:** by 31 March 2027, OpenAI, Anthropic or Google documents a generally available API option that routes each request automatically among its own models, priced on its pricing page. **30%.** Confirm before adopting that none exists today; neither review verified this.
 - **Comparison:** the move from one big database to specialised stores (cache, search, queue).
@@ -210,3 +210,14 @@ Moving up needs the next rung's evidence. An entry whose evidence for its curren
 - **Overlap:** MCP, agent SDKs, sandboxes, skills and the harness layer ride the same wave of agent building. One security incident would hit the stall signs of MCP, skills, harness and supply chain at once. The open-weight and routing entries move in opposite directions on the same prices. The measurement rule above handles double counting.
 - **Still to collect:** the Artificial Analysis index, Lovable and Bolt sources, a direct rate source for dev work, where CheckerBench scores are published, and an NVD API key.
 - **Facts from the reviewer not re-checked here:** SWT-bench Verified at 87.5%; Copilot's move to usage billing from 1 June 2026 (Thursday's run also reported it); Lovable's revenue range; the 2023 and 2024 Stack Overflow figures.
+
+## 5. Changes since approval
+
+**29 October 2026, after the first test run of the routine.** The run exposed three problems, fixed here and in `src/data/watch.json`:
+
+- The editorial guide let a single sign move an entry past its rung rule. Signs now count only as evidence towards the rule.
+- Several "moves up when" signs described the next milestone rather than evidence for the next rung. They were reworded for MCP, model routing, the harness layer, AI-native infrastructure, portable skills and autonomous QA. Open-weight's sign now counts only cuts to existing models' prices.
+- Under the rung rules, two entries already had the evidence for Hitting the market and moved up, with the author's approval: **Model routing and decision models** (GitHub Copilot Fusion and Vercel's Virtual Models, both generally available on 28 October) and **Generated software and UI** (Lovable, Bolt and v0 all sell generally available paid plans).
+
+No forecast was changed. The entries in section 3 keep the sign wording as approved; the current wording is in `src/data/watch.json` and on the Watch page.
+

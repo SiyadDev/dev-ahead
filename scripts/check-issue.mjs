@@ -114,6 +114,12 @@ for (const file of files) {
 
   if (date >= STRICT_FROM) checkTaglines(file, body);
 
+  // Length: link text counts, link addresses don't. Enforced from 29 October 2026.
+  if (date >= '2026-10-29') {
+    const words = body.replace(/\]\([^)]*\)/g, ']').split(/\s+/).filter(Boolean).length;
+    if (words > 1900) fail(`${file}: ${words} words; the limit is 1,900 (aim for 1,200 to 1,800)`);
+  }
+
   const text = `${JSON.stringify(data)}\n${body}`;
   for (const pattern of PRIVATE) {
     const hit = text.match(pattern);

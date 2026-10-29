@@ -40,7 +40,7 @@ tags: [ai, claude, mcp, devops] # max 4, lowercase letters and numbers only (dev
 - `npm run check` enforces the tag-line formats for issues dated 27 October 2026 or later. Earlier issues stay as published.
 - Sources: a paragraph starting `Source:` or `Sources:` with named links, e.g. `Sources: [The New Stack](https://…), [TechNode](https://…)`. Link the original page, never a search results page.
 - Links: absolute `https://` links for external pages; site pages as `/watch`.
-- Length: 1,200–1,800 words. Cut before you pad.
+- Length: 1,200–1,800 words, counting link text but not link addresses. Cut before you pad. From 29 October 2026, `npm run check` rejects an issue over 1,900 words.
 
 ## Honesty rules
 
@@ -67,7 +67,7 @@ tags: [ai, claude, mcp, devops] # max 4, lowercase letters and numbers only (dev
 
 Every entry carries a `register`: its claim, one or more forecasts, the signs that move it up or stall it (decided in advance), a comparable past shift, where it's measured, and a review date. The reasoning and the rung rules are in [hypothesis-register.md](hypothesis-register.md); read its section 1 before changing any status.
 
-- **Rung rules.** A status moves up only when the next rung's evidence rule is met, or one of the entry's `movesUpWhen` signs is. Name the rule or sign in the history note and in the issue. A met `stallsWhen` sign is reported, and the entry is held or moved down. A product feature never moves an entry to Repricing the work, and neither does a change in what a tool costs.
+- **Rung rules.** A status moves up only when the next rung's evidence rule is met. An entry's `movesUpWhen` signs say what evidence counts towards that rule for this entry; meeting a sign is never a shortcut past the rule. Name the rule, and the sign if one applies, in the history note and in the issue. A met `stallsWhen` sign is reported, and the entry is held or moved down. A product feature never moves an entry to Repricing the work, and neither does a change in what a tool costs.
 - **Forecasts are scored as made.** Never change an existing forecast's `text`, `probability` or `due`. When a forecast's due date has passed, set `outcome` to `"yes"` or `"no"` and `resolvedOn` to the date you marked it, using the source the forecast names, and report it first in the Disruption watch section. If you can't resolve it from that source, leave it open and list it under "Needs your check" in the pull request.
 - **Changing your mind** means adding a new forecast with a later due date and saying why in the issue, not editing the old one.
 - **New entries** need a full register: a claim, at least one forecast (a whole percentage from 1 to 99, a due date, and wording a stranger could mark right or wrong without an argument), at least one `movesUpWhen` and one `stallsWhen` sign with a number and a source, `measuredBy` and `reviewBy`. `npm run check` rejects an entry without one.

@@ -24,6 +24,10 @@ const shifts = (n: number) => `${n} ${n === 1 ? 'shift' : 'shifts'}`;
       {watch.entries.length} shifts changing how software gets built and paid for, each rated on a four-rung ladder and
       updated every issue. Last updated <time datetime={watch.updated}>{formatDate(watch.updated)}</time>.
     </p>
+    <p>
+      Each shift carries a dated forecast with a probability, and the evidence that would move its rating, decided in
+      advance. Forecasts are marked right or wrong when they come due.
+    </p>
   </header>
 
   <nav aria-label="Rungs">
@@ -89,6 +93,66 @@ const shifts = (n: number) => `${n} ${n === 1 ? 'shift' : 'shifts'}`;
                   </p>
                 )}
                 <p class="note">{e.note}</p>
+                {e.register && (
+                  <div class="evidence register">
+                    <p class="claim">
+                      <span class="label">Claim</span> {e.register.claim}
+                    </p>
+                    <ul class="forecasts" aria-label="Forecasts">
+                      {e.register.forecasts.map((f) => (
+                        <li>
+                          <span class="prob">
+                            {f.probability}%<span class="visually-hidden"> likely:</span>
+                          </span>
+                          <span>
+                            {f.text}{' '}
+                            <span class="due">
+                              {f.outcome ? (
+                                <>
+                                  Resolved {f.outcome} on <time datetime={f.resolvedOn}>{formatDate(f.resolvedOn!)}</time>
+                                </>
+                              ) : (
+                                <>
+                                  Due <time datetime={f.due}>{formatDate(f.due)}</time>
+                                </>
+                              )}
+                            </span>
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                    <details>
+                      <summary>
+                        <span class="when-closed">What would move this rating</span>
+                        <span class="when-open">Hide what would move this rating</span>
+                      </summary>
+                      <dl class="signposts">
+                        <dt>Moves up when</dt>
+                        {e.register.movesUpWhen.map((s) => <dd>{s}</dd>)}
+                        <dt>Stalls when</dt>
+                        {e.register.stallsWhen.map((s) => <dd>{s}</dd>)}
+                        {e.register.alreadyMet && e.register.alreadyMet.length > 0 && (
+                          <>
+                            <dt>Already met</dt>
+                            {e.register.alreadyMet.map((s) => <dd>{s}</dd>)}
+                          </>
+                        )}
+                        {e.register.comparison && (
+                          <>
+                            <dt>Comparable shift</dt>
+                            <dd>{e.register.comparison}</dd>
+                          </>
+                        )}
+                        <dt>Measured by</dt>
+                        <dd>{e.register.measuredBy}</dd>
+                        <dt>Review by</dt>
+                        <dd>
+                          <time datetime={e.register.reviewBy}>{formatDate(e.register.reviewBy)}</time>
+                        </dd>
+                      </dl>
+                    </details>
+                  </div>
+                )}
                 <div class="evidence">
                   {latest ? (
                     <div class="evidence-latest">

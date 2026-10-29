@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-10-29",
   "entries": [
     {
       "id": "open-weight-models",
@@ -25,13 +25,33 @@
           "note": "Muse Spark Open weights; DeepSeek V4.1 Flash absorbs V4-Pro.",
           "source": "https://thenewstack.io/meta-muse-spark-open/"
         }
-      ]
+      ],
+      "register": {
+        "claim": "The price of a given level of capability keeps falling fast enough that teams re-plan AI costs every quarter.",
+        "forecasts": [
+          {
+            "text": "On 30 April 2027, the cheapest paid OpenRouter model scoring at least Claude Sonnet 5.5's 29 October 2026 score on the Artificial Analysis Intelligence Index costs at most half today's cheapest at that bar, on output price.",
+            "probability": 60,
+            "due": "2027-04-30"
+          }
+        ],
+        "comparison": "Cloud compute and storage prices fell steadily for a decade; LLM prices per capability fell much faster in 2023–2025.",
+        "movesUpWhen": [
+          "A frontier lab cuts a price tier by 50% or more (OpenRouter)."
+        ],
+        "stallsWhen": [
+          "Anthropic, OpenAI, Google or DeepSeek raises a list price on OpenRouter.",
+          "3 of the 5 most-downloaded new open-weight models in a quarter ship under a non-OSI licence (Hugging Face)."
+        ],
+        "measuredBy": "OpenRouter and Hugging Face, collected daily; the Artificial Analysis index, read weekly.",
+        "reviewBy": "2027-01-31"
+      }
     },
     {
       "id": "agentic-coding",
       "name": "Agentic coding and orchestration replacing prompt-level help",
-      "status": "Repricing the work",
-      "note": "Fork subagents are on by default in scripted Claude Code runs, and 2.1.307 patched a duplicate-work failure mode. The cost effect is unmeasured.",
+      "status": "Hitting the market",
+      "note": "Re-rated: the evidence logged so far shows agents shipping and selling, not a change in what clients pay for development.",
       "history": [
         {
           "date": "2026-10-12",
@@ -50,14 +70,40 @@
           "status": "Repricing the work",
           "note": "2.1.307: each fork told which launch is its own.",
           "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+        },
+        {
+          "date": "2026-10-29",
+          "status": "Hitting the market",
+          "note": "Re-rated from Repricing the work under the board's evidence rules: only product evidence was logged, and a vendor changing how it bills for its own tool counts as market evidence, not repricing.",
+          "source": "https://github.com/SiyadDev/dev-ahead/blob/main/docs/hypothesis-register.md"
         }
-      ]
+      ],
+      "register": {
+        "claim": "Handing multi-step tasks to agents becomes the default way working developers use AI.",
+        "forecasts": [
+          {
+            "text": "Of public GitHub pull requests created 1–28 June 2027, at least 30% have \"Generated with Claude Code\" in the body or are authored by Copilot's coding agent (18.1% in September 2026, Claude Code alone).",
+            "probability": 55,
+            "due": "2027-06-30"
+          }
+        ],
+        "comparison": "AI coding tools reached a majority of surveyed developers about two years after launch (Stack Overflow survey, 2023–2024).",
+        "movesUpWhen": [
+          "Two independent surveys or rate reports show what clients pay for development changing."
+        ],
+        "stallsWhen": [
+          "The pull-request share falls for 3 months in a row.",
+          "Combined agent SDK downloads fall for 8 weeks in a row."
+        ],
+        "measuredBy": "GitHub search and npm, collected daily. The share covers two tools only, so read it as a floor.",
+        "reviewBy": "2027-03-31"
+      }
     },
     {
       "id": "context-engineering",
       "name": "Context engineering displacing prompt engineering",
-      "status": "Repricing the work",
-      "note": "Supporting evidence in every issue so far: idle compaction, per-subagent context windows, cache-aware usage warnings.",
+      "status": "Watching",
+      "note": "Re-rated: the features this relies on (compaction, memory files) are becoming automatic, and Hacker News attention fell from 41 title mentions in July 2025 to 5 in October 2026.",
       "history": [
         {
           "date": "2026-10-12",
@@ -74,14 +120,39 @@
           "date": "2026-10-19",
           "status": "Repricing the work",
           "note": "Idle-compaction setting exposed in /config."
+        },
+        {
+          "date": "2026-10-29",
+          "status": "Watching",
+          "note": "Re-rated from Repricing the work under the board's evidence rules: only product features were logged, and attention is falling.",
+          "source": "https://github.com/SiyadDev/dev-ahead/blob/main/docs/hypothesis-register.md"
         }
-      ]
+      ],
+      "register": {
+        "claim": "Deciding what goes into a model's context replaces prompt wording as the core skill.",
+        "forecasts": [
+          {
+            "text": "At least 30 Hacker News stories with \"context engineering\" in the title from 1 April to 30 June 2027 (13 in the last quarter).",
+            "probability": 15,
+            "due": "2027-06-30"
+          }
+        ],
+        "comparison": "Many terms coined at conferences never become job titles; \"DevOps\" took years.",
+        "movesUpWhen": [
+          "10 or more title stories a month for 3 months."
+        ],
+        "stallsWhen": [
+          "Fewer than 5 title stories a month for 3 months (already the case in October 2026)."
+        ],
+        "measuredBy": "Hacker News search, collected daily. If still falling at review, merge into the harness entry.",
+        "reviewBy": "2027-01-31"
+      }
     },
     {
       "id": "mcp",
       "name": "MCP and tool protocols standardising the integration layer",
-      "status": "Repricing the work",
-      "note": "Spec 2026-07-28 is the cloud default. HTTP MCP calls are now retried only for read-only or idempotent tools, so annotations are load-bearing.",
+      "status": "Hitting the market",
+      "note": "MCP is the default integration layer across coding agents and has neutral governance. A standards question has no repricing end point, so this tracks adoption instead.",
       "history": [
         {
           "date": "2026-10-15",
@@ -106,21 +177,89 @@
           "status": "Repricing the work",
           "note": "2.1.310: a timed-out call with an unanswered elicitation now tells the model not to repeat it.",
           "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+        },
+        {
+          "date": "2026-10-29",
+          "status": "Hitting the market",
+          "note": "Re-rated from Repricing the work under the board's evidence rules. Logged as already met: neutral governance, after MCP was donated to the Agentic AI Foundation on 9 December 2025.",
+          "source": "https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation"
         }
-      ]
+      ],
+      "register": {
+        "claim": "MCP becomes the standard way tools plug into agents, the way the Language Server Protocol did for editors.",
+        "forecasts": [
+          {
+            "text": "Combined npm downloads of @modelcontextprotocol/sdk and @modelcontextprotocol/core for the 7 days ending 30 April 2027, zero-download days repaired, are at least 200M (108.8M for the week to 27 October 2026).",
+            "probability": 55,
+            "due": "2027-04-30"
+          }
+        ],
+        "comparison": "The Language Server Protocol, announced on 27 June 2016, became the common way editors talk to language tools within a few years.",
+        "alreadyMet": [
+          "Neutral governance: donated to the Agentic AI Foundation on 9 December 2025."
+        ],
+        "movesUpWhen": [
+          "Combined weekly downloads keep growing above 2% a week for 8 weeks."
+        ],
+        "stallsWhen": [
+          "A competing protocol is documented as supported by 2 or more of OpenAI, Google, GitHub and Cursor.",
+          "An MCP server or SDK vulnerability is added to CISA's Known Exploited Vulnerabilities list.",
+          "Combined weekly downloads grow less than 1% a week for 8 weeks."
+        ],
+        "measuredBy": "npm and CISA, collected daily; vendor docs, read each issue.",
+        "reviewBy": "2027-01-31"
+      }
     },
     {
       "id": "app-generation",
-      "name": "App and full-stack generation platforms",
-      "status": "Repricing the work",
-      "note": "No dated news from the main platforms in the last three issues. Held for lack of evidence, not re-checked.",
-      "history": []
+      "name": "Generated software and UI replacing build work",
+      "status": "Accelerating",
+      "note": "App generation and design generation, merged: the same shift, with v0 as evidence for both. Figma reports over half its customers above $10k a year use the Figma agent weekly; standalone Claude Design closes on 14 December.",
+      "history": [
+        {
+          "date": "2026-10-19",
+          "status": "Accelerating",
+          "note": "Claude Design shutdown date announced in the Claude Code changelog.",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+        },
+        {
+          "date": "2026-10-29",
+          "status": "Accelerating",
+          "note": "Re-rated from Repricing the work and merged with design generation under the board's evidence rules: no repricing evidence was logged. Figma: over 50% of paid customers above $10k ARR used the Figma agent weekly as of 31 July 2026.",
+          "source": "https://investor.figma.com/news-events/news/news-details/2026/Figma-Announces-Second-Quarter-2026-Financial-Results/default.aspx"
+        }
+      ],
+      "register": {
+        "claim": "Generation platforms take over a share of greenfield build and routine UI work.",
+        "forecasts": [
+          {
+            "text": "By 30 June 2027, Lovable or its CEO publicly states annual recurring revenue of at least $1B. Vendor-reported; tests the market, not replacement.",
+            "probability": 50,
+            "due": "2027-06-30"
+          },
+          {
+            "text": "A Figma results release published by 30 June 2027 reports that at least 70% of paid customers above $10k ARR use the Figma agent weekly (over 50% as of 31 July 2026). If Figma stops reporting it, this resolves no.",
+            "probability": 40,
+            "due": "2027-06-30"
+          }
+        ],
+        "comparison": "Website builders took most small-business brochure sites over about five years, but not custom apps; stock photography cut routine commissioned work but not brand work.",
+        "movesUpWhen": [
+          "Two independent agency or freelancer surveys report fewer greenfield contracts or lower rates for them."
+        ],
+        "stallsWhen": [
+          "Another standalone generation product from Figma, Google, Adobe, Canva, OpenAI or Anthropic shuts down.",
+          "Figma's reported weekly agent use falls."
+        ],
+        "measuredBy": "Company announcements and Figma quarterly results, read each issue.",
+        "reviewBy": "2027-03-31"
+      }
     },
     {
       "id": "decision-models",
-      "name": "Small decision models as control nodes in agent graphs",
-      "status": "Hitting the market",
-      "note": "Calibrated yes/no and scoring models are replacing prompted frontier-model calls for route, approve and escalate steps.",
+      "name": "Model routing and decision models",
+      "status": "Accelerating",
+      "note": "Cheap frontier models (Haiku 5.5 at $0.10 / $0.50 per million tokens) weaken the case for separate decision models; routing is mostly a gateway feature so far. Moves opposite to the open-weight entry.",
       "history": [
         {
           "date": "2026-10-12",
@@ -132,8 +271,33 @@
           "date": "2026-10-16",
           "status": "Hitting the market",
           "note": "Ollama 0.40.4 runs decision models locally."
+        },
+        {
+          "date": "2026-10-29",
+          "status": "Accelerating",
+          "note": "Re-rated from Hitting the market under the board's evidence rules: its own stall sign is met, because frontier models got cheap enough that a separate decision model saves little.",
+          "source": "https://github.com/SiyadDev/dev-ahead/blob/main/docs/hypothesis-register.md"
         }
-      ]
+      ],
+      "register": {
+        "claim": "Cheap, specialised calls and automatic routers replace one big model call for routine agent steps.",
+        "forecasts": [
+          {
+            "text": "By 31 March 2027, OpenAI, Anthropic or Google documents a generally available API option that routes each request automatically among its own models, priced on its pricing page.",
+            "probability": 30,
+            "due": "2027-03-31"
+          }
+        ],
+        "comparison": "The move from one big database to specialised stores (cache, search, queue).",
+        "movesUpWhen": [
+          "Two independent published cost studies show routing halving spend at the same quality."
+        ],
+        "stallsWhen": [
+          "Cheap frontier model prices keep falling (OpenRouter), which removes the cost advantage."
+        ],
+        "measuredBy": "Provider docs and pricing pages, read each issue; OpenRouter, collected daily.",
+        "reviewBy": "2027-03-31"
+      }
     },
     {
       "id": "harness-layer",
@@ -171,49 +335,144 @@
           "note": "2.1.309 and 2.1.310 fix hooks that failed open on Windows and in sandboxes. Repair work, no new rung.",
           "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
         }
-      ]
+      ],
+      "register": {
+        "claim": "Hooks and plugins become the main way teams customise agents, and an economy forms around them.",
+        "forecasts": [
+          {
+            "text": "By 30 June 2027, the official Claude Code, Cursor or Copilot plugin marketplace sells a paid plugin.",
+            "probability": 20,
+            "due": "2027-06-30"
+          }
+        ],
+        "comparison": "Editor extension marketplaces stayed mostly free for years.",
+        "alreadyMet": [
+          "Blocking hooks in Claude Code, Cursor, Copilot CLI and Codex; plugin marketplaces in Claude Code and Cursor."
+        ],
+        "movesUpWhen": [
+          "A paid plugin marketplace launches."
+        ],
+        "stallsWhen": [
+          "A vendor removes or restricts third-party hooks or plugins, citing security."
+        ],
+        "measuredBy": "Marketplace docs and changelogs, read each issue.",
+        "reviewBy": "2027-03-31"
+      }
     },
     {
       "id": "ai-native-infra",
       "name": "AI-native infrastructure: sandboxes, computer use, cloud dev environments",
       "status": "Hitting the market",
-      "note": "Cloud sessions and routines keep maturing; computer-use agents are still rough on Windows.",
-      "history": []
+      "note": "Agent sandboxes are generally available from AWS and Azure with usage pricing. The open question is whether agents move off laptops at scale.",
+      "history": [
+        {
+          "date": "2026-10-29",
+          "status": "Hitting the market",
+          "note": "Evidence for the current rung, logged late: Amazon Bedrock AgentCore, including its code sandbox, generally available since 13 October 2025.",
+          "source": "https://aws.amazon.com/about-aws/whats-new/2025/10/amazon-bedrock-agentcore-available"
+        },
+        {
+          "date": "2026-10-29",
+          "status": "Hitting the market",
+          "note": "Azure Container Apps Sandboxes, hardware-isolated microVMs for agents, generally available since 23 September 2026.",
+          "source": "https://techcommunity.microsoft.com/blog/appsonazureblog/azure-container-apps-sandboxes-now-generally-available/4559125"
+        }
+      ],
+      "register": {
+        "claim": "Isolated sandboxes become the standard place agents run, rather than developers' laptops.",
+        "forecasts": [
+          {
+            "text": "Combined npm downloads of e2b, @vercel/sandbox, @daytonaio/sdk and @cloudflare/sandbox for the 7 days ending 30 June 2027, zero-download days repaired, reach at least 32M (about 10.7M in October 2026).",
+            "probability": 50,
+            "due": "2027-06-30"
+          }
+        ],
+        "comparison": "CI moved from office servers to hosted runners over about five years.",
+        "alreadyMet": [
+          "Generally available agent sandboxes from AWS (13 October 2025) and Azure (23 September 2026)."
+        ],
+        "movesUpWhen": [
+          "Coding agents run background tasks in a cloud sandbox by default."
+        ],
+        "stallsWhen": [
+          "A sandbox-escape CVE with a CVSS score of 8 or more in any of these products (NVD).",
+          "Combined downloads fall for 8 weeks in a row."
+        ],
+        "measuredBy": "npm and NVD, collected daily; cloud changelogs, read each issue.",
+        "reviewBy": "2027-01-31"
+      }
     },
     {
       "id": "autonomous-qa",
       "name": "Autonomous QA and test generation",
-      "status": "Hitting the market",
-      "note": "CheckerBench put a ceiling on it: the best agent wrote a working static-analysis checker for 45% of real CVEs.",
+      "status": "Accelerating",
+      "note": "Benchmark progress, not yet generally available products with paid use from two major vendors.",
       "history": [
         {
           "date": "2026-10-12",
           "status": "Hitting the market",
           "note": "CheckerBench reading: best model and harness 45.33%, C/C++ far behind Python.",
           "source": "https://arxiv.org/abs/2610.07557"
-        }
-      ]
-    },
-    {
-      "id": "design-generation",
-      "name": "Design generation replacing UI and design work",
-      "status": "Accelerating",
-      "note": "Standalone Claude Design closes on 14 December 2026. That's consolidation, not a breakthrough.",
-      "history": [
+        },
         {
-          "date": "2026-10-19",
+          "date": "2026-10-29",
           "status": "Accelerating",
-          "note": "Claude Design shutdown date announced in the Claude Code changelog.",
-          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+          "note": "Re-rated from Hitting the market under the board's evidence rules: the evidence logged is a benchmark result, which is research evidence.",
+          "source": "https://github.com/SiyadDev/dev-ahead/blob/main/docs/hypothesis-register.md"
         }
-      ]
+      ],
+      "register": {
+        "claim": "Agents write and maintain a meaningful share of tests in real codebases.",
+        "forecasts": [
+          {
+            "text": "The best published score on CheckerBench reaches at least 70% by 30 June 2027 (45.3% now).",
+            "probability": 35,
+            "due": "2027-06-30"
+          }
+        ],
+        "comparison": "SWE-bench scores rose from about 2% on the full set (2023) to above 70% on the easier Verified subset, so the history is not like for like.",
+        "movesUpWhen": [
+          "GitHub or GitLab ship native test generation as generally available."
+        ],
+        "stallsWhen": [
+          "GitHub or GitLab deprecate or roll back a test-generation feature."
+        ],
+        "measuredBy": "Papers and changelogs, read each issue. Where CheckerBench scores are published still needs finding.",
+        "reviewBy": "2027-03-31"
+      }
     },
     {
       "id": "pricing-pressure",
       "name": "Downward pressure on dev and agency pricing",
-      "status": "Accelerating",
-      "note": "Cheaper model tiers support it indirectly. No direct pricing evidence this period.",
-      "history": []
+      "status": "Watching",
+      "note": "Indeed's US software development postings index rose from about 65 to 80.8 in the year to 23 October 2026, so demand for developers is recovering. There is no direct data on rates yet.",
+      "history": [
+        {
+          "date": "2026-10-29",
+          "status": "Watching",
+          "note": "Re-rated from Accelerating under the board's evidence rules: no direct rate evidence, and the one numeric series (developer postings, up 24% in a year) points against the claim.",
+          "source": "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/US/job_postings_by_sector_US.csv"
+        }
+      ],
+      "register": {
+        "claim": "What clients pay for development and agency work falls as AI raises output per person.",
+        "forecasts": [
+          {
+            "text": "Indeed's US total-postings index for Software Development, the value dated 30 June 2027, is below 85 (80.8 on 23 October 2026, rising). Postings measure demand, not rates.",
+            "probability": 25,
+            "due": "2027-06-30"
+          }
+        ],
+        "comparison": "Offshoring in the 2000s lowered rates for routine work while specialist rates rose. Expect a split.",
+        "movesUpWhen": [
+          "A direct rate source (a freelance platform rate report or an agency rate survey) shows routine build rates falling, confirmed by a second source."
+        ],
+        "stallsWhen": [
+          "Postings keep rising for two more quarters."
+        ],
+        "measuredBy": "Indeed Hiring Lab, collected weekly. A direct rate source still needs finding.",
+        "reviewBy": "2027-01-31"
+      }
     },
     {
       "id": "agent-scale-source-control",
@@ -227,7 +486,26 @@
           "note": "New entry.",
           "source": "https://pub.towardsai.net/coding-agents-are-starting-to-reshape-source-control-49fc0aae8e01"
         }
-      ]
+      ],
+      "register": {
+        "claim": "Git hosting and code review get rebuilt for many agents working on one repository at once.",
+        "forecasts": [
+          {
+            "text": "By 30 June 2027, GitHub's changelog announces a generally available feature whose docs explicitly coordinate concurrent agent changes to the same branch or pull request (locking, conflict arbitration, or stacked merges across agent sessions). Parallel agents in separate pull requests don't count.",
+            "probability": 30,
+            "due": "2027-06-30"
+          }
+        ],
+        "comparison": "Merge queues took about nine years to become a built-in GitHub feature (Rust's bors around 2014 to general availability in July 2023).",
+        "movesUpWhen": [
+          "Three vendors ship same-branch agent coordination (Cursor Origin is one)."
+        ],
+        "stallsWhen": [
+          "12 months pass with no vendor shipping it beyond beta."
+        ],
+        "measuredBy": "GitHub, GitLab and Cursor changelogs, read each issue.",
+        "reviewBy": "2027-03-31"
+      }
     },
     {
       "id": "agent-audit-trail",
@@ -241,7 +519,27 @@
           "note": "New entry. Classifier-verdict fields (2.1.301), decider \"person\" (2.1.304) and claude_code.safety_event (2.1.307).",
           "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
         }
-      ]
+      ],
+      "register": {
+        "claim": "A full record of what an agent did, and who approved it, becomes a requirement for buying agent tools.",
+        "forecasts": [
+          {
+            "text": "By 30 June 2027, an OpenTelemetry semantic conventions release marks the invoke_agent and execute_tool spans as Stable (they are at Development status now).",
+            "probability": 20,
+            "due": "2027-06-30"
+          }
+        ],
+        "comparison": "AWS CloudTrail launched in November 2013 and later became a compliance default.",
+        "movesUpWhen": [
+          "A second vendor ships exportable per-action approval logs.",
+          "A regulator or standard names agent audit logs."
+        ],
+        "stallsWhen": [
+          "12 months pass without a second vendor shipping exportable approval logs."
+        ],
+        "measuredBy": "OpenTelemetry releases and vendor docs, read each issue. Telemetry alone is not an audit trail.",
+        "reviewBy": "2027-03-31"
+      }
     },
     {
       "id": "portable-skills",
@@ -255,7 +553,67 @@
           "note": "New entry. Donated to the Agentic AI Foundation on 22 October; Anthropic reports 70+ integrating platforms and about a million published skills.",
           "source": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"
         }
-      ]
+      ],
+      "register": {
+        "claim": "SKILL.md becomes the cross-vendor format for packaging agent know-how.",
+        "forecasts": [
+          {
+            "text": "By 30 June 2027, agentskills.io publishes a versioned specification release, 1.0 or later.",
+            "probability": 55,
+            "due": "2027-06-30"
+          }
+        ],
+        "comparison": "Container formats moved to a foundation (OCI, 2015), which standardised images and runtimes but not the Dockerfile itself.",
+        "alreadyMet": [
+          "SKILL.md documented by OpenAI, GitHub, Cursor, Google and Microsoft.",
+          "Moved to the Agentic AI Foundation on 22 October 2026, with maintainers from Anthropic, Google and OpenAI."
+        ],
+        "movesUpWhen": [
+          "Skill marketplaces with verified publishers appear."
+        ],
+        "stallsWhen": [
+          "A malicious-skill incident is reported by two independent security outlets.",
+          "A major vendor forks the format."
+        ],
+        "measuredBy": "agentskills.io and foundation announcements, read each issue.",
+        "reviewBy": "2027-01-31"
+      }
+    },
+    {
+      "id": "agent-supply-chain-security",
+      "name": "Agent supply-chain security",
+      "status": "Watching",
+      "note": "Skills, MCP servers and plugins are code that agents fetch and run. NVD CVEs naming \"MCP server\" went 27, 61, 120 in the first three quarters of 2026; none is on CISA's exploited list yet.",
+      "history": [
+        {
+          "date": "2026-10-29",
+          "status": "Watching",
+          "note": "New entry. AI tooling already appears on CISA's Known Exploited Vulnerabilities list about once a month (Langflow, LiteLLM), but nothing MCP-specific yet.",
+          "source": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "register": {
+        "claim": "Skills, MCP servers and plugins become a target the way npm packages did, and a security layer for agents becomes standard.",
+        "forecasts": [
+          {
+            "text": "NVD CVEs published 1 April to 30 June 2027 with the exact phrase \"MCP server\" number at least 400 (27, 61 and 120 in the first three quarters of 2026).",
+            "probability": 50,
+            "due": "2027-06-30"
+          }
+        ],
+        "comparison": "npm and PyPI moved from open publishing to two-factor and signed releases after a run of attacks over about five years.",
+        "alreadyMet": [
+          "The MCP Registry verifies publisher namespaces through GitHub or DNS."
+        ],
+        "movesUpWhen": [
+          "An MCP server or SDK, agent skill or agent plugin vulnerability is added to CISA's Known Exploited Vulnerabilities list."
+        ],
+        "stallsWhen": [
+          "Quarterly CVE counts stop rising for two quarters."
+        ],
+        "measuredBy": "NVD (with an API key) and CISA, collected daily.",
+        "reviewBy": "2027-01-31"
+      }
     }
   ]
 }

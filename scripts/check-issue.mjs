@@ -149,10 +149,36 @@ for (const e of watch.entries) {
       fail(`watch.json: "${e.id}" history on ${h.date} has no source; log only evidence the issue cites`);
     }
   }
+  if (!e.register) fail(`watch.json: "${e.id}" has no register; see docs/editorial-guide.md`);
+  else checkRegister(e.id, e.register);
   for (const pattern of PRIVATE) {
     const hit = JSON.stringify(e).match(pattern);
     if (hit) fail(`watch.json: "${e.id}" contains private wording "${hit[0]}"`);
   }
+}
+
+// The hypothesis register on each entry: a claim, at least one forecast that
+// can be scored, and signposts decided in advance (docs/hypothesis-register.md).
+function checkRegister(id, r) {
+  const isDate = (d) => typeof d === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(d);
+  const nonEmpty = (s) => typeof s === 'string' && s.trim() !== '';
+  const where = `watch.json: "${id}" register`;
+  if (!nonEmpty(r.claim)) fail(`${where} has no claim`);
+  if (!Array.isArray(r.forecasts) || r.forecasts.length === 0) fail(`${where} needs at least one forecast`);
+  for (const f of r.forecasts ?? []) {
+    if (!nonEmpty(f.text)) fail(`${where} has a forecast with no text`);
+    if (!Number.isInteger(f.probability) || f.probability < 1 || f.probability > 99) {
+      fail(`${where} forecast probability must be a whole percentage from 1 to 99`);
+    }
+    if (!isDate(f.due)) fail(`${where} forecast due date must be YYYY-MM-DD`);
+    if (f.outcome !== undefined && !['yes', 'no'].includes(f.outcome)) fail(`${where} forecast outcome must be "yes" or "no"`);
+    if (f.outcome !== undefined && !isDate(f.resolvedOn)) fail(`${where} resolved forecast needs resolvedOn as YYYY-MM-DD`);
+  }
+  for (const key of ['movesUpWhen', 'stallsWhen']) {
+    if (!Array.isArray(r[key]) || r[key].length === 0 || !r[key].every(nonEmpty)) fail(`${where} needs at least one "${key}" sign`);
+  }
+  if (!nonEmpty(r.measuredBy)) fail(`${where} has no measuredBy`);
+  if (!isDate(r.reviewBy)) fail(`${where} reviewBy must be YYYY-MM-DD`);
 }
 
 if (errors.length) {

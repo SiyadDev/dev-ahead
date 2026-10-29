@@ -5,7 +5,7 @@
       "id": "open-weight-models",
       "name": "Ultra-cheap and open-weight models",
       "status": "Repricing the work",
-      "note": "Meta's Muse Spark Open (816B, 42B active, custom licence) and DeepSeek folding V4-Pro into V4.1 Flash pricing. Record the licence of every open model you recommend, not just its price.",
+      "note": "GPT-6.1 Terra halves the price of OpenAI's mid tier ($1 / $5 per million tokens against $2 / $12). Re-check your model choices every quarter, and record the licence of any open model you recommend.",
       "history": [
         {
           "date": "2026-10-12",
@@ -24,6 +24,12 @@
           "status": "Repricing the work",
           "note": "Muse Spark Open weights; DeepSeek V4.1 Flash absorbs V4-Pro.",
           "source": "https://thenewstack.io/meta-muse-spark-open/"
+        },
+        {
+          "date": "2026-10-29",
+          "status": "Repricing the work",
+          "note": "Sign met, entry held at the top rung: GPT-6.1 Terra launched at $1 / $5 per million tokens on OpenRouter, against $2 / $12 for GPT-5.6 Terra, a 50% cut on input and 58% on output for the same tier.",
+          "source": "https://openai.com/index/introducing-gpt-6-1-terra/"
         }
       ],
       "register": {
@@ -51,7 +57,7 @@
       "id": "agentic-coding",
       "name": "Agentic coding and orchestration replacing prompt-level help",
       "status": "Hitting the market",
-      "note": "Re-rated: the evidence logged so far shows agents shipping and selling, not a change in what clients pay for development.",
+      "note": "GitHub reports that more than 40% of pull requests in September started with an agent's draft, up from 17% in March. The next rung needs evidence about what clients pay, not more adoption numbers.",
       "history": [
         {
           "date": "2026-10-12",
@@ -76,6 +82,12 @@
           "status": "Hitting the market",
           "note": "Re-rated from Repricing the work under the board's evidence rules: only product evidence was logged, and a vendor changing how it bills for its own tool counts as market evidence, not repricing.",
           "source": "https://github.com/SiyadDev/dev-ahead/blob/main/docs/hypothesis-register.md"
+        },
+        {
+          "date": "2026-10-29",
+          "status": "Hitting the market",
+          "note": "GitHub's Octoverse 2026: more than 40% of pull requests in September started with an agent's first draft, up from 17% in March, and 90% of agent-involved pull requests merged within two weeks. Adoption evidence, not repricing evidence; held.",
+          "source": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/"
         }
       ],
       "register": {
@@ -259,7 +271,7 @@
       "id": "decision-models",
       "name": "Model routing and decision models",
       "status": "Accelerating",
-      "note": "Cheap frontier models (Haiku 5.5 at $0.10 / $0.50 per million tokens) weaken the case for separate decision models; routing is mostly a gateway feature so far. Moves opposite to the open-weight entry.",
+      "note": "GitHub Copilot Fusion, generally available on 28 October, routes each task among models with cascade and critique patterns. Write your own agents to escalate to a stronger model only after a checked failure.",
       "history": [
         {
           "date": "2026-10-12",
@@ -277,6 +289,12 @@
           "status": "Accelerating",
           "note": "Re-rated from Hitting the market under the board's evidence rules: its own stall sign is met, because frontier models got cheap enough that a separate decision model saves little.",
           "source": "https://github.com/SiyadDev/dev-ahead/blob/main/docs/hypothesis-register.md"
+        },
+        {
+          "date": "2026-10-29",
+          "status": "Accelerating",
+          "note": "GitHub Copilot Fusion generally available on 28 October: routes each prompt among models (single, cascade, critique), billed per model used. GitHub's own figure is about half the cost per task within two points of Claude Code with Opus 5.5 Max. One vendor's claim, so the cost-study sign is not met; held at Accelerating.",
+          "source": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion"
         }
       ],
       "register": {
@@ -376,6 +394,12 @@
           "status": "Hitting the market",
           "note": "Azure Container Apps Sandboxes, hardware-isolated microVMs for agents, generally available since 23 September 2026.",
           "source": "https://techcommunity.microsoft.com/blog/appsonazureblog/azure-container-apps-sandboxes-now-generally-available/4559125"
+        },
+        {
+          "date": "2026-10-29",
+          "status": "Hitting the market",
+          "note": "Sign \"coding agents run background tasks in a cloud sandbox by default\" arguably met: GitHub Agentic Workflows (GA 28 October) runs agents read-only in a sandboxed container by default. Held, because the Repricing rung can't be reached on a product feature.",
+          "source": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available"
         }
       ],
       "register": {
@@ -405,8 +429,8 @@
     {
       "id": "autonomous-qa",
       "name": "Autonomous QA and test generation",
-      "status": "Accelerating",
-      "note": "Benchmark progress, not yet generally available products with paid use from two major vendors.",
+      "status": "Hitting the market",
+      "note": "Moved up on its own sign: GitHub Agentic Workflows, generally available since 28 October, runs agents inside GitHub Actions and names test writing as a supported task. Treat agent-written tests like agent-written code: review them, and check they fail when the code is wrong.",
       "history": [
         {
           "date": "2026-10-12",
@@ -419,6 +443,12 @@
           "status": "Accelerating",
           "note": "Re-rated from Hitting the market under the board's evidence rules: the evidence logged is a benchmark result, which is research evidence.",
           "source": "https://github.com/SiyadDev/dev-ahead/blob/main/docs/hypothesis-register.md"
+        },
+        {
+          "date": "2026-10-29",
+          "status": "Hitting the market",
+          "note": "Moved up from Accelerating on its own sign, \"GitHub or GitLab ship native test generation as generally available\": GitHub Agentic Workflows went GA on 28 October, names test writing as a supported task, and GitHub Next ships a Daily Test Improver workflow for it.",
+          "source": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available"
         }
       ],
       "register": {
@@ -478,13 +508,19 @@
       "id": "agent-scale-source-control",
       "name": "Source control and review built for many agents on one repo",
       "status": "Watching",
-      "note": "Cursor Origin is in early beta and GitLab is reported to be reworking its architecture for agent concurrency. No independent benchmarks yet.",
+      "note": "Cursor's Origin marketplace is confirmed at source and open to public submissions, but no vendor has announced coordination of several agents on one branch.",
       "history": [
         {
           "date": "2026-10-15",
           "status": "Watching",
           "note": "New entry.",
           "source": "https://pub.towardsai.net/coding-agents-are-starting-to-reshape-source-control-49fc0aae8e01"
+        },
+        {
+          "date": "2026-10-29",
+          "status": "Watching",
+          "note": "Cursor's Origin App Marketplace confirmed at source (13 October): 20-plus apps, open to public submissions, apps write check runs and reviews through the Origin API. No same-branch agent coordination announced by any vendor; held.",
+          "source": "https://cursor.com/changelog/origin-app-marketplace"
         }
       ],
       "register": {
@@ -511,12 +547,18 @@
       "id": "agent-audit-trail",
       "name": "Observable and auditable agent actions",
       "status": "Watching",
-      "note": "Claude Code now emits classifier verdicts and a safety event for each blocked or prompted tool call. One vendor so far.",
+      "note": "Claude Code 2.1.312 stopped sending its claude_code.safety_event telemetry event, one of the pieces of evidence this entry opened with. Export your own record of agent actions rather than relying on a vendor's event stream.",
       "history": [
         {
           "date": "2026-10-22",
           "status": "Watching",
           "note": "New entry. Classifier-verdict fields (2.1.301), decider \"person\" (2.1.304) and claude_code.safety_event (2.1.307).",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+        },
+        {
+          "date": "2026-10-29",
+          "status": "Watching",
+          "note": "Counter-signal: Claude Code 2.1.312 stops sending the claude_code.safety_event OpenTelemetry event, one of the three pieces of evidence this entry opened with. Held at Watching.",
           "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
         }
       ],

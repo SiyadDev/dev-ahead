@@ -1,0 +1,52 @@
+name: Collect signals
+
+# Gathers what the routine can't reach from its own environment (GitHub's
+# API and trending page) and saves it to the collector-data branch: repos
+# gaining stars and forks fastest, and the agent share of public pull
+# requests. Runs daily before the routine (Monday and Thursday, 03:30 UTC).
+
+on:
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Check out the data branch
+        run: |
+          if git ls-remote --exit-code --heads origin collector-data >/dev/null; then
+            git fetch --depth=1 origin collector-data
+            git worktree add --detach collector-data FETCH_HEAD
+          else
+            git worktree add --orphan -b collector-data collector-data
+          fi
+
+      - name: Collect
+        run: node scripts/collect-trending.mjs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          OUT_DIR: collector-data
+
+      - name: Save to the data branch
+        working-directory: collector-data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Signals for $(date -u +%F)" || { echo "Nothing changed."; exit 0; }
+          git push origin HEAD:refs/heads/collector-data

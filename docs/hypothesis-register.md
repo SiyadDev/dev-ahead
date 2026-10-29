@@ -29,6 +29,7 @@ Moving up needs the next rung's evidence. An entry's "moves up when" signs say w
 - **npm downloads:** npm's API returns zero for some days; five of the 14 days to 28 October were zero. Every weekly figure replaces a zero day with the same weekday from the nearest earlier week. Unrepaired figures understate real volume by about 15%.
 - **Hacker News counts:** Algolia search, stories only, phrase in the title only.
 - **NVD counts:** exact-phrase keyword match. The collector needs a free NVD API key, because unauthenticated requests time out.
+- **Collector:** a daily GitHub Action saves repo star and fork counts, the fastest-rising repos, and the agent share of public pull requests to the `collector-data` branch (`trending.json`). The share counts PRs with "Generated with Claude Code" in the body or authored by Copilot's coding agent, as a percentage of all public PRs created in the period (18.4% in September 2026).
 - **Evidence that counts for several entries** is logged once, with every entry it counts for listed. A rung move needs at least one piece of evidence unique to that entry.
 
 ## 2. What changed in this draft

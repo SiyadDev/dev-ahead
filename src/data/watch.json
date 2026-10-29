@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-10-29",
   "entries": [
     {
       "id": "open-weight-models",
@@ -31,7 +31,7 @@
       "id": "agentic-coding",
       "name": "Agentic coding and orchestration replacing prompt-level help",
       "status": "Repricing the work",
-      "note": "Fork subagents are on by default in scripted Claude Code runs, and 2.1.307 patched a duplicate-work failure mode. The cost effect is unmeasured.",
+      "note": "Agents now run inside CI as a GA product, and GitHub says over 40% of pull requests start with an agent. The bottleneck is review and CI capacity.",
       "history": [
         {
           "date": "2026-10-12",
@@ -50,6 +50,12 @@
           "status": "Repricing the work",
           "note": "2.1.307: each fork told which launch is its own.",
           "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+        },
+        {
+          "date": "2026-10-29",
+          "status": "Repricing the work",
+          "note": "GitHub Agentic Workflows GA: Markdown automations compiled to Actions, read-only agents with safe outputs.",
+          "source": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available"
         }
       ]
     },
@@ -57,7 +63,7 @@
       "id": "context-engineering",
       "name": "Context engineering displacing prompt engineering",
       "status": "Repricing the work",
-      "note": "Supporting evidence in every issue so far: idle compaction, per-subagent context windows, cache-aware usage warnings.",
+      "note": "Instruction files and skills are becoming agent-maintained (Copilot dreaming). Measure memory against plain retrieval before paying for it.",
       "history": [
         {
           "date": "2026-10-12",
@@ -74,6 +80,12 @@
           "date": "2026-10-19",
           "status": "Repricing the work",
           "note": "Idle-compaction setting exposed in /config."
+        },
+        {
+          "date": "2026-10-29",
+          "status": "Repricing the work",
+          "note": "Copilot Memory GA; dreaming proposes PRs to skills and instruction files. Memory Tax (arXiv 2610.34073) finds many memory systems underperform plain retrieval.",
+          "source": "https://github.blog/changelog/2026-10-28-github-intelligence-puts-your-code-context-and-history-to-work"
         }
       ]
     },
@@ -115,6 +127,20 @@
       "status": "Repricing the work",
       "note": "No dated news from the main platforms in the last three issues. Held for lack of evidence, not re-checked.",
       "history": []
+    },
+    {
+      "id": "model-routing",
+      "name": "Model routing replacing model choice",
+      "status": "Hitting the market",
+      "note": "You pick an effort level or a named alias, and a router picks the model. Put an alias between your code and the model, and re-test skills when what's behind it changes.",
+      "history": [
+        {
+          "date": "2026-10-29",
+          "status": "Hitting the market",
+          "note": "New entry. Copilot Fusion GA (single, cascade and critique routing by effort level); Vercel AI Gateway virtual models; Octoverse: 61% of Copilot users used more than one model in September.",
+          "source": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion"
+        }
+      ]
     },
     {
       "id": "decision-models",
@@ -170,6 +196,12 @@
           "status": "Hitting the market",
           "note": "2.1.309 and 2.1.310 fix hooks that failed open on Windows and in sandboxes. Repair work, no new rung.",
           "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+        },
+        {
+          "date": "2026-10-29",
+          "status": "Hitting the market",
+          "note": "Claude Code 2.1.312 caps prompt and agent hooks at 24 concurrent per session; TraceTrial-Bench (arXiv 2610.32285) benchmarks harnesses separately from models.",
+          "source": "https://arxiv.org/abs/2610.32285"
         }
       ]
     },
@@ -177,8 +209,15 @@
       "id": "ai-native-infra",
       "name": "AI-native infrastructure: sandboxes, computer use, cloud dev environments",
       "status": "Hitting the market",
-      "note": "Cloud sessions and routines keep maturing; computer-use agents are still rough on Windows.",
-      "history": []
+      "note": "Sandboxes are splitting from harnesses: credentials on the host, untrusted actions in the sandbox, durable replay with explicit repeat-safety.",
+      "history": [
+        {
+          "date": "2026-10-29",
+          "status": "Hitting the market",
+          "note": "Cloudflare Computer v0.7: replay after interruption, unsafeToRepeat(), approval pauses.",
+          "source": "https://developers.cloudflare.com/changelog/post/2026-10-26-computer-durable-javascript/"
+        }
+      ]
     },
     {
       "id": "autonomous-qa",
@@ -191,6 +230,12 @@
           "status": "Hitting the market",
           "note": "CheckerBench reading: best model and harness 45.33%, C/C++ far behind Python.",
           "source": "https://arxiv.org/abs/2610.07557"
+        },
+        {
+          "date": "2026-10-29",
+          "status": "Hitting the market",
+          "note": "GitHub Agentic Workflows ship CI-failure analysis and test-writing workflows as GA.",
+          "source": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available"
         }
       ]
     },
@@ -211,9 +256,16 @@
     {
       "id": "pricing-pressure",
       "name": "Downward pressure on dev and agency pricing",
-      "status": "Accelerating",
-      "note": "Cheaper model tiers support it indirectly. No direct pricing evidence this period.",
-      "history": []
+      "status": "Hitting the market",
+      "note": "AI coding is becoming a default, metered entitlement of the platform clients already pay for. Price review, integration and guarantees, and show AI spend as its own line.",
+      "history": [
+        {
+          "date": "2026-10-29",
+          "status": "Hitting the market",
+          "note": "Moved up from Accelerating. GitHub includes Copilot in every GitHub Enterprise seat with usage metered from the first request; Octoverse says over 40% of pull requests now start with an agent.",
+          "source": "https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot"
+        }
+      ]
     },
     {
       "id": "agent-scale-source-control",
@@ -233,12 +285,18 @@
       "id": "agent-audit-trail",
       "name": "Observable and auditable agent actions",
       "status": "Watching",
-      "note": "Claude Code now emits classifier verdicts and a safety event for each blocked or prompted tool call. One vendor so far.",
+      "note": "Claude Code removed its safety_event telemetry in 2.1.312, a week after adding it. No replacement named.",
       "history": [
         {
           "date": "2026-10-22",
           "status": "Watching",
           "note": "New entry. Classifier-verdict fields (2.1.301), decider \"person\" (2.1.304) and claude_code.safety_event (2.1.307).",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+        },
+        {
+          "date": "2026-10-29",
+          "status": "Watching",
+          "note": "Setback: Claude Code 2.1.312 stopped sending the claude_code.safety_event OpenTelemetry event added in 2.1.307.",
           "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
         }
       ]
@@ -247,13 +305,19 @@
       "id": "portable-skills",
       "name": "Portable agent skills (SKILL.md)",
       "status": "Hitting the market",
-      "note": "Anthropic donated Agent Skills to the Agentic AI Foundation. Adoption figures are Anthropic's own; security guidance for skill authors and installers is only a roadmap item.",
+      "note": "Platforms now ship onboarding as skills. A skill is portable; its effect depends on the model running it.",
       "history": [
         {
           "date": "2026-10-26",
           "status": "Hitting the market",
           "note": "New entry. Donated to the Agentic AI Foundation on 22 October; Anthropic reports 70+ integrating platforms and about a million published skills.",
           "source": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"
+        },
+        {
+          "date": "2026-10-29",
+          "status": "Hitting the market",
+          "note": "Vercel CI's setup is delivered as a skill (npx skills use vercel/ci@setup). arXiv 2610.33024: skills that help strong models can hurt weak ones.",
+          "source": "https://vercel.com/changelog/vercel-ci-is-now-in-beta"
         }
       ]
     }

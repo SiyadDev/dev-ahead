@@ -1729,6 +1729,65 @@ pre code {
   line-height: 1.5;
 }
 
+/* The register: the claim, its forecasts, and what would move the rating. */
+.register {
+  margin: 0 0 var(--s4);
+  max-width: var(--measure);
+}
+
+.register .claim {
+  margin: 0 0 var(--s2);
+}
+
+.register .label {
+  font-weight: 600;
+  margin-right: var(--s1);
+}
+
+.register .forecasts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.register .forecasts li {
+  display: grid;
+  grid-template-columns: 3.5rem minmax(0, 1fr);
+  gap: var(--s3);
+  padding: var(--s2) 0;
+  border-top: 1px solid var(--rule);
+}
+
+.register .prob {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+}
+
+.register .due {
+  color: var(--graphite);
+  white-space: nowrap;
+}
+
+.register .signposts {
+  margin: 0 0 var(--s2);
+}
+
+.register .signposts dt {
+  font-weight: 600;
+  margin-top: var(--s3);
+}
+
+.register .signposts dt:first-child {
+  margin-top: 0;
+}
+
+.register .signposts dd {
+  margin: var(--s1) 0 0;
+  padding-left: var(--s3);
+  border-left: 2px solid var(--rule);
+}
+
 .evidence-latest {
   display: grid;
   grid-template-columns: 9rem minmax(0, 1fr);

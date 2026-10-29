@@ -10,12 +10,36 @@ export interface WatchEvent {
   source?: string;
 }
 
+// A dated, checkable prediction. Probability is a whole percentage; when it
+// comes due, `outcome` records how it resolved.
+export interface WatchForecast {
+  text: string;
+  probability: number;
+  due: string;
+  outcome?: 'yes' | 'no';
+  resolvedOn?: string;
+}
+
+// What the entry claims, how it can be scored, and the evidence, decided in
+// advance, that moves its rating. See docs/hypothesis-register.md.
+export interface WatchRegister {
+  claim: string;
+  forecasts: WatchForecast[];
+  comparison?: string;
+  alreadyMet?: string[];
+  movesUpWhen: string[];
+  stallsWhen: string[];
+  measuredBy: string;
+  reviewBy: string;
+}
+
 export interface WatchEntry {
   id: string;
   name: string;
   status: Rung;
   note: string;
   history: WatchEvent[];
+  register?: WatchRegister;
 }
 
 // FIXTURE=worst swaps in a worst-case board for stress-testing the layout locally.

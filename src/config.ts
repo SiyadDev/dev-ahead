@@ -39,10 +39,10 @@ export const RUNGS = [
 export type Rung = (typeof RUNGS)[number];
 
 export const RUNG_MEANING: Record<Rung, string> = {
-  Watching: 'Early evidence. Worth knowing about, not yet worth acting on.',
-  Accelerating: 'Multiple independent signals, and the pace is picking up.',
-  'Hitting the market': 'Shipping products you can use or buy today.',
-  'Repricing the work': 'Changing what clients expect to pay for, or what a team needs to staff.',
+  Watching: "Early evidence from at least one primary source: a paper, a prototype, one vendor's beta.",
+  Accelerating: 'At least three independent builders or vendors, and a growth measure rising for four weeks or more.',
+  'Hitting the market': 'Generally available from at least two major vendors, with evidence of paid use.',
+  'Repricing the work': 'Direct evidence that what clients pay for the work, or how teams staff, has changed.',
 };
 
 // Prefixes a site-relative path with the configured base path.

@@ -72,5 +72,6 @@ Every entry carries a `register`: its claim, one or more forecasts, the signs th
 - **Changing your mind** means adding a new forecast with a later due date and saying why in the issue, not editing the old one.
 - **New entries** need a full register: a claim, at least one forecast (a whole percentage from 1 to 99, a due date, and wording a stranger could mark right or wrong without an argument), at least one `movesUpWhen` and one `stallsWhen` sign with a number and a source, `measuredBy` and `reviewBy`. `npm run check` rejects an entry without one.
 - **Evidence that counts for several entries** is logged on each, but a status change needs at least one piece of evidence unique to that entry.
+- **Prices.** Run `npm run prices` before judging any price sign. It compares OpenRouter's prices with the snapshot the previous run saved in `src/data/openrouter-prices.json`, lists cuts, rises, new and removed models, and saves today's snapshot. Commit the updated snapshot with the issue. A cut counts only for a model already in the previous snapshot; a new model priced below its predecessor is noted, but isn't a cut.
 - **Review dates.** When an entry's `reviewBy` has passed, the issue gives it a one-line review: still on the right rung, and is its forecast still the right test?
 

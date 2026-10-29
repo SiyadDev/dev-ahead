@@ -149,7 +149,8 @@ for (const e of watch.entries) {
       fail(`watch.json: "${e.id}" history on ${h.date} has no source; log only evidence the issue cites`);
     }
   }
-  if (e.register) checkRegister(e.id, e.register);
+  if (!e.register) fail(`watch.json: "${e.id}" has no register; see docs/editorial-guide.md`);
+  else checkRegister(e.id, e.register);
   for (const pattern of PRIVATE) {
     const hit = JSON.stringify(e).match(pattern);
     if (hit) fail(`watch.json: "${e.id}" contains private wording "${hit[0]}"`);

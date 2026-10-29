@@ -51,7 +51,7 @@
       "id": "agentic-coding",
       "name": "Agentic coding and orchestration replacing prompt-level help",
       "status": "Hitting the market",
-      "note": "Re-rated: the evidence logged so far shows agents shipping and selling, not a change in what clients pay for development.",
+      "note": "GitHub says over 40% of pull requests now start with an agent (September, up from 17% in March). Review, not writing, is the constraint to plan for.",
       "history": [
         {
           "date": "2026-10-12",
@@ -76,6 +76,12 @@
           "status": "Hitting the market",
           "note": "Re-rated from Repricing the work under the board's evidence rules: only product evidence was logged, and a vendor changing how it bills for its own tool counts as market evidence, not repricing.",
           "source": "https://github.com/SiyadDev/dev-ahead/blob/main/docs/hypothesis-register.md"
+        },
+        {
+          "date": "2026-10-29",
+          "status": "Hitting the market",
+          "note": "Held. GitHub's Octoverse reports more than 40% of pull requests started with an agent in September, up from 17% in March (vendor figure). The Repricing rule needs rate or survey evidence; none seen.",
+          "source": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/"
         }
       ],
       "register": {
@@ -103,7 +109,7 @@
       "id": "context-engineering",
       "name": "Context engineering displacing prompt engineering",
       "status": "Watching",
-      "note": "Re-rated: the features this relies on (compaction, memory files) are becoming automatic, and Hacker News attention fell from 41 title mentions in July 2025 to 5 in October 2026.",
+      "note": "Attention is low (5 Hacker News title stories in October), but Vercel's 67% session cost cut came from context management. The practice matters more than the term.",
       "history": [
         {
           "date": "2026-10-12",
@@ -126,6 +132,12 @@
           "status": "Watching",
           "note": "Re-rated from Repricing the work under the board's evidence rules: only product features were logged, and attention is falling.",
           "source": "https://github.com/SiyadDev/dev-ahead/blob/main/docs/hypothesis-register.md"
+        },
+        {
+          "date": "2026-10-29",
+          "status": "Watching",
+          "note": "Held. Hacker News title stories: 7 in August, 1 in September, 5 in October; neither sign met. Vercel cut Agent session cost 67% through context management and prompt-cache reuse, with rates unchanged.",
+          "source": "https://vercel.com/changelog/vercel-agent-sessions-now-cost-67-percent-less"
         }
       ],
       "register": {
@@ -265,7 +277,7 @@
       "id": "decision-models",
       "name": "Model routing and decision models",
       "status": "Hitting the market",
-      "note": "Automatic model routing is now generally available and paid for from two major vendors: GitHub Copilot Fusion and Vercel AI Gateway Virtual Models, both on 28 October. Small decision models are still a minority of what gets routed to.",
+      "note": "Copilot Fusion and Vercel Virtual Models make routing a product; Together AI's paper backs low-effort-first with escalation on a verified failure.",
       "history": [
         {
           "date": "2026-10-12",
@@ -295,6 +307,12 @@
           "status": "Hitting the market",
           "note": "Second vendor for the rule: Vercel launched Virtual Models on its paid AI Gateway on 28 October, so the model behind a task can change without a redeploy.",
           "source": "https://vercel.com/changelog/virtual-models-now-available-on-ai-gateway"
+        },
+        {
+          "date": "2026-10-29",
+          "status": "Hitting the market",
+          "note": "Held. Research evidence only: Together AI found starting at low effort and escalating after a verified failure matched fixed top effort at lower cost.",
+          "source": "https://arxiv.org/abs/2610.34491"
         }
       ],
       "register": {
@@ -321,7 +339,7 @@
       "id": "harness-layer",
       "name": "Harness and plugin layer: hooks, skills, mods",
       "status": "Hitting the market",
-      "note": "Hooks can fail closed, rewrite a subagent at spawn, and demand a human decider. 2.1.309 and 2.1.310 fixed several fail-open cases, so test the failure path of every blocking hook.",
+      "note": "Claude Code now caps concurrent hooks at 24 per session. The harness changes every few days, often without a stated reason; pin its version in unattended jobs.",
       "history": [
         {
           "date": "2026-10-12",
@@ -352,6 +370,12 @@
           "status": "Hitting the market",
           "note": "2.1.309 and 2.1.310 fix hooks that failed open on Windows and in sandboxes. Repair work, no new rung.",
           "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+        },
+        {
+          "date": "2026-10-29",
+          "status": "Hitting the market",
+          "note": "Held. 2.1.312 caps prompt and agent hooks at 24 running at once per session; a study of 1,886 agent releases found only 48% of instruction-stack changes explain why.",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
         }
       ],
       "register": {
@@ -381,7 +405,7 @@
       "id": "ai-native-infra",
       "name": "AI-native infrastructure: sandboxes, computer use, cloud dev environments",
       "status": "Hitting the market",
-      "note": "Agent sandboxes are generally available from AWS and Azure with usage pricing. The open question is whether agents move off laptops at scale.",
+      "note": "Agentic Workflows run agents in sandboxed containers and micro-VMs; sandbox SDK downloads reached 12.1M a week. Keep secrets on the host and only tool actions in the sandbox.",
       "history": [
         {
           "date": "2026-10-29",
@@ -394,6 +418,12 @@
           "status": "Hitting the market",
           "note": "Azure Container Apps Sandboxes, hardware-isolated microVMs for agents, generally available since 23 September 2026.",
           "source": "https://techcommunity.microsoft.com/blog/appsonazureblog/azure-container-apps-sandboxes-now-generally-available/4559125"
+        },
+        {
+          "date": "2026-10-29",
+          "status": "Hitting the market",
+          "note": "Held. GitHub Agentic Workflows went generally available with sandboxed containers and micro-VM isolation for agents. Combined weekly downloads of the four sandbox SDKs reached 12.1M (zero days repaired).",
+          "source": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available"
         }
       ],
       "register": {
@@ -424,7 +454,7 @@
       "id": "autonomous-qa",
       "name": "Autonomous QA and test generation",
       "status": "Accelerating",
-      "note": "Benchmark progress, not yet generally available products with paid use from two major vendors.",
+      "note": "FeatureArc shows agents miss defects they introduced in earlier stages about 95% of the time. Re-run tests for old behaviour between agent steps.",
       "history": [
         {
           "date": "2026-10-12",
@@ -437,6 +467,12 @@
           "status": "Accelerating",
           "note": "Re-rated from Hitting the market under the board's evidence rules: the evidence logged is a benchmark result, which is research evidence.",
           "source": "https://github.com/SiyadDev/dev-ahead/blob/main/docs/hypothesis-register.md"
+        },
+        {
+          "date": "2026-10-29",
+          "status": "Accelerating",
+          "note": "Held. FeatureArc (Tencent): whole-feature success fell to 28.5% from 62.7% at the first stage, and agents left inherited defects unnoticed about 95% of the time. Research evidence only.",
+          "source": "https://arxiv.org/abs/2610.37434"
         }
       ],
       "register": {
@@ -529,12 +565,18 @@
       "id": "agent-audit-trail",
       "name": "Observable and auditable agent actions",
       "status": "Watching",
-      "note": "Claude Code now emits classifier verdicts and a safety event for each blocked or prompted tool call. One vendor so far.",
+      "note": "Claude Code stopped sending its safety_event telemetry in 2.1.312. Telemetry is not an audit trail; watch for a second vendor with exportable per-action approval logs.",
       "history": [
         {
           "date": "2026-10-22",
           "status": "Watching",
           "note": "New entry. Classifier-verdict fields (2.1.301), decider \"person\" (2.1.304) and claude_code.safety_event (2.1.307).",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+        },
+        {
+          "date": "2026-10-29",
+          "status": "Watching",
+          "note": "Held, with evidence against: Claude Code 2.1.312 stopped sending the claude_code.safety_event OpenTelemetry event added in 2.1.307. The moves-up sign (a second vendor shipping exportable per-action approval logs) is not met.",
           "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
         }
       ],

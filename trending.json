@@ -1,27 +1,27 @@
 {
-  "generatedAt": "2026-10-29T10:34:51.741Z",
+  "generatedAt": "2026-10-30T07:59:22.396Z",
   "note": "Stars are attention, not adoption, and can be bought. A rising repo is a lead to read, not evidence on its own.",
   "comparedWith": {
-    "oneDay": null,
+    "oneDay": "2026-10-29",
     "sevenDays": null
   },
-  "tracked": 674,
+  "tracked": 706,
   "agentPullRequestShare": {
     "lastFullMonth": {
       "from": "2026-09-01",
       "to": "2026-09-30",
-      "total": 22736703,
-      "claudeCode": 4121436,
-      "copilotAgent": 59798,
+      "total": 22720049,
+      "claudeCode": 4117783,
+      "copilotAgent": 59731,
       "sharePercent": 18.4
     },
     "monthToDate": {
       "from": "2026-10-01",
-      "to": "2026-10-29",
-      "total": 29983511,
-      "claudeCode": 6815811,
-      "copilotAgent": 57458,
-      "sharePercent": 22.9
+      "to": "2026-10-30",
+      "total": 31048107,
+      "claudeCode": 7019124,
+      "copilotAgent": 58672,
+      "sharePercent": 22.8
     }
   },
   "rising": [],
@@ -29,8 +29,8 @@
     {
       "repo": "Gathin23/cleanyourtv",
       "url": "https://github.com/Gathin23/cleanyourtv",
-      "stars": 44520,
-      "forks": 5441,
+      "stars": 45844,
+      "forks": 5631,
       "description": "Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.",
       "topics": [
         "adb",
@@ -53,8 +53,8 @@
       ],
       "language": "Python",
       "createdAt": "2026-10-17",
-      "pushedAt": "2026-10-29",
-      "starsGained1d": null,
+      "pushedAt": "2026-10-30",
+      "starsGained1d": 1324,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": true,
@@ -67,33 +67,33 @@
     {
       "repo": "deepseek-ai/DeepInfer",
       "url": "https://github.com/deepseek-ai/DeepInfer",
-      "stars": 24124,
-      "forks": 2881,
+      "stars": 24366,
+      "forks": 2929,
       "description": "DeepInfer: High-performance, large-scale inference framework for DeepSeek models",
       "topics": [],
       "language": "Python",
       "createdAt": "2026-10-16",
       "pushedAt": "2026-10-26",
-      "starsGained1d": null,
+      "starsGained1d": 242,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
-        "new in the last 14 days"
+        "tracked"
       ]
     },
     {
       "repo": "Zagitta/gpu-unlock",
       "url": "https://github.com/Zagitta/gpu-unlock",
-      "stars": 12707,
-      "forks": 1245,
+      "stars": 13225,
+      "forks": 1292,
       "description": "Your GeForce runs AI at half speed. This fixes it for 20/30/40 series cards. Up to 2× FP16 / BF16 / TF32 tensor throughput",
       "topics": [],
       "language": "C",
       "createdAt": "2026-10-18",
       "pushedAt": "2026-10-29",
-      "starsGained1d": null,
+      "starsGained1d": 518,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": false,
@@ -105,8 +105,8 @@
     {
       "repo": "tangency-labs/solidcraft",
       "url": "https://github.com/tangency-labs/solidcraft",
-      "stars": 11803,
-      "forks": 1511,
+      "stars": 12141,
+      "forks": 1578,
       "description": "SolidCraft: an open-source parametric 3D CAD application built in pure Rust. Desktop, web, and automation through MCP.",
       "topics": [
         "3d-modeling",
@@ -121,8 +121,8 @@
       ],
       "language": "Rust",
       "createdAt": "2026-10-07",
-      "pushedAt": "2026-10-29",
-      "starsGained1d": null,
+      "pushedAt": "2026-10-30",
+      "starsGained1d": 338,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": true,
@@ -134,8 +134,8 @@
     {
       "repo": "rehan-remade/universal-modder",
       "url": "https://github.com/rehan-remade/universal-modder",
-      "stars": 9170,
-      "forks": 1020,
+      "stars": 9210,
+      "forks": 1027,
       "description": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos.",
       "topics": [
         "age-of-empires",
@@ -151,8 +151,8 @@
       ],
       "language": "Python",
       "createdAt": "2026-09-30",
-      "pushedAt": "2026-10-29",
-      "starsGained1d": null,
+      "pushedAt": "2026-10-30",
+      "starsGained1d": 40,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": true,
@@ -167,14 +167,14 @@
     {
       "repo": "pengchujin/aerial-tv",
       "url": "https://github.com/pengchujin/aerial-tv",
-      "stars": 7612,
-      "forks": 635,
+      "stars": 7899,
+      "forks": 658,
       "description": "给国产电视的一块干净桌面：参照 tvOS 设计的开源 Android TV 桌面，没有广告，开机自动接管。A tvOS-style launcher for Xiaomi, TCL and other China-market TVs.",
       "topics": [],
       "language": "Kotlin",
       "createdAt": "2026-10-20",
-      "pushedAt": "2026-10-29",
-      "starsGained1d": null,
+      "pushedAt": "2026-10-30",
+      "starsGained1d": 287,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": false,
@@ -184,10 +184,41 @@
       ]
     },
     {
+      "repo": "Jakeschincariol/replica-skill",
+      "url": "https://github.com/Jakeschincariol/replica-skill",
+      "stars": 6529,
+      "forks": 1159,
+      "description": "Eleven free Claude skills that clone any app: reverse-engineer it, rebuild it, test it for bugs, then fix what its users hate. Free, MIT.",
+      "topics": [
+        "agent",
+        "agent-skills",
+        "app-clone",
+        "claude",
+        "claude-code",
+        "claude-skills",
+        "indie-hacker",
+        "reverse-engineering",
+        "saas"
+      ],
+      "language": "Python",
+      "createdAt": "2026-10-03",
+      "pushedAt": "2026-10-03",
+      "starsGained1d": 176,
+      "starsGained7d": null,
+      "forksGained7d": null,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "new in topic:claude-code",
+        "new in topic:agent-skills",
+        "new in topic:claude-skills"
+      ]
+    },
+    {
       "repo": "ly05010419/MacNativeGames",
       "url": "https://github.com/ly05010419/MacNativeGames",
-      "stars": 6376,
-      "forks": 931,
+      "stars": 6505,
+      "forks": 949,
       "description": "Play your own Tears of the Kingdom and Breath of the Wild natively on Apple silicon Mac, iPhone and iPad. Not an emulator: the game's ARM64 code runs directly, NVN rebuilt on Metal. Bring your own gam",
       "topics": [
         "apple-silicon",
@@ -206,7 +237,7 @@
       "language": "C",
       "createdAt": "2026-10-17",
       "pushedAt": "2026-10-29",
-      "starsGained1d": null,
+      "starsGained1d": 129,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": false,
@@ -216,102 +247,10 @@
       ]
     },
     {
-      "repo": "Jakeschincariol/replica-skill",
-      "url": "https://github.com/Jakeschincariol/replica-skill",
-      "stars": 6353,
-      "forks": 1124,
-      "description": "Eleven free Claude skills that clone any app: reverse-engineer it, rebuild it, test it for bugs, then fix what its users hate. Free, MIT.",
-      "topics": [
-        "agent",
-        "agent-skills",
-        "app-clone",
-        "claude",
-        "claude-code",
-        "claude-skills",
-        "indie-hacker",
-        "reverse-engineering",
-        "saas"
-      ],
-      "language": "Python",
-      "createdAt": "2026-10-03",
-      "pushedAt": "2026-10-03",
-      "starsGained1d": null,
-      "starsGained7d": null,
-      "forksGained7d": null,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "new in topic:claude-code",
-        "new in topic:agent-skills",
-        "new in topic:claude-skills"
-      ]
-    },
-    {
-      "repo": "shader-effects-inc/shaders",
-      "url": "https://github.com/shader-effects-inc/shaders",
-      "stars": 5666,
-      "forks": 265,
-      "description": "WebGPU components for React, Vue, Svelte, Solid, JS & Framer",
-      "topics": [
-        "cli",
-        "javascript",
-        "mcp",
-        "react",
-        "shaders",
-        "solid",
-        "svelte",
-        "vue",
-        "webgpu-shaders"
-      ],
-      "language": "TypeScript",
-      "createdAt": "2026-09-29",
-      "pushedAt": "2026-10-21",
-      "starsGained1d": null,
-      "starsGained7d": null,
-      "forksGained7d": null,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "new in topic:mcp",
-        "new in topic:cli"
-      ]
-    },
-    {
-      "repo": "omlahore/RemoveMacAI",
-      "url": "https://github.com/omlahore/RemoveMacAI",
-      "stars": 5509,
-      "forks": 158,
-      "description": "Debloat macOS: turn off Apple Intelligence, analytics, ads and pop-ups. A native app and CLI, and every change can be undone.",
-      "topics": [
-        "ai-blocker",
-        "anti-ai",
-        "apple-intelligence",
-        "cli",
-        "debloat",
-        "hacktoberfest",
-        "macos",
-        "macos-27",
-        "privacy",
-        "siri",
-        "swift"
-      ],
-      "language": "Swift",
-      "createdAt": "2026-09-29",
-      "pushedAt": "2026-10-29",
-      "starsGained1d": null,
-      "starsGained7d": null,
-      "forksGained7d": null,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "new in topic:cli"
-      ]
-    },
-    {
       "repo": "simbasjungles/free-my-tv",
       "url": "https://github.com/simbasjungles/free-my-tv",
-      "stars": 5295,
-      "forks": 886,
+      "stars": 5415,
+      "forks": 906,
       "description": "A fast, ad-free home screen for Google TV, LG webOS and Samsung Tizen. One button to undo.",
       "topics": [
         "android-tv",
@@ -328,8 +267,8 @@
       ],
       "language": "Java",
       "createdAt": "2026-10-19",
-      "pushedAt": "2026-10-29",
-      "starsGained1d": null,
+      "pushedAt": "2026-10-30",
+      "starsGained1d": 120,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": true,
@@ -342,8 +281,8 @@
     {
       "repo": "xiaoyang111222/cn-math-taxonomy",
       "url": "https://github.com/xiaoyang111222/cn-math-taxonomy",
-      "stars": 5071,
-      "forks": 1295,
+      "stars": 5360,
+      "forks": 1364,
       "description": "数学（小学到高中）、英语（三年级到高中）、初中物理的知识图谱：1644 个知识点、2403 条先修边、6723 道题，对齐课标，附自适应前置诊断。",
       "topics": [
         "chinese",
@@ -365,8 +304,8 @@
       ],
       "language": "Python",
       "createdAt": "2026-10-18",
-      "pushedAt": "2026-10-28",
-      "starsGained1d": null,
+      "pushedAt": "2026-10-29",
+      "starsGained1d": 289,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": false,
@@ -376,10 +315,57 @@
       ]
     },
     {
+      "repo": "unclebob/ub-mode",
+      "url": "https://github.com/unclebob/ub-mode",
+      "stars": 4991,
+      "forks": 277,
+      "description": "",
+      "topics": [],
+      "language": null,
+      "createdAt": "2026-10-25",
+      "pushedAt": "2026-10-25",
+      "starsGained1d": 845,
+      "starsGained7d": null,
+      "forksGained7d": null,
+      "devRelevant": false,
+      "onTrendingPage": [],
+      "foundBy": [
+        "new in the last 14 days"
+      ]
+    },
+    {
+      "repo": "rddmwmddr/android-ad-cleaner",
+      "url": "https://github.com/rddmwmddr/android-ad-cleaner",
+      "stars": 4875,
+      "forks": 440,
+      "description": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。",
+      "topics": [
+        "adb",
+        "ai-agent",
+        "android",
+        "coloros",
+        "debloat",
+        "hyperos",
+        "magicos",
+        "originos"
+      ],
+      "language": "Python",
+      "createdAt": "2026-10-24",
+      "pushedAt": "2026-10-30",
+      "starsGained1d": 295,
+      "starsGained7d": null,
+      "forksGained7d": null,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "new in the last 14 days"
+      ]
+    },
+    {
       "repo": "QingYunA/answer-me-with-html",
       "url": "https://github.com/QingYunA/answer-me-with-html",
-      "stars": 4619,
-      "forks": 314,
+      "stars": 4816,
+      "forks": 329,
       "description": "Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read. 让 AI Agent 用一页 HTML 回答复杂问题。",
       "topics": [
         "agent-skill",
@@ -398,8 +384,8 @@
       ],
       "language": "JavaScript",
       "createdAt": "2026-10-02",
-      "pushedAt": "2026-10-28",
-      "starsGained1d": null,
+      "pushedAt": "2026-10-30",
+      "starsGained1d": 197,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": true,
@@ -411,44 +397,16 @@
       ]
     },
     {
-      "repo": "rddmwmddr/android-ad-cleaner",
-      "url": "https://github.com/rddmwmddr/android-ad-cleaner",
-      "stars": 4580,
-      "forks": 413,
-      "description": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。",
-      "topics": [
-        "adb",
-        "ai-agent",
-        "android",
-        "coloros",
-        "debloat",
-        "hyperos",
-        "magicos",
-        "originos"
-      ],
-      "language": "Python",
-      "createdAt": "2026-10-24",
-      "pushedAt": "2026-10-29",
-      "starsGained1d": null,
-      "starsGained7d": null,
-      "forksGained7d": null,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "new in the last 14 days"
-      ]
-    },
-    {
       "repo": "JustAResearcher/gpu-unlock-ada",
       "url": "https://github.com/JustAResearcher/gpu-unlock-ada",
-      "stars": 4466,
-      "forks": 572,
+      "stars": 4542,
+      "forks": 580,
       "description": "GPU tensor unlock source for RTX 4090 and experimental RTX 4070 Ti SUPER; firmware generated locally",
       "topics": [],
       "language": "C",
       "createdAt": "2026-10-23",
       "pushedAt": "2026-10-26",
-      "starsGained1d": null,
+      "starsGained1d": 76,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": false,
@@ -458,28 +416,28 @@
       ]
     },
     {
-      "repo": "unclebob/ub-mode",
-      "url": "https://github.com/unclebob/ub-mode",
-      "stars": 4146,
-      "forks": 228,
-      "description": "",
+      "repo": "amosblomqvist/learnharness",
+      "url": "https://github.com/amosblomqvist/learnharness",
+      "stars": 4104,
+      "forks": 634,
+      "description": "Agent harness for learning difficult things.",
       "topics": [],
-      "language": null,
-      "createdAt": "2026-10-25",
-      "pushedAt": "2026-10-25",
-      "starsGained1d": null,
+      "language": "TypeScript",
+      "createdAt": "2026-10-16",
+      "pushedAt": "2026-10-29",
+      "starsGained1d": 352,
       "starsGained7d": null,
       "forksGained7d": null,
-      "devRelevant": false,
+      "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
-        "new in the last 14 days"
+        "tracked"
       ]
     },
     {
       "repo": "Folkbench/folkbench",
       "url": "https://github.com/Folkbench/folkbench",
-      "stars": 3894,
+      "stars": 3961,
       "forks": 21,
       "description": "AI API 中转站评测排行与切换工具：实测可用率、延迟与价格 · Open-source AI API relay benchmark, rankings & switcher for Claude Code / Codex",
       "topics": [
@@ -501,7 +459,7 @@
       "language": "Rust",
       "createdAt": "2026-10-02",
       "pushedAt": "2026-10-29",
-      "starsGained1d": null,
+      "starsGained1d": 67,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": true,
@@ -511,19 +469,19 @@
       ]
     },
     {
-      "repo": "amosblomqvist/learnharness",
-      "url": "https://github.com/amosblomqvist/learnharness",
-      "stars": 3752,
-      "forks": 587,
-      "description": "Agent harness for learning difficult things.",
+      "repo": "interplains/Zero-Breach-Toolkit",
+      "url": "https://github.com/interplains/Zero-Breach-Toolkit",
+      "stars": 3691,
+      "forks": 391,
+      "description": "Free, open-source, offline checks for traces of known mercenary spyware. Works on Windows, macOS and Linux, Android phones and iPhone backups.",
       "topics": [],
-      "language": "TypeScript",
-      "createdAt": "2026-10-16",
+      "language": "Python",
+      "createdAt": "2026-10-25",
       "pushedAt": "2026-10-29",
-      "starsGained1d": null,
+      "starsGained1d": 593,
       "starsGained7d": null,
       "forksGained7d": null,
-      "devRelevant": true,
+      "devRelevant": false,
       "onTrendingPage": [],
       "foundBy": [
         "new in the last 14 days"
@@ -532,14 +490,14 @@
     {
       "repo": "aicodeking/leanrea",
       "url": "https://github.com/aicodeking/leanrea",
-      "stars": 3512,
-      "forks": 539,
+      "stars": 3685,
+      "forks": 559,
       "description": "One 8 KB skill that replaces REA (Reverse Engineer Anything): plain CLI tools, no MCP. Benchmarked: 38% faster, 35% cheaper.",
       "topics": [],
       "language": "Python",
       "createdAt": "2026-10-17",
       "pushedAt": "2026-10-19",
-      "starsGained1d": null,
+      "starsGained1d": 173,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": true,
@@ -551,8 +509,8 @@
     {
       "repo": "openfilm/openfilm",
       "url": "https://github.com/openfilm/openfilm",
-      "stars": 3480,
-      "forks": 327,
+      "stars": 3654,
+      "forks": 343,
       "description": "The open source AI video agent: turns any coding agent into a video agent, with an editor to change anything it makes.",
       "topics": [
         "ai-video",
@@ -566,8 +524,8 @@
       ],
       "language": "TypeScript",
       "createdAt": "2026-10-04",
-      "pushedAt": "2026-10-28",
-      "starsGained1d": null,
+      "pushedAt": "2026-10-30",
+      "starsGained1d": 174,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": true,
@@ -577,10 +535,38 @@
       ]
     },
     {
+      "repo": "anhao/ai-pose-gallery-zh",
+      "url": "https://github.com/anhao/ai-pose-gallery-zh",
+      "stars": 3526,
+      "forks": 916,
+      "description": "中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊",
+      "topics": [
+        "ai-art",
+        "chinese",
+        "cloudflare-pages",
+        "gallery",
+        "i18n",
+        "pose",
+        "reference-images",
+        "static-site"
+      ],
+      "language": "HTML",
+      "createdAt": "2026-10-27",
+      "pushedAt": "2026-10-30",
+      "starsGained1d": 1012,
+      "starsGained7d": null,
+      "forksGained7d": null,
+      "devRelevant": false,
+      "onTrendingPage": [],
+      "foundBy": [
+        "new in the last 14 days"
+      ]
+    },
+    {
       "repo": "kingcharleslzy-ai/dsh-purge",
       "url": "https://github.com/kingcharleslzy-ai/dsh-purge",
-      "stars": 3319,
-      "forks": 1750,
+      "stars": 3444,
+      "forks": 1811,
       "description": "dsh-purge Community · DeepSeek Harness 社区维护版：宿主兼容、状态诊断、提示词管理、更新与本机备份回滚。基于小杨 / YuJunZhiXue 的 dsh-purge。",
       "topics": [
         "agent-tools",
@@ -598,47 +584,46 @@
       "language": "JavaScript",
       "createdAt": "2026-10-16",
       "pushedAt": "2026-10-25",
-      "starsGained1d": null,
+      "starsGained1d": 125,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
-        "new in the last 14 days"
+        "tracked"
       ]
     },
     {
-      "repo": "Leonxlnx/earshot",
-      "url": "https://github.com/Leonxlnx/earshot",
-      "stars": 3187,
-      "forks": 196,
-      "description": "Ears for coding agents: let AI hear, review and make sound. CPU-only, open source.",
+      "repo": "Jakeschincariol/day-trader-skill",
+      "url": "https://github.com/Jakeschincariol/day-trader-skill",
+      "stars": 3353,
+      "forks": 772,
+      "description": "11 Claude skills for day trading: scan thousands of charts, track breaking news, time every entry and exit, and replay every outcome before you risk a dollar.",
       "topics": [
-        "ai-agents",
-        "audio",
-        "claude-code",
-        "mcp",
-        "sound-design"
+        "backtesting",
+        "claude",
+        "claude-skills",
+        "day-trading",
+        "stock-market"
       ],
       "language": "Python",
-      "createdAt": "2026-10-15",
-      "pushedAt": "2026-10-22",
-      "starsGained1d": null,
+      "createdAt": "2026-10-20",
+      "pushedAt": "2026-10-20",
+      "starsGained1d": 536,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
-        "new in topic:mcp",
-        "new in topic:claude-code",
-        "new in topic:ai-agents"
+        "new in topic:claude-skills",
+        "new in the last 14 days"
       ]
     },
     {
       "repo": "designfuchen/word-atlas",
       "url": "https://github.com/designfuchen/word-atlas",
-      "stars": 3173,
-      "forks": 696,
+      "stars": 3290,
+      "forks": 720,
       "description": "词光 · Word Atlas — Illustrated IELTS vocabulary with 7,298 words, UK/US audio and FSRS review. Open-source app + CC BY 4.0 dataset.",
       "topics": [
         "chinese",
@@ -657,7 +642,7 @@
       "language": "TypeScript",
       "createdAt": "2026-10-25",
       "pushedAt": "2026-10-27",
-      "starsGained1d": null,
+      "starsGained1d": 117,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": false,
@@ -667,10 +652,37 @@
       ]
     },
     {
+      "repo": "Leonxlnx/earshot",
+      "url": "https://github.com/Leonxlnx/earshot",
+      "stars": 3266,
+      "forks": 206,
+      "description": "Ears for coding agents: let AI hear, review and make sound. CPU-only, open source.",
+      "topics": [
+        "ai-agents",
+        "audio",
+        "claude-code",
+        "mcp",
+        "sound-design"
+      ],
+      "language": "Python",
+      "createdAt": "2026-10-15",
+      "pushedAt": "2026-10-22",
+      "starsGained1d": 79,
+      "starsGained7d": null,
+      "forksGained7d": null,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "new in topic:mcp",
+        "new in topic:claude-code",
+        "new in topic:ai-agents"
+      ]
+    },
+    {
       "repo": "JoasASantos/REA-Prompts",
       "url": "https://github.com/JoasASantos/REA-Prompts",
-      "stars": 3148,
-      "forks": 571,
+      "stars": 3238,
+      "forks": 583,
       "description": "REAP - Prompts for you to use REA (Reverse Engineer Anything), get the most out of it, and clone or break down any program",
       "topics": [
         "prompt-engineering",
@@ -680,65 +692,20 @@
       "language": "Batchfile",
       "createdAt": "2026-10-19",
       "pushedAt": "2026-10-26",
-      "starsGained1d": null,
+      "starsGained1d": 90,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": false,
       "onTrendingPage": [],
       "foundBy": [
-        "new in the last 14 days"
-      ]
-    },
-    {
-      "repo": "interplains/Zero-Breach-Toolkit",
-      "url": "https://github.com/interplains/Zero-Breach-Toolkit",
-      "stars": 3098,
-      "forks": 332,
-      "description": "Free, open-source, offline checks for traces of known mercenary spyware. Works on Windows, macOS and Linux, Android phones and iPhone backups.",
-      "topics": [],
-      "language": "Python",
-      "createdAt": "2026-10-25",
-      "pushedAt": "2026-10-29",
-      "starsGained1d": null,
-      "starsGained7d": null,
-      "forksGained7d": null,
-      "devRelevant": false,
-      "onTrendingPage": [],
-      "foundBy": [
-        "new in the last 14 days"
-      ]
-    },
-    {
-      "repo": "Jakeschincariol/day-trader-skill",
-      "url": "https://github.com/Jakeschincariol/day-trader-skill",
-      "stars": 2817,
-      "forks": 626,
-      "description": "11 Claude skills for day trading: scan thousands of charts, track breaking news, time every entry and exit, and replay every outcome before you risk a dollar.",
-      "topics": [
-        "backtesting",
-        "claude",
-        "claude-skills",
-        "day-trading",
-        "stock-market"
-      ],
-      "language": "Python",
-      "createdAt": "2026-10-20",
-      "pushedAt": "2026-10-20",
-      "starsGained1d": null,
-      "starsGained7d": null,
-      "forksGained7d": null,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "new in topic:claude-skills",
         "new in the last 14 days"
       ]
     },
     {
       "repo": "nanaism/yomiyasu",
       "url": "https://github.com/nanaism/yomiyasu",
-      "stars": 2686,
-      "forks": 69,
+      "stars": 2732,
+      "forks": 71,
       "description": "AI生成の日本語を自然な日本語へ推敲するAgent Skill / Agent Skill for Refining AI-Generated Japanese into Natural Japanese",
       "topics": [
         "agent-skills",
@@ -758,8 +725,8 @@
       ],
       "language": "Python",
       "createdAt": "2026-09-30",
-      "pushedAt": "2026-10-26",
-      "starsGained1d": null,
+      "pushedAt": "2026-10-30",
+      "starsGained1d": 46,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": true,
@@ -771,37 +738,36 @@
       ]
     },
     {
-      "repo": "anhao/ai-pose-gallery-zh",
-      "url": "https://github.com/anhao/ai-pose-gallery-zh",
-      "stars": 2514,
-      "forks": 663,
-      "description": "中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊",
+      "repo": "SoMarkAI/OXR",
+      "url": "https://github.com/SoMarkAI/OXR",
+      "stars": 2582,
+      "forks": 179,
+      "description": "An open-source document parsing model with SOTA accuracy and speed, using an RSI loop during post-training.",
       "topics": [
-        "ai-art",
-        "chinese",
-        "cloudflare-pages",
-        "gallery",
-        "i18n",
-        "pose",
-        "reference-images",
-        "static-site"
+        "agent",
+        "llm-tools",
+        "ocr",
+        "rsi",
+        "vlm",
+        "vlm-ocr"
       ],
-      "language": "HTML",
-      "createdAt": "2026-10-27",
-      "pushedAt": "2026-10-27",
-      "starsGained1d": null,
+      "language": "Python",
+      "createdAt": "2026-10-05",
+      "pushedAt": "2026-10-24",
+      "starsGained1d": 232,
       "starsGained7d": null,
       "forksGained7d": null,
-      "devRelevant": false,
+      "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
-        "new in the last 14 days"
+        "new in topic:llm-tools",
+        "active in topic:llm-tools"
       ]
     },
     {
       "repo": "oil-oil/oil-ui",
       "url": "https://github.com/oil-oil/oil-ui",
-      "stars": 2487,
+      "stars": 2513,
       "forks": 139,
       "description": "UI design skill for Claude Code, Codex and other AI agents: explore distinct directions, compare them side by side, refine against real screenshots. 给 AI Agent 用的 UI 设计 Skill。",
       "topics": [
@@ -817,7 +783,7 @@
       "language": "Python",
       "createdAt": "2026-09-30",
       "pushedAt": "2026-10-29",
-      "starsGained1d": null,
+      "starsGained1d": 26,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": true,
@@ -829,43 +795,16 @@
       ]
     },
     {
-      "repo": "SoMarkAI/OXR",
-      "url": "https://github.com/SoMarkAI/OXR",
-      "stars": 2350,
-      "forks": 164,
-      "description": "An open-source document parsing model with SOTA accuracy and speed, using an RSI loop during post-training.",
-      "topics": [
-        "agent",
-        "llm-tools",
-        "ocr",
-        "rsi",
-        "vlm",
-        "vlm-ocr"
-      ],
-      "language": "Python",
-      "createdAt": "2026-10-05",
-      "pushedAt": "2026-10-24",
-      "starsGained1d": null,
-      "starsGained7d": null,
-      "forksGained7d": null,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "new in topic:llm-tools",
-        "active in topic:llm-tools"
-      ]
-    },
-    {
       "repo": "wesbos/3d-model-anything",
       "url": "https://github.com/wesbos/3d-model-anything",
-      "stars": 2325,
-      "forks": 349,
+      "stars": 2420,
+      "forks": 361,
       "description": "Capture iPhone LiDAR and photos, reconstruct editable Three.js rooms, and explore them in a browser.",
       "topics": [],
       "language": "Swift",
       "createdAt": "2026-10-21",
       "pushedAt": "2026-10-27",
-      "starsGained1d": null,
+      "starsGained1d": 95,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": false,
@@ -877,14 +816,14 @@
     {
       "repo": "t3dotgg/tstack",
       "url": "https://github.com/t3dotgg/tstack",
-      "stars": 2316,
-      "forks": 144,
+      "stars": 2420,
+      "forks": 149,
       "description": "The agent skills I use every day. Works with Claude Code and Codex.",
       "topics": [],
       "language": "Python",
       "createdAt": "2026-10-24",
       "pushedAt": "2026-10-28",
-      "starsGained1d": null,
+      "starsGained1d": 104,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": true,
@@ -894,10 +833,29 @@
       ]
     },
     {
+      "repo": "Revivedx/SavageWindRecomp",
+      "url": "https://github.com/Revivedx/SavageWindRecomp",
+      "stars": 2338,
+      "forks": 137,
+      "description": "Work-in-progress static recompilation of The Legend of Zelda: Breath of the Wild (Switch, v1.9.0) for Windows and Linux. Bring your own dump: no game files, keys or dumping tools included.",
+      "topics": [],
+      "language": "C",
+      "createdAt": "2026-10-16",
+      "pushedAt": "2026-10-30",
+      "starsGained1d": 84,
+      "starsGained7d": null,
+      "forksGained7d": null,
+      "devRelevant": false,
+      "onTrendingPage": [],
+      "foundBy": [
+        "tracked"
+      ]
+    },
+    {
       "repo": "xevrion/hatchzip",
       "url": "https://github.com/xevrion/hatchzip",
-      "stars": 2289,
-      "forks": 71,
+      "stars": 2329,
+      "forks": 75,
       "description": "HatchZip is a free, open-source archive extractor for Windows, macOS and Linux that extracts ZIP, 7z, RAR, tar and split archives in place, so it needs free space for the extracted files only. Desktop",
       "topics": [
         "7z",
@@ -923,8 +881,8 @@
       ],
       "language": "Rust",
       "createdAt": "2026-10-21",
-      "pushedAt": "2026-10-28",
-      "starsGained1d": null,
+      "pushedAt": "2026-10-30",
+      "starsGained1d": 40,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": true,
@@ -935,35 +893,16 @@
       ]
     },
     {
-      "repo": "Revivedx/SavageWindRecomp",
-      "url": "https://github.com/Revivedx/SavageWindRecomp",
-      "stars": 2254,
-      "forks": 130,
-      "description": "Work-in-progress static recompilation of The Legend of Zelda: Breath of the Wild (Switch, v1.9.0) for Windows and Linux. Bring your own dump: no game files, keys or dumping tools included.",
-      "topics": [],
-      "language": "C",
-      "createdAt": "2026-10-16",
-      "pushedAt": "2026-10-28",
-      "starsGained1d": null,
-      "starsGained7d": null,
-      "forksGained7d": null,
-      "devRelevant": false,
-      "onTrendingPage": [],
-      "foundBy": [
-        "new in the last 14 days"
-      ]
-    },
-    {
       "repo": "EthanArbuckle/fairplay-decrypt",
       "url": "https://github.com/EthanArbuckle/fairplay-decrypt",
-      "stars": 2252,
-      "forks": 348,
+      "stars": 2278,
+      "forks": 353,
       "description": "Offline FairPlay App Store IPA decryption with independent key derivation",
       "topics": [],
       "language": "C",
       "createdAt": "2026-10-19",
       "pushedAt": "2026-10-28",
-      "starsGained1d": null,
+      "starsGained1d": 26,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": false,
@@ -975,8 +914,8 @@
     {
       "repo": "OpenMOSS/MOSS-Image",
       "url": "https://github.com/OpenMOSS/MOSS-Image",
-      "stars": 2195,
-      "forks": 115,
+      "stars": 2271,
+      "forks": 122,
       "description": "Official repository for MOSS-Image, a 5B-parameter base DiT model with high-quality text rendering, layout generation, and efficient fine-tuning.",
       "topics": [
         "controllable-generation",
@@ -988,20 +927,20 @@
       "language": "Python",
       "createdAt": "2026-10-16",
       "pushedAt": "2026-10-27",
-      "starsGained1d": null,
+      "starsGained1d": 76,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": false,
       "onTrendingPage": [],
       "foundBy": [
-        "new in the last 14 days"
+        "tracked"
       ]
     },
     {
       "repo": "trhhubsd/ARTEX",
       "url": "https://github.com/trhhubsd/ARTEX",
-      "stars": 2162,
-      "forks": 1028,
+      "stars": 2250,
+      "forks": 1080,
       "description": "ARTEX · AI autonomous penetration testing system (multi-agent LLM, Go + Next.js) · AI 自主渗透测试系统 · 百度 agent+ 攻防挑战赛冠军",
       "topics": [
         "ai-agent",
@@ -1028,7 +967,7 @@
       "language": "Go",
       "createdAt": "2026-10-08",
       "pushedAt": "2026-10-19",
-      "starsGained1d": null,
+      "starsGained1d": 88,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": true,
@@ -1040,8 +979,8 @@
     {
       "repo": "Jakeschincariol/founder-skill",
       "url": "https://github.com/Jakeschincariol/founder-skill",
-      "stars": 2130,
-      "forks": 286,
+      "stars": 2204,
+      "forks": 294,
       "description": "Eleven free Claude skills that test a business before you launch it: a board trained on Hormozi, Thiel and Jobs, a marketing director, a CFO, and a consumer panel of 100 buyer agents. Free, MIT.",
       "topics": [
         "business-plan",
@@ -1054,7 +993,7 @@
       "language": "Python",
       "createdAt": "2026-10-07",
       "pushedAt": "2026-10-07",
-      "starsGained1d": null,
+      "starsGained1d": 74,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": true,
@@ -1067,8 +1006,8 @@
     {
       "repo": "deeplethe/solid-glass",
       "url": "https://github.com/deeplethe/solid-glass",
-      "stars": 2040,
-      "forks": 38,
+      "stars": 2060,
+      "forks": 40,
       "description": "A design system for AI applications. Material, physical, tactile, technical.",
       "topics": [
         "agent-ui",
@@ -1086,7 +1025,7 @@
       "language": "TypeScript",
       "createdAt": "2026-10-12",
       "pushedAt": "2026-10-29",
-      "starsGained1d": null,
+      "starsGained1d": 20,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": true,
@@ -1096,10 +1035,44 @@
       ]
     },
     {
+      "repo": "LNPANDY/NX2Apple",
+      "url": "https://github.com/LNPANDY/NX2Apple",
+      "stars": 2059,
+      "forks": 274,
+      "description": "Play your own Switch games on iPhone/iPad — one-click macOS app, no terminal. | 把 Switch 游戏装进 iPhone：图形界面一键构建，不用命令行。Bring your own game.",
+      "topics": [
+        "apple-silicon",
+        "custom-format",
+        "homebrew",
+        "ios",
+        "ipa",
+        "ipad",
+        "ipados",
+        "iphone",
+        "metal",
+        "native-port",
+        "nintendo-switch",
+        "nxnative",
+        "romfs",
+        "switch-games"
+      ],
+      "language": "Python",
+      "createdAt": "2026-10-20",
+      "pushedAt": "2026-10-30",
+      "starsGained1d": 322,
+      "starsGained7d": null,
+      "forksGained7d": null,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "new in the last 14 days"
+      ]
+    },
+    {
       "repo": "zhuyansen/new-term-radar",
       "url": "https://github.com/zhuyansen/new-term-radar",
-      "stars": 1941,
-      "forks": 604,
+      "stars": 1973,
+      "forks": 612,
       "description": "Daily radar for new AI terms: names of new models, products and repos, caught on X, Hugging Face, GitHub and sitemaps before keyword tools list them.",
       "topics": [
         "agent-skills",
@@ -1119,7 +1092,7 @@
       "language": "Python",
       "createdAt": "2026-10-12",
       "pushedAt": "2026-10-28",
-      "starsGained1d": null,
+      "starsGained1d": 32,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": true,
@@ -1134,14 +1107,14 @@
     {
       "repo": "oosexgang/hakios-xnu-kernel",
       "url": "https://github.com/oosexgang/hakios-xnu-kernel",
-      "stars": 1927,
-      "forks": 331,
+      "stars": 1954,
+      "forks": 334,
       "description": "",
       "topics": [],
       "language": "C",
       "createdAt": "2026-10-22",
       "pushedAt": "2026-10-28",
-      "starsGained1d": null,
+      "starsGained1d": 27,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": false,
@@ -1153,8 +1126,8 @@
     {
       "repo": "shaongitbd/doory",
       "url": "https://github.com/shaongitbd/doory",
-      "stars": 1896,
-      "forks": 152,
+      "stars": 1912,
+      "forks": 155,
       "description": "Open source canva alternative",
       "topics": [
         "canva-alternative",
@@ -1174,7 +1147,7 @@
       "language": "TypeScript",
       "createdAt": "2026-10-10",
       "pushedAt": "2026-10-29",
-      "starsGained1d": null,
+      "starsGained1d": 16,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": true,
@@ -1184,10 +1157,40 @@
       ]
     },
     {
+      "repo": "alchaincyf/huashu-motion",
+      "url": "https://github.com/alchaincyf/huashu-motion",
+      "stars": 1904,
+      "forks": 181,
+      "description": "让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it.",
+      "topics": [
+        "agent-skills",
+        "animation",
+        "claude-code",
+        "codex",
+        "gsap",
+        "launch-video",
+        "motion-graphics",
+        "skills"
+      ],
+      "language": "JavaScript",
+      "createdAt": "2026-10-18",
+      "pushedAt": "2026-10-22",
+      "starsGained1d": 27,
+      "starsGained7d": null,
+      "forksGained7d": null,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "new in topic:claude-code",
+        "new in topic:agent-skills",
+        "new in the last 14 days"
+      ]
+    },
+    {
       "repo": "ikow/php2shell-poc",
       "url": "https://github.com/ikow/php2shell-poc",
-      "stars": 1896,
-      "forks": 644,
+      "stars": 1904,
+      "forks": 646,
       "description": "CVE-2026-109618/109619 — 5 RCE chains + detection rules (Suricata, Sigma, ModSecurity). PHP session.upload_progress pre-auth exploit research.",
       "topics": [
         "cve-2026-109618",
@@ -1208,7 +1211,7 @@
       "language": "Python",
       "createdAt": "2026-10-21",
       "pushedAt": "2026-10-28",
-      "starsGained1d": null,
+      "starsGained1d": 8,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": false,
@@ -1218,40 +1221,10 @@
       ]
     },
     {
-      "repo": "alchaincyf/huashu-motion",
-      "url": "https://github.com/alchaincyf/huashu-motion",
-      "stars": 1877,
-      "forks": 179,
-      "description": "让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it.",
-      "topics": [
-        "agent-skills",
-        "animation",
-        "claude-code",
-        "codex",
-        "gsap",
-        "launch-video",
-        "motion-graphics",
-        "skills"
-      ],
-      "language": "JavaScript",
-      "createdAt": "2026-10-18",
-      "pushedAt": "2026-10-22",
-      "starsGained1d": null,
-      "starsGained7d": null,
-      "forksGained7d": null,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "new in topic:claude-code",
-        "new in topic:agent-skills",
-        "new in the last 14 days"
-      ]
-    },
-    {
       "repo": "HelixDB/helix-foundry",
       "url": "https://github.com/HelixDB/helix-foundry",
-      "stars": 1755,
-      "forks": 259,
+      "stars": 1844,
+      "forks": 273,
       "description": "Connect your company's data, let an agent draft an ontology over it, and load it into HelixDB as one graph you can explore and ask questions of. Hosted at foundry.helix-db.com, or run it on your own m",
       "topics": [
         "ai-agents",
@@ -1266,7 +1239,7 @@
       "language": "TypeScript",
       "createdAt": "2026-10-07",
       "pushedAt": "2026-10-29",
-      "starsGained1d": null,
+      "starsGained1d": 89,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": true,
@@ -1276,31 +1249,16 @@
       ]
     },
     {
-      "repo": "LNPANDY/NX2Apple",
-      "url": "https://github.com/LNPANDY/NX2Apple",
-      "stars": 1737,
-      "forks": 230,
-      "description": "Play your own Switch games on iPhone/iPad — one-click macOS app, no terminal. | 把 Switch 游戏装进 iPhone：图形界面一键构建，不用命令行。Bring your own game.",
-      "topics": [
-        "apple-silicon",
-        "custom-format",
-        "homebrew",
-        "ios",
-        "ipa",
-        "ipad",
-        "ipados",
-        "iphone",
-        "metal",
-        "native-port",
-        "nintendo-switch",
-        "nxnative",
-        "romfs",
-        "switch-games"
-      ],
-      "language": "Python",
-      "createdAt": "2026-10-20",
-      "pushedAt": "2026-10-29",
-      "starsGained1d": null,
+      "repo": "Ansub/tv-detox",
+      "url": "https://github.com/Ansub/tv-detox",
+      "stars": 1800,
+      "forks": 195,
+      "description": "Make an old Android TV fast again with Claude Code or Codex: a tiny ad-free home screen plus the prompt to clean it up",
+      "topics": [],
+      "language": "Java",
+      "createdAt": "2026-10-18",
+      "pushedAt": "2026-10-30",
+      "starsGained1d": 72,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": true,
@@ -1312,8 +1270,8 @@
     {
       "repo": "humblemuzzu/dumbtv",
       "url": "https://github.com/humblemuzzu/dumbtv",
-      "stars": 1733,
-      "forks": 167,
+      "stars": 1772,
+      "forks": 174,
       "description": "Take the ads, tracking and clutter out of your Fire TV over ADB, no root. Every step can be undone. Comes with its own open-source home screen.",
       "topics": [
         "ad-blocking",
@@ -1332,7 +1290,7 @@
       "language": "Java",
       "createdAt": "2026-10-18",
       "pushedAt": "2026-10-27",
-      "starsGained1d": null,
+      "starsGained1d": 39,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": false,
@@ -1342,29 +1300,10 @@
       ]
     },
     {
-      "repo": "Ansub/tv-detox",
-      "url": "https://github.com/Ansub/tv-detox",
-      "stars": 1728,
-      "forks": 190,
-      "description": "Make an old Android TV fast again with Claude Code or Codex: a tiny ad-free home screen plus the prompt to clean it up",
-      "topics": [],
-      "language": "Java",
-      "createdAt": "2026-10-18",
-      "pushedAt": "2026-10-28",
-      "starsGained1d": null,
-      "starsGained7d": null,
-      "forksGained7d": null,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "new in the last 14 days"
-      ]
-    },
-    {
       "repo": "indexable-inc/blaze",
       "url": "https://github.com/indexable-inc/blaze",
-      "stars": 1717,
-      "forks": 58,
+      "stars": 1747,
+      "forks": 60,
       "description": "Incremental rust builds up to 92x faster than cargo/rustc",
       "topics": [
         "cargo",
@@ -1380,8 +1319,8 @@
       ],
       "language": "Rust",
       "createdAt": "2026-10-19",
-      "pushedAt": "2026-10-29",
-      "starsGained1d": null,
+      "pushedAt": "2026-10-30",
+      "starsGained1d": 30,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": true,
@@ -1394,8 +1333,8 @@
     {
       "repo": "lyramakesmusic/neuron-explorer",
       "url": "https://github.com/lyramakesmusic/neuron-explorer",
-      "stars": 1662,
-      "forks": 200,
+      "stars": 1714,
+      "forks": 205,
       "description": "Steering-first neuron explorer for Qwen3.5-4B: push every MLP neuron, keep every rollout, browse the results",
       "topics": [
         "interpretability",
@@ -1406,13 +1345,65 @@
       "language": "Python",
       "createdAt": "2026-10-21",
       "pushedAt": "2026-10-28",
-      "starsGained1d": null,
+      "starsGained1d": 52,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": false,
       "onTrendingPage": [],
       "foundBy": [
         "new in the last 14 days"
+      ]
+    },
+    {
+      "repo": "shinshin86/mesh-avatar-studio",
+      "url": "https://github.com/shinshin86/mesh-avatar-studio",
+      "stars": 1659,
+      "forks": 173,
+      "description": "Turn one illustration into an animated 2D mesh avatar with a coding agent and a local editor",
+      "topics": [
+        "2d-animation",
+        "avatar",
+        "claude-code",
+        "codex",
+        "mesh-deformation",
+        "vtuber",
+        "webgl"
+      ],
+      "language": "TypeScript",
+      "createdAt": "2026-10-04",
+      "pushedAt": "2026-10-30",
+      "starsGained1d": 88,
+      "starsGained7d": null,
+      "forksGained7d": null,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "new in topic:claude-code"
+      ]
+    },
+    {
+      "repo": "Sam-Hui-dot/mcd-budget-meal",
+      "url": "https://github.com/Sam-Hui-dot/mcd-budget-meal",
+      "stars": 1624,
+      "forks": 44,
+      "description": "麦麦预算餐：基于麦当劳 MCP 的真实核价、预算比较与餐品替换 Skill",
+      "topics": [
+        "mcdonalds",
+        "mcp",
+        "python",
+        "skill",
+        "workbuddy"
+      ],
+      "language": "HTML",
+      "createdAt": "2026-10-11",
+      "pushedAt": "2026-10-24",
+      "starsGained1d": 0,
+      "starsGained7d": null,
+      "forksGained7d": null,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "new in topic:mcp"
       ]
     }
   ]

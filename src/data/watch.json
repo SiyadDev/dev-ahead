@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29",
+  "updated": "2026-11-02",
   "entries": [
     {
       "id": "open-weight-models",
@@ -24,6 +24,12 @@
           "status": "Repricing the work",
           "note": "Muse Spark Open weights; DeepSeek V4.1 Flash absorbs V4-Pro.",
           "source": "https://thenewstack.io/meta-muse-spark-open/"
+        },
+        {
+          "date": "2026-11-02",
+          "status": "Repricing the work",
+          "note": "Held. First OpenRouter snapshot comparison: Mistral cut Large 4 by about 50% (input and output), confirmed on Vercel's changelog. OpenRouter's listed price for DeepSeek V4 Pro rose 67%, but only third-party hosts serve it there, so this is not DeepSeek raising a list price; stall sign not met. Flagged for review: the entry's evidence is price data, which the Repricing rule says never qualifies.",
+          "source": "https://vercel.com/changelog/mistral-large-4-updated-weights-and-lower-pricing-on-ai-gateway"
         }
       ],
       "register": {
@@ -51,7 +57,7 @@
       "id": "agentic-coding",
       "name": "Agentic coding and orchestration replacing prompt-level help",
       "status": "Hitting the market",
-      "note": "GitHub says over 40% of pull requests now start with an agent (September, up from 17% in March). Review, not writing, is the constraint to plan for.",
+      "note": "22.6% of public pull requests in October came from Claude Code or Copilot's coding agent (collector), up from 18.4% in September.",
       "history": [
         {
           "date": "2026-10-12",
@@ -82,6 +88,12 @@
           "status": "Hitting the market",
           "note": "Held. GitHub's Octoverse reports more than 40% of pull requests started with an agent in September, up from 17% in March (vendor figure). The Repricing rule needs rate or survey evidence; none seen.",
           "source": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/"
+        },
+        {
+          "date": "2026-11-02",
+          "status": "Hitting the market",
+          "note": "Held. The daily collector's first full month: 22.6% of public pull requests created in October came from Claude Code (7.38M) or Copilot's coding agent (61k), out of 32.9M; the register's September baseline was 18.4%. Stall sign (share falls three months running) not met. The Repricing rule needs rate or survey evidence; none seen.",
+          "source": "https://github.com/SiyadDev/dev-ahead/tree/collector-data"
         }
       ],
       "register": {
@@ -612,6 +624,12 @@
           "status": "Hitting the market",
           "note": "New entry. Donated to the Agentic AI Foundation on 22 October; Anthropic reports 70+ integrating platforms and about a million published skills.",
           "source": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"
+        },
+        {
+          "date": "2026-11-02",
+          "status": "Hitting the market",
+          "note": "Held. A study of 1.53M public skills found about one in seventeen carries a line that loosens human oversight, and open-source scanners catch at most 46%. Research, not a malicious-skill incident; stall signs not met. Cloudflare's Agents SDK now loads skills as files and checks each against the specification.",
+          "source": "https://arxiv.org/abs/2610.37734"
         }
       ],
       "register": {
@@ -650,6 +668,12 @@
           "status": "Watching",
           "note": "New entry. AI tooling already appears on CISA's Known Exploited Vulnerabilities list about once a month (Langflow, LiteLLM), but nothing MCP-specific yet.",
           "source": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "date": "2026-11-02",
+          "status": "Watching",
+          "note": "Held. NVD: 38 CVEs with the exact phrase \"MCP server\" published 1 October to 2 November. Nothing MCP-, skill- or plugin-specific on CISA's Known Exploited Vulnerabilities list.",
+          "source": "https://nvd.nist.gov/"
         }
       ],
       "register": {

@@ -15,7 +15,7 @@ The private brief above stays exactly as it is. Now produce a separate public ed
    - Cut, or mark as unverified, every item whose only source is a community digest.
    - Use the highest existing `issue` number plus one.
    - Keep it to 1,200–1,800 words (link text counts, link addresses don't). `npm run check` rejects an issue over 1,900 words, so cut before you run it.
-4. Update `src/data/watch.json` from today's Disruption Watch and the Step 0B signpost check, as the guide describes, including "The register on each entry". Every new entry needs a full register; `npm run check` rejects one without it.
+4. Update `src/data/watch.json` from today's Disruption Watch and the Step 0B signpost check, as the guide describes, including "The register on each entry". Every new entry needs a full register; `npm run check` rejects one without it. Commit the price snapshot `npm run prices` saved in `src/data/openrouter-prices.json` too, so the next run has a baseline.
 5. Run `npm ci`, then `npm run check`, then `npm run build`. Fix every failure before going on.
 6. Commit with the message `Issue N: <title>`, push the branch, and open a pull request titled `Ahead of Main #N: <title>`. The pull request description must contain:
    - **Summary:** two sentences.
@@ -24,6 +24,7 @@ The private brief above stays exactly as it is. Now produce a separate public ed
    - **Signposts checked:** a table from Step 0B: entry, sign, and met / not met / not measurable this run.
    - **Challenged:** the list from the challenge pass: item, the objection, and kept / changed / cut.
    - **Sources checked:** the coverage log from Step 1 as a short table: each fixed source, reached or failed, and how many entries fell inside the window.
+   - **Rising repos considered:** a table of the 8–10 most promising developer-relevant repos from the collector's `rising` list (or `newRepos` while `rising` is empty): repo, stars, 7-day star and fork gain when available, what it is in a few words, and **used** (where) or **not used** with a one-line reason. If the collector data was missing, say so.
    - **Add your take:** one suggested place in the issue where a paragraph of the author's own opinion would add the most, and why.
    - **LinkedIn post draft:** a 120–180 word post announcing the issue, with a hook in the first two lines and the link left as `[link]`. Opinions are fine; do not invent personal experiences or anecdotes. Mark it clearly as a draft.
 7. If you cannot open a pull request from this environment, push the branch anyway and put the compare link (`https://github.com/SiyadDev/dev-ahead/compare/main...claude/issue-YYYY-MM-DD`) and the description text in your final summary instead.

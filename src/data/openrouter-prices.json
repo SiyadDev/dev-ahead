@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-02",
+  "date": "2026-11-05",
   "source": "https://openrouter.ai/api/v1/models",
   "models": [
     {
@@ -293,8 +293,8 @@
     {
       "id": "deepseek/deepseek-v4-flash-0731",
       "created": "2026-07-31",
-      "input": 0.119,
-      "output": 0.238
+      "input": 0.059,
+      "output": 0.3
     },
     {
       "id": "deepseek/deepseek-v4-flash-vision-exp",
@@ -312,7 +312,7 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "created": "2026-08-12",
       "input": 0.115,
-      "output": 4
+      "output": 4.6
     },
     {
       "id": "deepseek/deepseek-v4.1-flash",
@@ -497,8 +497,8 @@
     {
       "id": "google/gemma-4-26b-a4b-it",
       "created": "2026-04-03",
-      "input": 0.023,
-      "output": 0.068
+      "input": 0.036,
+      "output": 0.107
     },
     {
       "id": "google/gemma-4-31b-it",
@@ -516,7 +516,7 @@
       "id": "ibm-granite/granite-4.2-8b",
       "created": "2026-08-31",
       "input": 0.06,
-      "output": 0.15
+      "output": 0.25
     },
     {
       "id": "inception/mercury-2",
@@ -593,8 +593,8 @@
     {
       "id": "meta-llama/llama-3.1-70b-instruct",
       "created": "2024-07-23",
-      "input": 0.4,
-      "output": 0.4
+      "input": 0.72,
+      "output": 0.72
     },
     {
       "id": "meta-llama/llama-3.1-8b-instruct",
@@ -617,14 +617,14 @@
     {
       "id": "meta-llama/llama-3.3-70b-instruct",
       "created": "2024-12-06",
-      "input": 0.1,
-      "output": 0.32
+      "input": 0.2,
+      "output": 0.52
     },
     {
       "id": "meta-llama/llama-4-maverick",
       "created": "2025-04-05",
-      "input": 0.1875,
-      "output": 0.6525
+      "input": 0.35,
+      "output": 1
     },
     {
       "id": "meta-llama/llama-4-scout",
@@ -918,7 +918,7 @@
       "id": "moonshotai/kimi-k3",
       "created": "2026-07-16",
       "input": 0.192,
-      "output": 15
+      "output": 16
     },
     {
       "id": "moonshotai/kimi-k3.1-pro",
@@ -949,18 +949,6 @@
       "created": "2026-09-08",
       "input": 0.075,
       "output": 0.25
-    },
-    {
-      "id": "nousresearch/hermes-3-llama-3.1-405b",
-      "created": "2024-08-16",
-      "input": 1,
-      "output": 1
-    },
-    {
-      "id": "nousresearch/hermes-3-llama-3.1-70b",
-      "created": "2024-08-18",
-      "input": 0.7,
-      "output": 0.7
     },
     {
       "id": "nousresearch/hermes-4-405b",
@@ -1325,14 +1313,14 @@
     {
       "id": "openai/gpt-oss-120b",
       "created": "2025-08-05",
-      "input": 0.15,
-      "output": 0.6
+      "input": 0.017,
+      "output": 0.063
     },
     {
       "id": "openai/gpt-oss-20b",
       "created": "2025-08-05",
-      "input": 0.018,
-      "output": 0.09
+      "input": 0.03,
+      "output": 0.13
     },
     {
       "id": "openai/gpt-oss-safeguard-20b",
@@ -1451,8 +1439,8 @@
     {
       "id": "qwen/qwen3-235b-a22b-2507",
       "created": "2025-07-21",
-      "input": 0.09,
-      "output": 0.55
+      "input": 0.14,
+      "output": 0.8
     },
     {
       "id": "qwen/qwen3-235b-a22b-thinking-2507",
@@ -1505,7 +1493,7 @@
     {
       "id": "qwen/qwen3-next-80b-a3b-instruct",
       "created": "2025-09-11",
-      "input": 0.09,
+      "input": 0.1,
       "output": 1.1
     },
     {
@@ -1689,6 +1677,12 @@
       "output": 3
     },
     {
+      "id": "ricursiveai/ripple-65b-preview",
+      "created": "2026-11-04",
+      "input": 0.2,
+      "output": 0.6
+    },
+    {
       "id": "sakana/fugu-max",
       "created": "2026-09-11",
       "input": 2,
@@ -1777,6 +1771,12 @@
       "created": "2026-04-22",
       "input": 0.18,
       "output": 0.6
+    },
+    {
+      "id": "tencent/hy4",
+      "created": "2026-11-04",
+      "input": 0.417,
+      "output": 1.2505
     },
     {
       "id": "tencent/hy4-preview",
@@ -1991,18 +1991,24 @@
     {
       "id": "z-ai/glm-5.3",
       "created": "2026-08-18",
-      "input": 0.08,
-      "output": 3.6
+      "input": 0.0699,
+      "output": 1.4
     },
     {
       "id": "z-ai/glm-5.3-flash",
       "created": "2026-08-26",
-      "input": 0.0285,
-      "output": 0.0923
+      "input": 0.15,
+      "output": 0.5
     },
     {
       "id": "z-ai/glm-5.3-flashx",
       "created": "2026-09-18",
+      "input": 0.37,
+      "output": 1.25
+    },
+    {
+      "id": "z-ai/glm-5.3-flashx-legal",
+      "created": "2026-11-02",
       "input": 0.37,
       "output": 1.25
     },

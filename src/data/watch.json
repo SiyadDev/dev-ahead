@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02",
+  "updated": "2026-11-05",
   "entries": [
     {
       "id": "open-weight-models",
@@ -30,6 +30,12 @@
           "status": "Repricing the work",
           "note": "Held. First OpenRouter snapshot comparison: Mistral cut Large 4 by about 50% (input and output), confirmed on Vercel's changelog. OpenRouter's listed price for DeepSeek V4 Pro rose 67%, but only third-party hosts serve it there, so this is not DeepSeek raising a list price; stall sign not met. Flagged for review: the entry's evidence is price data, which the Repricing rule says never qualifies.",
           "source": "https://vercel.com/changelog/mistral-large-4-updated-weights-and-lower-pricing-on-ai-gateway"
+        },
+        {
+          "date": "2026-11-05",
+          "status": "Repricing the work",
+          "note": "Held. OpenRouter headline prices since 2 November: 12 rises and 2 cuts of 50% or more (gpt-oss-120b, GLM 5.3), but the endpoint lists show each follows which third-party host is listed first, not a lab changing its own list price; neither the move-up nor the stall sign is met. Kimi K3.1 Pro shipped open weights on 2 November under a custom, non-OSI licence, which counts toward the licence stall sign at quarter end.",
+          "source": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro"
         }
       ],
       "register": {
@@ -93,6 +99,12 @@
           "date": "2026-11-02",
           "status": "Hitting the market",
           "note": "Held. The daily collector's first full month: 22.6% of public pull requests created in October came from Claude Code (7.38M) or Copilot's coding agent (61k), out of 32.9M; the register's September baseline was 18.4%. Stall sign (share falls three months running) not met. The Repricing rule needs rate or survey evidence; none seen.",
+          "source": "https://github.com/SiyadDev/dev-ahead/tree/collector-data"
+        },
+        {
+          "date": "2026-11-05",
+          "status": "Hitting the market",
+          "note": "Held. Collector: 22.6% of public pull requests in October came from Claude Code or Copilot's coding agent; 1–4 November reads 19.1%, a partial month that includes a weekend, so not a monthly fall. Agent SDK downloads keep rising (claude-agent-sdk 17.9M a week). Stall signs not met; Repricing rule not met.",
           "source": "https://github.com/SiyadDev/dev-ahead/tree/collector-data"
         }
       ],
@@ -207,6 +219,12 @@
           "status": "Hitting the market",
           "note": "Re-rated from Repricing the work under the board's evidence rules. Logged as already met: neutral governance, after MCP was donated to the Agentic AI Foundation on 9 December 2025.",
           "source": "https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation"
+        },
+        {
+          "date": "2026-11-05",
+          "status": "Hitting the market",
+          "note": "Held. Combined weekly npm downloads of @modelcontextprotocol/sdk and core reached 119.7M in the week to 4 November, zero days repaired (101.3M in the week to 25 October). No MCP entry on CISA's Known Exploited Vulnerabilities list; stall signs not met.",
+          "source": "https://api.npmjs.org/downloads/range/2026-09-20:2026-11-04/@modelcontextprotocol/sdk"
         }
       ],
       "register": {
@@ -289,7 +307,7 @@
       "id": "decision-models",
       "name": "Model routing and decision models",
       "status": "Hitting the market",
-      "note": "Copilot Fusion and Vercel Virtual Models make routing a product; Together AI's paper backs low-effort-first with escalation on a verified failure.",
+      "note": "Copilot Fusion, Vercel Virtual Models and now Cloudflare model aliases make routing behind one name a gateway feature.",
       "history": [
         {
           "date": "2026-10-12",
@@ -325,6 +343,12 @@
           "status": "Hitting the market",
           "note": "Held. Research evidence only: Together AI found starting at low effort and escalating after a verified failure matched fixed top effort at lower cost.",
           "source": "https://arxiv.org/abs/2610.34491"
+        },
+        {
+          "date": "2026-11-05",
+          "status": "Hitting the market",
+          "note": "Held. Cloudflare AI Gateway added model aliases with ordered fallback and per-request routing, the third gateway vendor with alias routing in nine days after Copilot Fusion and Vercel Virtual Models. Already at Hitting the market; no lab price change, so the stall sign is not met.",
+          "source": "https://developers.cloudflare.com/changelog/post/2026-11-04-model-aliases/"
         }
       ],
       "register": {
@@ -436,6 +460,12 @@
           "status": "Hitting the market",
           "note": "Held. GitHub Agentic Workflows went generally available with sandboxed containers and micro-VM isolation for agents. Combined weekly downloads of the four sandbox SDKs reached 12.1M (zero days repaired).",
           "source": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available"
+        },
+        {
+          "date": "2026-11-05",
+          "status": "Hitting the market",
+          "note": "Held. Combined weekly downloads of e2b, @vercel/sandbox, @daytonaio/sdk and @cloudflare/sandbox reached 13.2M in the week to 4 November, zero days repaired. One NVD \"sandbox escape\" CVE since 1 November, CVSS 7.4 and not in these products; stall signs not met.",
+          "source": "https://api.npmjs.org/downloads/range/2026-09-20:2026-11-04/e2b"
         }
       ],
       "register": {
@@ -551,6 +581,12 @@
           "status": "Watching",
           "note": "New entry.",
           "source": "https://pub.towardsai.net/coding-agents-are-starting-to-reshape-source-control-49fc0aae8e01"
+        },
+        {
+          "date": "2026-11-05",
+          "status": "Watching",
+          "note": "Held. OpenAI described Pando, an internal Git-compatible backend built for Codex-scale development, and agreed to acquire Pierre Computer Company for code review tooling (read from OpenAI's feed). Neither is a shipped same-branch coordination feature; sign not met.",
+          "source": "https://openai.com/index/scaling-git-at-openai"
         }
       ],
       "register": {
@@ -590,6 +626,12 @@
           "status": "Watching",
           "note": "Held, with evidence against: Claude Code 2.1.312 stopped sending the claude_code.safety_event OpenTelemetry event added in 2.1.307. The moves-up sign (a second vendor shipping exportable per-action approval logs) is not met.",
           "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+        },
+        {
+          "date": "2026-11-05",
+          "status": "Watching",
+          "note": "Held. A pre-registered study found 26% of an agent's rule violations came with a customer message denying the action it had just taken, so transcript-only review would miss them. Research, not a second vendor shipping exportable approval logs; sign not met.",
+          "source": "https://arxiv.org/abs/2611.06116"
         }
       ],
       "register": {
@@ -661,7 +703,7 @@
       "id": "agent-supply-chain-security",
       "name": "Agent supply-chain security",
       "status": "Watching",
-      "note": "Skills, MCP servers and plugins are code that agents fetch and run. NVD CVEs naming \"MCP server\" went 27, 61, 120 in the first three quarters of 2026; none is on CISA's exploited list yet.",
+      "note": "Skills, MCP servers and plugins are code agents fetch and run. Dependabot now updates agent packages and Vercel blocks malicious npm installs; NVD \"MCP server\" CVEs ran 27, 61, 120 in the first three quarters of 2026 and 40 so far in Q4. None is on CISA's exploited list.",
       "history": [
         {
           "date": "2026-10-29",
@@ -674,6 +716,12 @@
           "status": "Watching",
           "note": "Held. NVD: 38 CVEs with the exact phrase \"MCP server\" published 1 October to 2 November. Nothing MCP-, skill- or plugin-specific on CISA's Known Exploited Vulnerabilities list.",
           "source": "https://nvd.nist.gov/"
+        },
+        {
+          "date": "2026-11-05",
+          "status": "Watching",
+          "note": "Held. Dependabot now opens version-update pull requests for Agent Package Manager dependencies (skills, prompts, instructions), and Vercel blocks known-malicious npm versions during install. Accelerating also needs a growth measure rising for four weeks: NVD lists 40 \"MCP server\" CVEs since 1 October, slightly behind the third quarter's pace. No MCP, skill or plugin entry on CISA's Known Exploited Vulnerabilities list.",
+          "source": "https://github.blog/changelog/2026-11-03-dependabot-version-updates-support-agent-package-manager"
         }
       ],
       "register": {

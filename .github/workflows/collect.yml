@@ -3,11 +3,13 @@ name: Collect signals
 # Gathers what the routine can't reach from its own environment (GitHub's
 # API and trending page) and saves it to the collector-data branch: repos
 # gaining stars and forks fastest, and the agent share of public pull
-# requests. Runs daily before the routine (Monday and Thursday, 03:30 UTC).
+# requests. Runs daily at 20:17 UTC. GitHub often starts scheduled runs hours
+# late (5-7 hours in the first week), and the top of the hour is busiest, so
+# an off-peak evening slot still finishes before the routine's 03:30 UTC runs.
 
 on:
   schedule:
-    - cron: '0 2 * * *'
+    - cron: '17 20 * * *'
   workflow_dispatch:
 
 permissions:

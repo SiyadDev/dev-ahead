@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05",
+  "updated": "2026-11-09",
   "entries": [
     {
       "id": "open-weight-models",
@@ -36,6 +36,12 @@
           "status": "Repricing the work",
           "note": "Held. OpenRouter headline prices since 2 November: 12 rises and 2 cuts of 50% or more (gpt-oss-120b, GLM 5.3), but the endpoint lists show each follows which third-party host is listed first, not a lab changing its own list price; neither the move-up nor the stall sign is met. Kimi K3.1 Pro shipped open weights on 2 November under a custom, non-OSI licence, which counts toward the licence stall sign at quarter end.",
           "source": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro"
+        },
+        {
+          "date": "2026-11-09",
+          "status": "Repricing the work",
+          "note": "Held. npm run prices saved the first snapshot with each lab's own OpenRouter price (200 of 334 paid models); the 5 November snapshot predates lab prices, so the move and stall price signs are not measurable this run.",
+          "source": "https://openrouter.ai/api/v1/models"
         }
       ],
       "register": {
@@ -63,7 +69,7 @@
       "id": "agentic-coding",
       "name": "Agentic coding and orchestration replacing prompt-level help",
       "status": "Hitting the market",
-      "note": "22.6% of public pull requests in October came from Claude Code or Copilot's coding agent (collector), up from 18.4% in September.",
+      "note": "22.6% of public pull requests in October came from Claude Code or Copilot's coding agent; 1–8 November reads 20.1% (collector).",
       "history": [
         {
           "date": "2026-10-12",
@@ -105,6 +111,12 @@
           "date": "2026-11-05",
           "status": "Hitting the market",
           "note": "Held. Collector: 22.6% of public pull requests in October came from Claude Code or Copilot's coding agent; 1–4 November reads 19.1%, a partial month that includes a weekend, so not a monthly fall. Agent SDK downloads keep rising (claude-agent-sdk 17.9M a week). Stall signs not met; Repricing rule not met.",
+          "source": "https://github.com/SiyadDev/dev-ahead/tree/collector-data"
+        },
+        {
+          "date": "2026-11-09",
+          "status": "Hitting the market",
+          "note": "Held. Collector: 20.1% of public pull requests created 1–8 November came from Claude Code (1.86M) or Copilot's coding agent (11.6k), out of 9.30M; October was 22.6%. A partial month, not a monthly fall. Agent SDK downloads (claude-agent-sdk and codex-sdk) 21.1M a week, up from 20.4M. Stall signs not met; Repricing rule (rate or survey evidence) not met.",
           "source": "https://github.com/SiyadDev/dev-ahead/tree/collector-data"
         }
       ],
@@ -225,6 +237,12 @@
           "status": "Hitting the market",
           "note": "Held. Combined weekly npm downloads of @modelcontextprotocol/sdk and core reached 119.7M in the week to 4 November, zero days repaired (101.3M in the week to 25 October). No MCP entry on CISA's Known Exploited Vulnerabilities list; stall signs not met.",
           "source": "https://api.npmjs.org/downloads/range/2026-09-20:2026-11-04/@modelcontextprotocol/sdk"
+        },
+        {
+          "date": "2026-11-09",
+          "status": "Hitting the market",
+          "note": "Held. @modelcontextprotocol/sdk and core: 122.8M downloads in the week to 8 November, zero days repaired (116.7M the week before, +5.2%). No MCP entry on CISA KEV. Stall signs not met.",
+          "source": "https://api.npmjs.org/downloads/range/2026-10-26:2026-11-08/@modelcontextprotocol/sdk"
         }
       ],
       "register": {
@@ -275,6 +293,12 @@
           "status": "Hitting the market",
           "note": "Moved up from Accelerating under the Hitting the market rule (generally available from two major vendors, with paid use): Lovable sells Business and Enterprise plans with SSO and audit logs; Bolt and v0 also sell paid plans up to Enterprise.",
           "source": "https://docs.lovable.dev/introduction/lovable-for-enterprise"
+        },
+        {
+          "date": "2026-11-09",
+          "status": "Hitting the market",
+          "note": "Held. Cursor's Build live apps: a cloud agent scaffolds an app, adds Postgres, puts auth behind Cursor SSO, runs security checks and hosts it, for staff outside engineering. Product evidence; the Repricing rule needs agency or freelancer surveys, none seen.",
+          "source": "https://cursor.com/changelog/build-live-apps"
         }
       ],
       "register": {
@@ -349,6 +373,12 @@
           "status": "Hitting the market",
           "note": "Held. Cloudflare AI Gateway added model aliases with ordered fallback and per-request routing, the third gateway vendor with alias routing in nine days after Copilot Fusion and Vercel Virtual Models. Already at Hitting the market; no lab price change, so the stall sign is not met.",
           "source": "https://developers.cloudflare.com/changelog/post/2026-11-04-model-aliases/"
+        },
+        {
+          "date": "2026-11-09",
+          "status": "Hitting the market",
+          "note": "Held. OpenRouter listed Auto Code, a router for coding agents and harnesses; Vercel's Token Pass now applies to any gateway key. The forecast needs OpenAI, Anthropic or Google, so neither counts. Price stall sign not measurable this run (first lab-price snapshot).",
+          "source": "https://openrouter.ai/api/v1/models"
         }
       ],
       "register": {
@@ -412,6 +442,12 @@
           "status": "Hitting the market",
           "note": "Held. 2.1.312 caps prompt and agent hooks at 24 running at once per session; a study of 1,886 agent releases found only 48% of instruction-stack changes explain why.",
           "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+        },
+        {
+          "date": "2026-11-09",
+          "status": "Hitting the market",
+          "note": "Held. Claude Code 2.1.319 fixed Bash deny rules missing quoted words, a sed permission-check skip, an environment-prefix bypass and a worktree sandbox escape. A paper (PatternOps, arXiv 2611.09088) found routine operations silently broke guardrails in released harnesses. Neither is a vendor restricting hooks, so the stall sign is not met.",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
         }
       ],
       "register": {
@@ -466,6 +502,12 @@
           "status": "Hitting the market",
           "note": "Held. Combined weekly downloads of e2b, @vercel/sandbox, @daytonaio/sdk and @cloudflare/sandbox reached 13.2M in the week to 4 November, zero days repaired. One NVD \"sandbox escape\" CVE since 1 November, CVSS 7.4 and not in these products; stall signs not met.",
           "source": "https://api.npmjs.org/downloads/range/2026-09-20:2026-11-04/e2b"
+        },
+        {
+          "date": "2026-11-09",
+          "status": "Hitting the market",
+          "note": "Held. Sandbox SDKs (e2b, @vercel/sandbox, @daytonaio/sdk, @cloudflare/sandbox): 13.4M downloads in the week to 8 November. NVD lists no sandbox-escape CVE published 5–8 November. Stall signs not met.",
+          "source": "https://api.npmjs.org/downloads/range/2026-10-26:2026-11-08/e2b"
         }
       ],
       "register": {
@@ -672,6 +714,12 @@
           "status": "Hitting the market",
           "note": "Held. A study of 1.53M public skills found about one in seventeen carries a line that loosens human oversight, and open-source scanners catch at most 46%. Research, not a malicious-skill incident; stall signs not met. Cloudflare's Agents SDK now loads skills as files and checks each against the specification.",
           "source": "https://arxiv.org/abs/2610.37734"
+        },
+        {
+          "date": "2026-11-09",
+          "status": "Hitting the market",
+          "note": "Held. supabase-flutter v3 ships package skills for Claude Code, Cursor, Gemini and Copilot with a library major version, including a migration skill. No fork, no malicious-skill incident; the priced-service sign is not met.",
+          "source": "https://supabase.com/changelog/supabase-flutter-v3"
         }
       ],
       "register": {
@@ -722,6 +770,12 @@
           "status": "Watching",
           "note": "Held. Dependabot now opens version-update pull requests for Agent Package Manager dependencies (skills, prompts, instructions), and Vercel blocks known-malicious npm versions during install. Accelerating also needs a growth measure rising for four weeks: NVD lists 40 \"MCP server\" CVEs since 1 October, slightly behind the third quarter's pace. No MCP, skill or plugin entry on CISA's Known Exploited Vulnerabilities list.",
           "source": "https://github.blog/changelog/2026-11-03-dependabot-version-updates-support-agent-package-manager"
+        },
+        {
+          "date": "2026-11-09",
+          "status": "Watching",
+          "note": "Held. NVD lists 46 \"MCP server\" CVEs published since 1 October (6 from 5–8 November), on pace below the third quarter's 120. CISA KEV added one entry (SonicWall), nothing agent-related. The move-up sign is not met.",
+          "source": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
         }
       ],
       "register": {

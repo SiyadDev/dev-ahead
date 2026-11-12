@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09",
+  "updated": "2026-11-12",
   "entries": [
     {
       "id": "open-weight-models",
@@ -42,6 +42,12 @@
           "status": "Repricing the work",
           "note": "Held. npm run prices saved the first snapshot with each lab's own OpenRouter price (200 of 334 paid models); the 5 November snapshot predates lab prices, so the move and stall price signs are not measurable this run.",
           "source": "https://openrouter.ai/api/v1/models"
+        },
+        {
+          "date": "2026-11-12",
+          "status": "Repricing the work",
+          "note": "Held. Price snapshot vs 9 November: no lab cut of 50% or more on an existing model, no lab price rise. Claude Fable 5.2 launched at $8/$40 against Fable 5.1's $10/$50: a new model priced below its predecessor, noted, not a cut. Gemini 4 Carbon is listed at $2/$10 under a launch discount that Vercel says ends 30 November; whether a scheduled end to a discount counts as a list-price rise needs judging when it lands.",
+          "source": "https://platform.claude.com/docs/en/release-notes/overview"
         }
       ],
       "register": {
@@ -118,6 +124,12 @@
           "status": "Hitting the market",
           "note": "Held. Collector: 20.1% of public pull requests created 1–8 November came from Claude Code (1.86M) or Copilot's coding agent (11.6k), out of 9.30M; October was 22.6%. A partial month, not a monthly fall. Agent SDK downloads (claude-agent-sdk and codex-sdk) 21.1M a week, up from 20.4M. Stall signs not met; Repricing rule (rate or survey evidence) not met.",
           "source": "https://github.com/SiyadDev/dev-ahead/tree/collector-data"
+        },
+        {
+          "date": "2026-11-12",
+          "status": "Hitting the market",
+          "note": "Held. Collector (generated 12 November): 1–12 November share 20.1% (2.68M Claude Code + 15.7k Copilot agent of 13.43M public PRs); October recomputed at 22.5%. If November closes below October, that is month one of the three-month stall sign. Agent SDK downloads (claude-agent-sdk + codex-sdk) 21.2M for the week to 10 November, up from 20.6M.",
+          "source": "https://github.com/SiyadDev/dev-ahead/blob/collector-data/trending.json"
         }
       ],
       "register": {
@@ -243,6 +255,12 @@
           "status": "Hitting the market",
           "note": "Held. @modelcontextprotocol/sdk and core: 122.8M downloads in the week to 8 November, zero days repaired (116.7M the week before, +5.2%). No MCP entry on CISA KEV. Stall signs not met.",
           "source": "https://api.npmjs.org/downloads/range/2026-10-26:2026-11-08/@modelcontextprotocol/sdk"
+        },
+        {
+          "date": "2026-11-12",
+          "status": "Hitting the market",
+          "note": "Held. @modelcontextprotocol/sdk + core: 124.0M for the week to 10 November, zero days repaired (119.7M the week before, +3.6%). No MCP entry on CISA's exploited list; no competing protocol documented by two of the named vendors.",
+          "source": "https://api.npmjs.org/downloads/range/2026-09-20:2026-11-11/@modelcontextprotocol/core"
         }
       ],
       "register": {
@@ -331,7 +349,7 @@
       "id": "decision-models",
       "name": "Model routing and decision models",
       "status": "Hitting the market",
-      "note": "Copilot Fusion, Vercel Virtual Models and now Cloudflare model aliases make routing behind one name a gateway feature.",
+      "note": "Decision models took 26% of AI Gateway requests in October for 0.53% of spend (Vercel); Google now sells one, Gemini Decision 1.",
       "history": [
         {
           "date": "2026-10-12",
@@ -379,6 +397,12 @@
           "status": "Hitting the market",
           "note": "Held. OpenRouter listed Auto Code, a router for coding agents and harnesses; Vercel's Token Pass now applies to any gateway key. The forecast needs OpenAI, Anthropic or Google, so neither counts. Price stall sign not measurable this run (first lab-price snapshot).",
           "source": "https://openrouter.ai/api/v1/models"
+        },
+        {
+          "date": "2026-11-12",
+          "status": "Hitting the market",
+          "note": "Held. Vercel's November AI Gateway Production Index: decision models took 26% of gateway requests in October for 0.53% of spend, used by nearly a third of paid teams; Google's Gemini Decision 1 reached the gateway on 11 November. Repricing needs evidence of client charges or staffing changing because of routing; traffic share isn't that. Stall sign (existing frontier prices keep falling) not met: no lab cut on an existing model this run.",
+          "source": "https://vercel.com/blog/ai-gateway-production-index-november-2026"
         }
       ],
       "register": {
@@ -477,7 +501,7 @@
       "id": "ai-native-infra",
       "name": "AI-native infrastructure: sandboxes, computer use, cloud dev environments",
       "status": "Hitting the market",
-      "note": "Agentic Workflows run agents in sandboxed containers and micro-VMs; sandbox SDK downloads reached 12.1M a week. Keep secrets on the host and only tool actions in the sandbox.",
+      "note": "Coding-agent loops now run inside Cloudflare Durable Objects (Codex port, Nanocode, Exo). Sandbox SDK downloads flat at 13.2M a week.",
       "history": [
         {
           "date": "2026-10-29",
@@ -508,6 +532,12 @@
           "status": "Hitting the market",
           "note": "Held. Sandbox SDKs (e2b, @vercel/sandbox, @daytonaio/sdk, @cloudflare/sandbox): 13.4M downloads in the week to 8 November. NVD lists no sandbox-escape CVE published 5–8 November. Stall signs not met.",
           "source": "https://api.npmjs.org/downloads/range/2026-10-26:2026-11-08/e2b"
+        },
+        {
+          "date": "2026-11-12",
+          "status": "Hitting the market",
+          "note": "Held. Cloudflare published three ways to run a coding-agent loop in Durable Objects on 9 November (an experimental Codex port, Nanocode, Exo with Cloudflare Sandboxes); Vercel Sandbox snapshots dropped to under 0.4 s median. Sandbox SDK downloads 13.24M for the week to 10 November (13.21M the week before). Stall sign not met: the 14 NVD 'sandbox escape' CVEs in the window are all Firefox or Windows.",
+          "source": "https://developers.cloudflare.com/changelog/post/2026-11-09-codex-harness/"
         }
       ],
       "register": {
@@ -776,6 +806,12 @@
           "status": "Watching",
           "note": "Held. NVD lists 46 \"MCP server\" CVEs published since 1 October (6 from 5–8 November), on pace below the third quarter's 120. CISA KEV added one entry (SonicWall), nothing agent-related. The move-up sign is not met.",
           "source": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "date": "2026-11-12",
+          "status": "Watching",
+          "note": "Held. NVD 'MCP server' CVEs: 57 published 1 October to 11 November (11 from 9 November), on pace for about 125 this quarter against 120 in Q3. CISA added 10 entries from 9 to 10 November; none is an MCP server, SDK, skill or plugin. Claude Code 2.1.321 fixed MCP OAuth sending refresh tokens to another host on redirect.",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
         }
       ],
       "register": {

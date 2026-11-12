@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-09",
+  "date": "2026-11-12",
   "source": "https://openrouter.ai/api/v1/models",
   "priceBasis": "each lab's own standard endpoint",
   "models": [
@@ -154,6 +154,17 @@
       }
     },
     {
+      "id": "anthropic/claude-fable-5.2",
+      "created": "2026-11-09",
+      "input": 8,
+      "output": 40,
+      "lab": {
+        "provider": "Anthropic",
+        "input": 8,
+        "output": 40
+      }
+    },
+    {
       "id": "anthropic/claude-haiku-4.5",
       "created": "2025-10-15",
       "input": 1,
@@ -293,25 +304,14 @@
       }
     },
     {
-      "id": "bytedance-seed/seed-1.6",
-      "created": "2025-12-23",
-      "input": 0.25,
-      "output": 2,
+      "id": "baidu/ernie-light-dt-1.0-intl",
+      "created": "2026-11-10",
+      "input": 1.13,
+      "output": 3.94,
       "lab": {
-        "provider": "Seed",
-        "input": 0.25,
-        "output": 2
-      }
-    },
-    {
-      "id": "bytedance-seed/seed-1.6-flash",
-      "created": "2025-12-23",
-      "input": 0.075,
-      "output": 0.3,
-      "lab": {
-        "provider": "Seed",
-        "input": 0.075,
-        "output": 0.3
+        "provider": "Baidu",
+        "input": 1.13,
+        "output": 3.94
       }
     },
     {
@@ -323,17 +323,6 @@
         "provider": "Seed",
         "input": 0.5,
         "output": 2.5
-      }
-    },
-    {
-      "id": "bytedance-seed/seed-2.0-code",
-      "created": "2026-08-12",
-      "input": 0.5,
-      "output": 3,
-      "lab": {
-        "provider": "Seed",
-        "input": 0.5,
-        "output": 3
       }
     },
     {
@@ -479,8 +468,8 @@
     {
       "id": "deepseek/deepseek-v4-flash",
       "created": "2026-04-24",
-      "input": 0.091,
-      "output": 0.182,
+      "input": 0.09,
+      "output": 0.18,
       "lab": null
     },
     {
@@ -518,15 +507,15 @@
     {
       "id": "deepseek/deepseek-v4.1-flash",
       "created": "2026-09-10",
-      "input": 0.051,
-      "output": 0.567,
+      "input": 0.022,
+      "output": 0.4,
       "lab": null
     },
     {
       "id": "deepseek/deepseek-v4.1-flash-1017",
       "created": "2026-10-17",
-      "input": 0.006,
-      "output": 0.5,
+      "input": 0.3,
+      "output": 1.2,
       "lab": {
         "provider": "DeepSeek",
         "input": 0.3,
@@ -771,6 +760,17 @@
       }
     },
     {
+      "id": "google/gemini-4-carbon",
+      "created": "2026-11-10",
+      "input": 2,
+      "output": 10,
+      "lab": {
+        "provider": "Google AI Studio",
+        "input": 2,
+        "output": 10
+      }
+    },
+    {
       "id": "google/gemini-nano-banana-2.1",
       "created": "2026-10-06",
       "input": 1.5,
@@ -821,7 +821,7 @@
       "id": "google/gemma-3-27b-it",
       "created": "2025-03-12",
       "input": 0.08,
-      "output": 0.45,
+      "output": 0.35,
       "lab": null
     },
     {
@@ -834,8 +834,8 @@
     {
       "id": "google/gemma-4-26b-a4b-it",
       "created": "2026-04-03",
-      "input": 0.0675,
-      "output": 0.225,
+      "input": 0.08,
+      "output": 0.1,
       "lab": null
     },
     {
@@ -856,7 +856,7 @@
       "id": "ibm-granite/granite-4.2-8b",
       "created": "2026-08-31",
       "input": 0.06,
-      "output": 0.25,
+      "output": 0.15,
       "lab": null
     },
     {
@@ -910,6 +910,17 @@
       }
     },
     {
+      "id": "kt/midm-k-3.0-pro",
+      "created": "2026-11-05",
+      "input": 0.2,
+      "output": 0.8,
+      "lab": {
+        "provider": "KT",
+        "input": 0.2,
+        "output": 0.8
+      }
+    },
+    {
       "id": "liquid/lfm-2.5-2.6b",
       "created": "2026-08-11",
       "input": 0.35,
@@ -945,12 +956,12 @@
     {
       "id": "mancer/weaver",
       "created": "2023-08-02",
-      "input": 0.4,
-      "output": 0.75,
+      "input": 0.3,
+      "output": 0.5,
       "lab": {
         "provider": "Mancer 2",
-        "input": 0.4,
-        "output": 0.75
+        "input": 0.3,
+        "output": 0.5
       }
     },
     {
@@ -991,8 +1002,8 @@
     {
       "id": "meta-llama/llama-3.3-70b-instruct",
       "created": "2024-12-06",
-      "input": 0.59,
-      "output": 0.79,
+      "input": 0.71,
+      "output": 0.71,
       "lab": null
     },
     {
@@ -1015,6 +1026,17 @@
       "input": 0.18,
       "output": 0.18,
       "lab": null
+    },
+    {
+      "id": "meta/muse-ember",
+      "created": "2026-11-09",
+      "input": 0.1,
+      "output": 0.5,
+      "lab": {
+        "provider": "Meta",
+        "input": 0.1,
+        "output": 0.5
+      }
     },
     {
       "id": "meta/muse-glimmer-30b",
@@ -1104,17 +1126,10 @@
       "lab": null
     },
     {
-      "id": "minimax/minimax-m1",
-      "created": "2025-06-17",
-      "input": 0.55,
-      "output": 2.2,
-      "lab": null
-    },
-    {
       "id": "minimax/minimax-m2.5",
       "created": "2026-02-12",
-      "input": 0.3,
-      "output": 1.2,
+      "input": 0.27,
+      "output": 1.08,
       "lab": null
     },
     {
@@ -1280,8 +1295,8 @@
     {
       "id": "mistralai/mistral-small-3.2-24b-instruct",
       "created": "2025-06-20",
-      "input": 0.075,
-      "output": 0.2,
+      "input": 0.1,
+      "output": 0.3,
       "lab": null
     },
     {
@@ -1407,6 +1422,13 @@
       }
     },
     {
+      "id": "motif-technologies/motif-3",
+      "created": "2026-11-02",
+      "input": 0.3,
+      "output": 1.2,
+      "lab": null
+    },
+    {
       "id": "nex-agi/nex-n2.5-mini",
       "created": "2026-09-08",
       "input": 0.025,
@@ -1426,6 +1448,17 @@
         "provider": "Nex AGI",
         "input": 0.075,
         "output": 0.25
+      }
+    },
+    {
+      "id": "nex-agi/nex-n2.6",
+      "created": "2026-11-10",
+      "input": 0.12,
+      "output": 0.4,
+      "lab": {
+        "provider": "Nex AGI",
+        "input": 0.12,
+        "output": 0.4
       }
     },
     {
@@ -1474,7 +1507,7 @@
       "id": "nvidia/nemotron-3.5-super-vl",
       "created": "2026-10-15",
       "input": 0.15,
-      "output": 0.5,
+      "output": 0.47,
       "lab": null
     },
     {
@@ -1832,8 +1865,8 @@
     {
       "id": "openai/gpt-5.6-sol",
       "created": "2026-07-09",
-      "input": 4,
-      "output": 20,
+      "input": 4.4,
+      "output": 22,
       "lab": {
         "provider": "OpenAI",
         "input": 4,
@@ -2026,8 +2059,8 @@
     {
       "id": "openai/gpt-oss-20b",
       "created": "2025-08-05",
-      "input": 0.03,
-      "output": 0.13,
+      "input": 0.018,
+      "output": 0.09,
       "lab": null
     },
     {
@@ -2165,13 +2198,6 @@
       "lab": null
     },
     {
-      "id": "qwen/qwen-2.5-7b-instruct",
-      "created": "2024-10-16",
-      "input": 0.1,
-      "output": 0.2,
-      "lab": null
-    },
-    {
       "id": "qwen/qwen-2.5-coder-32b-instruct",
       "created": "2024-11-11",
       "input": 0.66,
@@ -2199,8 +2225,8 @@
     {
       "id": "qwen/qwen3-14b",
       "created": "2025-04-28",
-      "input": 0.12,
-      "output": 0.24,
+      "input": 0.1,
+      "output": 0.22,
       "lab": null
     },
     {
@@ -2352,8 +2378,8 @@
     {
       "id": "qwen/qwen3.5-9b",
       "created": "2026-03-10",
-      "input": 0.17,
-      "output": 0.25,
+      "input": 0.081,
+      "output": 0.119,
       "lab": null
     },
     {
@@ -2792,6 +2818,17 @@
       }
     },
     {
+      "id": "unbiased/pareto-26.10-preview",
+      "created": "2026-10-01",
+      "input": 0.8,
+      "output": 3.2,
+      "lab": {
+        "provider": "Unbiased",
+        "input": 0.8,
+        "output": 3.2
+      }
+    },
+    {
       "id": "unbiased/pareto-26.9",
       "created": "2026-10-13",
       "input": 2.5,
@@ -2805,8 +2842,8 @@
     {
       "id": "undi95/remm-slerp-l2-13b",
       "created": "2023-07-22",
-      "input": 0.35,
-      "output": 0.65,
+      "input": 0.3,
+      "output": 0.5,
       "lab": null
     },
     {
@@ -2976,8 +3013,8 @@
     {
       "id": "z-ai/glm-4.5-air",
       "created": "2025-07-25",
-      "input": 0.13,
-      "output": 0.85,
+      "input": 0.2,
+      "output": 1.1,
       "lab": {
         "provider": "Z.AI",
         "input": 0.2,
@@ -3071,7 +3108,7 @@
     {
       "id": "z-ai/glm-5.2",
       "created": "2026-06-16",
-      "input": 0.006,
+      "input": 0.007,
       "output": 6.8,
       "lab": {
         "provider": "Z.AI",
@@ -3093,8 +3130,8 @@
     {
       "id": "z-ai/glm-5.3-flash",
       "created": "2026-08-26",
-      "input": 0.0335,
-      "output": 0.083,
+      "input": 0.0399,
+      "output": 0.0784,
       "lab": {
         "provider": "Z.AI",
         "input": 0.15,

@@ -1,35 +1,35 @@
 {
-  "generatedAt": "2026-11-11T00:42:25.295Z",
+  "generatedAt": "2026-11-12T01:56:26.862Z",
   "note": "Stars are attention, not adoption, and can be bought. A rising repo is a lead to read, not evidence on its own.",
   "comparedWith": {
-    "oneDay": "2026-11-10",
+    "oneDay": "2026-11-11",
     "sevenDays": "2026-11-04"
   },
-  "tracked": 1011,
+  "tracked": 1049,
   "agentPullRequestShare": {
     "lastFullMonth": {
       "from": "2026-10-01",
       "to": "2026-10-31",
-      "total": 32552197,
-      "claudeCode": 7275162,
-      "copilotAgent": 60573,
+      "total": 32523917,
+      "claudeCode": 7264260,
+      "copilotAgent": 60453,
       "sharePercent": 22.5
     },
     "monthToDate": {
       "from": "2026-11-01",
-      "to": "2026-11-11",
-      "total": 12025288,
-      "claudeCode": 2393611,
-      "copilotAgent": 14504,
-      "sharePercent": 20
+      "to": "2026-11-12",
+      "total": 13429146,
+      "claudeCode": 2682985,
+      "copilotAgent": 15662,
+      "sharePercent": 20.1
     }
   },
   "rising": [
     {
       "repo": "morluto/rea",
       "url": "https://github.com/morluto/rea",
-      "stars": 449982,
-      "forks": 110748,
+      "stars": 452855,
+      "forks": 111345,
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "topics": [
         "agent-skills",
@@ -56,9 +56,9 @@
       "language": "TypeScript",
       "createdAt": "2026-04-14",
       "pushedAt": "2026-11-11",
-      "starsGained1d": 2747,
-      "starsGained7d": 21513,
-      "forksGained7d": 4161,
+      "starsGained1d": 2873,
+      "starsGained7d": 24386,
+      "forksGained7d": 4758,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -71,16 +71,16 @@
     {
       "repo": "storytold/craft-anything",
       "url": "https://github.com/storytold/craft-anything",
-      "stars": 26270,
-      "forks": 5342,
+      "stars": 28501,
+      "forks": 5781,
       "description": "Craft Anything: understand how any software works, and craft your own.",
       "topics": [],
       "language": "Rust",
       "createdAt": "2026-10-31",
-      "pushedAt": "2026-11-11",
-      "starsGained1d": 1574,
-      "starsGained7d": 16809,
-      "forksGained7d": 3772,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 2231,
+      "starsGained7d": 19040,
+      "forksGained7d": 4211,
       "devRelevant": false,
       "onTrendingPage": [],
       "foundBy": [
@@ -90,8 +90,8 @@
     {
       "repo": "sherlock-project/sherlock",
       "url": "https://github.com/sherlock-project/sherlock",
-      "stars": 108968,
-      "forks": 12656,
+      "stars": 110111,
+      "forks": 12755,
       "description": "Hunt down social media accounts by username across social networks",
       "topics": [
         "cli",
@@ -113,54 +113,49 @@
       ],
       "language": "Python",
       "createdAt": "2018-12-24",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 1697,
-      "starsGained7d": 13435,
-      "forksGained7d": 1262,
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 1143,
+      "starsGained7d": 14578,
+      "forksGained7d": 1361,
       "devRelevant": true,
-      "onTrendingPage": [
-        "daily"
-      ],
+      "onTrendingPage": [],
       "foundBy": [
-        "active in topic:cli",
-        "GitHub trending (daily)"
-      ]
-    },
-    {
-      "repo": "cloudflare/security-audit-skill",
-      "url": "https://github.com/cloudflare/security-audit-skill",
-      "stars": 69322,
-      "forks": 4579,
-      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-      "topics": [],
-      "language": "JavaScript",
-      "createdAt": "2026-06-18",
-      "pushedAt": "2026-09-14",
-      "starsGained1d": 1166,
-      "starsGained7d": 10886,
-      "forksGained7d": 774,
-      "devRelevant": true,
-      "onTrendingPage": [
-        "weekly"
-      ],
-      "foundBy": [
-        "GitHub trending (weekly)"
+        "active in topic:cli"
       ]
     },
     {
       "repo": "pingdotgg/t3code",
       "url": "https://github.com/pingdotgg/t3code",
-      "stars": 55745,
-      "forks": 10350,
+      "stars": 57097,
+      "forks": 10527,
       "description": "",
       "topics": [],
       "language": "TypeScript",
       "createdAt": "2026-02-08",
-      "pushedAt": "2026-11-11",
-      "starsGained1d": 1464,
-      "starsGained7d": 10674,
-      "forksGained7d": 1037,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 1352,
+      "starsGained7d": 12026,
+      "forksGained7d": 1214,
       "devRelevant": false,
+      "onTrendingPage": [],
+      "foundBy": [
+        "tracked"
+      ]
+    },
+    {
+      "repo": "cloudflare/security-audit-skill",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "stars": 70401,
+      "forks": 4667,
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "topics": [],
+      "language": "JavaScript",
+      "createdAt": "2026-06-18",
+      "pushedAt": "2026-09-14",
+      "starsGained1d": 1079,
+      "starsGained7d": 11965,
+      "forksGained7d": 862,
+      "devRelevant": true,
       "onTrendingPage": [
         "weekly"
       ],
@@ -171,8 +166,8 @@
     {
       "repo": "ccch1mneyyy/dsh-go",
       "url": "https://github.com/ccch1mneyyy/dsh-go",
-      "stars": 18676,
-      "forks": 821,
+      "stars": 19781,
+      "forks": 881,
       "description": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
       "topics": [
         "ai-agent",
@@ -189,10 +184,10 @@
       ],
       "language": "Dart",
       "createdAt": "2026-10-25",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 982,
-      "starsGained7d": 10230,
-      "forksGained7d": 421,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 1105,
+      "starsGained7d": 11335,
+      "forksGained7d": 481,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -202,8 +197,8 @@
     {
       "repo": "ccch1mneyyy/dsh-Go",
       "url": "https://github.com/ccch1mneyyy/dsh-Go",
-      "stars": 18676,
-      "forks": 821,
+      "stars": 19781,
+      "forks": 881,
       "description": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
       "topics": [
         "ai-agent",
@@ -220,10 +215,10 @@
       ],
       "language": "Dart",
       "createdAt": "2026-10-25",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 982,
-      "starsGained7d": 10229,
-      "forksGained7d": 421,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 1105,
+      "starsGained7d": 11334,
+      "forksGained7d": 481,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -232,33 +227,10 @@
       ]
     },
     {
-      "repo": "mattpocock/skills",
-      "url": "https://github.com/mattpocock/skills",
-      "stars": 320908,
-      "forks": 26908,
-      "description": "Skills for Real Engineers. Straight from my .agents directory.",
-      "topics": [],
-      "language": "Shell",
-      "createdAt": "2026-02-03",
-      "pushedAt": "2026-11-09",
-      "starsGained1d": 1070,
-      "starsGained7d": 8996,
-      "forksGained7d": 700,
-      "devRelevant": true,
-      "onTrendingPage": [
-        "daily",
-        "weekly"
-      ],
-      "foundBy": [
-        "GitHub trending (daily)",
-        "GitHub trending (weekly)"
-      ]
-    },
-    {
       "repo": "Ebony-Vinyl/dsh-our-free-model",
       "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
-      "stars": 68713,
-      "forks": 1849,
+      "stars": 70095,
+      "forks": 1900,
       "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there,",
       "topics": [
         "ai-agents",
@@ -274,10 +246,10 @@
       ],
       "language": "JavaScript",
       "createdAt": "2026-09-24",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 1232,
-      "starsGained7d": 8955,
-      "forksGained7d": 222,
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 1382,
+      "starsGained7d": 10337,
+      "forksGained7d": 273,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -287,10 +259,31 @@
       ]
     },
     {
+      "repo": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "stars": 322077,
+      "forks": 27008,
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "topics": [],
+      "language": "Shell",
+      "createdAt": "2026-02-03",
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 1169,
+      "starsGained7d": 10165,
+      "forksGained7d": 800,
+      "devRelevant": true,
+      "onTrendingPage": [
+        "weekly"
+      ],
+      "foundBy": [
+        "GitHub trending (weekly)"
+      ]
+    },
+    {
       "repo": "milind-soni/OpenMausBot",
       "url": "https://github.com/milind-soni/OpenMausBot",
-      "stars": 20623,
-      "forks": 2858,
+      "stars": 21263,
+      "forks": 2968,
       "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
       "topics": [
         "ai-agents",
@@ -307,10 +300,10 @@
       ],
       "language": "TypeScript",
       "createdAt": "2026-08-11",
-      "pushedAt": "2026-11-11",
-      "starsGained1d": 804,
-      "starsGained7d": 8797,
-      "forksGained7d": 1232,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 640,
+      "starsGained7d": 9437,
+      "forksGained7d": 1342,
       "devRelevant": true,
       "onTrendingPage": [
         "weekly"
@@ -322,8 +315,8 @@
     {
       "repo": "vercel-labs/agent-desktop",
       "url": "https://github.com/vercel-labs/agent-desktop",
-      "stars": 21385,
-      "forks": 1593,
+      "stars": 22125,
+      "forks": 1647,
       "description": "Computer use CLI for AI agents",
       "topics": [
         "accessibility",
@@ -342,9 +335,9 @@
       "language": "Rust",
       "createdAt": "2026-02-19",
       "pushedAt": "2026-11-11",
-      "starsGained1d": 809,
-      "starsGained7d": 7800,
-      "forksGained7d": 661,
+      "starsGained1d": 740,
+      "starsGained7d": 8540,
+      "forksGained7d": 715,
       "devRelevant": true,
       "onTrendingPage": [
         "weekly"
@@ -356,8 +349,8 @@
     {
       "repo": "stablyai/orca",
       "url": "https://github.com/stablyai/orca",
-      "stars": 121447,
-      "forks": 7697,
+      "stars": 122447,
+      "forks": 7763,
       "description": "Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscription. Available on desktop, mobile and remote runtime.",
       "topics": [
         "agent-ide",
@@ -383,10 +376,10 @@
       ],
       "language": "TypeScript",
       "createdAt": "2026-03-17",
-      "pushedAt": "2026-11-11",
-      "starsGained1d": 936,
-      "starsGained7d": 6593,
-      "forksGained7d": 450,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 1000,
+      "starsGained7d": 7593,
+      "forksGained7d": 516,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -397,8 +390,8 @@
     {
       "repo": "deepseek-ai/deepseek-harness",
       "url": "https://github.com/deepseek-ai/deepseek-harness",
-      "stars": 278188,
-      "forks": 34164,
+      "stars": 279054,
+      "forks": 34333,
       "description": "DeepSeek Harness: Everything is a Plugin.",
       "topics": [
         "ai-agents",
@@ -408,10 +401,29 @@
       ],
       "language": "TypeScript",
       "createdAt": "2026-08-13",
-      "pushedAt": "2026-11-04",
-      "starsGained1d": 734,
-      "starsGained7d": 6454,
-      "forksGained7d": 1084,
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 866,
+      "starsGained7d": 7320,
+      "forksGained7d": 1253,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "active in topic:ai-agents"
+      ]
+    },
+    {
+      "repo": "heydamir/unslop",
+      "url": "https://github.com/heydamir/unslop",
+      "stars": 14570,
+      "forks": 820,
+      "description": "A Claude skill that turns vibecoded, AI-looking UI into a designed interface",
+      "topics": [],
+      "language": "JavaScript",
+      "createdAt": "2026-10-29",
+      "pushedAt": "2026-11-08",
+      "starsGained1d": 846,
+      "starsGained7d": 6750,
+      "forksGained7d": 428,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -419,29 +431,10 @@
       ]
     },
     {
-      "repo": "heydamir/unslop",
-      "url": "https://github.com/heydamir/unslop",
-      "stars": 13724,
-      "forks": 764,
-      "description": "A Claude skill that turns vibecoded, AI-looking UI into a designed interface",
-      "topics": [],
-      "language": "JavaScript",
-      "createdAt": "2026-10-29",
-      "pushedAt": "2026-11-08",
-      "starsGained1d": 922,
-      "starsGained7d": 5904,
-      "forksGained7d": 372,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "new in the last 14 days"
-      ]
-    },
-    {
       "repo": "pbakaus/impeccable",
       "url": "https://github.com/pbakaus/impeccable",
-      "stars": 107599,
-      "forks": 6401,
+      "stars": 108338,
+      "forks": 6442,
       "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
       "topics": [
         "agent-skills",
@@ -452,10 +445,10 @@
       ],
       "language": "Rust",
       "createdAt": "2025-11-16",
-      "pushedAt": "2026-11-11",
-      "starsGained1d": 654,
-      "starsGained7d": 5732,
-      "forksGained7d": 396,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 739,
+      "starsGained7d": 6471,
+      "forksGained7d": 437,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -465,8 +458,8 @@
     {
       "repo": "google/elephant-goldfish-model",
       "url": "https://github.com/google/elephant-goldfish-model",
-      "stars": 17174,
-      "forks": 1277,
+      "stars": 17703,
+      "forks": 1322,
       "description": "Open-source plugin for designing and reviewing software with agents",
       "topics": [
         "agent-skills",
@@ -488,24 +481,22 @@
       ],
       "language": "Python",
       "createdAt": "2026-09-13",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 647,
-      "starsGained7d": 5728,
-      "forksGained7d": 492,
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 529,
+      "starsGained7d": 6257,
+      "forksGained7d": 537,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
-        "new in topic:claude-code",
-        "new in topic:claude-code-plugin",
         "active in topic:claude-code-plugin",
-        "new in topic:agent-skills"
+        "active in topic:claude-skills"
       ]
     },
     {
       "repo": "D4Vinci/Scrapling",
       "url": "https://github.com/D4Vinci/Scrapling",
-      "stars": 101133,
-      "forks": 10558,
+      "stars": 101670,
+      "forks": 10595,
       "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and trick",
       "topics": [
         "ai",
@@ -531,10 +522,10 @@
       ],
       "language": "Python",
       "createdAt": "2024-10-13",
-      "pushedAt": "2026-11-09",
-      "starsGained1d": 521,
-      "starsGained7d": 5691,
-      "forksGained7d": 553,
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 537,
+      "starsGained7d": 6228,
+      "forksGained7d": 590,
       "devRelevant": true,
       "onTrendingPage": [
         "weekly"
@@ -548,16 +539,16 @@
     {
       "repo": "Nutlope/hallmark",
       "url": "https://github.com/Nutlope/hallmark",
-      "stars": 52609,
-      "forks": 2800,
+      "stars": 53440,
+      "forks": 2846,
       "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
       "topics": [],
       "language": "CSS",
       "createdAt": "2026-04-27",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 759,
-      "starsGained7d": 5308,
-      "forksGained7d": 298,
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 831,
+      "starsGained7d": 6139,
+      "forksGained7d": 344,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -567,8 +558,8 @@
     {
       "repo": "anthropics/skills",
       "url": "https://github.com/anthropics/skills",
-      "stars": 192318,
-      "forks": 22644,
+      "stars": 193168,
+      "forks": 22733,
       "description": "Public repository for Agent Skills",
       "topics": [
         "agent-skills"
@@ -576,25 +567,23 @@
       "language": "Python",
       "createdAt": "2025-09-22",
       "pushedAt": "2026-11-06",
-      "starsGained1d": 1212,
-      "starsGained7d": 5105,
-      "forksGained7d": 553,
+      "starsGained1d": 850,
+      "starsGained7d": 5955,
+      "forksGained7d": 642,
       "devRelevant": true,
       "onTrendingPage": [
-        "daily",
         "weekly"
       ],
       "foundBy": [
         "active in topic:agent-skills",
-        "GitHub trending (daily)",
         "GitHub trending (weekly)"
       ]
     },
     {
       "repo": "yetone/magpie",
       "url": "https://github.com/yetone/magpie",
-      "stars": 33873,
-      "forks": 3008,
+      "stars": 34762,
+      "forks": 3088,
       "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
       "topics": [
         "claude-code",
@@ -606,10 +595,10 @@
       ],
       "language": "Go",
       "createdAt": "2026-09-23",
-      "pushedAt": "2026-11-11",
-      "starsGained1d": 683,
-      "starsGained7d": 4480,
-      "forksGained7d": 488,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 889,
+      "starsGained7d": 5369,
+      "forksGained7d": 568,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -617,10 +606,40 @@
       ]
     },
     {
+      "repo": "DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "stars": 189183,
+      "forks": 10524,
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "claude",
+        "claude-code",
+        "claude-code-plugin",
+        "cursor-rules",
+        "developer-tools",
+        "llm",
+        "prompt-engineering",
+        "yagni"
+      ],
+      "language": "JavaScript",
+      "createdAt": "2026-06-12",
+      "pushedAt": "2026-10-29",
+      "starsGained1d": 781,
+      "starsGained7d": 5179,
+      "forksGained7d": 376,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "tracked"
+      ]
+    },
+    {
       "repo": "Gathin23/cleanyourtv",
       "url": "https://github.com/Gathin23/cleanyourtv",
-      "stars": 56018,
-      "forks": 7222,
+      "stars": 56571,
+      "forks": 7280,
       "description": "Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.",
       "topics": [
         "adb",
@@ -643,10 +662,10 @@
       ],
       "language": "Python",
       "createdAt": "2026-10-17",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 514,
-      "starsGained7d": 4421,
-      "forksGained7d": 695,
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 553,
+      "starsGained7d": 4974,
+      "forksGained7d": 753,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -654,48 +673,18 @@
       ]
     },
     {
-      "repo": "DietrichGebert/ponytail",
-      "url": "https://github.com/DietrichGebert/ponytail",
-      "stars": 188402,
-      "forks": 10471,
-      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "topics": [
-        "agent-skills",
-        "ai-agents",
-        "claude",
-        "claude-code",
-        "claude-code-plugin",
-        "cursor-rules",
-        "developer-tools",
-        "llm",
-        "prompt-engineering",
-        "yagni"
-      ],
-      "language": "JavaScript",
-      "createdAt": "2026-06-12",
-      "pushedAt": "2026-10-29",
-      "starsGained1d": 625,
-      "starsGained7d": 4398,
-      "forksGained7d": 323,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "tracked"
-      ]
-    },
-    {
       "repo": "deepseek-ai/dsh-superagent-prototype",
       "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
-      "stars": 22179,
-      "forks": 2678,
+      "stars": 22512,
+      "forks": 2732,
       "description": "Towards a More Autonomous Agent System",
       "topics": [],
       "language": "TypeScript",
       "createdAt": "2026-10-31",
       "pushedAt": "2026-11-03",
-      "starsGained1d": 386,
-      "starsGained7d": 4375,
-      "forksGained7d": 753,
+      "starsGained1d": 333,
+      "starsGained7d": 4708,
+      "forksGained7d": 807,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -705,8 +694,8 @@
     {
       "repo": "affaan-m/ECC",
       "url": "https://github.com/affaan-m/ECC",
-      "stars": 300814,
-      "forks": 44393,
+      "stars": 301407,
+      "forks": 44470,
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "topics": [
         "ai-agents",
@@ -721,9 +710,9 @@
       "language": "JavaScript",
       "createdAt": "2026-01-18",
       "pushedAt": "2026-11-09",
-      "starsGained1d": 539,
-      "starsGained7d": 4066,
-      "forksGained7d": 515,
+      "starsGained1d": 593,
+      "starsGained7d": 4659,
+      "forksGained7d": 592,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -736,8 +725,8 @@
     {
       "repo": "heygen-com/hyperframes",
       "url": "https://github.com/heygen-com/hyperframes",
-      "stars": 82315,
-      "forks": 7610,
+      "stars": 82940,
+      "forks": 7657,
       "description": "Write HTML. Render video. Built for agents.",
       "topics": [
         "ai",
@@ -758,10 +747,10 @@
       ],
       "language": "TypeScript",
       "createdAt": "2026-03-10",
-      "pushedAt": "2026-11-11",
-      "starsGained1d": 571,
-      "starsGained7d": 3763,
-      "forksGained7d": 380,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 625,
+      "starsGained7d": 4388,
+      "forksGained7d": 427,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -773,8 +762,8 @@
     {
       "repo": "obra/superpowers",
       "url": "https://github.com/obra/superpowers",
-      "stars": 315755,
-      "forks": 28080,
+      "stars": 316324,
+      "forks": 28143,
       "description": "An agentic skills framework & software development methodology that works.",
       "topics": [
         "ai",
@@ -789,9 +778,9 @@
       "language": "Shell",
       "createdAt": "2025-10-09",
       "pushedAt": "2026-11-03",
-      "starsGained1d": 555,
-      "starsGained7d": 3706,
-      "forksGained7d": 322,
+      "starsGained1d": 569,
+      "starsGained7d": 4275,
+      "forksGained7d": 385,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -801,8 +790,8 @@
     {
       "repo": "Graphify-Labs/graphify",
       "url": "https://github.com/Graphify-Labs/graphify",
-      "stars": 145650,
-      "forks": 13946,
+      "stars": 146192,
+      "forks": 14009,
       "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, e",
       "topics": [
         "ai-agents",
@@ -828,10 +817,10 @@
       ],
       "language": "Python",
       "createdAt": "2026-04-03",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 575,
-      "starsGained7d": 3611,
-      "forksGained7d": 380,
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 542,
+      "starsGained7d": 4153,
+      "forksGained7d": 443,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -844,8 +833,8 @@
     {
       "repo": "thedotmack/claude-mem",
       "url": "https://github.com/thedotmack/claude-mem",
-      "stars": 115821,
-      "forks": 10049,
+      "stars": 116250,
+      "forks": 10089,
       "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Cla",
       "topics": [
         "ai",
@@ -871,14 +860,12 @@
       ],
       "language": "TypeScript",
       "createdAt": "2025-08-31",
-      "pushedAt": "2026-11-11",
-      "starsGained1d": 395,
-      "starsGained7d": 3543,
-      "forksGained7d": 287,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 429,
+      "starsGained7d": 3972,
+      "forksGained7d": 327,
       "devRelevant": true,
-      "onTrendingPage": [
-        "weekly"
-      ],
+      "onTrendingPage": [],
       "foundBy": [
         "active in topic:claude-code",
         "active in topic:claude-code-plugin",
@@ -889,8 +876,8 @@
     {
       "repo": "Leonxlnx/taste-skill",
       "url": "https://github.com/Leonxlnx/taste-skill",
-      "stars": 113001,
-      "forks": 7610,
+      "stars": 113604,
+      "forks": 7645,
       "description": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages",
       "topics": [
         "agent-skills",
@@ -908,9 +895,9 @@
       "language": "JavaScript",
       "createdAt": "2026-02-19",
       "pushedAt": "2026-11-08",
-      "starsGained1d": 435,
-      "starsGained7d": 3307,
-      "forksGained7d": 236,
+      "starsGained1d": 603,
+      "starsGained7d": 3910,
+      "forksGained7d": 271,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -923,8 +910,8 @@
     {
       "repo": "calesthio/OpenMontage",
       "url": "https://github.com/calesthio/OpenMontage",
-      "stars": 79427,
-      "forks": 10625,
+      "stars": 79720,
+      "forks": 10672,
       "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video produc",
       "topics": [
         "agent",
@@ -950,9 +937,28 @@
       "language": "Python",
       "createdAt": "2026-03-29",
       "pushedAt": "2026-11-09",
-      "starsGained1d": 272,
-      "starsGained7d": 3278,
-      "forksGained7d": 534,
+      "starsGained1d": 293,
+      "starsGained7d": 3571,
+      "forksGained7d": 581,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "tracked"
+      ]
+    },
+    {
+      "repo": "amosblomqvist/learnharness",
+      "url": "https://github.com/amosblomqvist/learnharness",
+      "stars": 8761,
+      "forks": 1174,
+      "description": "Agent harness for learning difficult things.",
+      "topics": [],
+      "language": "TypeScript",
+      "createdAt": "2026-10-16",
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 454,
+      "starsGained7d": 3522,
+      "forksGained7d": 354,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -962,8 +968,8 @@
     {
       "repo": "HKUDS/DeepTutor",
       "url": "https://github.com/HKUDS/DeepTutor",
-      "stars": 57989,
-      "forks": 7059,
+      "stars": 58352,
+      "forks": 7095,
       "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
       "topics": [
         "ai-agents",
@@ -979,28 +985,9 @@
       "language": "Python",
       "createdAt": "2025-12-28",
       "pushedAt": "2026-11-07",
-      "starsGained1d": 326,
-      "starsGained7d": 3136,
-      "forksGained7d": 346,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "tracked"
-      ]
-    },
-    {
-      "repo": "amosblomqvist/learnharness",
-      "url": "https://github.com/amosblomqvist/learnharness",
-      "stars": 8307,
-      "forks": 1131,
-      "description": "Agent harness for learning difficult things.",
-      "topics": [],
-      "language": "TypeScript",
-      "createdAt": "2026-10-16",
-      "pushedAt": "2026-11-11",
-      "starsGained1d": 530,
-      "starsGained7d": 3068,
-      "forksGained7d": 311,
+      "starsGained1d": 363,
+      "starsGained7d": 3499,
+      "forksGained7d": 382,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -1010,8 +997,8 @@
     {
       "repo": "Donchitos/Claude-Code-Game-Studios",
       "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
-      "stars": 38054,
-      "forks": 4970,
+      "stars": 38493,
+      "forks": 5008,
       "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
       "topics": [
         "ai-agents",
@@ -1030,9 +1017,9 @@
       "language": "Shell",
       "createdAt": "2026-02-12",
       "pushedAt": "2026-11-09",
-      "starsGained1d": 436,
-      "starsGained7d": 3058,
-      "forksGained7d": 340,
+      "starsGained1d": 439,
+      "starsGained7d": 3497,
+      "forksGained7d": 378,
       "devRelevant": true,
       "onTrendingPage": [
         "weekly"
@@ -1044,8 +1031,8 @@
     {
       "repo": "blader/humanizer",
       "url": "https://github.com/blader/humanizer",
-      "stars": 67564,
-      "forks": 5309,
+      "stars": 68003,
+      "forks": 5340,
       "description": "Agent skill that removes signs of AI-generated writing from text",
       "topics": [
         "agent-skills",
@@ -1065,9 +1052,9 @@
       "language": "Python",
       "createdAt": "2026-01-18",
       "pushedAt": "2026-11-10",
-      "starsGained1d": 407,
-      "starsGained7d": 3004,
-      "forksGained7d": 216,
+      "starsGained1d": 439,
+      "starsGained7d": 3443,
+      "forksGained7d": 247,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -1076,43 +1063,10 @@
       ]
     },
     {
-      "repo": "qybaihe/bla",
-      "url": "https://github.com/qybaihe/bla",
-      "stars": 5006,
-      "forks": 600,
-      "description": "🛡️ BLA (Blind LLM Agents) — Adversarial defense shield that protects binaries, Electron apps, JS bundles, Python, and WebAssembly against AI reverse-engineering agents like REA. Poison -> Exhaust -> ",
-      "topics": [
-        "adversarial-ai",
-        "claude-code",
-        "cursor",
-        "electron-security",
-        "llm-security",
-        "mcp",
-        "mcp-server",
-        "obfuscation",
-        "reverse-engineering",
-        "webassembly"
-      ],
-      "language": "TypeScript",
-      "createdAt": "2026-10-25",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 592,
-      "starsGained7d": 2895,
-      "forksGained7d": 320,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "new in topic:mcp",
-        "new in topic:mcp-server",
-        "new in topic:claude-code",
-        "new in topic:cursor"
-      ]
-    },
-    {
       "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
       "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 147805,
-      "forks": 15636,
+      "stars": 148234,
+      "forks": 15688,
       "description": "An AI skill that provides design intelligence for building professional UI/UX across multiple platforms.",
       "topics": [
         "ai-skills",
@@ -1138,9 +1092,9 @@
       "language": "Python",
       "createdAt": "2025-11-30",
       "pushedAt": "2026-11-10",
-      "starsGained1d": 397,
-      "starsGained7d": 2881,
-      "forksGained7d": 308,
+      "starsGained1d": 429,
+      "starsGained7d": 3310,
+      "forksGained7d": 360,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -1149,10 +1103,62 @@
       ]
     },
     {
+      "repo": "qybaihe/bla",
+      "url": "https://github.com/qybaihe/bla",
+      "stars": 5318,
+      "forks": 639,
+      "description": "🛡️ BLA (Blind LLM Agents) — Adversarial defense shield that protects binaries, Electron apps, JS bundles, Python, and WebAssembly against AI reverse-engineering agents like REA. Poison -> Exhaust -> ",
+      "topics": [
+        "adversarial-ai",
+        "claude-code",
+        "cursor",
+        "electron-security",
+        "llm-security",
+        "mcp",
+        "mcp-server",
+        "obfuscation",
+        "reverse-engineering",
+        "webassembly"
+      ],
+      "language": "TypeScript",
+      "createdAt": "2026-10-25",
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 312,
+      "starsGained7d": 3207,
+      "forksGained7d": 359,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "new in topic:mcp",
+        "new in topic:mcp-server",
+        "new in topic:claude-code",
+        "new in topic:cursor"
+      ]
+    },
+    {
+      "repo": "multica-ai/andrej-karpathy-skills",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "stars": 232239,
+      "forks": 23096,
+      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+      "topics": [],
+      "language": null,
+      "createdAt": "2026-01-27",
+      "pushedAt": "2026-04-20",
+      "starsGained1d": 373,
+      "starsGained7d": 3004,
+      "forksGained7d": 257,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "tracked"
+      ]
+    },
+    {
       "repo": "KKKKhazix/agent-autoloop",
       "url": "https://github.com/KKKKhazix/agent-autoloop",
-      "stars": 4427,
-      "forks": 804,
+      "stars": 4532,
+      "forks": 827,
       "description": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
       "topics": [
         "ai-agents",
@@ -1169,10 +1175,10 @@
       ],
       "language": "TypeScript",
       "createdAt": "2026-11-03",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 123,
-      "starsGained7d": 2856,
-      "forksGained7d": 490,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 105,
+      "starsGained7d": 2961,
+      "forksGained7d": 513,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -1183,169 +1189,10 @@
       ]
     },
     {
-      "repo": "multica-ai/andrej-karpathy-skills",
-      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
-      "stars": 231866,
-      "forks": 23055,
-      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
-      "topics": [],
-      "language": null,
-      "createdAt": "2026-01-27",
-      "pushedAt": "2026-04-20",
-      "starsGained1d": 469,
-      "starsGained7d": 2631,
-      "forksGained7d": 216,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "tracked"
-      ]
-    },
-    {
-      "repo": "Zagitta/gpu-unlock",
-      "url": "https://github.com/Zagitta/gpu-unlock",
-      "stars": 18574,
-      "forks": 1899,
-      "description": "Your GeForce runs AI at half speed. This fixes it for 20/30/40 series cards. Up to 2× FP16 / BF16 / TF32 tensor throughput",
-      "topics": [],
-      "language": "C",
-      "createdAt": "2026-10-18",
-      "pushedAt": "2026-10-29",
-      "starsGained1d": 171,
-      "starsGained7d": 2616,
-      "forksGained7d": 310,
-      "devRelevant": false,
-      "onTrendingPage": [],
-      "foundBy": [
-        "tracked"
-      ]
-    },
-    {
-      "repo": "LNPANDY/NX2Apple",
-      "url": "https://github.com/LNPANDY/NX2Apple",
-      "stars": 5956,
-      "forks": 749,
-      "description": "Play your own Switch games on iPhone/iPad — one-click macOS app, no terminal. | 把 Switch 游戏装进 iPhone：图形界面一键构建，不用命令行。Bring your own game.",
-      "topics": [
-        "apple-silicon",
-        "custom-format",
-        "homebrew",
-        "ios",
-        "ipa",
-        "ipad",
-        "ipados",
-        "iphone",
-        "metal",
-        "native-port",
-        "nintendo-switch",
-        "nxnative",
-        "romfs",
-        "switch-games"
-      ],
-      "language": "Swift",
-      "createdAt": "2026-10-20",
-      "pushedAt": "2026-11-11",
-      "starsGained1d": 241,
-      "starsGained7d": 2587,
-      "forksGained7d": 295,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "tracked"
-      ]
-    },
-    {
-      "repo": "Djihads80/Eglantine",
-      "url": "https://github.com/Djihads80/Eglantine",
-      "stars": 5783,
-      "forks": 625,
-      "description": "VERY experimental Nintendo Switch 2 emulator",
-      "topics": [],
-      "language": "C++",
-      "createdAt": "2026-10-29",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 122,
-      "starsGained7d": 2582,
-      "forksGained7d": 257,
-      "devRelevant": false,
-      "onTrendingPage": [],
-      "foundBy": [
-        "tracked"
-      ]
-    },
-    {
-      "repo": "l0ng-ai/openidea",
-      "url": "https://github.com/l0ng-ai/openidea",
-      "stars": 8393,
-      "forks": 738,
-      "description": "The IDE you know, rebuilt in Rust. IntelliJ IDEA–style keymap, tool windows and search-everywhere in a fast native app: editor, code insight, debugger, Git, terminal, database and HTTP clients for 60+",
-      "topics": [
-        "code-editor",
-        "cross-platform",
-        "dap",
-        "database-client",
-        "debugger",
-        "desktop-app",
-        "developer-tools",
-        "git",
-        "http-client",
-        "ide",
-        "intellij",
-        "lsp",
-        "rust",
-        "tauri",
-        "terminal"
-      ],
-      "language": "TypeScript",
-      "createdAt": "2026-10-21",
-      "pushedAt": "2026-11-11",
-      "starsGained1d": 195,
-      "starsGained7d": 2546,
-      "forksGained7d": 251,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "new in topic:developer-tools"
-      ]
-    },
-    {
-      "repo": "Usagi-org/ai-goofish-monitor",
-      "url": "https://github.com/Usagi-org/ai-goofish-monitor",
-      "stars": 19424,
-      "forks": 3159,
-      "description": "基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。",
-      "topics": [
-        "ai",
-        "ai-assistant",
-        "ai-tools",
-        "automation",
-        "gemini",
-        "goofish",
-        "open-source",
-        "openai",
-        "playwright",
-        "tool",
-        "xian-yu",
-        "xianyu",
-        "xianyu-bot"
-      ],
-      "language": "Python",
-      "createdAt": "2025-07-16",
-      "pushedAt": "2026-10-10",
-      "starsGained1d": 779,
-      "starsGained7d": 2529,
-      "forksGained7d": 272,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "tracked"
-      ]
-    },
-    {
       "repo": "lemomo-ai/lemo-opuscar",
       "url": "https://github.com/lemomo-ai/lemo-opuscar",
-      "stars": 14494,
-      "forks": 1746,
+      "stars": 14916,
+      "forks": 1811,
       "description": "A toolbox of film styles made in code for Claude Code: 66 ready to use, and your own. Each style is a style prompt plus a demo film made entirely in code by Claude Opus 5.5, with no video model. By Le",
       "topics": [
         "agent-skills",
@@ -1372,9 +1219,9 @@
       "language": "JavaScript",
       "createdAt": "2026-09-26",
       "pushedAt": "2026-11-10",
-      "starsGained1d": 387,
-      "starsGained7d": 2510,
-      "forksGained7d": 362,
+      "starsGained1d": 422,
+      "starsGained7d": 2932,
+      "forksGained7d": 427,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -1385,10 +1232,124 @@
       ]
     },
     {
+      "repo": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "stars": 115985,
+      "forks": 12166,
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "topics": [
+        "agent-skills",
+        "antigravity",
+        "claude-code",
+        "codex",
+        "cursor",
+        "skills"
+      ],
+      "language": "JavaScript",
+      "createdAt": "2026-02-15",
+      "pushedAt": "2026-11-01",
+      "starsGained1d": 829,
+      "starsGained7d": 2858,
+      "forksGained7d": 329,
+      "devRelevant": true,
+      "onTrendingPage": [
+        "daily"
+      ],
+      "foundBy": [
+        "GitHub trending (daily)"
+      ]
+    },
+    {
+      "repo": "Usagi-org/ai-goofish-monitor",
+      "url": "https://github.com/Usagi-org/ai-goofish-monitor",
+      "stars": 19717,
+      "forks": 3200,
+      "description": "基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。",
+      "topics": [
+        "ai",
+        "ai-assistant",
+        "ai-tools",
+        "automation",
+        "gemini",
+        "goofish",
+        "open-source",
+        "openai",
+        "playwright",
+        "tool",
+        "xian-yu",
+        "xianyu",
+        "xianyu-bot"
+      ],
+      "language": "Python",
+      "createdAt": "2025-07-16",
+      "pushedAt": "2026-10-10",
+      "starsGained1d": 293,
+      "starsGained7d": 2822,
+      "forksGained7d": 313,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "tracked"
+      ]
+    },
+    {
+      "repo": "Zagitta/gpu-unlock",
+      "url": "https://github.com/Zagitta/gpu-unlock",
+      "stars": 18769,
+      "forks": 1920,
+      "description": "Your GeForce runs AI at half speed. This fixes it for 20/30/40 series cards. Up to 2× FP16 / BF16 / TF32 tensor throughput",
+      "topics": [],
+      "language": "C",
+      "createdAt": "2026-10-18",
+      "pushedAt": "2026-10-29",
+      "starsGained1d": 195,
+      "starsGained7d": 2811,
+      "forksGained7d": 331,
+      "devRelevant": false,
+      "onTrendingPage": [],
+      "foundBy": [
+        "tracked"
+      ]
+    },
+    {
+      "repo": "LNPANDY/NX2Apple",
+      "url": "https://github.com/LNPANDY/NX2Apple",
+      "stars": 6169,
+      "forks": 770,
+      "description": "Play your own Switch games on iPhone/iPad — one-click macOS app, no terminal. | 把 Switch 游戏装进 iPhone：图形界面一键构建，不用命令行。Bring your own game.",
+      "topics": [
+        "apple-silicon",
+        "custom-format",
+        "homebrew",
+        "ios",
+        "ipa",
+        "ipad",
+        "ipados",
+        "iphone",
+        "metal",
+        "native-port",
+        "nintendo-switch",
+        "nxnative",
+        "romfs",
+        "switch-games"
+      ],
+      "language": "Swift",
+      "createdAt": "2026-10-20",
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 213,
+      "starsGained7d": 2800,
+      "forksGained7d": 316,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "tracked"
+      ]
+    },
+    {
       "repo": "jub0t/Concat",
       "url": "https://github.com/jub0t/Concat",
-      "stars": 16528,
-      "forks": 2051,
+      "stars": 16855,
+      "forks": 2098,
       "description": "Beta: The truly free, open-source, local-first, cross-platform video editor. Scriptable through a JSON-RPC API & MCP.",
       "topics": [
         "ffmpeg",
@@ -1409,10 +1370,10 @@
       ],
       "language": "Rust",
       "createdAt": "2026-08-25",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 302,
-      "starsGained7d": 2455,
-      "forksGained7d": 312,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 327,
+      "starsGained7d": 2782,
+      "forksGained7d": 359,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -1420,37 +1381,126 @@
       ]
     },
     {
-      "repo": "github/spec-kit",
-      "url": "https://github.com/github/spec-kit",
-      "stars": 149205,
-      "forks": 13398,
-      "description": "💫 Toolkit to help you get started with SDD or any other process!",
+      "repo": "l0ng-ai/openidea",
+      "url": "https://github.com/l0ng-ai/openidea",
+      "stars": 8592,
+      "forks": 759,
+      "description": "The IDE you know, rebuilt in Rust. IntelliJ IDEA–style keymap, tool windows and search-everywhere in a fast native app: editor, code insight, debugger, Git, terminal, database and HTTP clients for 60+",
       "topics": [
-        "ai",
-        "copilot",
-        "development",
-        "engineering",
-        "prd",
-        "spec",
-        "spec-driven"
+        "code-editor",
+        "cross-platform",
+        "dap",
+        "database-client",
+        "debugger",
+        "desktop-app",
+        "developer-tools",
+        "git",
+        "http-client",
+        "ide",
+        "intellij",
+        "lsp",
+        "rust",
+        "tauri",
+        "terminal"
       ],
-      "language": "Python",
-      "createdAt": "2025-08-21",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 165,
-      "starsGained7d": 2363,
-      "forksGained7d": 228,
+      "language": "TypeScript",
+      "createdAt": "2026-10-21",
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 199,
+      "starsGained7d": 2745,
+      "forksGained7d": 272,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
-        "active in topic:copilot"
+        "new in topic:developer-tools"
+      ]
+    },
+    {
+      "repo": "patch-gg/pixelfx",
+      "url": "https://github.com/patch-gg/pixelfx",
+      "stars": 6998,
+      "forks": 908,
+      "description": "244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.",
+      "topics": [
+        "agent-skills",
+        "animation",
+        "canvas",
+        "claude-code-plugin",
+        "gamedev",
+        "pixel-art",
+        "sprite-sheet",
+        "vfx"
+      ],
+      "language": "JavaScript",
+      "createdAt": "2026-10-30",
+      "pushedAt": "2026-11-09",
+      "starsGained1d": 335,
+      "starsGained7d": 2654,
+      "forksGained7d": 324,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "new in topic:claude-code-plugin",
+        "active in topic:claude-code-plugin",
+        "new in topic:agent-skills",
+        "new in the last 14 days"
+      ]
+    },
+    {
+      "repo": "Djihads80/Eglantine",
+      "url": "https://github.com/Djihads80/Eglantine",
+      "stars": 5849,
+      "forks": 632,
+      "description": "VERY experimental Nintendo Switch 2 emulator",
+      "topics": [],
+      "language": "C++",
+      "createdAt": "2026-10-29",
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 66,
+      "starsGained7d": 2648,
+      "forksGained7d": 264,
+      "devRelevant": false,
+      "onTrendingPage": [],
+      "foundBy": [
+        "tracked"
+      ]
+    },
+    {
+      "repo": "kingcharleslzy-ai/dsh-purge",
+      "url": "https://github.com/kingcharleslzy-ai/dsh-purge",
+      "stars": 7033,
+      "forks": 3169,
+      "description": "dsh-purge Community · DeepSeek Harness 社区维护版：宿主兼容、状态诊断、提示词管理、更新与本机备份回滚。基于小杨 / YuJunZhiXue 的 dsh-purge。",
+      "topics": [
+        "agent-tools",
+        "backup",
+        "deepseek",
+        "deepseek-harness",
+        "dsh",
+        "dsh-plugin",
+        "jailbreak",
+        "prompt-injection",
+        "prompt-management",
+        "purge-community",
+        "rollback"
+      ],
+      "language": "JavaScript",
+      "createdAt": "2026-10-16",
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 484,
+      "starsGained7d": 2628,
+      "forksGained7d": 1014,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "tracked"
       ]
     },
     {
       "repo": "Panniantong/Agent-Reach",
       "url": "https://github.com/Panniantong/Agent-Reach",
-      "stars": 110914,
-      "forks": 9931,
+      "stars": 111137,
+      "forks": 9955,
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
       "topics": [
         "agent-infrastructure",
@@ -1474,9 +1524,9 @@
       "language": "Python",
       "createdAt": "2026-02-24",
       "pushedAt": "2026-11-08",
-      "starsGained1d": 271,
-      "starsGained7d": 2356,
-      "forksGained7d": 243,
+      "starsGained1d": 223,
+      "starsGained7d": 2579,
+      "forksGained7d": 267,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -1487,110 +1537,84 @@
       ]
     },
     {
-      "repo": "patch-gg/pixelfx",
-      "url": "https://github.com/patch-gg/pixelfx",
-      "stars": 6663,
-      "forks": 870,
-      "description": "244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.",
+      "repo": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "stars": 200976,
+      "forks": 10557,
+      "description": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. 🔥",
       "topics": [
-        "agent-skills",
-        "animation",
-        "canvas",
-        "claude-code-plugin",
-        "gamedev",
-        "pixel-art",
-        "sprite-sheet",
-        "vfx"
+        "ai",
+        "ai-agents",
+        "ai-crawler",
+        "ai-scraping",
+        "ai-search",
+        "crawler",
+        "data-extraction",
+        "html-to-markdown",
+        "llm",
+        "markdown",
+        "scraper",
+        "scraping",
+        "web-crawler",
+        "web-data",
+        "web-data-extraction",
+        "web-scraper",
+        "web-scraping",
+        "web-search",
+        "webscraping"
       ],
-      "language": "JavaScript",
-      "createdAt": "2026-10-30",
-      "pushedAt": "2026-11-09",
-      "starsGained1d": 300,
-      "starsGained7d": 2319,
-      "forksGained7d": 286,
+      "language": "TypeScript",
+      "createdAt": "2024-04-15",
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 441,
+      "starsGained7d": 2552,
+      "forksGained7d": 82,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
-        "new in topic:claude-code-plugin",
-        "active in topic:claude-code-plugin",
-        "new in topic:agent-skills",
-        "new in the last 14 days"
+        "active in topic:ai-agents"
+      ]
+    },
+    {
+      "repo": "github/spec-kit",
+      "url": "https://github.com/github/spec-kit",
+      "stars": 149367,
+      "forks": 13415,
+      "description": "💫 Toolkit to help you get started with SDD or any other process!",
+      "topics": [
+        "ai",
+        "copilot",
+        "development",
+        "engineering",
+        "prd",
+        "spec",
+        "spec-driven"
+      ],
+      "language": "Python",
+      "createdAt": "2025-08-21",
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 162,
+      "starsGained7d": 2525,
+      "forksGained7d": 245,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "active in topic:copilot"
       ]
     },
     {
       "repo": "JustVugg/colibri",
       "url": "https://github.com/JustVugg/colibri",
-      "stars": 49769,
-      "forks": 5860,
+      "stars": 49979,
+      "forks": 5885,
       "description": "A hierarchical inference engine for frontier MoE models: hot experts on the GPU (CUDA, Vulkan), warm ones in RAM, cold ones streamed from NVMe. Written in C, runs on the hardware you already own.",
       "topics": [],
       "language": "C",
       "createdAt": "2026-07-01",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 334,
-      "starsGained7d": 2311,
-      "forksGained7d": 378,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "tracked"
-      ]
-    },
-    {
-      "repo": "floci-io/floci",
-      "url": "https://github.com/floci-io/floci",
-      "stars": 31283,
-      "forks": 3427,
-      "description": "Light, fluffy, and always free - The AWS Local Emulator alternative",
-      "topics": [
-        "aws",
-        "aws-emulation",
-        "devops",
-        "docker",
-        "ec2",
-        "ecs",
-        "localstack",
-        "s3",
-        "sqs",
-        "testcontainers"
-      ],
-      "language": "Java",
-      "createdAt": "2026-02-18",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 72,
-      "starsGained7d": 2181,
-      "forksGained7d": 192,
-      "devRelevant": false,
-      "onTrendingPage": [],
-      "foundBy": [
-        "tracked"
-      ]
-    },
-    {
-      "repo": "kingcharleslzy-ai/dsh-purge",
-      "url": "https://github.com/kingcharleslzy-ai/dsh-purge",
-      "stars": 6549,
-      "forks": 2997,
-      "description": "dsh-purge Community · DeepSeek Harness 社区维护版：宿主兼容、状态诊断、提示词管理、更新与本机备份回滚。基于小杨 / YuJunZhiXue 的 dsh-purge。",
-      "topics": [
-        "agent-tools",
-        "backup",
-        "deepseek",
-        "deepseek-harness",
-        "dsh",
-        "dsh-plugin",
-        "jailbreak",
-        "prompt-injection",
-        "prompt-management",
-        "purge-community",
-        "rollback"
-      ],
-      "language": "JavaScript",
-      "createdAt": "2026-10-16",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 463,
-      "starsGained7d": 2144,
-      "forksGained7d": 842,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 210,
+      "starsGained7d": 2521,
+      "forksGained7d": 403,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -1600,8 +1624,8 @@
     {
       "repo": "tt-a1i/archify",
       "url": "https://github.com/tt-a1i/archify",
-      "stars": 95379,
-      "forks": 6509,
+      "stars": 95658,
+      "forks": 6541,
       "description": "Turn any idea, plan, or codebase into a beautiful interactive diagram. An agent skill for Claude Code, Codex, and more.",
       "topics": [
         "agent-skills",
@@ -1627,10 +1651,10 @@
       ],
       "language": "JavaScript",
       "createdAt": "2026-04-15",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 294,
-      "starsGained7d": 2131,
-      "forksGained7d": 157,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 279,
+      "starsGained7d": 2410,
+      "forksGained7d": 189,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -1641,49 +1665,10 @@
       ]
     },
     {
-      "repo": "firecrawl/firecrawl",
-      "url": "https://github.com/firecrawl/firecrawl",
-      "stars": 200535,
-      "forks": 10547,
-      "description": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. 🔥",
-      "topics": [
-        "ai",
-        "ai-agents",
-        "ai-crawler",
-        "ai-scraping",
-        "ai-search",
-        "crawler",
-        "data-extraction",
-        "html-to-markdown",
-        "llm",
-        "markdown",
-        "scraper",
-        "scraping",
-        "web-crawler",
-        "web-data",
-        "web-data-extraction",
-        "web-scraper",
-        "web-scraping",
-        "web-search",
-        "webscraping"
-      ],
-      "language": "TypeScript",
-      "createdAt": "2024-04-15",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 353,
-      "starsGained7d": 2111,
-      "forksGained7d": 72,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "active in topic:ai-agents"
-      ]
-    },
-    {
       "repo": "NousResearch/hermes-agent",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "stars": 262451,
-      "forks": 58655,
+      "stars": 262742,
+      "forks": 59078,
       "description": "The agent that grows with you",
       "topics": [
         "ai",
@@ -1702,10 +1687,10 @@
       ],
       "language": "Python",
       "createdAt": "2025-07-22",
-      "pushedAt": "2026-11-11",
-      "starsGained1d": 352,
-      "starsGained7d": 2107,
-      "forksGained7d": 1272,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 291,
+      "starsGained7d": 2398,
+      "forksGained7d": 1695,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -1714,40 +1699,10 @@
       ]
     },
     {
-      "repo": "Renhuai123/ziwei-doushu",
-      "url": "https://github.com/Renhuai123/ziwei-doushu",
-      "stars": 17465,
-      "forks": 3399,
-      "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
-      "topics": [
-        "bazi",
-        "chinese-astrology",
-        "divination",
-        "fortune-telling",
-        "nextjs",
-        "open-source",
-        "purple-star-astrology",
-        "typescript",
-        "zi-wei-dou-shu",
-        "ziwei-doushu"
-      ],
-      "language": "TypeScript",
-      "createdAt": "2026-05-01",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 153,
-      "starsGained7d": 2056,
-      "forksGained7d": 415,
-      "devRelevant": false,
-      "onTrendingPage": [],
-      "foundBy": [
-        "tracked"
-      ]
-    },
-    {
       "repo": "herdrdev/herdr",
       "url": "https://github.com/herdrdev/herdr",
-      "stars": 50012,
-      "forks": 4042,
+      "stars": 50350,
+      "forks": 4065,
       "description": "the runtime your coding agents live on",
       "topics": [
         "agent",
@@ -1772,22 +1727,117 @@
       "language": "Rust",
       "createdAt": "2026-03-27",
       "pushedAt": "2026-11-07",
-      "starsGained1d": 216,
-      "starsGained7d": 2046,
-      "forksGained7d": 195,
+      "starsGained1d": 338,
+      "starsGained7d": 2384,
+      "forksGained7d": 218,
       "devRelevant": true,
-      "onTrendingPage": [],
+      "onTrendingPage": [
+        "weekly"
+      ],
       "foundBy": [
         "active in topic:developer-tools",
         "active in topic:devtools",
-        "active in topic:cli"
+        "active in topic:cli",
+        "GitHub trending (weekly)"
+      ]
+    },
+    {
+      "repo": "floci-io/floci",
+      "url": "https://github.com/floci-io/floci",
+      "stars": 31465,
+      "forks": 3457,
+      "description": "Light, fluffy, and always free - The AWS Local Emulator alternative",
+      "topics": [
+        "aws",
+        "aws-emulation",
+        "devops",
+        "docker",
+        "ec2",
+        "ecs",
+        "localstack",
+        "s3",
+        "sqs",
+        "testcontainers"
+      ],
+      "language": "Java",
+      "createdAt": "2026-02-18",
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 182,
+      "starsGained7d": 2363,
+      "forksGained7d": 222,
+      "devRelevant": false,
+      "onTrendingPage": [],
+      "foundBy": [
+        "tracked"
+      ]
+    },
+    {
+      "repo": "tangency-labs/solidcraft",
+      "url": "https://github.com/tangency-labs/solidcraft",
+      "stars": 15814,
+      "forks": 2155,
+      "description": "SolidCraft: an open-source parametric 3D CAD application built in pure Rust. Desktop, web, and automation through MCP.",
+      "topics": [
+        "3d-modeling",
+        "brep",
+        "cad",
+        "egui",
+        "mcp",
+        "parametric-cad",
+        "rust",
+        "step",
+        "wasm"
+      ],
+      "language": "Rust",
+      "createdAt": "2026-10-07",
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 306,
+      "starsGained7d": 2332,
+      "forksGained7d": 373,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "new in topic:mcp"
+      ]
+    },
+    {
+      "repo": "public-apis/public-apis",
+      "url": "https://github.com/public-apis/public-apis",
+      "stars": 498266,
+      "forks": 55763,
+      "description": "A collective list of free APIs",
+      "topics": [
+        "api",
+        "apis",
+        "dataset",
+        "development",
+        "free",
+        "list",
+        "lists",
+        "open-source",
+        "public",
+        "public-api",
+        "public-apis",
+        "resources",
+        "software"
+      ],
+      "language": "Python",
+      "createdAt": "2016-03-20",
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 328,
+      "starsGained7d": 2328,
+      "forksGained7d": 390,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "tracked"
       ]
     },
     {
       "repo": "paperclipai/paperclip",
       "url": "https://github.com/paperclipai/paperclip",
-      "stars": 112949,
-      "forks": 18737,
+      "stars": 113201,
+      "forks": 18796,
       "description": "The open-source app everyone uses to manage agents at work",
       "topics": [
         "acpx",
@@ -1813,10 +1863,10 @@
       ],
       "language": "TypeScript",
       "createdAt": "2026-03-02",
-      "pushedAt": "2026-11-11",
-      "starsGained1d": 290,
-      "starsGained7d": 2031,
-      "forksGained7d": 364,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 252,
+      "starsGained7d": 2283,
+      "forksGained7d": 423,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -1827,119 +1877,10 @@
       ]
     },
     {
-      "repo": "addyosmani/agent-skills",
-      "url": "https://github.com/addyosmani/agent-skills",
-      "stars": 115156,
-      "forks": 12096,
-      "description": "Production-grade engineering skills for AI coding agents.",
-      "topics": [
-        "agent-skills",
-        "antigravity",
-        "claude-code",
-        "codex",
-        "cursor",
-        "skills"
-      ],
-      "language": "JavaScript",
-      "createdAt": "2026-02-15",
-      "pushedAt": "2026-11-01",
-      "starsGained1d": 558,
-      "starsGained7d": 2029,
-      "forksGained7d": 259,
-      "devRelevant": true,
-      "onTrendingPage": [
-        "daily"
-      ],
-      "foundBy": [
-        "GitHub trending (daily)"
-      ]
-    },
-    {
-      "repo": "tangency-labs/solidcraft",
-      "url": "https://github.com/tangency-labs/solidcraft",
-      "stars": 15508,
-      "forks": 2098,
-      "description": "SolidCraft: an open-source parametric 3D CAD application built in pure Rust. Desktop, web, and automation through MCP.",
-      "topics": [
-        "3d-modeling",
-        "brep",
-        "cad",
-        "egui",
-        "mcp",
-        "parametric-cad",
-        "rust",
-        "step",
-        "wasm"
-      ],
-      "language": "Rust",
-      "createdAt": "2026-10-07",
-      "pushedAt": "2026-11-11",
-      "starsGained1d": 199,
-      "starsGained7d": 2026,
-      "forksGained7d": 316,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "new in topic:mcp"
-      ]
-    },
-    {
-      "repo": "public-apis/public-apis",
-      "url": "https://github.com/public-apis/public-apis",
-      "stars": 497938,
-      "forks": 55714,
-      "description": "A collective list of free APIs",
-      "topics": [
-        "api",
-        "apis",
-        "dataset",
-        "development",
-        "free",
-        "list",
-        "lists",
-        "open-source",
-        "public",
-        "public-api",
-        "public-apis",
-        "resources",
-        "software"
-      ],
-      "language": "Python",
-      "createdAt": "2016-03-20",
-      "pushedAt": "2026-11-07",
-      "starsGained1d": 285,
-      "starsGained7d": 2000,
-      "forksGained7d": 341,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "tracked"
-      ]
-    },
-    {
-      "repo": "togg53192-cmd/jailbreaks",
-      "url": "https://github.com/togg53192-cmd/jailbreaks",
-      "stars": 16018,
-      "forks": 2609,
-      "description": "LIST OF ALL MY JAILBREAKS",
-      "topics": [],
-      "language": null,
-      "createdAt": "2026-06-18",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 205,
-      "starsGained7d": 1944,
-      "forksGained7d": 457,
-      "devRelevant": false,
-      "onTrendingPage": [],
-      "foundBy": [
-        "tracked"
-      ]
-    },
-    {
       "repo": "cheaper-inference/OmniRoute",
       "url": "https://github.com/cheaper-inference/OmniRoute",
-      "stars": 86300,
-      "forks": 13137,
+      "stars": 86621,
+      "forks": 13213,
       "description": "Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline",
       "topics": [
         "a2a",
@@ -1965,10 +1906,10 @@
       ],
       "language": "TypeScript",
       "createdAt": "2026-02-13",
-      "pushedAt": "2026-11-11",
-      "starsGained1d": 280,
-      "starsGained7d": 1925,
-      "forksGained7d": 469,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 321,
+      "starsGained7d": 2246,
+      "forksGained7d": 545,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -1979,66 +1920,59 @@
       ]
     },
     {
-      "repo": "wangzan101/Mika",
-      "url": "https://github.com/wangzan101/Mika",
-      "stars": 8074,
-      "forks": 1842,
-      "description": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
-      "topics": [
-        "accessibility",
-        "ai-agent",
-        "android",
-        "automation",
-        "jetpack-compose",
-        "kotlin",
-        "llm",
-        "mobile-agent"
-      ],
-      "language": "Kotlin",
-      "createdAt": "2026-10-29",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 155,
-      "starsGained7d": 1831,
-      "forksGained7d": 625,
-      "devRelevant": true,
+      "repo": "togg53192-cmd/jailbreaks",
+      "url": "https://github.com/togg53192-cmd/jailbreaks",
+      "stars": 16286,
+      "forks": 2703,
+      "description": "LIST OF ALL MY JAILBREAKS",
+      "topics": [],
+      "language": null,
+      "createdAt": "2026-06-18",
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 268,
+      "starsGained7d": 2212,
+      "forksGained7d": 551,
+      "devRelevant": false,
       "onTrendingPage": [],
       "foundBy": [
-        "new in the last 14 days"
+        "tracked"
       ]
     },
     {
-      "repo": "govijr/terminal-mac",
-      "url": "https://github.com/govijr/terminal-mac",
-      "stars": 2552,
-      "forks": 178,
-      "description": "Entire MacOS running in your terminal.",
+      "repo": "Renhuai123/ziwei-doushu",
+      "url": "https://github.com/Renhuai123/ziwei-doushu",
+      "stars": 17608,
+      "forks": 3428,
+      "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
       "topics": [
-        "cli",
-        "gui",
-        "macos",
-        "shell",
-        "swift",
-        "terminal",
-        "tui"
+        "bazi",
+        "chinese-astrology",
+        "divination",
+        "fortune-telling",
+        "nextjs",
+        "open-source",
+        "purple-star-astrology",
+        "typescript",
+        "zi-wei-dou-shu",
+        "ziwei-doushu"
       ],
-      "language": "Swift",
-      "createdAt": "2026-11-03",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 35,
-      "starsGained7d": 1825,
-      "forksGained7d": 126,
-      "devRelevant": true,
+      "language": "TypeScript",
+      "createdAt": "2026-05-01",
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 143,
+      "starsGained7d": 2199,
+      "forksGained7d": 444,
+      "devRelevant": false,
       "onTrendingPage": [],
       "foundBy": [
-        "new in topic:cli",
-        "new in the last 14 days"
+        "tracked"
       ]
     },
     {
       "repo": "valentderah/totk-pc-recomp",
       "url": "https://github.com/valentderah/totk-pc-recomp",
-      "stars": 6451,
-      "forks": 534,
+      "stars": 6749,
+      "forks": 552,
       "description": "Static recompilation of The Legend of Zelda: Tears of the Kingdom to native Windows and Linux x86-64, with a Vulkan renderer. Game files not included.",
       "topics": [
         "game",
@@ -2049,21 +1983,46 @@
       ],
       "language": "C",
       "createdAt": "2026-10-29",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 234,
-      "starsGained7d": 1821,
-      "forksGained7d": 161,
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 298,
+      "starsGained7d": 2119,
+      "forksGained7d": 179,
       "devRelevant": false,
       "onTrendingPage": [],
       "foundBy": [
-        "new in the last 14 days"
+        "tracked"
+      ]
+    },
+    {
+      "repo": "Jakeschincariol/day-trader-skill",
+      "url": "https://github.com/Jakeschincariol/day-trader-skill",
+      "stars": 7107,
+      "forks": 1708,
+      "description": "11 Claude skills for day trading: scan thousands of charts, track breaking news, time every entry and exit, and replay every outcome before you risk a dollar.",
+      "topics": [
+        "backtesting",
+        "claude",
+        "claude-skills",
+        "day-trading",
+        "stock-market"
+      ],
+      "language": "Python",
+      "createdAt": "2026-10-20",
+      "pushedAt": "2026-10-20",
+      "starsGained1d": 415,
+      "starsGained7d": 2054,
+      "forksGained7d": 482,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "new in topic:claude-skills"
       ]
     },
     {
       "repo": "career-ops-hq/career-ops",
       "url": "https://github.com/career-ops-hq/career-ops",
-      "stars": 81749,
-      "forks": 15016,
+      "stars": 82011,
+      "forks": 15055,
       "description": "Open-source AI job search agent and job finder: scan job boards, score each job 1-5 against your CV before you apply, tailor an ATS-friendly resume and cover letter, get interview prep and an applicat",
       "topics": [
         "agent-skills",
@@ -2089,10 +2048,10 @@
       ],
       "language": "JavaScript",
       "createdAt": "2026-04-04",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 247,
-      "starsGained7d": 1769,
-      "forksGained7d": 292,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 262,
+      "starsGained7d": 2031,
+      "forksGained7d": 331,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -2104,8 +2063,8 @@
     {
       "repo": "Vincentwei1021/video-shotcraft",
       "url": "https://github.com/Vincentwei1021/video-shotcraft",
-      "stars": 18488,
-      "forks": 1749,
+      "stars": 18777,
+      "forks": 1772,
       "description": "AI video skill for Claude Code & Codex — cinematic, editable product promos with Remotion: 124 shot recipe cards, 150 motion previews, beat sync, sound design, Motion Workbench & JianYing (CapCut CN) ",
       "topics": [
         "agent-skills",
@@ -2125,10 +2084,10 @@
       ],
       "language": "TypeScript",
       "createdAt": "2026-07-19",
-      "pushedAt": "2026-11-09",
-      "starsGained1d": 278,
-      "starsGained7d": 1738,
-      "forksGained7d": 169,
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 289,
+      "starsGained7d": 2027,
+      "forksGained7d": 192,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -2136,38 +2095,38 @@
       ]
     },
     {
-      "repo": "max-sixty/worktrunk",
-      "url": "https://github.com/max-sixty/worktrunk",
-      "stars": 12393,
-      "forks": 487,
-      "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
+      "repo": "wangzan101/Mika",
+      "url": "https://github.com/wangzan101/Mika",
+      "stars": 8256,
+      "forks": 1886,
+      "description": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
       "topics": [
-        "agents",
-        "claude-code",
-        "codex",
-        "developer-tools",
-        "git",
-        "worktrees"
+        "accessibility",
+        "ai-agent",
+        "android",
+        "automation",
+        "jetpack-compose",
+        "kotlin",
+        "llm",
+        "mobile-agent"
       ],
-      "language": "Rust",
-      "createdAt": "2025-10-17",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 108,
-      "starsGained7d": 1701,
-      "forksGained7d": 94,
+      "language": "Kotlin",
+      "createdAt": "2026-10-29",
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 182,
+      "starsGained7d": 2013,
+      "forksGained7d": 669,
       "devRelevant": true,
-      "onTrendingPage": [
-        "weekly"
-      ],
+      "onTrendingPage": [],
       "foundBy": [
-        "GitHub trending (weekly)"
+        "tracked"
       ]
     },
     {
       "repo": "farion1231/cc-switch",
       "url": "https://github.com/farion1231/cc-switch",
-      "stars": 153339,
-      "forks": 10076,
+      "stars": 153683,
+      "forks": 10088,
       "description": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode,DeepSeek Harness and more. Only official website: ccswitch.io",
       "topics": [
         "ai-tools",
@@ -2192,10 +2151,10 @@
       ],
       "language": "Rust",
       "createdAt": "2025-08-04",
-      "pushedAt": "2026-11-11",
-      "starsGained1d": 239,
-      "starsGained7d": 1655,
-      "forksGained7d": 112,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 344,
+      "starsGained7d": 1999,
+      "forksGained7d": 124,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -2206,8 +2165,8 @@
     {
       "repo": "yt-dlp/yt-dlp",
       "url": "https://github.com/yt-dlp/yt-dlp",
-      "stars": 206728,
-      "forks": 18186,
+      "stars": 206998,
+      "forks": 18223,
       "description": "A feature-rich command-line audio/video downloader",
       "topics": [
         "cli",
@@ -2221,9 +2180,9 @@
       "language": "Python",
       "createdAt": "2020-10-26",
       "pushedAt": "2026-11-04",
-      "starsGained1d": 211,
-      "starsGained7d": 1640,
-      "forksGained7d": 171,
+      "starsGained1d": 270,
+      "starsGained7d": 1910,
+      "forksGained7d": 208,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -2231,44 +2190,168 @@
       ]
     },
     {
-      "repo": "Jakeschincariol/day-trader-skill",
-      "url": "https://github.com/Jakeschincariol/day-trader-skill",
-      "stars": 6692,
-      "forks": 1636,
-      "description": "11 Claude skills for day trading: scan thousands of charts, track breaking news, time every entry and exit, and replay every outcome before you risk a dollar.",
+      "repo": "govijr/terminal-mac",
+      "url": "https://github.com/govijr/terminal-mac",
+      "stars": 2606,
+      "forks": 180,
+      "description": "Entire MacOS running in your terminal.",
       "topics": [
-        "backtesting",
-        "claude",
-        "claude-skills",
-        "day-trading",
-        "stock-market"
+        "cli",
+        "gui",
+        "macos",
+        "shell",
+        "swift",
+        "terminal",
+        "tui"
       ],
-      "language": "Python",
-      "createdAt": "2026-10-20",
-      "pushedAt": "2026-10-20",
-      "starsGained1d": 264,
-      "starsGained7d": 1639,
-      "forksGained7d": 410,
+      "language": "Swift",
+      "createdAt": "2026-11-03",
+      "pushedAt": "2026-11-10",
+      "starsGained1d": 54,
+      "starsGained7d": 1879,
+      "forksGained7d": 128,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
-        "new in topic:claude-skills"
+        "new in topic:cli",
+        "new in the last 14 days"
+      ]
+    },
+    {
+      "repo": "AgriciDaniel/claude-seo",
+      "url": "https://github.com/AgriciDaniel/claude-seo",
+      "stars": 28285,
+      "forks": 3649,
+      "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local S",
+      "topics": [
+        "ai",
+        "ai-seo",
+        "claude-code",
+        "claude-code-skill",
+        "marketing-automation",
+        "open-source",
+        "seo"
+      ],
+      "language": "Python",
+      "createdAt": "2026-02-07",
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 361,
+      "starsGained7d": 1846,
+      "forksGained7d": 209,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "tracked"
+      ]
+    },
+    {
+      "repo": "JuliusBrussee/caveman",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "stars": 119146,
+      "forks": 6926,
+      "description": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
+      "topics": [
+        "ai",
+        "anthropic",
+        "caveman",
+        "claude",
+        "claude-code",
+        "llm",
+        "meme",
+        "prompt-engineering",
+        "skill",
+        "tokens"
+      ],
+      "language": "Go",
+      "createdAt": "2026-04-04",
+      "pushedAt": "2026-11-10",
+      "starsGained1d": 255,
+      "starsGained7d": 1825,
+      "forksGained7d": 118,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "active in topic:claude-code"
       ]
     },
     {
       "repo": "pengchujin/aerial-tv",
       "url": "https://github.com/pengchujin/aerial-tv",
-      "stars": 11106,
-      "forks": 953,
+      "stars": 11294,
+      "forks": 968,
       "description": "给国产电视的一块干净桌面：参照 tvOS 设计的开源 Android TV 桌面，没有广告，开机自动接管。A tvOS-style launcher for Xiaomi, TCL and other China-market TVs.",
       "topics": [],
       "language": "Kotlin",
       "createdAt": "2026-10-20",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 177,
-      "starsGained7d": 1616,
-      "forksGained7d": 137,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 188,
+      "starsGained7d": 1804,
+      "forksGained7d": 152,
       "devRelevant": false,
+      "onTrendingPage": [],
+      "foundBy": [
+        "tracked"
+      ]
+    },
+    {
+      "repo": "Egonex-AI/Understand-Anything",
+      "url": "https://github.com/Egonex-AI/Understand-Anything",
+      "stars": 92187,
+      "forks": 7862,
+      "description": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI,",
+      "topics": [
+        "antigravity-skills",
+        "business-knowledge",
+        "claude-code",
+        "claude-skills",
+        "codebase-analysis",
+        "codex",
+        "codex-skills",
+        "developer-tools-ai-agent",
+        "gemini-cli-skills",
+        "karpathy-llm-wiki",
+        "knowledge-base",
+        "knowledge-graph",
+        "memory",
+        "opencode-skills",
+        "pi-agent",
+        "understandcode",
+        "vibe-coding"
+      ],
+      "language": "TypeScript",
+      "createdAt": "2026-03-15",
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 301,
+      "starsGained7d": 1791,
+      "forksGained7d": 148,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "active in topic:claude-code",
+        "active in topic:claude-skills"
+      ]
+    },
+    {
+      "repo": "max-sixty/worktrunk",
+      "url": "https://github.com/max-sixty/worktrunk",
+      "stars": 12450,
+      "forks": 493,
+      "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
+      "topics": [
+        "agents",
+        "claude-code",
+        "codex",
+        "developer-tools",
+        "git",
+        "worktrees"
+      ],
+      "language": "Rust",
+      "createdAt": "2025-10-17",
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 57,
+      "starsGained7d": 1758,
+      "forksGained7d": 100,
+      "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
         "tracked"
@@ -2277,8 +2360,8 @@
     {
       "repo": "ruvnet/RuView",
       "url": "https://github.com/ruvnet/RuView",
-      "stars": 103898,
-      "forks": 13522,
+      "stars": 104067,
+      "forks": 13543,
       "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
       "topics": [
         "claude",
@@ -2303,10 +2386,10 @@
       ],
       "language": "Rust",
       "createdAt": "2025-06-07",
-      "pushedAt": "2026-11-11",
-      "starsGained1d": 370,
-      "starsGained7d": 1588,
-      "forksGained7d": 231,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 169,
+      "starsGained7d": 1757,
+      "forksGained7d": 252,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -2315,40 +2398,10 @@
       ]
     },
     {
-      "repo": "JuliusBrussee/caveman",
-      "url": "https://github.com/JuliusBrussee/caveman",
-      "stars": 118891,
-      "forks": 6916,
-      "description": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
-      "topics": [
-        "ai",
-        "anthropic",
-        "caveman",
-        "claude",
-        "claude-code",
-        "llm",
-        "meme",
-        "prompt-engineering",
-        "skill",
-        "tokens"
-      ],
-      "language": "Go",
-      "createdAt": "2026-04-04",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 225,
-      "starsGained7d": 1570,
-      "forksGained7d": 108,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "active in topic:claude-code"
-      ]
-    },
-    {
       "repo": "rohitg00/ai-engineering-from-scratch",
       "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "stars": 78307,
-      "forks": 13933,
+      "stars": 78502,
+      "forks": 13975,
       "description": "Learn AI Engineering! Learn it. Build it. Ship it for others.",
       "topics": [
         "agents",
@@ -2374,63 +2427,40 @@
       ],
       "language": "Python",
       "createdAt": "2026-03-18",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 138,
-      "starsGained7d": 1546,
-      "forksGained7d": 347,
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 195,
+      "starsGained7d": 1741,
+      "forksGained7d": 389,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
-        "active in topic:ai-agents"
+        "tracked"
       ]
     },
     {
-      "repo": "reacher-z/Awesome-REA",
-      "url": "https://github.com/reacher-z/Awesome-REA",
-      "stars": 2472,
-      "forks": 450,
-      "description": "Curated tools, case studies and papers for reverse engineering websites, games, apps, binaries, firmware and protocols. Source-reviewed, English and Chinese.",
-      "topics": [
-        "agent-skills",
-        "ai-agents",
-        "android-reverse-engineering",
-        "awesome",
-        "awesome-list",
-        "awesome-resources",
-        "binary-analysis",
-        "decompilation",
-        "firmware-analysis",
-        "game-reversing",
-        "ghidra",
-        "ios-reverse-engineering",
-        "javascript-deobfuscation",
-        "mcp",
-        "protocol-analysis",
-        "rea",
-        "research-papers",
-        "reverse-engineering",
-        "static-analysis",
-        "web-reverse-engineering"
-      ],
-      "language": "Python",
-      "createdAt": "2026-10-16",
-      "pushedAt": "2026-11-11",
-      "starsGained1d": 131,
-      "starsGained7d": 1543,
-      "forksGained7d": 211,
+      "repo": "anomalyco/opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "stars": 226195,
+      "forks": 30575,
+      "description": "The open source coding agent.",
+      "topics": [],
+      "language": "TypeScript",
+      "createdAt": "2025-04-30",
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 289,
+      "starsGained7d": 1741,
+      "forksGained7d": 352,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
-        "new in topic:mcp",
-        "new in topic:agent-skills",
-        "new in topic:ai-agents"
+        "tracked"
       ]
     },
     {
       "repo": "nightly-labs/openbot",
       "url": "https://github.com/nightly-labs/openbot",
-      "stars": 6895,
-      "forks": 687,
+      "stars": 7110,
+      "forks": 719,
       "description": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
       "topics": [
         "ai-agents",
@@ -2444,10 +2474,10 @@
       ],
       "language": "TypeScript",
       "createdAt": "2026-08-12",
-      "pushedAt": "2026-11-11",
-      "starsGained1d": 168,
-      "starsGained7d": 1523,
-      "forksGained7d": 142,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 215,
+      "starsGained7d": 1738,
+      "forksGained7d": 174,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -2455,10 +2485,38 @@
       ]
     },
     {
+      "repo": "cathrynlavery/diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "stars": 66543,
+      "forks": 4422,
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "topics": [
+        "agent-skills",
+        "claude-code",
+        "codex",
+        "data-visualization",
+        "diagrams",
+        "drawio",
+        "mermaid",
+        "svg"
+      ],
+      "language": "HTML",
+      "createdAt": "2026-04-16",
+      "pushedAt": "2026-11-10",
+      "starsGained1d": 222,
+      "starsGained7d": 1735,
+      "forksGained7d": 145,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "active in topic:agent-skills"
+      ]
+    },
+    {
       "repo": "hmjz100/LinkSwift",
       "url": "https://github.com/hmjz100/LinkSwift",
-      "stars": 39250,
-      "forks": 2827,
+      "stars": 39415,
+      "forks": 2835,
       "description": "一个基于 JavaScript 的网盘文件下载地址获取工具。基于【网盘直链下载助手】修改 ，支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘",
       "topics": [
         "123pan",
@@ -2485,9 +2543,9 @@
       "language": "JavaScript",
       "createdAt": "2022-08-10",
       "pushedAt": "2026-11-10",
-      "starsGained1d": 174,
-      "starsGained7d": 1523,
-      "forksGained7d": 128,
+      "starsGained1d": 165,
+      "starsGained7d": 1688,
+      "forksGained7d": 136,
       "devRelevant": false,
       "onTrendingPage": [],
       "foundBy": [
@@ -2495,111 +2553,60 @@
       ]
     },
     {
-      "repo": "cathrynlavery/diagram-design",
-      "url": "https://github.com/cathrynlavery/diagram-design",
-      "stars": 66321,
-      "forks": 4408,
-      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "repo": "reacher-z/Awesome-REA",
+      "url": "https://github.com/reacher-z/Awesome-REA",
+      "stars": 2584,
+      "forks": 461,
+      "description": "Curated tools, case studies and papers for reverse engineering websites, games, apps, binaries, firmware and protocols. Source-reviewed, English and Chinese.",
       "topics": [
         "agent-skills",
-        "claude-code",
-        "codex",
-        "data-visualization",
-        "diagrams",
-        "drawio",
-        "mermaid",
-        "svg"
-      ],
-      "language": "HTML",
-      "createdAt": "2026-04-16",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 217,
-      "starsGained7d": 1513,
-      "forksGained7d": 131,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "active in topic:agent-skills"
-      ]
-    },
-    {
-      "repo": "Egonex-AI/Understand-Anything",
-      "url": "https://github.com/Egonex-AI/Understand-Anything",
-      "stars": 91886,
-      "forks": 7839,
-      "description": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI,",
-      "topics": [
-        "antigravity-skills",
-        "business-knowledge",
-        "claude-code",
-        "claude-skills",
-        "codebase-analysis",
-        "codex",
-        "codex-skills",
-        "developer-tools-ai-agent",
-        "gemini-cli-skills",
-        "karpathy-llm-wiki",
-        "knowledge-base",
-        "knowledge-graph",
-        "memory",
-        "opencode-skills",
-        "pi-agent",
-        "understandcode",
-        "vibe-coding"
-      ],
-      "language": "TypeScript",
-      "createdAt": "2026-03-15",
-      "pushedAt": "2026-11-09",
-      "starsGained1d": 120,
-      "starsGained7d": 1490,
-      "forksGained7d": 125,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "active in topic:claude-code",
-        "active in topic:claude-skills"
-      ]
-    },
-    {
-      "repo": "AgriciDaniel/claude-seo",
-      "url": "https://github.com/AgriciDaniel/claude-seo",
-      "stars": 27924,
-      "forks": 3617,
-      "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local S",
-      "topics": [
-        "ai",
-        "ai-seo",
-        "claude-code",
-        "claude-code-skill",
-        "marketing-automation",
-        "open-source",
-        "seo"
+        "ai-agents",
+        "android-reverse-engineering",
+        "awesome",
+        "awesome-list",
+        "awesome-resources",
+        "binary-analysis",
+        "decompilation",
+        "firmware-analysis",
+        "game-reversing",
+        "ghidra",
+        "ios-reverse-engineering",
+        "javascript-deobfuscation",
+        "mcp",
+        "protocol-analysis",
+        "rea",
+        "research-papers",
+        "reverse-engineering",
+        "static-analysis",
+        "web-reverse-engineering"
       ],
       "language": "Python",
-      "createdAt": "2026-02-07",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 185,
-      "starsGained7d": 1485,
-      "forksGained7d": 177,
+      "createdAt": "2026-10-16",
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 112,
+      "starsGained7d": 1655,
+      "forksGained7d": 222,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
-        "tracked"
+        "new in topic:mcp",
+        "new in topic:agent-skills",
+        "new in topic:ai-agents"
       ]
     },
     {
       "repo": "mromidev/claude-animated-shorts",
       "url": "https://github.com/mromidev/claude-animated-shorts",
-      "stars": 2781,
-      "forks": 605,
+      "stars": 2972,
+      "forks": 647,
       "description": "Free Claude skill: viral animated story shorts (2D characters in a 3D world) with three.js + Remotion",
       "topics": [],
       "language": "TypeScript",
       "createdAt": "2026-11-01",
       "pushedAt": "2026-11-01",
-      "starsGained1d": 157,
-      "starsGained7d": 1456,
-      "forksGained7d": 299,
+      "starsGained1d": 191,
+      "starsGained7d": 1647,
+      "forksGained7d": 341,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -2607,18 +2614,24 @@
       ]
     },
     {
-      "repo": "anomalyco/opencode",
-      "url": "https://github.com/anomalyco/opencode",
-      "stars": 225906,
-      "forks": 30513,
-      "description": "The open source coding agent.",
-      "topics": [],
-      "language": "TypeScript",
-      "createdAt": "2025-04-30",
-      "pushedAt": "2026-11-11",
-      "starsGained1d": 211,
-      "starsGained7d": 1452,
-      "forksGained7d": 290,
+      "repo": "TauricResearch/TradingAgents",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "stars": 122121,
+      "forks": 23376,
+      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "topics": [
+        "agent",
+        "finance",
+        "llm",
+        "multiagent",
+        "trading"
+      ],
+      "language": "Python",
+      "createdAt": "2024-12-28",
+      "pushedAt": "2026-11-04",
+      "starsGained1d": 241,
+      "starsGained7d": 1646,
+      "forksGained7d": 346,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -2628,8 +2641,8 @@
     {
       "repo": "anomalyco/hex",
       "url": "https://github.com/anomalyco/hex",
-      "stars": 6198,
-      "forks": 377,
+      "stars": 6378,
+      "forks": 386,
       "description": "Local voice dictation for mac, windows and linux",
       "topics": [
         "dictation",
@@ -2643,38 +2656,11 @@
       ],
       "language": "Rust",
       "createdAt": "2026-07-17",
-      "pushedAt": "2026-11-11",
-      "starsGained1d": 199,
-      "starsGained7d": 1408,
-      "forksGained7d": 108,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 180,
+      "starsGained7d": 1588,
+      "forksGained7d": 117,
       "devRelevant": false,
-      "onTrendingPage": [
-        "weekly"
-      ],
-      "foundBy": [
-        "GitHub trending (weekly)"
-      ]
-    },
-    {
-      "repo": "TauricResearch/TradingAgents",
-      "url": "https://github.com/TauricResearch/TradingAgents",
-      "stars": 121880,
-      "forks": 23324,
-      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
-      "topics": [
-        "agent",
-        "finance",
-        "llm",
-        "multiagent",
-        "trading"
-      ],
-      "language": "Python",
-      "createdAt": "2024-12-28",
-      "pushedAt": "2026-11-04",
-      "starsGained1d": 231,
-      "starsGained7d": 1405,
-      "forksGained7d": 294,
-      "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
         "tracked"
@@ -2683,8 +2669,8 @@
     {
       "repo": "The-PR-Agent/pr-agent",
       "url": "https://github.com/The-PR-Agent/pr-agent",
-      "stars": 15881,
-      "forks": 2170,
+      "stars": 15963,
+      "forks": 2179,
       "description": "🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier.",
       "topics": [
         "ai",
@@ -2699,25 +2685,108 @@
       ],
       "language": "Python",
       "createdAt": "2023-07-05",
-      "pushedAt": "2026-11-11",
-      "starsGained1d": 139,
-      "starsGained7d": 1404,
-      "forksGained7d": 104,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 82,
+      "starsGained7d": 1486,
+      "forksGained7d": 113,
       "devRelevant": true,
-      "onTrendingPage": [
-        "weekly"
-      ],
+      "onTrendingPage": [],
       "foundBy": [
         "active in topic:devtools",
-        "active in topic:code-review",
-        "GitHub trending (weekly)"
+        "active in topic:code-review"
+      ]
+    },
+    {
+      "repo": "vorssaint/vorssaint-utils",
+      "url": "https://github.com/vorssaint/vorssaint-utils",
+      "stars": 34309,
+      "forks": 1719,
+      "description": "Free and open-source macOS menu bar toolkit.",
+      "topics": [
+        "alt-tab",
+        "app-uninstaller",
+        "appkit",
+        "finder",
+        "free",
+        "keep-awake",
+        "mac-os",
+        "menu-bar",
+        "menubar",
+        "open-source",
+        "swift",
+        "swift-ui",
+        "system-monitor",
+        "uninstaller",
+        "volume-mixer",
+        "window-switcher"
+      ],
+      "language": "Swift",
+      "createdAt": "2026-06-12",
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 282,
+      "starsGained7d": 1478,
+      "forksGained7d": 117,
+      "devRelevant": false,
+      "onTrendingPage": [],
+      "foundBy": [
+        "tracked"
+      ]
+    },
+    {
+      "repo": "benjitaylor/skills",
+      "url": "https://github.com/benjitaylor/skills",
+      "stars": 3112,
+      "forks": 209,
+      "description": "Skills for AI coding agents.",
+      "topics": [],
+      "language": "TypeScript",
+      "createdAt": "2026-10-26",
+      "pushedAt": "2026-11-05",
+      "starsGained1d": 105,
+      "starsGained7d": 1474,
+      "forksGained7d": 97,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "tracked"
+      ]
+    },
+    {
+      "repo": "Jakeschincariol/replica-skill",
+      "url": "https://github.com/Jakeschincariol/replica-skill",
+      "stars": 8970,
+      "forks": 1617,
+      "description": "Eleven free Claude skills that clone any app: reverse-engineer it, rebuild it, test it for bugs, then fix what its users hate. Free, MIT.",
+      "topics": [
+        "agent",
+        "agent-skills",
+        "app-clone",
+        "claude",
+        "claude-code",
+        "claude-skills",
+        "indie-hacker",
+        "reverse-engineering",
+        "saas"
+      ],
+      "language": "Python",
+      "createdAt": "2026-10-03",
+      "pushedAt": "2026-10-03",
+      "starsGained1d": 161,
+      "starsGained7d": 1458,
+      "forksGained7d": 286,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "new in topic:claude-code",
+        "new in topic:agent-skills",
+        "new in topic:claude-skills"
       ]
     },
     {
       "repo": "Verlintas/NOIR",
       "url": "https://github.com/Verlintas/NOIR",
-      "stars": 3234,
-      "forks": 295,
+      "stars": 3290,
+      "forks": 305,
       "description": "手机隐私审计：用 adb 扫出 Android 应用的权限、上报端点与数据流向，并给出可回滚的处置。Desktop Android leak audit: permissions, endpoints, data flows, reversible fixes.",
       "topics": [
         "adb",
@@ -2743,10 +2812,10 @@
       ],
       "language": "Kotlin",
       "createdAt": "2026-10-31",
-      "pushedAt": "2026-11-07",
-      "starsGained1d": 69,
-      "starsGained7d": 1388,
-      "forksGained7d": 152,
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 56,
+      "starsGained7d": 1444,
+      "forksGained7d": 162,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -2755,79 +2824,29 @@
       ]
     },
     {
-      "repo": "benjitaylor/skills",
-      "url": "https://github.com/benjitaylor/skills",
-      "stars": 3007,
-      "forks": 205,
-      "description": "Skills for AI coding agents.",
+      "repo": "elvarofficial/teardown",
+      "url": "https://github.com/elvarofficial/teardown",
+      "stars": 3175,
+      "forks": 477,
+      "description": "A Claude Code skill that turns any machine into a 3D simulator you can take apart",
       "topics": [],
-      "language": "TypeScript",
-      "createdAt": "2026-10-26",
-      "pushedAt": "2026-11-05",
-      "starsGained1d": 103,
-      "starsGained7d": 1369,
-      "forksGained7d": 93,
+      "language": "JavaScript",
+      "createdAt": "2026-10-30",
+      "pushedAt": "2026-10-31",
+      "starsGained1d": 208,
+      "starsGained7d": 1415,
+      "forksGained7d": 210,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
-        "tracked"
-      ]
-    },
-    {
-      "repo": "Jakeschincariol/replica-skill",
-      "url": "https://github.com/Jakeschincariol/replica-skill",
-      "stars": 8809,
-      "forks": 1583,
-      "description": "Eleven free Claude skills that clone any app: reverse-engineer it, rebuild it, test it for bugs, then fix what its users hate. Free, MIT.",
-      "topics": [
-        "agent",
-        "agent-skills",
-        "app-clone",
-        "claude",
-        "claude-code",
-        "claude-skills",
-        "indie-hacker",
-        "reverse-engineering",
-        "saas"
-      ],
-      "language": "Python",
-      "createdAt": "2026-10-03",
-      "pushedAt": "2026-10-03",
-      "starsGained1d": 146,
-      "starsGained7d": 1297,
-      "forksGained7d": 252,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "new in topic:claude-code",
-        "new in topic:agent-skills",
-        "new in topic:claude-skills"
-      ]
-    },
-    {
-      "repo": "jakubkrehel/skills",
-      "url": "https://github.com/jakubkrehel/skills",
-      "stars": 11963,
-      "forks": 466,
-      "description": "A collection of agent skills that help you build great interfaces.",
-      "topics": [],
-      "language": "Markdown",
-      "createdAt": "2026-07-10",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 87,
-      "starsGained7d": 1283,
-      "forksGained7d": 56,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "tracked"
+        "new in the last 14 days"
       ]
     },
     {
       "repo": "coreyhaines31/marketingskills",
       "url": "https://github.com/coreyhaines31/marketingskills",
-      "stars": 59593,
-      "forks": 8699,
+      "stars": 59791,
+      "forks": 8734,
       "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
       "topics": [
         "agent-skills",
@@ -2853,10 +2872,10 @@
       ],
       "language": "JavaScript",
       "createdAt": "2026-01-15",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 158,
-      "starsGained7d": 1209,
-      "forksGained7d": 130,
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 198,
+      "starsGained7d": 1407,
+      "forksGained7d": 165,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -2867,29 +2886,10 @@
       ]
     },
     {
-      "repo": "elvarofficial/teardown",
-      "url": "https://github.com/elvarofficial/teardown",
-      "stars": 2967,
-      "forks": 450,
-      "description": "A Claude Code skill that turns any machine into a 3D simulator you can take apart",
-      "topics": [],
-      "language": "JavaScript",
-      "createdAt": "2026-10-30",
-      "pushedAt": "2026-10-31",
-      "starsGained1d": 149,
-      "starsGained7d": 1207,
-      "forksGained7d": 183,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "new in the last 14 days"
-      ]
-    },
-    {
       "repo": "nexu-io/open-design",
       "url": "https://github.com/nexu-io/open-design",
-      "stars": 107034,
-      "forks": 12174,
+      "stars": 107228,
+      "forks": 12192,
       "description": "The 1st Collaborative AI Design Agent Workspace. Local-first and open source. Create motion, prototypes, websites, apps, dashboards, presentations, images, and videos with your team and AI agents. Sha",
       "topics": [
         "agent-skills",
@@ -2915,10 +2915,10 @@
       ],
       "language": "TypeScript",
       "createdAt": "2026-04-28",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 177,
-      "starsGained7d": 1201,
-      "forksGained7d": 120,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 194,
+      "starsGained7d": 1395,
+      "forksGained7d": 138,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -2926,46 +2926,10 @@
       ]
     },
     {
-      "repo": "vorssaint/vorssaint-utils",
-      "url": "https://github.com/vorssaint/vorssaint-utils",
-      "stars": 34027,
-      "forks": 1701,
-      "description": "Free and open-source macOS menu bar toolkit.",
-      "topics": [
-        "alt-tab",
-        "app-uninstaller",
-        "appkit",
-        "finder",
-        "free",
-        "keep-awake",
-        "mac-os",
-        "menu-bar",
-        "menubar",
-        "open-source",
-        "swift",
-        "swift-ui",
-        "system-monitor",
-        "uninstaller",
-        "volume-mixer",
-        "window-switcher"
-      ],
-      "language": "Swift",
-      "createdAt": "2026-06-12",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 136,
-      "starsGained7d": 1196,
-      "forksGained7d": 99,
-      "devRelevant": false,
-      "onTrendingPage": [],
-      "foundBy": [
-        "tracked"
-      ]
-    },
-    {
       "repo": "rddmwmddr/android-ad-cleaner",
       "url": "https://github.com/rddmwmddr/android-ad-cleaner",
-      "stars": 7386,
-      "forks": 657,
+      "stars": 7575,
+      "forks": 674,
       "description": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。",
       "topics": [
         "adb",
@@ -2979,10 +2943,10 @@
       ],
       "language": "Python",
       "createdAt": "2026-10-24",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 115,
-      "starsGained7d": 1189,
-      "forksGained7d": 90,
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 189,
+      "starsGained7d": 1378,
+      "forksGained7d": 107,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -2990,45 +2954,46 @@
       ]
     },
     {
-      "repo": "p-e-w/heretic",
-      "url": "https://github.com/p-e-w/heretic",
-      "stars": 40235,
-      "forks": 4606,
-      "description": "Training-free language model modification: Remove censorship, suppress slop, reduce sycophancy, and more",
+      "repo": "kuafuai/andee",
+      "url": "https://github.com/kuafuai/andee",
+      "stars": 4850,
+      "forks": 282,
+      "description": "Andee lives on your phone or Mac and uses any app like you do—no integrations, no root, any model; memory and passwords never leave your device | Andee 住进你的手机或 Mac，像你一样操作任何 App——无需集成、无需 Root、支持任意模型，记忆",
       "topics": [
-        "abliteration",
-        "anti-censorship",
-        "anticensorship",
-        "censorship",
-        "censorship-resistance",
-        "llm",
-        "transformer"
+        "agent",
+        "ai",
+        "ai-agents",
+        "android-automation",
+        "mobile-agents",
+        "personal-agent",
+        "personal-ai",
+        "phone-automation"
       ],
-      "language": "Python",
-      "createdAt": "2025-09-21",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 82,
-      "starsGained7d": 1188,
-      "forksGained7d": 202,
+      "language": "Kotlin",
+      "createdAt": "2026-09-17",
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 422,
+      "starsGained7d": 1361,
+      "forksGained7d": 52,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
-        "tracked"
+        "new in topic:ai-agents"
       ]
     },
     {
-      "repo": "elayadesign/ai-design-skills",
-      "url": "https://github.com/elayadesign/ai-design-skills",
-      "stars": 15207,
-      "forks": 1158,
-      "description": "",
+      "repo": "jakubkrehel/skills",
+      "url": "https://github.com/jakubkrehel/skills",
+      "stars": 12040,
+      "forks": 468,
+      "description": "A collection of agent skills that help you build great interfaces.",
       "topics": [],
-      "language": "Python",
-      "createdAt": "2026-07-29",
-      "pushedAt": "2026-11-01",
-      "starsGained1d": 90,
-      "starsGained7d": 1168,
-      "forksGained7d": 113,
+      "language": "Markdown",
+      "createdAt": "2026-07-10",
+      "pushedAt": "2026-11-10",
+      "starsGained1d": 77,
+      "starsGained7d": 1360,
+      "forksGained7d": 58,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -3038,8 +3003,8 @@
     {
       "repo": "openfilm/openfilm",
       "url": "https://github.com/openfilm/openfilm",
-      "stars": 5664,
-      "forks": 539,
+      "stars": 5806,
+      "forks": 553,
       "description": "The open source AI video agent: turns any coding agent into a video agent, with an editor to change anything it makes.",
       "topics": [
         "ai-video",
@@ -3054,9 +3019,9 @@
       "language": "TypeScript",
       "createdAt": "2026-10-04",
       "pushedAt": "2026-11-09",
-      "starsGained1d": 131,
-      "starsGained7d": 1144,
-      "forksGained7d": 111,
+      "starsGained1d": 142,
+      "starsGained7d": 1286,
+      "forksGained7d": 125,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -3066,8 +3031,8 @@
     {
       "repo": "BryceYuuu/RUN",
       "url": "https://github.com/BryceYuuu/RUN",
-      "stars": 4428,
-      "forks": 319,
+      "stars": 4631,
+      "forks": 323,
       "description": "RUN · 润：中国护照持有人的海外移居手册。欧洲 36 国 110 条移民路线 + 13 个主要移民地区：数字游民签证、欧盟蓝卡、技术移民、留学转工作、创业自雇、投资居留，每条附官方来源，持续更新。",
       "topics": [
         "china",
@@ -3092,43 +3057,59 @@
       "language": "Python",
       "createdAt": "2026-10-29",
       "pushedAt": "2026-11-07",
-      "starsGained1d": 64,
-      "starsGained7d": 1067,
-      "forksGained7d": 73,
+      "starsGained1d": 203,
+      "starsGained7d": 1270,
+      "forksGained7d": 77,
       "devRelevant": false,
       "onTrendingPage": [],
       "foundBy": [
-        "new in the last 14 days"
+        "tracked"
       ]
     },
     {
-      "repo": "lobehub/lobehub",
-      "url": "https://github.com/lobehub/lobehub",
-      "stars": 84870,
-      "forks": 16209,
-      "description": "🤯 LobeHub - Super-Agents on Your Team. Add super-agents to the chats your team already uses.They take on work by themselves and get better every week.",
+      "repo": "p-e-w/heretic",
+      "url": "https://github.com/p-e-w/heretic",
+      "stars": 40317,
+      "forks": 4621,
+      "description": "Training-free language model modification: Remove censorship, suppress slop, reduce sycophancy, and more",
       "topics": [
-        "agent",
-        "agent-collaboration",
-        "agent-harness",
-        "loop-engineering",
-        "mcp",
-        "personal-assistant",
-        "proactive-agent",
-        "skills",
-        "super-agent",
-        "task-management"
+        "abliteration",
+        "anti-censorship",
+        "anticensorship",
+        "censorship",
+        "censorship-resistance",
+        "llm",
+        "transformer"
       ],
-      "language": "TypeScript",
-      "createdAt": "2023-05-21",
-      "pushedAt": "2026-11-11",
-      "starsGained1d": 249,
-      "starsGained7d": 1051,
-      "forksGained7d": 167,
+      "language": "Python",
+      "createdAt": "2025-09-21",
+      "pushedAt": "2026-11-10",
+      "starsGained1d": 82,
+      "starsGained7d": 1270,
+      "forksGained7d": 217,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
-        "active in topic:mcp"
+        "tracked"
+      ]
+    },
+    {
+      "repo": "elayadesign/ai-design-skills",
+      "url": "https://github.com/elayadesign/ai-design-skills",
+      "stars": 15300,
+      "forks": 1171,
+      "description": "",
+      "topics": [],
+      "language": "Python",
+      "createdAt": "2026-07-29",
+      "pushedAt": "2026-11-01",
+      "starsGained1d": 93,
+      "starsGained7d": 1261,
+      "forksGained7d": 126,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "tracked"
       ]
     }
   ],
@@ -3136,8 +3117,8 @@
     {
       "repo": "Gathin23/cleanyourtv",
       "url": "https://github.com/Gathin23/cleanyourtv",
-      "stars": 56018,
-      "forks": 7222,
+      "stars": 56571,
+      "forks": 7280,
       "description": "Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.",
       "topics": [
         "adb",
@@ -3160,10 +3141,10 @@
       ],
       "language": "Python",
       "createdAt": "2026-10-17",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 514,
-      "starsGained7d": 4421,
-      "forksGained7d": 695,
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 553,
+      "starsGained7d": 4974,
+      "forksGained7d": 753,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -3173,16 +3154,16 @@
     {
       "repo": "storytold/craft-anything",
       "url": "https://github.com/storytold/craft-anything",
-      "stars": 26270,
-      "forks": 5342,
+      "stars": 28501,
+      "forks": 5781,
       "description": "Craft Anything: understand how any software works, and craft your own.",
       "topics": [],
       "language": "Rust",
       "createdAt": "2026-10-31",
-      "pushedAt": "2026-11-11",
-      "starsGained1d": 1574,
-      "starsGained7d": 16809,
-      "forksGained7d": 3772,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 2231,
+      "starsGained7d": 19040,
+      "forksGained7d": 4211,
       "devRelevant": false,
       "onTrendingPage": [],
       "foundBy": [
@@ -3192,16 +3173,16 @@
     {
       "repo": "deepseek-ai/DeepInfer",
       "url": "https://github.com/deepseek-ai/DeepInfer",
-      "stars": 25809,
-      "forks": 3166,
+      "stars": 25871,
+      "forks": 3171,
       "description": "DeepInfer: High-performance, large-scale inference framework for DeepSeek models",
       "topics": [],
       "language": "Python",
       "createdAt": "2026-10-16",
       "pushedAt": "2026-11-03",
       "starsGained1d": 62,
-      "starsGained7d": 507,
-      "forksGained7d": 77,
+      "starsGained7d": 569,
+      "forksGained7d": 82,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -3211,16 +3192,16 @@
     {
       "repo": "deepseek-ai/dsh-superagent-prototype",
       "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
-      "stars": 22179,
-      "forks": 2678,
+      "stars": 22512,
+      "forks": 2732,
       "description": "Towards a More Autonomous Agent System",
       "topics": [],
       "language": "TypeScript",
       "createdAt": "2026-10-31",
       "pushedAt": "2026-11-03",
-      "starsGained1d": 386,
-      "starsGained7d": 4375,
-      "forksGained7d": 753,
+      "starsGained1d": 333,
+      "starsGained7d": 4708,
+      "forksGained7d": 807,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -3230,8 +3211,8 @@
     {
       "repo": "ccch1mneyyy/dsh-go",
       "url": "https://github.com/ccch1mneyyy/dsh-go",
-      "stars": 18676,
-      "forks": 821,
+      "stars": 19781,
+      "forks": 881,
       "description": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
       "topics": [
         "ai-agent",
@@ -3248,10 +3229,10 @@
       ],
       "language": "Dart",
       "createdAt": "2026-10-25",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 982,
-      "starsGained7d": 10230,
-      "forksGained7d": 421,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 1105,
+      "starsGained7d": 11335,
+      "forksGained7d": 481,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -3261,8 +3242,8 @@
     {
       "repo": "ccch1mneyyy/dsh-Go",
       "url": "https://github.com/ccch1mneyyy/dsh-Go",
-      "stars": 18676,
-      "forks": 821,
+      "stars": 19781,
+      "forks": 881,
       "description": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
       "topics": [
         "ai-agent",
@@ -3279,10 +3260,10 @@
       ],
       "language": "Dart",
       "createdAt": "2026-10-25",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 982,
-      "starsGained7d": 10229,
-      "forksGained7d": 421,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 1105,
+      "starsGained7d": 11334,
+      "forksGained7d": 481,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -3293,16 +3274,16 @@
     {
       "repo": "Zagitta/gpu-unlock",
       "url": "https://github.com/Zagitta/gpu-unlock",
-      "stars": 18574,
-      "forks": 1899,
+      "stars": 18769,
+      "forks": 1920,
       "description": "Your GeForce runs AI at half speed. This fixes it for 20/30/40 series cards. Up to 2× FP16 / BF16 / TF32 tensor throughput",
       "topics": [],
       "language": "C",
       "createdAt": "2026-10-18",
       "pushedAt": "2026-10-29",
-      "starsGained1d": 171,
-      "starsGained7d": 2616,
-      "forksGained7d": 310,
+      "starsGained1d": 195,
+      "starsGained7d": 2811,
+      "forksGained7d": 331,
       "devRelevant": false,
       "onTrendingPage": [],
       "foundBy": [
@@ -3312,36 +3293,55 @@
     {
       "repo": "heydamir/unslop",
       "url": "https://github.com/heydamir/unslop",
-      "stars": 13724,
-      "forks": 764,
+      "stars": 14570,
+      "forks": 820,
       "description": "A Claude skill that turns vibecoded, AI-looking UI into a designed interface",
       "topics": [],
       "language": "JavaScript",
       "createdAt": "2026-10-29",
       "pushedAt": "2026-11-08",
-      "starsGained1d": 922,
-      "starsGained7d": 5904,
-      "forksGained7d": 372,
+      "starsGained1d": 846,
+      "starsGained7d": 6750,
+      "forksGained7d": 428,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
-        "new in the last 14 days"
+        "tracked"
       ]
     },
     {
       "repo": "pengchujin/aerial-tv",
       "url": "https://github.com/pengchujin/aerial-tv",
-      "stars": 11106,
-      "forks": 953,
+      "stars": 11294,
+      "forks": 968,
       "description": "给国产电视的一块干净桌面：参照 tvOS 设计的开源 Android TV 桌面，没有广告，开机自动接管。A tvOS-style launcher for Xiaomi, TCL and other China-market TVs.",
       "topics": [],
       "language": "Kotlin",
       "createdAt": "2026-10-20",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 177,
-      "starsGained7d": 1616,
-      "forksGained7d": 137,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 188,
+      "starsGained7d": 1804,
+      "forksGained7d": 152,
       "devRelevant": false,
+      "onTrendingPage": [],
+      "foundBy": [
+        "tracked"
+      ]
+    },
+    {
+      "repo": "amosblomqvist/learnharness",
+      "url": "https://github.com/amosblomqvist/learnharness",
+      "stars": 8761,
+      "forks": 1174,
+      "description": "Agent harness for learning difficult things.",
+      "topics": [],
+      "language": "TypeScript",
+      "createdAt": "2026-10-16",
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 454,
+      "starsGained7d": 3522,
+      "forksGained7d": 354,
+      "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
         "tracked"
@@ -3350,8 +3350,8 @@
     {
       "repo": "l0ng-ai/openidea",
       "url": "https://github.com/l0ng-ai/openidea",
-      "stars": 8393,
-      "forks": 738,
+      "stars": 8592,
+      "forks": 759,
       "description": "The IDE you know, rebuilt in Rust. IntelliJ IDEA–style keymap, tool windows and search-everywhere in a fast native app: editor, code insight, debugger, Git, terminal, database and HTTP clients for 60+",
       "topics": [
         "code-editor",
@@ -3372,10 +3372,10 @@
       ],
       "language": "TypeScript",
       "createdAt": "2026-10-21",
-      "pushedAt": "2026-11-11",
-      "starsGained1d": 195,
-      "starsGained7d": 2546,
-      "forksGained7d": 251,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 199,
+      "starsGained7d": 2745,
+      "forksGained7d": 272,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -3383,35 +3383,16 @@
       ]
     },
     {
-      "repo": "amosblomqvist/learnharness",
-      "url": "https://github.com/amosblomqvist/learnharness",
-      "stars": 8307,
-      "forks": 1131,
-      "description": "Agent harness for learning difficult things.",
-      "topics": [],
-      "language": "TypeScript",
-      "createdAt": "2026-10-16",
-      "pushedAt": "2026-11-11",
-      "starsGained1d": 530,
-      "starsGained7d": 3068,
-      "forksGained7d": 311,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "tracked"
-      ]
-    },
-    {
       "repo": "zortos293/Lichii",
       "url": "https://github.com/zortos293/Lichii",
-      "stars": 8190,
-      "forks": 1314,
+      "stars": 8555,
+      "forks": 1376,
       "description": "VERY experimental Nintendo Switch 2 emulator",
       "topics": [],
       "language": "C++",
       "createdAt": "2026-10-31",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 501,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 365,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": false,
@@ -3423,8 +3404,8 @@
     {
       "repo": "Minireel/HGhub",
       "url": "https://github.com/Minireel/HGhub",
-      "stars": 8134,
-      "forks": 3191,
+      "stars": 8294,
+      "forks": 4042,
       "description": "YellowFruit third-party client",
       "topics": [
         "android",
@@ -3437,7 +3418,7 @@
       "language": null,
       "createdAt": "2026-11-03",
       "pushedAt": "2026-11-10",
-      "starsGained1d": 1516,
+      "starsGained1d": 160,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": false,
@@ -3449,8 +3430,8 @@
     {
       "repo": "wangzan101/Mika",
       "url": "https://github.com/wangzan101/Mika",
-      "stars": 8074,
-      "forks": 1842,
+      "stars": 8256,
+      "forks": 1886,
       "description": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
       "topics": [
         "accessibility",
@@ -3464,11 +3445,30 @@
       ],
       "language": "Kotlin",
       "createdAt": "2026-10-29",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 155,
-      "starsGained7d": 1831,
-      "forksGained7d": 625,
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 182,
+      "starsGained7d": 2013,
+      "forksGained7d": 669,
       "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "tracked"
+      ]
+    },
+    {
+      "repo": "NotRexed/Hookshot",
+      "url": "https://github.com/NotRexed/Hookshot",
+      "stars": 7854,
+      "forks": 707,
+      "description": "A Native Recompilation Of The Legend Of Zelda: Ocarina Of Time Nintendo Switch 2 Remake",
+      "topics": [],
+      "language": "C++",
+      "createdAt": "2026-11-05",
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 1314,
+      "starsGained7d": null,
+      "forksGained7d": null,
+      "devRelevant": false,
       "onTrendingPage": [],
       "foundBy": [
         "new in the last 14 days"
@@ -3477,48 +3477,16 @@
     {
       "repo": "unclebob/ub-mode",
       "url": "https://github.com/unclebob/ub-mode",
-      "stars": 7599,
-      "forks": 434,
+      "stars": 7762,
+      "forks": 443,
       "description": "",
       "topics": [],
       "language": null,
       "createdAt": "2026-10-25",
       "pushedAt": "2026-11-02",
-      "starsGained1d": 127,
-      "starsGained7d": 745,
-      "forksGained7d": 48,
-      "devRelevant": false,
-      "onTrendingPage": [],
-      "foundBy": [
-        "tracked"
-      ]
-    },
-    {
-      "repo": "ly05010419/MacNativeGames",
-      "url": "https://github.com/ly05010419/MacNativeGames",
-      "stars": 7478,
-      "forks": 1127,
-      "description": "Play your own Tears of the Kingdom and Breath of the Wild natively on Apple silicon Mac, iPhone and iPad. Not an emulator: the game's ARM64 code runs directly, NVN rebuilt on Metal. Bring your own gam",
-      "topics": [
-        "apple-silicon",
-        "arm64",
-        "breath-of-the-wild",
-        "game-port",
-        "ios",
-        "ipados",
-        "macos",
-        "metal",
-        "native-port",
-        "tears-of-the-kingdom",
-        "ultrawide",
-        "zelda"
-      ],
-      "language": "C",
-      "createdAt": "2026-10-17",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 74,
-      "starsGained7d": 490,
-      "forksGained7d": 93,
+      "starsGained1d": 163,
+      "starsGained7d": 908,
+      "forksGained7d": 57,
       "devRelevant": false,
       "onTrendingPage": [],
       "foundBy": [
@@ -3528,8 +3496,8 @@
     {
       "repo": "xiaoyang111222/cn-math-taxonomy",
       "url": "https://github.com/xiaoyang111222/cn-math-taxonomy",
-      "stars": 7448,
-      "forks": 1961,
+      "stars": 7693,
+      "forks": 2042,
       "description": "数学（小学到高中）、英语（三年级到高中）、初中物理的知识图谱：1644 个知识点、2403 条先修边、6723 道题，对齐课标，附自适应前置诊断。",
       "topics": [
         "chinese",
@@ -3551,10 +3519,10 @@
       ],
       "language": "Python",
       "createdAt": "2026-10-18",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 179,
-      "starsGained7d": 984,
-      "forksGained7d": 287,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 245,
+      "starsGained7d": 1229,
+      "forksGained7d": 368,
       "devRelevant": false,
       "onTrendingPage": [],
       "foundBy": [
@@ -3564,8 +3532,8 @@
     {
       "repo": "rddmwmddr/android-ad-cleaner",
       "url": "https://github.com/rddmwmddr/android-ad-cleaner",
-      "stars": 7386,
-      "forks": 657,
+      "stars": 7575,
+      "forks": 674,
       "description": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。",
       "topics": [
         "adb",
@@ -3579,11 +3547,43 @@
       ],
       "language": "Python",
       "createdAt": "2026-10-24",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 115,
-      "starsGained7d": 1189,
-      "forksGained7d": 90,
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 189,
+      "starsGained7d": 1378,
+      "forksGained7d": 107,
       "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "tracked"
+      ]
+    },
+    {
+      "repo": "ly05010419/MacNativeGames",
+      "url": "https://github.com/ly05010419/MacNativeGames",
+      "stars": 7563,
+      "forks": 1135,
+      "description": "Play your own Tears of the Kingdom and Breath of the Wild natively on Apple silicon Mac, iPhone and iPad. Not an emulator: the game's ARM64 code runs directly, NVN rebuilt on Metal. Bring your own gam",
+      "topics": [
+        "apple-silicon",
+        "arm64",
+        "breath-of-the-wild",
+        "game-port",
+        "ios",
+        "ipados",
+        "macos",
+        "metal",
+        "native-port",
+        "tears-of-the-kingdom",
+        "ultrawide",
+        "zelda"
+      ],
+      "language": "C",
+      "createdAt": "2026-10-17",
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 85,
+      "starsGained7d": 575,
+      "forksGained7d": 101,
+      "devRelevant": false,
       "onTrendingPage": [],
       "foundBy": [
         "tracked"
@@ -3592,8 +3592,8 @@
     {
       "repo": "Jakeschincariol/day-trader-skill",
       "url": "https://github.com/Jakeschincariol/day-trader-skill",
-      "stars": 6692,
-      "forks": 1636,
+      "stars": 7107,
+      "forks": 1708,
       "description": "11 Claude skills for day trading: scan thousands of charts, track breaking news, time every entry and exit, and replay every outcome before you risk a dollar.",
       "topics": [
         "backtesting",
@@ -3605,9 +3605,9 @@
       "language": "Python",
       "createdAt": "2026-10-20",
       "pushedAt": "2026-10-20",
-      "starsGained1d": 264,
-      "starsGained7d": 1639,
-      "forksGained7d": 410,
+      "starsGained1d": 415,
+      "starsGained7d": 2054,
+      "forksGained7d": 482,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -3615,144 +3615,10 @@
       ]
     },
     {
-      "repo": "patch-gg/pixelfx",
-      "url": "https://github.com/patch-gg/pixelfx",
-      "stars": 6663,
-      "forks": 870,
-      "description": "244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.",
-      "topics": [
-        "agent-skills",
-        "animation",
-        "canvas",
-        "claude-code-plugin",
-        "gamedev",
-        "pixel-art",
-        "sprite-sheet",
-        "vfx"
-      ],
-      "language": "JavaScript",
-      "createdAt": "2026-10-30",
-      "pushedAt": "2026-11-09",
-      "starsGained1d": 300,
-      "starsGained7d": 2319,
-      "forksGained7d": 286,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "new in topic:claude-code-plugin",
-        "active in topic:claude-code-plugin",
-        "new in topic:agent-skills",
-        "new in the last 14 days"
-      ]
-    },
-    {
-      "repo": "anhao/ai-pose-gallery-zh",
-      "url": "https://github.com/anhao/ai-pose-gallery-zh",
-      "stars": 6654,
-      "forks": 1681,
-      "description": "中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊",
-      "topics": [
-        "ai-art",
-        "chinese",
-        "cloudflare-pages",
-        "gallery",
-        "i18n",
-        "pose",
-        "reference-images",
-        "static-site"
-      ],
-      "language": "TypeScript",
-      "createdAt": "2026-10-27",
-      "pushedAt": "2026-11-04",
-      "starsGained1d": 95,
-      "starsGained7d": 807,
-      "forksGained7d": 187,
-      "devRelevant": false,
-      "onTrendingPage": [],
-      "foundBy": [
-        "tracked"
-      ]
-    },
-    {
-      "repo": "kingcharleslzy-ai/dsh-purge",
-      "url": "https://github.com/kingcharleslzy-ai/dsh-purge",
-      "stars": 6549,
-      "forks": 2997,
-      "description": "dsh-purge Community · DeepSeek Harness 社区维护版：宿主兼容、状态诊断、提示词管理、更新与本机备份回滚。基于小杨 / YuJunZhiXue 的 dsh-purge。",
-      "topics": [
-        "agent-tools",
-        "backup",
-        "deepseek",
-        "deepseek-harness",
-        "dsh",
-        "dsh-plugin",
-        "jailbreak",
-        "prompt-injection",
-        "prompt-management",
-        "purge-community",
-        "rollback"
-      ],
-      "language": "JavaScript",
-      "createdAt": "2026-10-16",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 463,
-      "starsGained7d": 2144,
-      "forksGained7d": 842,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "tracked"
-      ]
-    },
-    {
-      "repo": "NotRexed/Hookshot",
-      "url": "https://github.com/NotRexed/Hookshot",
-      "stars": 6540,
-      "forks": 582,
-      "description": "A Native Recompilation Of The Legend Of Zelda: Ocarina Of Time Nintendo Switch 2 Remake",
-      "topics": [],
-      "language": "C++",
-      "createdAt": "2026-11-05",
-      "pushedAt": "2026-11-11",
-      "starsGained1d": 1354,
-      "starsGained7d": null,
-      "forksGained7d": null,
-      "devRelevant": false,
-      "onTrendingPage": [],
-      "foundBy": [
-        "new in the last 14 days"
-      ]
-    },
-    {
-      "repo": "valentderah/totk-pc-recomp",
-      "url": "https://github.com/valentderah/totk-pc-recomp",
-      "stars": 6451,
-      "forks": 534,
-      "description": "Static recompilation of The Legend of Zelda: Tears of the Kingdom to native Windows and Linux x86-64, with a Vulkan renderer. Game files not included.",
-      "topics": [
-        "game",
-        "linux",
-        "port",
-        "recompilation",
-        "windows"
-      ],
-      "language": "C",
-      "createdAt": "2026-10-29",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 234,
-      "starsGained7d": 1821,
-      "forksGained7d": 161,
-      "devRelevant": false,
-      "onTrendingPage": [],
-      "foundBy": [
-        "new in the last 14 days"
-      ]
-    },
-    {
       "repo": "JuneYaooo/rea-video",
       "url": "https://github.com/JuneYaooo/rea-video",
-      "stars": 6364,
-      "forks": 907,
+      "stars": 7082,
+      "forks": 1031,
       "description": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. 逆向一切视频，逐个镜头看是拍的、AI 生成的还是代码做的，再告诉你怎么复刻。",
       "topics": [
         "agent-skills",
@@ -3775,168 +3641,84 @@
       ],
       "language": "Python",
       "createdAt": "2026-10-29",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 746,
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 718,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
         "new in topic:claude-code",
+        "new in topic:agent-skills"
+      ]
+    },
+    {
+      "repo": "kingcharleslzy-ai/dsh-purge",
+      "url": "https://github.com/kingcharleslzy-ai/dsh-purge",
+      "stars": 7033,
+      "forks": 3169,
+      "description": "dsh-purge Community · DeepSeek Harness 社区维护版：宿主兼容、状态诊断、提示词管理、更新与本机备份回滚。基于小杨 / YuJunZhiXue 的 dsh-purge。",
+      "topics": [
+        "agent-tools",
+        "backup",
+        "deepseek",
+        "deepseek-harness",
+        "dsh",
+        "dsh-plugin",
+        "jailbreak",
+        "prompt-injection",
+        "prompt-management",
+        "purge-community",
+        "rollback"
+      ],
+      "language": "JavaScript",
+      "createdAt": "2026-10-16",
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 484,
+      "starsGained7d": 2628,
+      "forksGained7d": 1014,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "tracked"
+      ]
+    },
+    {
+      "repo": "patch-gg/pixelfx",
+      "url": "https://github.com/patch-gg/pixelfx",
+      "stars": 6998,
+      "forks": 908,
+      "description": "244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.",
+      "topics": [
+        "agent-skills",
+        "animation",
+        "canvas",
+        "claude-code-plugin",
+        "gamedev",
+        "pixel-art",
+        "sprite-sheet",
+        "vfx"
+      ],
+      "language": "JavaScript",
+      "createdAt": "2026-10-30",
+      "pushedAt": "2026-11-09",
+      "starsGained1d": 335,
+      "starsGained7d": 2654,
+      "forksGained7d": 324,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "new in topic:claude-code-plugin",
+        "active in topic:claude-code-plugin",
         "new in topic:agent-skills",
         "new in the last 14 days"
       ]
     },
     {
-      "repo": "simbasjungles/free-my-tv",
-      "url": "https://github.com/simbasjungles/free-my-tv",
-      "stars": 6253,
-      "forks": 1091,
-      "description": "A fast, ad-free home screen for Google TV, LG webOS and Samsung Tizen. One button to undo.",
-      "topics": [
-        "android-tv",
-        "claude-code",
-        "google-tv",
-        "home-screen",
-        "launcher",
-        "no-ads",
-        "open-source",
-        "samsung-tizen",
-        "tizen",
-        "tmdb",
-        "webos"
-      ],
-      "language": "Java",
-      "createdAt": "2026-10-19",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 36,
-      "starsGained7d": 411,
-      "forksGained7d": 86,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "new in topic:claude-code"
-      ]
-    },
-    {
-      "repo": "LNPANDY/NX2Apple",
-      "url": "https://github.com/LNPANDY/NX2Apple",
-      "stars": 5956,
-      "forks": 749,
-      "description": "Play your own Switch games on iPhone/iPad — one-click macOS app, no terminal. | 把 Switch 游戏装进 iPhone：图形界面一键构建，不用命令行。Bring your own game.",
-      "topics": [
-        "apple-silicon",
-        "custom-format",
-        "homebrew",
-        "ios",
-        "ipa",
-        "ipad",
-        "ipados",
-        "iphone",
-        "metal",
-        "native-port",
-        "nintendo-switch",
-        "nxnative",
-        "romfs",
-        "switch-games"
-      ],
-      "language": "Swift",
-      "createdAt": "2026-10-20",
-      "pushedAt": "2026-11-11",
-      "starsGained1d": 241,
-      "starsGained7d": 2587,
-      "forksGained7d": 295,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "tracked"
-      ]
-    },
-    {
-      "repo": "Djihads80/Eglantine",
-      "url": "https://github.com/Djihads80/Eglantine",
-      "stars": 5783,
-      "forks": 625,
-      "description": "VERY experimental Nintendo Switch 2 emulator",
-      "topics": [],
-      "language": "C++",
-      "createdAt": "2026-10-29",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 122,
-      "starsGained7d": 2582,
-      "forksGained7d": 257,
-      "devRelevant": false,
-      "onTrendingPage": [],
-      "foundBy": [
-        "tracked"
-      ]
-    },
-    {
-      "repo": "Eglantine-Community/Eglantine",
-      "url": "https://github.com/Eglantine-Community/Eglantine",
-      "stars": 5783,
-      "forks": 625,
-      "description": "VERY experimental Nintendo Switch 2 emulator",
-      "topics": [],
-      "language": "C++",
-      "createdAt": "2026-10-29",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 122,
-      "starsGained7d": null,
-      "forksGained7d": null,
-      "devRelevant": false,
-      "onTrendingPage": [],
-      "foundBy": [
-        "new in the last 14 days"
-      ]
-    },
-    {
-      "repo": "microsoft/TokenEconomizer",
-      "url": "https://github.com/microsoft/TokenEconomizer",
-      "stars": 5653,
-      "forks": 352,
-      "description": "Experience-Driven Black-Box Cost Control for Coding Agents",
-      "topics": [
-        "agentic-ai",
-        "agentic-coding",
-        "ai-coding",
-        "ai-coding-assistant",
-        "anthropic",
-        "artificial-intelligence",
-        "claude-code",
-        "codex",
-        "coding-agent",
-        "coding-agents",
-        "cost-optimization",
-        "cost-reduction",
-        "developer-tools",
-        "github-copilot",
-        "llm",
-        "open-source",
-        "openai",
-        "productivity",
-        "token-optimization"
-      ],
-      "language": "Python",
-      "createdAt": "2026-10-13",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 114,
-      "starsGained7d": 935,
-      "forksGained7d": 68,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "new in topic:claude-code",
-        "new in topic:coding-agent",
-        "active in topic:coding-agent",
-        "new in topic:ai-coding"
-      ]
-    },
-    {
       "repo": "anefzaoui/misterdownloadmanager",
       "url": "https://github.com/anefzaoui/misterdownloadmanager",
-      "stars": 5532,
-      "forks": 398,
+      "stars": 6877,
+      "forks": 533,
       "description": "misterdownloadmanager: The ultimate open-source, clean-room download manager written from scratch in pure Rust for Windows, Mac, and Linux",
       "topics": [
         "bittorrent-client",
@@ -3962,8 +3744,80 @@
       ],
       "language": "Rust",
       "createdAt": "2026-10-29",
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 1345,
+      "starsGained7d": null,
+      "forksGained7d": null,
+      "devRelevant": false,
+      "onTrendingPage": [],
+      "foundBy": [
+        "tracked"
+      ]
+    },
+    {
+      "repo": "anhao/ai-pose-gallery-zh",
+      "url": "https://github.com/anhao/ai-pose-gallery-zh",
+      "stars": 6761,
+      "forks": 1713,
+      "description": "中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊",
+      "topics": [
+        "ai-art",
+        "chinese",
+        "cloudflare-pages",
+        "gallery",
+        "i18n",
+        "pose",
+        "reference-images",
+        "static-site"
+      ],
+      "language": "TypeScript",
+      "createdAt": "2026-10-27",
+      "pushedAt": "2026-11-04",
+      "starsGained1d": 107,
+      "starsGained7d": 914,
+      "forksGained7d": 219,
+      "devRelevant": false,
+      "onTrendingPage": [],
+      "foundBy": [
+        "tracked"
+      ]
+    },
+    {
+      "repo": "valentderah/totk-pc-recomp",
+      "url": "https://github.com/valentderah/totk-pc-recomp",
+      "stars": 6749,
+      "forks": 552,
+      "description": "Static recompilation of The Legend of Zelda: Tears of the Kingdom to native Windows and Linux x86-64, with a Vulkan renderer. Game files not included.",
+      "topics": [
+        "game",
+        "linux",
+        "port",
+        "recompilation",
+        "windows"
+      ],
+      "language": "C",
+      "createdAt": "2026-10-29",
       "pushedAt": "2026-11-11",
-      "starsGained1d": 1363,
+      "starsGained1d": 298,
+      "starsGained7d": 2119,
+      "forksGained7d": 179,
+      "devRelevant": false,
+      "onTrendingPage": [],
+      "foundBy": [
+        "tracked"
+      ]
+    },
+    {
+      "repo": "huamidev/GestaltX",
+      "url": "https://github.com/huamidev/GestaltX",
+      "stars": 6291,
+      "forks": 2434,
+      "description": "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups, and support for 7 languages.",
+      "topics": [],
+      "language": "Swift",
+      "createdAt": "2026-11-09",
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 1533,
       "starsGained7d": null,
       "forksGained7d": null,
       "devRelevant": false,
@@ -3973,10 +3827,174 @@
       ]
     },
     {
+      "repo": "simbasjungles/free-my-tv",
+      "url": "https://github.com/simbasjungles/free-my-tv",
+      "stars": 6281,
+      "forks": 1098,
+      "description": "A fast, ad-free home screen for Google TV, LG webOS and Samsung Tizen. One button to undo.",
+      "topics": [
+        "android-tv",
+        "claude-code",
+        "google-tv",
+        "home-screen",
+        "launcher",
+        "no-ads",
+        "open-source",
+        "samsung-tizen",
+        "tizen",
+        "tmdb",
+        "webos"
+      ],
+      "language": "Java",
+      "createdAt": "2026-10-19",
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 28,
+      "starsGained7d": 439,
+      "forksGained7d": 93,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "new in topic:claude-code"
+      ]
+    },
+    {
+      "repo": "LNPANDY/NX2Apple",
+      "url": "https://github.com/LNPANDY/NX2Apple",
+      "stars": 6169,
+      "forks": 770,
+      "description": "Play your own Switch games on iPhone/iPad — one-click macOS app, no terminal. | 把 Switch 游戏装进 iPhone：图形界面一键构建，不用命令行。Bring your own game.",
+      "topics": [
+        "apple-silicon",
+        "custom-format",
+        "homebrew",
+        "ios",
+        "ipa",
+        "ipad",
+        "ipados",
+        "iphone",
+        "metal",
+        "native-port",
+        "nintendo-switch",
+        "nxnative",
+        "romfs",
+        "switch-games"
+      ],
+      "language": "Swift",
+      "createdAt": "2026-10-20",
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 213,
+      "starsGained7d": 2800,
+      "forksGained7d": 316,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "tracked"
+      ]
+    },
+    {
+      "repo": "janestreet/agent_skills",
+      "url": "https://github.com/janestreet/agent_skills",
+      "stars": 5922,
+      "forks": 413,
+      "description": "Agent skills",
+      "topics": [],
+      "language": null,
+      "createdAt": "2026-11-03",
+      "pushedAt": "2026-11-03",
+      "starsGained1d": 2095,
+      "starsGained7d": null,
+      "forksGained7d": null,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "new in the last 14 days"
+      ]
+    },
+    {
+      "repo": "Djihads80/Eglantine",
+      "url": "https://github.com/Djihads80/Eglantine",
+      "stars": 5849,
+      "forks": 632,
+      "description": "VERY experimental Nintendo Switch 2 emulator",
+      "topics": [],
+      "language": "C++",
+      "createdAt": "2026-10-29",
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 66,
+      "starsGained7d": 2648,
+      "forksGained7d": 264,
+      "devRelevant": false,
+      "onTrendingPage": [],
+      "foundBy": [
+        "tracked"
+      ]
+    },
+    {
+      "repo": "Eglantine-Community/Eglantine",
+      "url": "https://github.com/Eglantine-Community/Eglantine",
+      "stars": 5849,
+      "forks": 632,
+      "description": "VERY experimental Nintendo Switch 2 emulator",
+      "topics": [],
+      "language": "C++",
+      "createdAt": "2026-10-29",
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 66,
+      "starsGained7d": null,
+      "forksGained7d": null,
+      "devRelevant": false,
+      "onTrendingPage": [],
+      "foundBy": [
+        "tracked"
+      ]
+    },
+    {
+      "repo": "microsoft/TokenEconomizer",
+      "url": "https://github.com/microsoft/TokenEconomizer",
+      "stars": 5742,
+      "forks": 362,
+      "description": "Experience-Driven Black-Box Cost Control for Coding Agents",
+      "topics": [
+        "agentic-ai",
+        "agentic-coding",
+        "ai-coding",
+        "ai-coding-assistant",
+        "anthropic",
+        "artificial-intelligence",
+        "claude-code",
+        "codex",
+        "coding-agent",
+        "coding-agents",
+        "cost-optimization",
+        "cost-reduction",
+        "developer-tools",
+        "github-copilot",
+        "llm",
+        "open-source",
+        "openai",
+        "productivity",
+        "token-optimization"
+      ],
+      "language": "Python",
+      "createdAt": "2026-10-13",
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 89,
+      "starsGained7d": 1024,
+      "forksGained7d": 78,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "new in topic:claude-code",
+        "new in topic:coding-agent",
+        "active in topic:coding-agent",
+        "new in topic:ai-coding"
+      ]
+    },
+    {
       "repo": "qybaihe/bla",
       "url": "https://github.com/qybaihe/bla",
-      "stars": 5006,
-      "forks": 600,
+      "stars": 5318,
+      "forks": 639,
       "description": "🛡️ BLA (Blind LLM Agents) — Adversarial defense shield that protects binaries, Electron apps, JS bundles, Python, and WebAssembly against AI reverse-engineering agents like REA. Poison -> Exhaust -> ",
       "topics": [
         "adversarial-ai",
@@ -3992,10 +4010,10 @@
       ],
       "language": "TypeScript",
       "createdAt": "2026-10-25",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 592,
-      "starsGained7d": 2895,
-      "forksGained7d": 320,
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 312,
+      "starsGained7d": 3207,
+      "forksGained7d": 359,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -4008,54 +4026,16 @@
     {
       "repo": "JustAResearcher/gpu-unlock-ada",
       "url": "https://github.com/JustAResearcher/gpu-unlock-ada",
-      "stars": 4863,
-      "forks": 631,
+      "stars": 4875,
+      "forks": 636,
       "description": "GPU tensor unlock source for RTX 4090 and experimental RTX 4070 Ti SUPER; firmware generated locally",
       "topics": [],
       "language": "C",
       "createdAt": "2026-10-23",
       "pushedAt": "2026-10-26",
-      "starsGained1d": 9,
-      "starsGained7d": 115,
-      "forksGained7d": 26,
-      "devRelevant": false,
-      "onTrendingPage": [],
-      "foundBy": [
-        "tracked"
-      ]
-    },
-    {
-      "repo": "huamidev/GestaltX",
-      "url": "https://github.com/huamidev/GestaltX",
-      "stars": 4758,
-      "forks": 1809,
-      "description": "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups, and support for 7 languages.",
-      "topics": [],
-      "language": "Swift",
-      "createdAt": "2026-11-09",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 2703,
-      "starsGained7d": null,
-      "forksGained7d": null,
-      "devRelevant": false,
-      "onTrendingPage": [],
-      "foundBy": [
-        "new in the last 14 days"
-      ]
-    },
-    {
-      "repo": "interplains/Zero-Breach-Toolkit",
-      "url": "https://github.com/interplains/Zero-Breach-Toolkit",
-      "stars": 4644,
-      "forks": 486,
-      "description": "Free, open-source check for traces of mercenary spyware (Pegasus, Predator, Graphite, Candiru and more) on computers, Android phones and iPhone backups. Double-click apps for Windows, Mac and Linux, i",
-      "topics": [],
-      "language": "Python",
-      "createdAt": "2026-10-25",
-      "pushedAt": "2026-11-05",
-      "starsGained1d": 19,
-      "starsGained7d": 256,
-      "forksGained7d": 22,
+      "starsGained1d": 12,
+      "starsGained7d": 127,
+      "forksGained7d": 31,
       "devRelevant": false,
       "onTrendingPage": [],
       "foundBy": [
@@ -4065,8 +4045,8 @@
     {
       "repo": "designfuchen/word-atlas",
       "url": "https://github.com/designfuchen/word-atlas",
-      "stars": 4628,
-      "forks": 980,
+      "stars": 4712,
+      "forks": 1003,
       "description": "词光 · Word Atlas — Illustrated IELTS vocabulary with 7,298 words, UK/US audio and FSRS review. Open-source app + CC BY 4.0 dataset.",
       "topics": [
         "chinese",
@@ -4085,9 +4065,9 @@
       "language": "TypeScript",
       "createdAt": "2026-10-25",
       "pushedAt": "2026-11-08",
-      "starsGained1d": 50,
-      "starsGained7d": 489,
-      "forksGained7d": 90,
+      "starsGained1d": 84,
+      "starsGained7d": 573,
+      "forksGained7d": 113,
       "devRelevant": false,
       "onTrendingPage": [],
       "foundBy": [
@@ -4095,37 +4075,29 @@
       ]
     },
     {
-      "repo": "Leonxlnx/earshot",
-      "url": "https://github.com/Leonxlnx/earshot",
-      "stars": 4453,
-      "forks": 287,
-      "description": "Ears for coding agents: let AI hear, review and make sound. CPU-only, open source.",
-      "topics": [
-        "ai-agents",
-        "audio",
-        "claude-code",
-        "mcp",
-        "sound-design"
-      ],
+      "repo": "interplains/Zero-Breach-Toolkit",
+      "url": "https://github.com/interplains/Zero-Breach-Toolkit",
+      "stars": 4677,
+      "forks": 488,
+      "description": "Free, open-source check for traces of mercenary spyware (Pegasus, Predator, Graphite, Candiru and more) on computers, Android phones and iPhone backups. Double-click apps for Windows, Mac and Linux, i",
+      "topics": [],
       "language": "Python",
-      "createdAt": "2026-10-15",
-      "pushedAt": "2026-11-06",
-      "starsGained1d": 76,
-      "starsGained7d": 637,
-      "forksGained7d": 44,
-      "devRelevant": true,
+      "createdAt": "2026-10-25",
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 33,
+      "starsGained7d": 289,
+      "forksGained7d": 24,
+      "devRelevant": false,
       "onTrendingPage": [],
       "foundBy": [
-        "new in topic:mcp",
-        "new in topic:claude-code",
-        "new in topic:ai-agents"
+        "tracked"
       ]
     },
     {
       "repo": "BryceYuuu/RUN",
       "url": "https://github.com/BryceYuuu/RUN",
-      "stars": 4428,
-      "forks": 319,
+      "stars": 4631,
+      "forks": 323,
       "description": "RUN · 润：中国护照持有人的海外移居手册。欧洲 36 国 110 条移民路线 + 13 个主要移民地区：数字游民签证、欧盟蓝卡、技术移民、留学转工作、创业自雇、投资居留，每条附官方来源，持续更新。",
       "topics": [
         "china",
@@ -4150,20 +4122,20 @@
       "language": "Python",
       "createdAt": "2026-10-29",
       "pushedAt": "2026-11-07",
-      "starsGained1d": 64,
-      "starsGained7d": 1067,
-      "forksGained7d": 73,
+      "starsGained1d": 203,
+      "starsGained7d": 1270,
+      "forksGained7d": 77,
       "devRelevant": false,
       "onTrendingPage": [],
       "foundBy": [
-        "new in the last 14 days"
+        "tracked"
       ]
     },
     {
       "repo": "KKKKhazix/agent-autoloop",
       "url": "https://github.com/KKKKhazix/agent-autoloop",
-      "stars": 4427,
-      "forks": 804,
+      "stars": 4532,
+      "forks": 827,
       "description": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
       "topics": [
         "ai-agents",
@@ -4180,10 +4152,10 @@
       ],
       "language": "TypeScript",
       "createdAt": "2026-11-03",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 123,
-      "starsGained7d": 2856,
-      "forksGained7d": 490,
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 105,
+      "starsGained7d": 2961,
+      "forksGained7d": 513,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -4194,19 +4166,65 @@
       ]
     },
     {
+      "repo": "Leonxlnx/earshot",
+      "url": "https://github.com/Leonxlnx/earshot",
+      "stars": 4529,
+      "forks": 290,
+      "description": "Ears for coding agents: let AI hear, review and make sound. CPU-only, open source.",
+      "topics": [
+        "ai-agents",
+        "audio",
+        "claude-code",
+        "mcp",
+        "sound-design"
+      ],
+      "language": "Python",
+      "createdAt": "2026-10-15",
+      "pushedAt": "2026-11-06",
+      "starsGained1d": 76,
+      "starsGained7d": 713,
+      "forksGained7d": 47,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "new in topic:mcp",
+        "new in topic:claude-code",
+        "new in topic:ai-agents"
+      ]
+    },
+    {
       "repo": "aicodeking/leanrea",
       "url": "https://github.com/aicodeking/leanrea",
-      "stars": 4187,
-      "forks": 639,
+      "stars": 4219,
+      "forks": 642,
       "description": "One 8 KB skill that replaces REA (Reverse Engineer Anything): plain CLI tools, no MCP. Benchmarked: 38% faster, 35% cheaper.",
       "topics": [],
       "language": "Python",
       "createdAt": "2026-10-17",
       "pushedAt": "2026-10-19",
-      "starsGained1d": 43,
-      "starsGained7d": 201,
-      "forksGained7d": 31,
+      "starsGained1d": 32,
+      "starsGained7d": 233,
+      "forksGained7d": 34,
       "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "tracked"
+      ]
+    },
+    {
+      "repo": "Revivedx/SavageWindRecomp",
+      "url": "https://github.com/Revivedx/SavageWindRecomp",
+      "stars": 3969,
+      "forks": 232,
+      "description": "Work-in-progress static recompilation of The Legend of Zelda: Breath of the Wild (Switch, v1.9.0) for Windows and Linux. Bring your own dump: no game files, keys or dumping tools included.",
+      "topics": [],
+      "language": "C",
+      "createdAt": "2026-10-16",
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 144,
+      "starsGained7d": 949,
+      "forksGained7d": 57,
+      "devRelevant": false,
       "onTrendingPage": [],
       "foundBy": [
         "tracked"
@@ -4215,8 +4233,8 @@
     {
       "repo": "JoasASantos/REA-Prompts",
       "url": "https://github.com/JoasASantos/REA-Prompts",
-      "stars": 3895,
-      "forks": 695,
+      "stars": 3952,
+      "forks": 701,
       "description": "REAP - Prompts for you to use REA (Reverse Engineer Anything), get the most out of it, and clone or break down any program",
       "topics": [
         "prompt-engineering",
@@ -4226,67 +4244,10 @@
       "language": "Batchfile",
       "createdAt": "2026-10-19",
       "pushedAt": "2026-11-05",
-      "starsGained1d": 35,
-      "starsGained7d": 334,
-      "forksGained7d": 48,
+      "starsGained1d": 57,
+      "starsGained7d": 391,
+      "forksGained7d": 54,
       "devRelevant": false,
-      "onTrendingPage": [],
-      "foundBy": [
-        "tracked"
-      ]
-    },
-    {
-      "repo": "janestreet/agent_skills",
-      "url": "https://github.com/janestreet/agent_skills",
-      "stars": 3827,
-      "forks": 226,
-      "description": "Agent skills",
-      "topics": [],
-      "language": null,
-      "createdAt": "2026-11-03",
-      "pushedAt": "2026-11-03",
-      "starsGained1d": 1583,
-      "starsGained7d": null,
-      "forksGained7d": null,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "new in the last 14 days"
-      ]
-    },
-    {
-      "repo": "Revivedx/SavageWindRecomp",
-      "url": "https://github.com/Revivedx/SavageWindRecomp",
-      "stars": 3825,
-      "forks": 227,
-      "description": "Work-in-progress static recompilation of The Legend of Zelda: Breath of the Wild (Switch, v1.9.0) for Windows and Linux. Bring your own dump: no game files, keys or dumping tools included.",
-      "topics": [],
-      "language": "C",
-      "createdAt": "2026-10-16",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 105,
-      "starsGained7d": 805,
-      "forksGained7d": 52,
-      "devRelevant": false,
-      "onTrendingPage": [],
-      "foundBy": [
-        "tracked"
-      ]
-    },
-    {
-      "repo": "t3dotgg/tstack",
-      "url": "https://github.com/t3dotgg/tstack",
-      "stars": 3451,
-      "forks": 260,
-      "description": "The agent skills I use every day. Works with Claude Code and Codex.",
-      "topics": [],
-      "language": "Python",
-      "createdAt": "2026-10-24",
-      "pushedAt": "2026-10-28",
-      "starsGained1d": 78,
-      "starsGained7d": 659,
-      "forksGained7d": 66,
-      "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
         "tracked"
@@ -4295,8 +4256,8 @@
     {
       "repo": "haydenschmitty/floorplan",
       "url": "https://github.com/haydenschmitty/floorplan",
-      "stars": 3446,
-      "forks": 274,
+      "stars": 3689,
+      "forks": 299,
       "description": "See how your app actually fits together. An interactive, plain-English map of your codebase, drawn by Claude or Codex.",
       "topics": [
         "ai-coding",
@@ -4314,10 +4275,10 @@
       ],
       "language": "JavaScript",
       "createdAt": "2026-10-27",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 78,
-      "starsGained7d": 747,
-      "forksGained7d": 74,
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 243,
+      "starsGained7d": 990,
+      "forksGained7d": 99,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -4328,10 +4289,48 @@
       ]
     },
     {
+      "repo": "t3dotgg/tstack",
+      "url": "https://github.com/t3dotgg/tstack",
+      "stars": 3492,
+      "forks": 263,
+      "description": "The agent skills I use every day. Works with Claude Code and Codex.",
+      "topics": [],
+      "language": "Python",
+      "createdAt": "2026-10-24",
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 41,
+      "starsGained7d": 700,
+      "forksGained7d": 69,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "tracked"
+      ]
+    },
+    {
+      "repo": "Lee-xeo/Claude-Cage",
+      "url": "https://github.com/Lee-xeo/Claude-Cage",
+      "stars": 3354,
+      "forks": 381,
+      "description": "Cage：为 Claude 特化的轻量化虚拟机，彻底杜绝网络泄露。多平台适配，支持多账号管理、远程部署、移动端操控。",
+      "topics": [],
+      "language": "Go",
+      "createdAt": "2026-10-31",
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 2124,
+      "starsGained7d": null,
+      "forksGained7d": null,
+      "devRelevant": true,
+      "onTrendingPage": [],
+      "foundBy": [
+        "new in the last 14 days"
+      ]
+    },
+    {
       "repo": "Verlintas/NOIR",
       "url": "https://github.com/Verlintas/NOIR",
-      "stars": 3234,
-      "forks": 295,
+      "stars": 3290,
+      "forks": 305,
       "description": "手机隐私审计：用 adb 扫出 Android 应用的权限、上报端点与数据流向，并给出可回滚的处置。Desktop Android leak audit: permissions, endpoints, data flows, reversible fixes.",
       "topics": [
         "adb",
@@ -4357,10 +4356,10 @@
       ],
       "language": "Kotlin",
       "createdAt": "2026-10-31",
-      "pushedAt": "2026-11-07",
-      "starsGained1d": 69,
-      "starsGained7d": 1388,
-      "forksGained7d": 152,
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 56,
+      "starsGained7d": 1444,
+      "forksGained7d": 162,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -4369,9 +4368,28 @@
       ]
     },
     {
+      "repo": "tangerineturtle1/NX2navi",
+      "url": "https://github.com/tangerineturtle1/NX2navi",
+      "stars": 3270,
+      "forks": 220,
+      "description": "",
+      "topics": [],
+      "language": "C",
+      "createdAt": "2026-11-07",
+      "pushedAt": "2026-11-12",
+      "starsGained1d": 397,
+      "starsGained7d": null,
+      "forksGained7d": null,
+      "devRelevant": false,
+      "onTrendingPage": [],
+      "foundBy": [
+        "new in the last 14 days"
+      ]
+    },
+    {
       "repo": "modelflare-ai/AnyModelBot",
       "url": "https://github.com/modelflare-ai/AnyModelBot",
-      "stars": 3025,
+      "stars": 3215,
       "forks": 46,
       "description": "🤖 Open-source, local-first alternative to Grok Bot, OpenAI dots and Claude Duet. Your own AI bots on any model: GPT, Claude, Gemini, Grok, DeepSeek, Kimi, GLM and 70+ more through one Modelflare key.",
       "topics": [
@@ -4398,29 +4416,10 @@
       ],
       "language": "Python",
       "createdAt": "2026-10-27",
-      "pushedAt": "2026-11-10",
-      "starsGained1d": 217,
-      "starsGained7d": 650,
+      "pushedAt": "2026-11-11",
+      "starsGained1d": 190,
+      "starsGained7d": 840,
       "forksGained7d": 19,
-      "devRelevant": true,
-      "onTrendingPage": [],
-      "foundBy": [
-        "tracked"
-      ]
-    },
-    {
-      "repo": "benjitaylor/skills",
-      "url": "https://github.com/benjitaylor/skills",
-      "stars": 3007,
-      "forks": 205,
-      "description": "Skills for AI coding agents.",
-      "topics": [],
-      "language": "TypeScript",
-      "createdAt": "2026-10-26",
-      "pushedAt": "2026-11-05",
-      "starsGained1d": 103,
-      "starsGained7d": 1369,
-      "forksGained7d": 93,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
@@ -4430,39 +4429,20 @@
     {
       "repo": "elvarofficial/teardown",
       "url": "https://github.com/elvarofficial/teardown",
-      "stars": 2967,
-      "forks": 450,
+      "stars": 3175,
+      "forks": 477,
       "description": "A Claude Code skill that turns any machine into a 3D simulator you can take apart",
       "topics": [],
       "language": "JavaScript",
       "createdAt": "2026-10-30",
       "pushedAt": "2026-10-31",
-      "starsGained1d": 149,
-      "starsGained7d": 1207,
-      "forksGained7d": 183,
+      "starsGained1d": 208,
+      "starsGained7d": 1415,
+      "forksGained7d": 210,
       "devRelevant": true,
       "onTrendingPage": [],
       "foundBy": [
         "new in the last 14 days"
-      ]
-    },
-    {
-      "repo": "wesbos/3d-model-anything",
-      "url": "https://github.com/wesbos/3d-model-anything",
-      "stars": 2934,
-      "forks": 440,
-      "description": "Capture iPhone LiDAR and photos, reconstruct editable Three.js rooms, and explore them in a browser.",
-      "topics": [],
-      "language": "Swift",
-      "createdAt": "2026-10-21",
-      "pushedAt": "2026-10-27",
-      "starsGained1d": 15,
-      "starsGained7d": 230,
-      "forksGained7d": 36,
-      "devRelevant": false,
-      "onTrendingPage": [],
-      "foundBy": [
-        "tracked"
       ]
     }
   ]

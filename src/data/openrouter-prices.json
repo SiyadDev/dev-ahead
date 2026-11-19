@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-12",
+  "date": "2026-11-19",
   "source": "https://openrouter.ai/api/v1/models",
   "priceBasis": "each lab's own standard endpoint",
   "models": [
@@ -419,8 +419,8 @@
     {
       "id": "deepseek/deepseek-chat",
       "created": "2024-12-26",
-      "input": 0.32,
-      "output": 0.89,
+      "input": 0.2574,
+      "output": 1.0287,
       "lab": null
     },
     {
@@ -440,8 +440,8 @@
     {
       "id": "deepseek/deepseek-r1-0528",
       "created": "2025-05-28",
-      "input": 0.5,
-      "output": 2.15,
+      "input": 0.571,
+      "output": 2.286,
       "lab": null
     },
     {
@@ -475,7 +475,7 @@
     {
       "id": "deepseek/deepseek-v4-flash-0731",
       "created": "2026-07-31",
-      "input": 0.0434,
+      "input": 0.047,
       "output": 0.3,
       "lab": null
     },
@@ -489,8 +489,8 @@
     {
       "id": "deepseek/deepseek-v4-pro",
       "created": "2026-04-24",
-      "input": 0.9553,
-      "output": 1.9105,
+      "input": 0.9,
+      "output": 1.5,
       "lab": null
     },
     {
@@ -507,8 +507,8 @@
     {
       "id": "deepseek/deepseek-v4.1-flash",
       "created": "2026-09-10",
-      "input": 0.022,
-      "output": 0.4,
+      "input": 0.3,
+      "output": 1.2,
       "lab": null
     },
     {
@@ -771,6 +771,28 @@
       }
     },
     {
+      "id": "google/gemini-4-hydrogen",
+      "created": "2026-11-12",
+      "input": 1.5,
+      "output": 7.5,
+      "lab": {
+        "provider": "Google AI Studio",
+        "input": 1.5,
+        "output": 7.5
+      }
+    },
+    {
+      "id": "google/gemini-4-neon",
+      "created": "2026-11-18",
+      "input": 3,
+      "output": 15,
+      "lab": {
+        "provider": "Google AI Studio",
+        "input": 3,
+        "output": 15
+      }
+    },
+    {
       "id": "google/gemini-nano-banana-2.1",
       "created": "2026-10-06",
       "input": 1.5,
@@ -821,7 +843,7 @@
       "id": "google/gemma-3-27b-it",
       "created": "2025-03-12",
       "input": 0.08,
-      "output": 0.35,
+      "output": 0.16,
       "lab": null
     },
     {
@@ -834,8 +856,8 @@
     {
       "id": "google/gemma-4-26b-a4b-it",
       "created": "2026-04-03",
-      "input": 0.08,
-      "output": 0.1,
+      "input": 0.0765,
+      "output": 0.255,
       "lab": null
     },
     {
@@ -921,17 +943,6 @@
       }
     },
     {
-      "id": "liquid/lfm-2.5-2.6b",
-      "created": "2026-08-11",
-      "input": 0.35,
-      "output": 0.5,
-      "lab": {
-        "provider": "Liquid",
-        "input": 0.35,
-        "output": 0.5
-      }
-    },
-    {
       "id": "liquid/lfm-2.5-24b-a2b",
       "created": "2026-10-13",
       "input": 0.05,
@@ -995,8 +1006,8 @@
     {
       "id": "meta-llama/llama-3.2-3b-instruct",
       "created": "2024-09-25",
-      "input": 0.05,
-      "output": 0.33,
+      "input": 0.0509,
+      "output": 0.335,
       "lab": null
     },
     {
@@ -1041,8 +1052,8 @@
     {
       "id": "meta/muse-glimmer-30b",
       "created": "2026-08-09",
-      "input": 0.3,
-      "output": 1.2,
+      "input": 0.35,
+      "output": 1.5,
       "lab": null
     },
     {
@@ -1128,8 +1139,8 @@
     {
       "id": "minimax/minimax-m2.5",
       "created": "2026-02-12",
-      "input": 0.27,
-      "output": 1.08,
+      "input": 0.295,
+      "output": 1.2,
       "lab": null
     },
     {
@@ -1239,8 +1250,8 @@
     {
       "id": "mistralai/mistral-medium-3",
       "created": "2025-05-07",
-      "input": 0.4,
-      "output": 2,
+      "input": 0.44,
+      "output": 2.2,
       "lab": null
     },
     {
@@ -1253,8 +1264,8 @@
     {
       "id": "mistralai/mistral-medium-3.1",
       "created": "2025-08-13",
-      "input": 0.4,
-      "output": 2,
+      "input": 0.44,
+      "output": 2.2,
       "lab": null
     },
     {
@@ -1295,8 +1306,8 @@
     {
       "id": "mistralai/mistral-small-3.2-24b-instruct",
       "created": "2025-06-20",
-      "input": 0.1,
-      "output": 0.3,
+      "input": 0.075,
+      "output": 0.2,
       "lab": null
     },
     {
@@ -1351,8 +1362,8 @@
     {
       "id": "moonshotai/kimi-k2.5",
       "created": "2026-01-27",
-      "input": 0.532,
-      "output": 3.325,
+      "input": 0.5,
+      "output": 2.5,
       "lab": null
     },
     {
@@ -1391,8 +1402,8 @@
     {
       "id": "moonshotai/kimi-k3.1-pro",
       "created": "2026-10-23",
-      "input": 2,
-      "output": 10,
+      "input": 0.253,
+      "output": 8.8,
       "lab": {
         "provider": "Moonshot AI",
         "input": 2,
@@ -1485,8 +1496,8 @@
     {
       "id": "nvidia/nemotron-3-ultra-550b-a55b",
       "created": "2026-06-04",
-      "input": 0.6,
-      "output": 2.4,
+      "input": 0.5,
+      "output": 2.2,
       "lab": null
     },
     {
@@ -1507,7 +1518,7 @@
       "id": "nvidia/nemotron-3.5-super-vl",
       "created": "2026-10-15",
       "input": 0.15,
-      "output": 0.47,
+      "output": 0.5,
       "lab": null
     },
     {
@@ -1865,8 +1876,8 @@
     {
       "id": "openai/gpt-5.6-sol",
       "created": "2026-07-09",
-      "input": 4.4,
-      "output": 22,
+      "input": 4,
+      "output": 20,
       "lab": {
         "provider": "OpenAI",
         "input": 4,
@@ -2017,6 +2028,50 @@
       }
     },
     {
+      "id": "openai/gpt-6.2-astra",
+      "created": "2026-11-17",
+      "input": 8,
+      "output": 40,
+      "lab": {
+        "provider": "OpenAI",
+        "input": 8,
+        "output": 40
+      }
+    },
+    {
+      "id": "openai/gpt-6.2-astra-pro",
+      "created": "2026-11-17",
+      "input": 8,
+      "output": 40,
+      "lab": {
+        "provider": "OpenAI",
+        "input": 8,
+        "output": 40
+      }
+    },
+    {
+      "id": "openai/gpt-6.2-sol",
+      "created": "2026-11-17",
+      "input": 2,
+      "output": 10,
+      "lab": {
+        "provider": "OpenAI",
+        "input": 2,
+        "output": 10
+      }
+    },
+    {
+      "id": "openai/gpt-6.2-sol-pro",
+      "created": "2026-11-17",
+      "input": 2,
+      "output": 10,
+      "lab": {
+        "provider": "OpenAI",
+        "input": 2,
+        "output": 10
+      }
+    },
+    {
       "id": "openai/gpt-audio",
       "created": "2026-01-19",
       "input": 2.5,
@@ -2095,7 +2150,7 @@
     {
       "id": "particle-ai/particle-1",
       "created": "2026-10-28",
-      "input": 0.05,
+      "input": 0.06,
       "output": 0.5,
       "lab": null
     },
@@ -2225,8 +2280,8 @@
     {
       "id": "qwen/qwen3-14b",
       "created": "2025-04-28",
-      "input": 0.1,
-      "output": 0.22,
+      "input": 0.12,
+      "output": 0.24,
       "lab": null
     },
     {
@@ -2299,7 +2354,7 @@
     {
       "id": "qwen/qwen3-next-80b-a3b-instruct",
       "created": "2025-09-11",
-      "input": 0.09,
+      "input": 0.1,
       "output": 1.1,
       "lab": null
     },
@@ -2315,13 +2370,6 @@
       "created": "2025-10-06",
       "input": 0.15,
       "output": 0.6,
-      "lab": null
-    },
-    {
-      "id": "qwen/qwen3-vl-30b-a3b-thinking",
-      "created": "2025-10-06",
-      "input": 0.29,
-      "output": 1,
       "lab": null
     },
     {
@@ -2345,8 +2393,8 @@
     {
       "id": "qwen/qwen3.5-27b",
       "created": "2026-02-25",
-      "input": 0.26,
-      "output": 2.6,
+      "input": 0.195,
+      "output": 1.56,
       "lab": {
         "provider": "Alibaba",
         "input": 0.195,
@@ -2367,8 +2415,8 @@
     {
       "id": "qwen/qwen3.5-397b-a17b",
       "created": "2026-02-16",
-      "input": 0.6,
-      "output": 3.6,
+      "input": 0.45,
+      "output": 3,
       "lab": {
         "provider": "Alibaba",
         "input": 0.39,
@@ -2378,8 +2426,8 @@
     {
       "id": "qwen/qwen3.5-9b",
       "created": "2026-03-10",
-      "input": 0.081,
-      "output": 0.119,
+      "input": 0.154,
+      "output": 0.226,
       "lab": null
     },
     {
@@ -2502,8 +2550,8 @@
     {
       "id": "qwen/qwen3.8-27b",
       "created": "2026-08-14",
-      "input": 0.15,
-      "output": 1.875,
+      "input": 0.06,
+      "output": 2.2,
       "lab": {
         "provider": "Alibaba",
         "input": 0.425,
@@ -2555,9 +2603,20 @@
       }
     },
     {
+      "id": "qwen/qwen4-max",
+      "created": "2026-11-16",
+      "input": 1.425,
+      "output": 4.275,
+      "lab": {
+        "provider": "Alibaba",
+        "input": 1.425,
+        "output": 4.275
+      }
+    },
+    {
       "id": "reflection/beam-1.0-501b-a23b",
       "created": "2026-10-16",
-      "input": 0.3,
+      "input": 0.25,
       "output": 1,
       "lab": null
     },
@@ -2600,8 +2659,8 @@
     {
       "id": "ricursiveai/ripple-65b-preview",
       "created": "2026-11-04",
-      "input": 0.2,
-      "output": 0.6,
+      "input": 0.1,
+      "output": 0.3,
       "lab": null
     },
     {
@@ -2663,13 +2722,6 @@
       "lab": null
     },
     {
-      "id": "stepfun/step-3.5-flash",
-      "created": "2026-01-29",
-      "input": 0.1,
-      "output": 0.3,
-      "lab": null
-    },
-    {
       "id": "stepfun/step-3.7-flash",
       "created": "2026-05-28",
       "input": 0.2,
@@ -2690,13 +2742,6 @@
         "input": 1,
         "output": 2.7
       }
-    },
-    {
-      "id": "tencent/hunyuan-a13b-instruct",
-      "created": "2025-07-08",
-      "input": 0.14,
-      "output": 0.57,
-      "lab": null
     },
     {
       "id": "tencent/hy-mt2-1.8b",
@@ -2761,6 +2806,17 @@
       }
     },
     {
+      "id": "tencent/hy4-flash",
+      "created": "2026-11-16",
+      "input": 0.035,
+      "output": 0.1405,
+      "lab": {
+        "provider": "Tencent",
+        "input": 0.035,
+        "output": 0.1405
+      }
+    },
+    {
       "id": "tencent/hy4-preview",
       "created": "2026-08-28",
       "input": 0.834,
@@ -2797,6 +2853,13 @@
       "created": "2026-07-17",
       "input": 1,
       "output": 4.05,
+      "lab": null
+    },
+    {
+      "id": "thinkingmachines/inkling-2-small",
+      "created": "2026-11-09",
+      "input": 0.3,
+      "output": 1,
       "lab": null
     },
     {
@@ -3013,8 +3076,8 @@
     {
       "id": "z-ai/glm-4.5-air",
       "created": "2025-07-25",
-      "input": 0.2,
-      "output": 1.1,
+      "input": 0.13,
+      "output": 0.85,
       "lab": {
         "provider": "Z.AI",
         "input": 0.2,
@@ -3057,8 +3120,8 @@
     {
       "id": "z-ai/glm-4.7",
       "created": "2025-12-22",
-      "input": 0.6,
-      "output": 2.2,
+      "input": 0.4,
+      "output": 1.75,
       "lab": {
         "provider": "Z.AI",
         "input": 0.6,
@@ -3097,8 +3160,8 @@
     {
       "id": "z-ai/glm-5.1",
       "created": "2026-04-07",
-      "input": 1.4,
-      "output": 4.4,
+      "input": 1.19,
+      "output": 3.74,
       "lab": {
         "provider": "Z.AI",
         "input": 1.4,
@@ -3130,8 +3193,8 @@
     {
       "id": "z-ai/glm-5.3-flash",
       "created": "2026-08-26",
-      "input": 0.0399,
-      "output": 0.0784,
+      "input": 0.15,
+      "output": 0.5,
       "lab": {
         "provider": "Z.AI",
         "input": 0.15,
@@ -3163,8 +3226,8 @@
     {
       "id": "z-ai/glm-5.3-prime",
       "created": "2026-09-23",
-      "input": 2.8,
-      "output": 8.8,
+      "input": 1.68,
+      "output": 5.28,
       "lab": null
     },
     {

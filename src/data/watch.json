@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-12",
+  "updated": "2026-11-19",
   "entries": [
     {
       "id": "open-weight-models",
       "name": "Ultra-cheap and open-weight models",
       "status": "Repricing the work",
-      "note": "Meta's Muse Spark Open (816B, 42B active, custom licence) and DeepSeek folding V4-Pro into V4.1 Flash pricing. Record the licence of every open model you recommend, not just its price.",
+      "note": "Held. Price snapshot vs 12 November: 211 lab-priced models compared, no cut and no rise on an existing model. GPT-6.2 Astra launched at $8/$40, 80% of GPT-6 Astra: a new model priced below its predecessor, noted, not a cut. Tencent's open-weight Hy4 Flash launched at $0.035/$0.14 per million tokens.",
       "history": [
         {
           "date": "2026-10-12",
@@ -48,6 +48,12 @@
           "status": "Repricing the work",
           "note": "Held. Price snapshot vs 9 November: no lab cut of 50% or more on an existing model, no lab price rise. Claude Fable 5.2 launched at $8/$40 against Fable 5.1's $10/$50: a new model priced below its predecessor, noted, not a cut. Gemini 4 Carbon is listed at $2/$10 under a launch discount that Vercel says ends 30 November; whether a scheduled end to a discount counts as a list-price rise needs judging when it lands.",
           "source": "https://platform.claude.com/docs/en/release-notes/overview"
+        },
+        {
+          "date": "2026-11-19",
+          "status": "Repricing the work",
+          "note": "Held. Price snapshot vs 12 November: 211 lab-priced models compared, no cut and no rise on an existing model. GPT-6.2 Astra launched at $8/$40, 80% of GPT-6 Astra: a new model priced below its predecessor, noted, not a cut. Tencent's open-weight Hy4 Flash launched at $0.035/$0.14 per million tokens.",
+          "source": "https://openrouter.ai/api/v1/models"
         }
       ],
       "register": {
@@ -75,7 +81,7 @@
       "id": "agentic-coding",
       "name": "Agentic coding and orchestration replacing prompt-level help",
       "status": "Hitting the market",
-      "note": "22.6% of public pull requests in October came from Claude Code or Copilot's coding agent; 1–8 November reads 20.1% (collector).",
+      "note": "Held. Collector (generated 19 November): 1–19 November share 20.5% (4.59M Claude Code + 18.6k Copilot agent of 22.48M public PRs); October 22.4%. November hasn't closed, so the three-month stall sign has no month yet. Agent SDK downloads 22.2M for the week to 17 November, up from 21.2M.",
       "history": [
         {
           "date": "2026-10-12",
@@ -129,6 +135,12 @@
           "date": "2026-11-12",
           "status": "Hitting the market",
           "note": "Held. Collector (generated 12 November): 1–12 November share 20.1% (2.68M Claude Code + 15.7k Copilot agent of 13.43M public PRs); October recomputed at 22.5%. If November closes below October, that is month one of the three-month stall sign. Agent SDK downloads (claude-agent-sdk + codex-sdk) 21.2M for the week to 10 November, up from 20.6M.",
+          "source": "https://github.com/SiyadDev/dev-ahead/blob/collector-data/trending.json"
+        },
+        {
+          "date": "2026-11-19",
+          "status": "Hitting the market",
+          "note": "Held. Collector (generated 19 November): 1–19 November share 20.5% (4.59M Claude Code + 18.6k Copilot agent of 22.48M public PRs); October 22.4%. November hasn't closed, so the three-month stall sign has no month yet. Agent SDK downloads 22.2M for the week to 17 November, up from 21.2M.",
           "source": "https://github.com/SiyadDev/dev-ahead/blob/collector-data/trending.json"
         }
       ],
@@ -212,7 +224,7 @@
       "id": "mcp",
       "name": "MCP and tool protocols standardising the integration layer",
       "status": "Hitting the market",
-      "note": "MCP is the default integration layer across coding agents and has neutral governance. A standards question has no repricing end point, so this tracks adoption instead.",
+      "note": "Held. @modelcontextprotocol/sdk + core: 132.5M for the week to 17 November, no zero days (124.0M the week before, +6.9%). CISA added LiteLLM CVE-2026-40217 on 18 November, an LLM gateway bug, not an MCP server or SDK, so the stall sign is not met.",
       "history": [
         {
           "date": "2026-10-15",
@@ -261,6 +273,12 @@
           "status": "Hitting the market",
           "note": "Held. @modelcontextprotocol/sdk + core: 124.0M for the week to 10 November, zero days repaired (119.7M the week before, +3.6%). No MCP entry on CISA's exploited list; no competing protocol documented by two of the named vendors.",
           "source": "https://api.npmjs.org/downloads/range/2026-09-20:2026-11-11/@modelcontextprotocol/core"
+        },
+        {
+          "date": "2026-11-19",
+          "status": "Hitting the market",
+          "note": "Held. @modelcontextprotocol/sdk + core: 132.5M for the week to 17 November, no zero days (124.0M the week before, +6.9%). CISA added LiteLLM CVE-2026-40217 on 18 November, an LLM gateway bug, not an MCP server or SDK, so the stall sign is not met.",
+          "source": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
         }
       ],
       "register": {
@@ -349,7 +367,7 @@
       "id": "decision-models",
       "name": "Model routing and decision models",
       "status": "Hitting the market",
-      "note": "Decision models took 26% of AI Gateway requests in October for 0.53% of spend (Vercel); Google now sells one, Gemini Decision 1.",
+      "note": "Held. Microsoft's Decision-1.1 (17 November, better calibrated) and Parallel Decisions (13 November, web-grounded) reached Vercel's gateway, so five vendors now sell decision models; eve 1.0 screens every message with one. GitHub Copilot Fusion routes per task, but the forecast needs OpenAI, Anthropic or Google. Stall sign not met: no lab cut on an existing model. Repricing rule not met.",
       "history": [
         {
           "date": "2026-10-12",
@@ -403,6 +421,12 @@
           "status": "Hitting the market",
           "note": "Held. Vercel's November AI Gateway Production Index: decision models took 26% of gateway requests in October for 0.53% of spend, used by nearly a third of paid teams; Google's Gemini Decision 1 reached the gateway on 11 November. Repricing needs evidence of client charges or staffing changing because of routing; traffic share isn't that. Stall sign (existing frontier prices keep falling) not met: no lab cut on an existing model this run.",
           "source": "https://vercel.com/blog/ai-gateway-production-index-november-2026"
+        },
+        {
+          "date": "2026-11-19",
+          "status": "Hitting the market",
+          "note": "Held. Microsoft's Decision-1.1 (17 November, better calibrated) and Parallel Decisions (13 November, web-grounded) reached Vercel's gateway, so five vendors now sell decision models; eve 1.0 screens every message with one. GitHub Copilot Fusion routes per task, but the forecast needs OpenAI, Anthropic or Google. Stall sign not met: no lab cut on an existing model. Repricing rule not met.",
+          "source": "https://vercel.com/changelog/decision-1-1-now-available-on-ai-gateway"
         }
       ],
       "register": {
@@ -429,7 +453,7 @@
       "id": "harness-layer",
       "name": "Harness and plugin layer: hooks, skills, mods",
       "status": "Hitting the market",
-      "note": "Claude Code now caps concurrent hooks at 24 per session. The harness changes every few days, often without a stated reason; pin its version in unattended jobs.",
+      "note": "Held. GitHub added strictPluginOnlyCustomization, letting enterprise admins require skills, agents, hooks and MCP servers to come from plugins. That's an admin option that keeps plugins working, not a vendor removing or restricting third-party hooks, so the stall sign is not met. GitHub's benchmarks site now compares harnesses on the same model.",
       "history": [
         {
           "date": "2026-10-12",
@@ -472,6 +496,12 @@
           "status": "Hitting the market",
           "note": "Held. Claude Code 2.1.319 fixed Bash deny rules missing quoted words, a sed permission-check skip, an environment-prefix bypass and a worktree sandbox escape. A paper (PatternOps, arXiv 2611.09088) found routine operations silently broke guardrails in released harnesses. Neither is a vendor restricting hooks, so the stall sign is not met.",
           "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+        },
+        {
+          "date": "2026-11-19",
+          "status": "Hitting the market",
+          "note": "Held. GitHub added strictPluginOnlyCustomization, letting enterprise admins require skills, agents, hooks and MCP servers to come from plugins. That's an admin option that keeps plugins working, not a vendor removing or restricting third-party hooks, so the stall sign is not met. GitHub's benchmarks site now compares harnesses on the same model.",
+          "source": "https://github.blog/changelog/2026-11-16-control-where-github-copilot-customizations-come-from"
         }
       ],
       "register": {
@@ -501,7 +531,7 @@
       "id": "ai-native-infra",
       "name": "AI-native infrastructure: sandboxes, computer use, cloud dev environments",
       "status": "Hitting the market",
-      "note": "Coding-agent loops now run inside Cloudflare Durable Objects (Codex port, Nanocode, Exo). Sandbox SDK downloads flat at 13.2M a week.",
+      "note": "Held. Sandbox SDK downloads 14.5M for the week to 17 November (13.2M the week before). No NVD 'sandbox escape' CVE in the window. Vercel Sandbox starts up to 4x faster outside iad1; Claude Code now runs sandboxed Bash through the normal permission flow by default.",
       "history": [
         {
           "date": "2026-10-29",
@@ -538,6 +568,12 @@
           "status": "Hitting the market",
           "note": "Held. Cloudflare published three ways to run a coding-agent loop in Durable Objects on 9 November (an experimental Codex port, Nanocode, Exo with Cloudflare Sandboxes); Vercel Sandbox snapshots dropped to under 0.4 s median. Sandbox SDK downloads 13.24M for the week to 10 November (13.21M the week before). Stall sign not met: the 14 NVD 'sandbox escape' CVEs in the window are all Firefox or Windows.",
           "source": "https://developers.cloudflare.com/changelog/post/2026-11-09-codex-harness/"
+        },
+        {
+          "date": "2026-11-19",
+          "status": "Hitting the market",
+          "note": "Held. Sandbox SDK downloads 14.5M for the week to 17 November (13.2M the week before). No NVD 'sandbox escape' CVE in the window. Vercel Sandbox starts up to 4x faster outside iad1; Claude Code now runs sandboxed Bash through the normal permission flow by default.",
+          "source": "https://vercel.com/changelog/vercel-sandbox-starts-up-to-four-times-faster"
         }
       ],
       "register": {
@@ -685,7 +721,7 @@
       "id": "agent-audit-trail",
       "name": "Observable and auditable agent actions",
       "status": "Watching",
-      "note": "Claude Code stopped sending its safety_event telemetry in 2.1.312. Telemetry is not an audit trail; watch for a second vendor with exportable per-action approval logs.",
+      "note": "Held, moves-up sign met. Vercel's eve 1.0 (GA 17 November) records approval decisions in agent traces and exports them to any OpenTelemetry backend: a second vendor shipping exportable per-action approval records, after Claude Code. Microsoft Agent 365 now also ingests GitHub Copilot prompts, responses and tool calls. The Accelerating rule needs three independent vendors and a growth measure rising for four weeks or more; this entry has no growth measure, so it holds. Add one at the March review.",
       "history": [
         {
           "date": "2026-10-22",
@@ -704,6 +740,12 @@
           "status": "Watching",
           "note": "Held. A pre-registered study found 26% of an agent's rule violations came with a customer message denying the action it had just taken, so transcript-only review would miss them. Research, not a second vendor shipping exportable approval logs; sign not met.",
           "source": "https://arxiv.org/abs/2611.06116"
+        },
+        {
+          "date": "2026-11-19",
+          "status": "Watching",
+          "note": "Held, moves-up sign met. Vercel's eve 1.0 (GA 17 November) records approval decisions in agent traces and exports them to any OpenTelemetry backend: a second vendor shipping exportable per-action approval records, after Claude Code. Microsoft Agent 365 now also ingests GitHub Copilot prompts, responses and tool calls. The Accelerating rule needs three independent vendors and a growth measure rising for four weeks or more; this entry has no growth measure, so it holds. Add one at the March review.",
+          "source": "https://vercel.com/blog/eve-is-now-generally-available"
         }
       ],
       "register": {
@@ -731,7 +773,7 @@
       "id": "portable-skills",
       "name": "Portable agent skills (SKILL.md)",
       "status": "Hitting the market",
-      "note": "Anthropic donated Agent Skills to the Agentic AI Foundation. Adoption figures are Anthropic's own; security guidance for skill authors and installers is only a roadmap item.",
+      "note": "Held. Modern Web Guidance, agent skills stewarded by the Chrome, Edge, Firefox and MDN teams with a public eval dashboard, follows Supabase's package skills. No fork, no malicious-skill incident; the priced-service sign is not met.",
       "history": [
         {
           "date": "2026-10-26",
@@ -750,6 +792,12 @@
           "status": "Hitting the market",
           "note": "Held. supabase-flutter v3 ships package skills for Claude Code, Cursor, Gemini and Copilot with a library major version, including a migration skill. No fork, no malicious-skill incident; the priced-service sign is not met.",
           "source": "https://supabase.com/changelog/supabase-flutter-v3"
+        },
+        {
+          "date": "2026-11-19",
+          "status": "Hitting the market",
+          "note": "Held. Modern Web Guidance, agent skills stewarded by the Chrome, Edge, Firefox and MDN teams with a public eval dashboard, follows Supabase's package skills. No fork, no malicious-skill incident; the priced-service sign is not met.",
+          "source": "https://raw.githubusercontent.com/GoogleChrome/modern-web-guidance-src/HEAD/README.md"
         }
       ],
       "register": {
@@ -781,7 +829,7 @@
       "id": "agent-supply-chain-security",
       "name": "Agent supply-chain security",
       "status": "Watching",
-      "note": "Skills, MCP servers and plugins are code agents fetch and run. Dependabot now updates agent packages and Vercel blocks malicious npm installs; NVD \"MCP server\" CVEs ran 27, 61, 120 in the first three quarters of 2026 and 40 so far in Q4. None is on CISA's exploited list.",
+      "note": "Held. NVD 'MCP server' CVEs: 79 published 1 October to 18 November (22 from 12 November), on pace for about 148 this quarter against 120 in Q3. CISA added LiteLLM (an LLM gateway, exploited RCE) on 18 November after GPUStack on 10 November; neither is an MCP server or SDK, skill or plugin, so the sign is not met.",
       "history": [
         {
           "date": "2026-10-29",
@@ -812,6 +860,12 @@
           "status": "Watching",
           "note": "Held. NVD 'MCP server' CVEs: 57 published 1 October to 11 November (11 from 9 November), on pace for about 125 this quarter against 120 in Q3. CISA added 10 entries from 9 to 10 November; none is an MCP server, SDK, skill or plugin. Claude Code 2.1.321 fixed MCP OAuth sending refresh tokens to another host on redirect.",
           "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+        },
+        {
+          "date": "2026-11-19",
+          "status": "Watching",
+          "note": "Held. NVD 'MCP server' CVEs: 79 published 1 October to 18 November (22 from 12 November), on pace for about 148 this quarter against 120 in Q3. CISA added LiteLLM (an LLM gateway, exploited RCE) on 18 November after GPUStack on 10 November; neither is an MCP server or SDK, skill or plugin, so the sign is not met.",
+          "source": "https://nvd.nist.gov/vuln/detail/CVE-2026-40217"
         }
       ],
       "register": {

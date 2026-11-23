@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-19",
+  "date": "2026-11-23",
   "source": "https://openrouter.ai/api/v1/models",
   "priceBasis": "each lab's own standard endpoint",
   "models": [
@@ -426,8 +426,8 @@
     {
       "id": "deepseek/deepseek-chat-v3-0324",
       "created": "2025-03-24",
-      "input": 0.29,
-      "output": 1.14,
+      "input": 0.25,
+      "output": 1,
       "lab": null
     },
     {
@@ -475,15 +475,15 @@
     {
       "id": "deepseek/deepseek-v4-flash-0731",
       "created": "2026-07-31",
-      "input": 0.047,
+      "input": 0.0443,
       "output": 0.3,
       "lab": null
     },
     {
       "id": "deepseek/deepseek-v4-flash-vision-exp",
       "created": "2026-08-21",
-      "input": 0.44,
-      "output": 1.32,
+      "input": 0.2156,
+      "output": 0.6468,
       "lab": null
     },
     {
@@ -496,8 +496,8 @@
     {
       "id": "deepseek/deepseek-v4-pro-0813",
       "created": "2026-08-12",
-      "input": 0.111,
-      "output": 4.44,
+      "input": 1.32,
+      "output": 3.96,
       "lab": {
         "provider": "DeepSeek",
         "input": 1.32,
@@ -507,8 +507,8 @@
     {
       "id": "deepseek/deepseek-v4.1-flash",
       "created": "2026-09-10",
-      "input": 0.3,
-      "output": 1.2,
+      "input": 0.0498,
+      "output": 0.1992,
       "lab": null
     },
     {
@@ -849,15 +849,15 @@
     {
       "id": "google/gemma-3-4b-it",
       "created": "2025-03-13",
-      "input": 0.05,
-      "output": 0.1,
+      "input": 0.04,
+      "output": 0.05,
       "lab": null
     },
     {
       "id": "google/gemma-4-26b-a4b-it",
       "created": "2026-04-03",
-      "input": 0.0765,
-      "output": 0.255,
+      "input": 0.0675,
+      "output": 0.225,
       "lab": null
     },
     {
@@ -870,8 +870,8 @@
     {
       "id": "gryphe/mythomax-l2-13b",
       "created": "2023-07-02",
-      "input": 0.08,
-      "output": 0.11,
+      "input": 0.3,
+      "output": 0.5,
       "lab": null
     },
     {
@@ -905,8 +905,8 @@
     {
       "id": "inclusionai/ling-3.1-flash",
       "created": "2026-10-02",
-      "input": 0.045,
-      "output": 0.135,
+      "input": 0.06,
+      "output": 0.18,
       "lab": null
     },
     {
@@ -976,13 +976,6 @@
       }
     },
     {
-      "id": "meituan/longcat-2.0",
-      "created": "2026-07-20",
-      "input": 0.3,
-      "output": 1.2,
-      "lab": null
-    },
-    {
       "id": "meta-llama/llama-3.1-70b-instruct",
       "created": "2024-07-23",
       "input": 0.72,
@@ -997,17 +990,10 @@
       "lab": null
     },
     {
-      "id": "meta-llama/llama-3.2-1b-instruct",
-      "created": "2024-09-25",
-      "input": 0.027,
-      "output": 0.201,
-      "lab": null
-    },
-    {
       "id": "meta-llama/llama-3.2-3b-instruct",
       "created": "2024-09-25",
-      "input": 0.0509,
-      "output": 0.335,
+      "input": 0.05,
+      "output": 0.33,
       "lab": null
     },
     {
@@ -1139,15 +1125,15 @@
     {
       "id": "minimax/minimax-m2.5",
       "created": "2026-02-12",
-      "input": 0.295,
-      "output": 1.2,
+      "input": 0.27,
+      "output": 0.95,
       "lab": null
     },
     {
       "id": "minimax/minimax-m2.7",
       "created": "2026-03-18",
-      "input": 0.21,
-      "output": 0.84,
+      "input": 0.6,
+      "output": 1.8,
       "lab": null
     },
     {
@@ -1155,22 +1141,14 @@
       "created": "2026-05-31",
       "input": 0.3,
       "output": 1.2,
-      "lab": {
-        "provider": "Minimax",
-        "input": 0.3,
-        "output": 1.2
-      }
+      "lab": null
     },
     {
       "id": "minimax/minimax-m3.1-flash",
       "created": "2026-10-19",
       "input": 0.15,
       "output": 0.6,
-      "lab": {
-        "provider": "Minimax",
-        "input": 0.15,
-        "output": 0.6
-      }
+      "lab": null
     },
     {
       "id": "mistralai/codestral-2508",
@@ -1318,6 +1296,13 @@
       "lab": null
     },
     {
+      "id": "mistralai/pixtral-large-2502",
+      "created": "2026-11-20",
+      "input": 2,
+      "output": 6,
+      "lab": null
+    },
+    {
       "id": "mistralai/voxtral-small-24b-2507",
       "created": "2025-10-30",
       "input": 0.1,
@@ -1381,7 +1366,7 @@
       "id": "moonshotai/kimi-k2.7-code",
       "created": "2026-06-12",
       "input": 0.6,
-      "output": 3.5,
+      "output": 3,
       "lab": {
         "provider": "Moonshot AI",
         "input": 0.95,
@@ -1402,8 +1387,8 @@
     {
       "id": "moonshotai/kimi-k3.1-pro",
       "created": "2026-10-23",
-      "input": 0.253,
-      "output": 8.8,
+      "input": 0.2403,
+      "output": 8.4023,
       "lab": {
         "provider": "Moonshot AI",
         "input": 2,
@@ -1518,7 +1503,7 @@
       "id": "nvidia/nemotron-3.5-super-vl",
       "created": "2026-10-15",
       "input": 0.15,
-      "output": 0.5,
+      "output": 0.47,
       "lab": null
     },
     {
@@ -2107,15 +2092,15 @@
     {
       "id": "openai/gpt-oss-120b",
       "created": "2025-08-05",
-      "input": 0.15,
-      "output": 0.6,
+      "input": 0.05,
+      "output": 0.25,
       "lab": null
     },
     {
       "id": "openai/gpt-oss-20b",
       "created": "2025-08-05",
-      "input": 0.018,
-      "output": 0.09,
+      "input": 0.03,
+      "output": 0.13,
       "lab": null
     },
     {
@@ -2150,7 +2135,7 @@
     {
       "id": "particle-ai/particle-1",
       "created": "2026-10-28",
-      "input": 0.06,
+      "input": 0.07,
       "output": 0.5,
       "lab": null
     },
@@ -2329,8 +2314,8 @@
     {
       "id": "qwen/qwen3-coder-30b-a3b-instruct",
       "created": "2025-07-31",
-      "input": 0.15,
-      "output": 0.6,
+      "input": 0.07,
+      "output": 0.28,
       "lab": null
     },
     {
@@ -2393,8 +2378,8 @@
     {
       "id": "qwen/qwen3.5-27b",
       "created": "2026-02-25",
-      "input": 0.195,
-      "output": 1.56,
+      "input": 0.26,
+      "output": 2.6,
       "lab": {
         "provider": "Alibaba",
         "input": 0.195,
@@ -2426,8 +2411,8 @@
     {
       "id": "qwen/qwen3.5-9b",
       "created": "2026-03-10",
-      "input": 0.154,
-      "output": 0.226,
+      "input": 0.17,
+      "output": 0.25,
       "lab": null
     },
     {
@@ -2477,8 +2462,8 @@
     {
       "id": "qwen/qwen3.6-35b-a3b",
       "created": "2026-04-27",
-      "input": 0.1,
-      "output": 0.9,
+      "input": 0.05,
+      "output": 0.7,
       "lab": null
     },
     {
@@ -2550,8 +2535,8 @@
     {
       "id": "qwen/qwen3.8-27b",
       "created": "2026-08-14",
-      "input": 0.06,
-      "output": 2.2,
+      "input": 0.035,
+      "output": 1.5,
       "lab": {
         "provider": "Alibaba",
         "input": 0.425,
@@ -2612,6 +2597,13 @@
         "input": 1.425,
         "output": 4.275
       }
+    },
+    {
+      "id": "radixark/daisyrose-27b",
+      "created": "2026-11-21",
+      "input": 0.15,
+      "output": 1.875,
+      "lab": null
     },
     {
       "id": "reflection/beam-1.0-501b-a23b",
@@ -2779,20 +2771,13 @@
     {
       "id": "tencent/hy3",
       "created": "2026-07-06",
-      "input": 0.132,
-      "output": 0.528,
+      "input": 0.14,
+      "output": 0.58,
       "lab": {
         "provider": "Tencent",
         "input": 0.132,
         "output": 0.528
       }
-    },
-    {
-      "id": "tencent/hy3-preview",
-      "created": "2026-04-22",
-      "input": 0.18,
-      "output": 0.6,
-      "lab": null
     },
     {
       "id": "tencent/hy4",
@@ -2853,6 +2838,13 @@
       "created": "2026-07-17",
       "input": 1,
       "output": 4.05,
+      "lab": null
+    },
+    {
+      "id": "thinkingmachines/inkling-2-mini",
+      "created": "2026-11-21",
+      "input": 0.075,
+      "output": 0.3,
       "lab": null
     },
     {
@@ -3005,17 +2997,6 @@
       }
     },
     {
-      "id": "x-ai/grok-build-0.1",
-      "created": "2026-05-20",
-      "input": 1,
-      "output": 2,
-      "lab": {
-        "provider": "xAI",
-        "input": 1,
-        "output": 2
-      }
-    },
-    {
       "id": "xiaomi/mimo-v2.5",
       "created": "2026-04-22",
       "input": 0.4,
@@ -3120,8 +3101,8 @@
     {
       "id": "z-ai/glm-4.7",
       "created": "2025-12-22",
-      "input": 0.4,
-      "output": 1.75,
+      "input": 0.6,
+      "output": 2.2,
       "lab": {
         "provider": "Z.AI",
         "input": 0.6,
@@ -3160,8 +3141,8 @@
     {
       "id": "z-ai/glm-5.1",
       "created": "2026-04-07",
-      "input": 1.19,
-      "output": 3.74,
+      "input": 1.4,
+      "output": 4.4,
       "lab": {
         "provider": "Z.AI",
         "input": 1.4,
@@ -3171,8 +3152,8 @@
     {
       "id": "z-ai/glm-5.2",
       "created": "2026-06-16",
-      "input": 0.007,
-      "output": 6.8,
+      "input": 0.62,
+      "output": 2.42,
       "lab": {
         "provider": "Z.AI",
         "input": 1.4,
@@ -3193,8 +3174,8 @@
     {
       "id": "z-ai/glm-5.3-flash",
       "created": "2026-08-26",
-      "input": 0.15,
-      "output": 0.5,
+      "input": 0.0399,
+      "output": 0.0784,
       "lab": {
         "provider": "Z.AI",
         "input": 0.15,

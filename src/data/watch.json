@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-23",
+  "updated": "2026-11-26",
   "entries": [
     {
       "id": "open-weight-models",
       "name": "Ultra-cheap and open-weight models",
       "status": "Repricing the work",
-      "note": "Held. Price snapshot vs 19 November: 208 lab-priced models compared, no cut and no rise on an existing model; 3 new models, 4 removed. Thinking Machines released Inkling 2 Mini on 20 November under Apache 2.0 (26.4B total, 3.4B active, runs on a 32GB Mac); third-party hosts on OpenRouter charge $0.075/$0.30 per million tokens. It's OSI-licensed, so it doesn't add to the licence stall sign.",
+      "note": "Held. Price snapshot vs 23 November: 205 lab-priced models compared, no cut and no rise on an existing model; 4 new models, 10 removed. Z.ai's GLM-5.4, its first looped transformer, is not yet open-weight: Z.ai plans to release weights after safety hardening, and the model is reachable only through its Coding Plan. Noted, not a stall sign.",
       "history": [
         {
           "date": "2026-10-12",
@@ -60,6 +60,12 @@
           "status": "Repricing the work",
           "note": "Held. Price snapshot vs 19 November: 208 lab-priced models compared, no cut and no rise on an existing model; 3 new models, 4 removed. Thinking Machines released Inkling 2 Mini on 20 November under Apache 2.0 (26.4B total, 3.4B active, runs on a 32GB Mac); third-party hosts on OpenRouter charge $0.075/$0.30 per million tokens. It's OSI-licensed, so it doesn't add to the licence stall sign.",
           "source": "https://huggingface.co/thinkingmachines/Inkling-2-Mini"
+        },
+        {
+          "date": "2026-11-26",
+          "status": "Repricing the work",
+          "note": "Held. Price snapshot vs 23 November: 205 lab-priced models compared, no cut and no rise on an existing model; 4 new models, 10 removed. Z.ai's GLM-5.4, its first looped transformer, is not yet open-weight: Z.ai plans to release weights after safety hardening, and the model is reachable only through its Coding Plan. Noted, not a stall sign.",
+          "source": "https://simonwillison.net/2026/Nov/23/glm-54/"
         }
       ],
       "register": {
@@ -87,7 +93,7 @@
       "id": "agentic-coding",
       "name": "Agentic coding and orchestration replacing prompt-level help",
       "status": "Hitting the market",
-      "note": "Held. Collector (generated 22 November): 1–22 November share 20.5% (5.32M Claude Code + 18.8k Copilot agent of 26.05M public PRs); October 22.4%. November hasn't closed, so the three-month stall sign has no month yet. Agent SDK downloads (claude-agent-sdk + codex-sdk) 23.0M for the week to 22 November, up 6.5% from 21.6M; 22 November repaired from 15 November. Repricing rule not met.",
+      "note": "Held. Agent SDK downloads (claude-agent-sdk + codex-sdk) 22.82M for the week to 25 November, flat against 22.84M (25 November repaired from 18 November); the stall sign needs eight falling weeks. The collector last ran on 22 November, so the pull-request share wasn't re-measured. Repricing rule not met.",
       "history": [
         {
           "date": "2026-10-12",
@@ -154,6 +160,12 @@
           "status": "Hitting the market",
           "note": "Held. Collector (generated 22 November): 1–22 November share 20.5% (5.32M Claude Code + 18.8k Copilot agent of 26.05M public PRs); October 22.4%. November hasn't closed, so the three-month stall sign has no month yet. Agent SDK downloads (claude-agent-sdk + codex-sdk) 23.0M for the week to 22 November, up 6.5% from 21.6M; 22 November repaired from 15 November. Repricing rule not met.",
           "source": "https://github.com/SiyadDev/dev-ahead/blob/collector-data/trending.json"
+        },
+        {
+          "date": "2026-11-26",
+          "status": "Hitting the market",
+          "note": "Held. Agent SDK downloads (claude-agent-sdk + codex-sdk) 22.82M for the week to 25 November, flat against 22.84M (25 November repaired from 18 November); the stall sign needs eight falling weeks. The collector last ran on 22 November, so the pull-request share wasn't re-measured. Repricing rule not met.",
+          "source": "https://api.npmjs.org/downloads/range/2026-10-29:2026-11-25/@anthropic-ai/claude-agent-sdk"
         }
       ],
       "register": {
@@ -181,7 +193,7 @@
       "id": "context-engineering",
       "name": "Context engineering displacing prompt engineering",
       "status": "Watching",
-      "note": "Held. Hacker News title stories with 'context engineering': 1 in November to 23 November (1 in September, 5 in October). The stall sign needs fewer than 5 for three months; October's 5 doesn't count, so it isn't met before January at the earliest. The Embeddings vs. Grep paper found keyword search plus model-written identifiers matched embedding search on real repositories.",
+      "note": "Held. Hacker News title stories with 'context engineering': 1 in November to 26 November. Neither sign can be met before January.",
       "history": [
         {
           "date": "2026-10-12",
@@ -216,6 +228,12 @@
           "status": "Watching",
           "note": "Held. Hacker News title stories with 'context engineering': 1 in November to 23 November (1 in September, 5 in October). The stall sign needs fewer than 5 for three months; October's 5 doesn't count, so it isn't met before January at the earliest. The Embeddings vs. Grep paper found keyword search plus model-written identifiers matched embedding search on real repositories.",
           "source": "https://arxiv.org/abs/2611.20455"
+        },
+        {
+          "date": "2026-11-26",
+          "status": "Watching",
+          "note": "Held. Hacker News title stories with 'context engineering': 1 in November to 26 November. Neither sign can be met before January.",
+          "source": "https://hn.algolia.com/api/v1/search?query=%22context%20engineering%22&tags=story&restrictSearchableAttributes=title&numericFilters=created_at_i%3E1793491200"
         }
       ],
       "register": {
@@ -242,7 +260,7 @@
       "id": "mcp",
       "name": "MCP and tool protocols standardising the integration layer",
       "status": "Hitting the market",
-      "note": "Held. @modelcontextprotocol/sdk + core: 137.4M for the week to 22 November (129.0M the week before, +6.5%; 22 November repaired from 15 November). CISA's catalog (2026.11.20) added no MCP server or SDK, so the stall sign is not met. No competing protocol documented by two of OpenAI, Google, GitHub and Cursor.",
+      "note": "Held. @modelcontextprotocol/sdk + core: 137.0M for the week to 25 November, up 0.9% from 135.75M (25 November repaired from 18 November); one week under the 1% stall line, which needs eight. Claude Code 2.1.332 loads skills from MCP servers (beta). CISA's catalog (2026.11.25) added no MCP server or SDK.",
       "history": [
         {
           "date": "2026-10-15",
@@ -303,6 +321,12 @@
           "status": "Hitting the market",
           "note": "Held. @modelcontextprotocol/sdk + core: 137.4M for the week to 22 November (129.0M the week before, +6.5%; 22 November repaired from 15 November). CISA's catalog (2026.11.20) added no MCP server or SDK, so the stall sign is not met. No competing protocol documented by two of OpenAI, Google, GitHub and Cursor.",
           "source": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+        },
+        {
+          "date": "2026-11-26",
+          "status": "Hitting the market",
+          "note": "Held. @modelcontextprotocol/sdk + core: 137.0M for the week to 25 November, up 0.9% from 135.75M (25 November repaired from 18 November); one week under the 1% stall line, which needs eight. Claude Code 2.1.332 loads skills from MCP servers (beta). CISA's catalog (2026.11.25) added no MCP server or SDK.",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
         }
       ],
       "register": {
@@ -477,7 +501,7 @@
       "id": "harness-layer",
       "name": "Harness and plugin layer: hooks, skills, mods",
       "status": "Hitting the market",
-      "note": "Held. Gemini CLI 0.70.0 skips system MCP servers with insecure command permissions, and Claude Code 2.1.329 shows where a folder's hooks are declared in its trust dialog. Both are narrow hardening, not a vendor removing or restricting third-party hooks or plugins, so the stall sign is not met. Staffing sign not met.",
+      "note": "Held. Claude Code 2.1.332 adds a PreSkillShellCommand hook that can refuse a skill's inline shell commands, and 2.1.331 makes managed plugin marketplaces auto-update by default from 30 November. Both add controls; neither removes or restricts third-party hooks or plugins, so the stall sign is not met.",
       "history": [
         {
           "date": "2026-10-12",
@@ -532,6 +556,12 @@
           "status": "Hitting the market",
           "note": "Held. Gemini CLI 0.70.0 skips system MCP servers with insecure command permissions, and Claude Code 2.1.329 shows where a folder's hooks are declared in its trust dialog. Both are narrow hardening, not a vendor removing or restricting third-party hooks or plugins, so the stall sign is not met. Staffing sign not met.",
           "source": "https://github.com/google-gemini/gemini-cli/blob/main/docs/changelogs/index.md"
+        },
+        {
+          "date": "2026-11-26",
+          "status": "Hitting the market",
+          "note": "Held. Claude Code 2.1.332 adds a PreSkillShellCommand hook that can refuse a skill's inline shell commands, and 2.1.331 makes managed plugin marketplaces auto-update by default from 30 November. Both add controls; neither removes or restricts third-party hooks or plugins, so the stall sign is not met.",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
         }
       ],
       "register": {
@@ -561,7 +591,7 @@
       "id": "ai-native-infra",
       "name": "AI-native infrastructure: sandboxes, computer use, cloud dev environments",
       "status": "Hitting the market",
-      "note": "Held. Sandbox SDK downloads 14.5M for the week to 22 November (13.9M the week before, +4.4%). No NVD 'sandbox escape' CVE from 19 to 23 November. Cloudflare's Agents SDK 0.34.0 lets tools park while waiting for a person or deadline so the Durable Object can hibernate. Budget or staffing sign not met.",
+      "note": "Held. Sandbox SDK downloads 13.40M for the week to 25 November, down 10.4% from 14.95M, the first fall; the stall sign needs eight. NVD 'sandbox escape' CVEs 23–26 November: 21, of which 20 are Firefox and one a PHP sandbox, none in the four tracked products, so the CVE stall sign is not met.",
       "history": [
         {
           "date": "2026-10-29",
@@ -610,6 +640,12 @@
           "status": "Hitting the market",
           "note": "Held. Sandbox SDK downloads 14.5M for the week to 22 November (13.9M the week before, +4.4%). No NVD 'sandbox escape' CVE from 19 to 23 November. Cloudflare's Agents SDK 0.34.0 lets tools park while waiting for a person or deadline so the Durable Object can hibernate. Budget or staffing sign not met.",
           "source": "https://developers.cloudflare.com/changelog/post/2026-11-20-pi-harness-pi-1-6/"
+        },
+        {
+          "date": "2026-11-26",
+          "status": "Hitting the market",
+          "note": "Held. Sandbox SDK downloads 13.40M for the week to 25 November, down 10.4% from 14.95M, the first fall; the stall sign needs eight. NVD 'sandbox escape' CVEs 23–26 November: 21, of which 20 are Firefox and one a PHP sandbox, none in the four tracked products, so the CVE stall sign is not met.",
+          "source": "https://api.npmjs.org/downloads/range/2026-10-29:2026-11-25/@vercel/sandbox"
         }
       ],
       "register": {
@@ -809,7 +845,7 @@
       "id": "portable-skills",
       "name": "Portable agent skills (SKILL.md)",
       "status": "Hitting the market",
-      "note": "Held. Modern Web Guidance, agent skills stewarded by the Chrome, Edge, Firefox and MDN teams with a public eval dashboard, follows Supabase's package skills. No fork, no malicious-skill incident; the priced-service sign is not met.",
+      "note": "Held. Claude Code now loads skills from MCP servers (beta), a new distribution path rather than a fork of the format. NVIDIA's SkillEvaluator adds CI quality and security gates for skills, and an audit of SkillsBench (arXiv 2611.33943) found its per-task harm results not significant. No priced-service evidence, no malicious-skill incident.",
       "history": [
         {
           "date": "2026-10-26",
@@ -834,6 +870,12 @@
           "status": "Hitting the market",
           "note": "Held. Modern Web Guidance, agent skills stewarded by the Chrome, Edge, Firefox and MDN teams with a public eval dashboard, follows Supabase's package skills. No fork, no malicious-skill incident; the priced-service sign is not met.",
           "source": "https://raw.githubusercontent.com/GoogleChrome/modern-web-guidance-src/HEAD/README.md"
+        },
+        {
+          "date": "2026-11-26",
+          "status": "Hitting the market",
+          "note": "Held. Claude Code now loads skills from MCP servers (beta), a new distribution path rather than a fork of the format. NVIDIA's SkillEvaluator adds CI quality and security gates for skills, and an audit of SkillsBench (arXiv 2611.33943) found its per-task harm results not significant. No priced-service evidence, no malicious-skill incident.",
+          "source": "https://arxiv.org/abs/2611.33943"
         }
       ],
       "register": {
@@ -865,7 +907,7 @@
       "id": "agent-supply-chain-security",
       "name": "Agent supply-chain security",
       "status": "Watching",
-      "note": "Held. NVD 'MCP server' CVEs: 87 published 1 October to 23 November (8 from 19 November), on pace for about 148 this quarter against 120 in Q3. CISA's additions on 18 and 20 November include no MCP server or SDK, skill or plugin, so the sign is not met. Security-audit skills (Cloudflare's, Claude-BugHunter) are among the fastest-rising repositories.",
+      "note": "Held. NVD 'MCP server' CVEs: 98 published 1 October to 26 November (11 from 23 November), on pace for about 157 this quarter against 120 in Q3. CISA's additions to 25 November include no MCP server or SDK, skill or plugin, so the sign is not met.",
       "history": [
         {
           "date": "2026-10-29",
@@ -908,6 +950,12 @@
           "status": "Watching",
           "note": "Held. NVD 'MCP server' CVEs: 87 published 1 October to 23 November (8 from 19 November), on pace for about 148 this quarter against 120 in Q3. CISA's additions on 18 and 20 November include no MCP server or SDK, skill or plugin, so the sign is not met. Security-audit skills (Cloudflare's, Claude-BugHunter) are among the fastest-rising repositories.",
           "source": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+        },
+        {
+          "date": "2026-11-26",
+          "status": "Watching",
+          "note": "Held. NVD 'MCP server' CVEs: 98 published 1 October to 26 November (11 from 23 November), on pace for about 157 this quarter against 120 in Q3. CISA's additions to 25 November include no MCP server or SDK, skill or plugin, so the sign is not met.",
+          "source": "https://services.nvd.nist.gov/rest/json/cves/2.0?keywordSearch=MCP%20server&keywordExactMatch&pubStartDate=2026-10-01T00:00:00.000Z&pubEndDate=2026-11-26T23:59:59.000Z&resultsPerPage=1"
         }
       ],
       "register": {
